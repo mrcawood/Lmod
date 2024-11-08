@@ -1,0 +1,60 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/load_any/mf:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/load_any/mf;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/load_any/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/load_any/mf",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load B
+===========================
+false
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load A
+===========================
+LOADEDMODULES=Foo/1.0:A/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/load_any/mf;
+export MODULEPATH;
+NAME=Foo;
+export NAME;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/load_any/mf/Foo/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/load_any/mf/A/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={A={fn="/Users/mcawood/Lmod/Lmod/rt/load_any/mf/A/1.0.lua",fullName="A/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="A",wV="000000001.*zfinal",},Foo={fn="/Users/mcawood/Lmod/Lmod/rt/load_any/mf/Foo/1.0.lua",fullName="Foo/1.0",loadOrder=1,propT={},stackDepth=1,status="active",userName="Foo",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/load_any/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/load_any/mf",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/load_any/mf;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={A={fn="/Users/mcawood/Lmod/Lmod/rt/load_any/mf/A/1.0.lua",fullName="A/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="A",wV="000000001.*zfinal",},Foo={fn="/Users/mcawood/Lmod/Lmod/rt/load_any/mf/Foo/1.0.lua",fullName="Foo/1.0",loadOrder=1,propT={},stackDepth=1,status="active",userName="Foo",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/load_any/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/load_any/mf",}';
+export _ModuleTable_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing rm A
+===========================
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/load_any/mf;
+export MODULEPATH;
+unset NAME;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/load_any/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/load_any/mf",}';
+export _ModuleTable_;
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/load_any/mf;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/load_any/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/load_any/mf",}';
+export _ModuleTable_;

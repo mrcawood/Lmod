@@ -1,0 +1,40 @@
+===========================
+step 1
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load TACC.orig
+===========================
+false
+===========================
+step 3
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing save
+===========================
+__LMOD_REF_COUNT_MODULEPATH=ProjectDIR/rt/sd_tacc/mf/TACC:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=ProjectDIR/rt/sd_tacc/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"ProjectDIR/rt/sd_tacc/mf/TACC",},systemBaseMPATH="ProjectDIR/rt/sd_tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 4
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing purge
+===========================
+MODULEPATH=ProjectDIR/rt/sd_tacc/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"ProjectDIR/rt/sd_tacc/mf/TACC",},systemBaseMPATH="ProjectDIR/rt/sd_tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 5
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load TACC
+===========================
+false
+===========================
+step 6
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing save
+===========================
+MODULEPATH=ProjectDIR/rt/sd_tacc/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"ProjectDIR/rt/sd_tacc/mf/TACC",},systemBaseMPATH="ProjectDIR/rt/sd_tacc/mf/TACC",}';
+export _ModuleTable_;

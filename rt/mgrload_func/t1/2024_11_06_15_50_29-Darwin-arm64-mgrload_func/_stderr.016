@@ -1,0 +1,24 @@
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {
+    avx = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/mgrload_func/mf/Core/avx.lua",
+      fullName = "avx",
+      loadOrder = 1,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "avx",
+      wV = "M.*zfinal",
+    },
+  },
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/mgrload_func/mf/Core",
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/mgrload_func/mf/Core",
+}
+

@@ -1,0 +1,40 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use broken_mf
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/build_cache/t1/2024_10_17_14_37_12-Darwin-arm64-build_cache/broken_mf:1\;/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/build_cache/t1/2024_10_17_14_37_12-Darwin-arm64-build_cache/broken_mf:/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/build_cache/t1/2024_10_17_14_37_12-Darwin-arm64-build_cache/broken_mf","/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/build_cache/t1/2024_10_17_14_37_12-Darwin-arm64-build_cache/broken_mf:/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/build_cache/t1/2024_10_17_14_37_12-Darwin-arm64-build_cache/broken_mf","/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/build_cache/t1/2024_10_17_14_37_12-Darwin-arm64-build_cache/broken_mf:/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/build_cache/t1/2024_10_17_14_37_12-Darwin-arm64-build_cache/broken_mf","/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common",}';
+export _ModuleTable_;

@@ -1,0 +1,4 @@
+===========================
+step 2
+buildSh2MF --from zsh /Users/mcawood/Lmod/Lmod/rt/zsh_to_modulefile/tstScript.zsh
+===========================

@@ -1,0 +1,63 @@
+===========================
+step 1
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing --version
+===========================
+Modules based on Lua: Version
+    by Robert McLay mclay@tacc.utexas.edu
+===========================
+step 2
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing -T load ibmA openmpi phdf5
+===========================
+running: module --regression_testing -T load ibmA openmpi phdf5
+  (1)(0)Loading: ibmA (fn: ProjectDIR/rt/family/mf/Core/ibmA/13.1.6.lua, using Find-Best)
+Lmod has detected the following error: Syntax error in file: ProjectDIR/rt/family/mf/Core/ibmA/13.1.6.lua
+ with command: load, one or more arguments are not strings.
+While processing the following module(s):
+    Module fullname  Module Filename
+    ibmA/13.1.6      ProjectDIR/rt/family/mf/Core/ibmA/13.1.6.lua
+===========================
+step 3
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 4
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing -T load gccA
+===========================
+running: module --regression_testing -T load gccA
+  (1)(0)Loading: gccA (fn: ProjectDIR/rt/family/mf/Core/gccA/7.1.0.lua, using Find-Best)
+Lmod has detected the following error: Syntax error in file: ProjectDIR/rt/family/mf/Core/gccA/7.1.0.lua
+ with command: load, one or more arguments are not strings.
+While processing the following module(s):
+    Module fullname  Module Filename
+    gccA/7.1.0       ProjectDIR/rt/family/mf/Core/gccA/7.1.0.lua
+===========================
+step 5
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing avail
+===========================
+ProjectDIR/rt/family/mf/Core
+   gcc/7.1.0    gccA/7.1.0    ibm/13.1.6    ibmA/13.1.6    tcc/1.0
+If the avail list is too long consider trying:
+"module --default avail" or "ml -d av" to just list the default modules.
+"module overview" or "ml ov" to display the number of modules for each name.
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
+===========================
+step 6
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing -T load ibmA
+===========================
+running: module --regression_testing -T load ibmA
+  (1)(0)Loading: ibmA (fn: ProjectDIR/rt/family/mf/Core/ibmA/13.1.6.lua, using Find-Best)
+Lmod has detected the following error: Syntax error in file: ProjectDIR/rt/family/mf/Core/ibmA/13.1.6.lua
+ with command: load, one or more arguments are not strings.
+While processing the following module(s):
+    Module fullname  Module Filename
+    ibmA/13.1.6      ProjectDIR/rt/family/mf/Core/ibmA/13.1.6.lua
+===========================
+step 7
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load tcc
+===========================
+Lmod has detected the following error: family names must be start with a letter or underscore followed letters, numbers and underscores (Not: "tcc-compiler")
+While processing the following module(s):
+    Module fullname  Module Filename
+    tcc/1.0          ProjectDIR/rt/family/mf/Core/tcc/1.0.lua

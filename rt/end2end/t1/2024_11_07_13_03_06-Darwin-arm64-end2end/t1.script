@@ -1,0 +1,93 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_07"; export tag
+idTag="t1"; export idTag
+TARGET=""; export TARGET
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_07_13_03_06-Darwin-arm64-end2end/t1.runtime"; export runtimeFn
+resultFn="/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_07_13_03_06-Darwin-arm64-end2end/t1.result"; export resultFn
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/end2end"; export testDir
+testName="end2end"; export testName
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_07_13_03_06-Darwin-arm64-end2end/message.lua"; export messageFn
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/end2end/end2end.tdesc"; export testdescriptFn
+outputDir="/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_07_13_03_06-Darwin-arm64-end2end"; export outputDir
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_07_13_03_06-Darwin-arm64-end2end/results.lua"; export cmdResultFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     export MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/end2end/mf
+     export MODULEPATH=$MODULEPATH_ROOT/Core
+     numStep=0
+     COUNT=0
+     ORIG_HOME=`(cd $HOME; /bin/pwd)`
+     HOME=`/bin/pwd`
+     CMD="lmod.in.lua"
+     DIR=Lmod
+     dir=lmod
+
+
+     remove_generated_lmod_files build b0 lmod results.csv
+
+     GIT_BRANCH=`git status | head -n 1 | sed -e 's/^[# ]*On branch //g' -e 's/^[# ]*HEAD detached at//g'`
+     runLmod --version              # 1
+     LmodV=`$LUA_EXEC $projectDir/src/$CMD bash --dumpversion 2>&1`
+     echo LmodV=$LmodV
+     mkdir b0
+     (cd b0; /Users/mcawood/Lmod/Lmod/configure --prefix=/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_07_13_03_06-Darwin-arm64-end2end/b0 --with-useBuiltinPkgs=yes)
+     (cd /Users/mcawood/Lmod/Lmod; make -f /Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_07_13_03_06-Darwin-arm64-end2end/b0/makefile dist GIT_BRANCH=$GIT_BRANCH)
+     tar xf $projectDir/${DIR}-$LmodV.tar.bz2
+     rm -rf $projectDir/${DIR}-$LmodV.tar.bz2
+     mkdir build; cd build; ../${DIR}-$LmodV/configure --prefix=`pwd`/.. --with-useBuiltinPkgs=yes;
+     make install
+     myStatus=$?
+
+     cd $outputDir
+     echo status: $myStatus
+     if [ $myStatus -eq 0 ]; then
+        echo "passed, make" >> results.csv
+     else
+        echo "diff, make"   >> results.csv
+     fi
+
+
+     LMOD_EXEC=$outputDir/$dir/$dir/libexec/lmod
+
+     runMe $LMOD_EXEC --version
+     mkdir ${dir}/etc
+     cp /Users/mcawood/Lmod/Lmod/rt/end2end/modulerc ${dir}/etc/rc
+
+     runMe $LMOD_EXEC load admin
+     runMe $LMOD_EXEC load amber
+     runMe $LMOD_EXEC load bad
+     runMe $LMOD_EXEC load myinfo
+     runMe $LMOD_EXEC list
+     runMe $LMOD_EXEC avail
+     export TEST=0
+     runMe $LMOD_EXEC load b
+     runMe echo "TEST: $TEST"
+     runMe $LMOD_EXEC unload b
+     runMe echo "TEST: $TEST"
+
+
+
+     cp /Users/mcawood/Lmod/Lmod/rt/end2end/bad_modulerc ${dir}/etc/rc
+     runMe $LMOD_EXEC avail
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/end2end/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/end2end/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_07_13_03_06-Darwin-arm64-end2end/t1.result -t /Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_07_13_03_06-Darwin-arm64-end2end/t1.runtime results.csv
+   

@@ -1,0 +1,8 @@
+Lmod has detected the following error: Cannot load module "fftw/2.1.5/intel-13.1.1". At least one of these module(s) must be loaded:
+   intel/13.1.1
+
+While processing the following module(s):
+    Module fullname          Module Filename
+    ---------------          ---------------
+    fftw/2.1.5/intel-13.1.1  /Users/mcawood/Lmod/Lmod/rt/columnT/modules/fftw/2.1.5/intel-13.1.1
+

@@ -1,0 +1,73 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use -a /Users/mcawood/Lmod/Lmod/rt/always/mf
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/always/mf:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/always/mf;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9hbHdheXMvbWYiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load master
+===========================
+LMOD_A_DIR=/a/b/c;
+export LMOD_A_DIR;
+LMOD_B_DIR=/d/e/f;
+export LMOD_B_DIR;
+LOADEDMODULES=a:b:master/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/always/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/always/mf/a.lua:/Users/mcawood/Lmod/Lmod/rt/always/mf/b.lua:/Users/mcawood/Lmod/Lmod/rt/always/mf/master/1.0.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewphID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvYWx3YXlzL21mL2EubHVhIiwKZnVsbE5hbWUgPSAiYSIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiYSIsCndWID0gIk0uKnpmaW5hbCIsCn0sCmIgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9hbHdheXMvbWYvYi5sdWEiLApmdWxsTmFtZSA9ICJiIiwKbG9hZE9yZGVyID0gMiwKcHJvcFQgPSB7fSwK;
+export _ModuleTable001_;
+_ModuleTable002_=c3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJiIiwKd1YgPSAiTS4qemZpbmFsIiwKfSwKbWFzdGVyID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvYWx3YXlzL21mL21hc3Rlci8xLjAubHVhIiwKZnVsbE5hbWUgPSAibWFzdGVyLzEuMCIsCmxvYWRPcmRlciA9IDMsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibWFzdGVyIiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvYWx3YXlzL21mIiwKfSwKfQo=;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/always/mf;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewphID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvYWx3YXlzL21mL2EubHVhIiwKZnVsbE5hbWUgPSAiYSIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiYSIsCndWID0gIk0uKnpmaW5hbCIsCn0sCmIgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9hbHdheXMvbWYvYi5sdWEiLApmdWxsTmFtZSA9ICJiIiwKbG9hZE9yZGVyID0gMiwKcHJvcFQgPSB7fSwK;
+export _ModuleTable001_;
+_ModuleTable002_=c3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJiIiwKd1YgPSAiTS4qemZpbmFsIiwKfSwKbWFzdGVyID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvYWx3YXlzL21mL21hc3Rlci8xLjAubHVhIiwKZnVsbE5hbWUgPSAibWFzdGVyLzEuMCIsCmxvYWRPcmRlciA9IDMsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibWFzdGVyIiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvYWx3YXlzL21mIiwKfSwKfQo=;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload master
+===========================
+unset LMOD_B_DIR;
+LOADEDMODULES=a;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/always/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/always/mf/a.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewphID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvYWx3YXlzL21mL2EubHVhIiwKZnVsbE5hbWUgPSAiYSIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiYSIsCndWID0gIk0uKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9hbHdheXMvbWYiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/always/mf;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewphID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvYWx3YXlzL21mL2EubHVhIiwKZnVsbE5hbWUgPSAiYSIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiYSIsCndWID0gIk0uKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9hbHdheXMvbWYiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;

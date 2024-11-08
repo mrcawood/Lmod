@@ -1,0 +1,90 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use /Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/path1
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/path1:1\;/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/path1:/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/path1","/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --ignore_cache spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/path1:/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/path1","/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --ignore_cache spider inaccessible
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/path1:/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/path1","/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unuse /Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/path1
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider inaccessible
+===========================
+false
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load extend
+===========================
+false
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider software1
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/UI/Compilers:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/UI/Compilers;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/UI/Compilers",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/UI/Compilers",}';
+export _ModuleTable_;
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load compiler1
+===========================
+LOADEDMODULES=compiler1/1.0;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/modules/Compilers/compiler1/1.0:1\;/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/UI/Compilers:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/modules/Compilers/compiler1/1.0:/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/UI/Compilers;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/UI/Compilers/compiler1/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={compiler1={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/modules/Compilers/compiler1/1.0\")",},fn="/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/UI/Compilers/compiler1/1.0.lua",fullName="compiler1/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="compiler1",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/modules/Compilers/compiler1/1.0","/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/UI/Compilers",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/UI/Compilers",}';
+export _ModuleTable_;
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing av
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/modules/Compilers/compiler1/1.0:/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/UI/Compilers;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={compiler1={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/modules/Compilers/compiler1/1.0\")",},fn="/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/UI/Compilers/compiler1/1.0.lua",fullName="compiler1/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="compiler1",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/modules/Compilers/compiler1/1.0","/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/UI/Compilers",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2/Stages/2017a/UI/Compilers",}';
+export _ModuleTable_;

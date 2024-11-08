@@ -1,0 +1,61 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/spider_dot"; export testDir
+messageFn="/Users/mcawood/Lmod/Lmod/rt/spider_dot/t1/2024_11_06_15_50_29-Darwin-arm64-spider_dot/message.lua"; export messageFn
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_06"; export tag
+target=""; export target
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/spider_dot/spider_dot.tdesc"; export testdescriptFn
+TARGET=""; export TARGET
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/spider_dot/t1/2024_11_06_15_50_29-Darwin-arm64-spider_dot/results.lua"; export cmdResultFn
+packageName="rt"; export packageName
+resultFn="/Users/mcawood/Lmod/Lmod/rt/spider_dot/t1/2024_11_06_15_50_29-Darwin-arm64-spider_dot/t1.result"; export resultFn
+testName="spider_dot"; export testName
+idTag="t1"; export idTag
+outputDir="/Users/mcawood/Lmod/Lmod/rt/spider_dot/t1/2024_11_06_15_50_29-Darwin-arm64-spider_dot"; export outputDir
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/spider_dot/t1/2024_11_06_15_50_29-Darwin-arm64-spider_dot/t1.runtime"; export runtimeFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     export MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/spider_dot/mf
+     export MODULEPATH=$MODULEPATH_ROOT/Core
+
+     remove_generated_lmod_files
+
+     cp /Users/mcawood/Lmod/Lmod/init/lmodrc.lua .lmodrc.lua
+
+     runLmod --version               # 1
+     runLmod spider                  # 2
+     runLmod --show_hidden spider    # 3
+     runLmod --show_hidden -t spider # 4
+     runLmod spider  fftw            # 5
+     runLmod spider  fft             # 6
+
+     unsetMT
+     export MODULEPATH_ROOT2=/Users/mcawood/Lmod/Lmod/rt/spider_dot/mf2
+     export MODULEPATH=$MODULEPATH_ROOT2/Core
+
+     
+     runLmod spider test/1.2.3                # 7
+     runLmod --show_hidden spider test/1.2.3  # 8
+     runLmod spider cluster                   # 9
+     runLmod --show_hidden spider cluster     #10
+
+     HOME=$ORIG_HOME
+
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/spider_dot/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/spider_dot/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/spider_dot/t1/2024_11_06_15_50_29-Darwin-arm64-spider_dot/t1.result -t /Users/mcawood/Lmod/Lmod/rt/spider_dot/t1/2024_11_06_15_50_29-Darwin-arm64-spider_dot/t1.runtime results.csv
+   

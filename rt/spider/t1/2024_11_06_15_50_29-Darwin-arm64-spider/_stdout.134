@@ -1,0 +1,188 @@
+timestampFn = {
+  false,
+}
+mrcT = {
+  alias2modT = {
+    intelcompiler = "intel",
+  },
+  hiddenT = {
+    ["gcc/4.8"] = true,
+  },
+  version2modT = {
+    ["intel/17"] = "intel/2017.1.132",
+    ["intel/2017"] = "intel/2017.1.132",
+  },
+}
+
+mrcMpathT = {}
+spiderT = {
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/gcc/10"] = {
+    GROMACS = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["GROMACS/2018"] = {
+          Description = [[GROMACS(CPU/2018) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a CPU enabled build, containing both MPI and threadMPI binaries for 2018.
+]],
+          Version = "2018",
+          canonical = "2018",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/gcc/10/GROMACS/2018.lua",
+          help = [[
+HELP Description
+================
+GROMACS(CPU/2018) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a CPU enabled build, containing both MPI and threadMPI binaries for 2018.
+
+
+More information
+================
+ - Homepage: http://www.gromacs.org
+]],
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/gcc/10",
+          pV = "000002018.*zfinal",
+          wV = "000002018.*zfinal",
+          whatis = {
+            [[Description: 
+GROMACS(CPU/2018) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a CPU enabled build, containing both MPI and threadMPI binaries for 2018.
+]],
+          },
+        },
+        ["GROMACS/2019"] = {
+          Description = [[GROMACS(CPU/2019) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a CPU enabled build, containing both MPI and threadMPI binaries for 2019.
+]],
+          Version = "2019",
+          canonical = "2019",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/gcc/10/GROMACS/2019.lua",
+          help = [[
+HELP Description
+================
+GROMACS(CPU/2019) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a CPU enabled build, containing both MPI and threadMPI binaries for 2019.
+
+
+More information
+================
+ - Homepage: http://www.gromacs.org
+]],
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/gcc/10",
+          pV = "000002019.*zfinal",
+          wV = "000002019.*zfinal",
+          whatis = {
+            [[Description: 
+GROMACS(CPU/2019) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a CPU enabled build, containing both MPI and threadMPI binaries for 2019.
+]],
+          },
+        },
+      },
+    },
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/zuda/10"] = {
+    GROMACS = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["GROMACS/2019"] = {
+          Description = [[GROMACS(GPU/2019) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a GPU only build, containing both MPI and threadMPI builds for 2019.
+]],
+          Version = "2019",
+          canonical = "2019",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/zuda/10/GROMACS/2019.lua",
+          help = [[
+HELP Description
+================
+GROMACS(GPU/2019) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a GPU only build, containing both MPI and threadMPI builds for 2019.
+
+
+More information
+================
+ - Homepage: http://www.gromacs.org
+]],
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/zuda/10",
+          pV = "000002019.*zfinal",
+          wV = "000002019.*zfinal",
+          whatis = {
+            [[Description: 
+GROMACS(GPU/2019) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a GPU only build, containing both MPI and threadMPI builds for 2019.
+]],
+          },
+        },
+      },
+    },
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core"] = {
+    gcc = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["gcc/10.1"] = {
+          Version = "10.1",
+          canonical = "10.1",
+          changeMPATH = true,
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core/gcc/10.1.lua",
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core",
+          pV = "000000010.000000001.*zfinal",
+          wV = "000000010.000000001.*zfinal",
+        },
+      },
+    },
+    zuda = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["zuda/10.1"] = {
+          Version = "10.1",
+          canonical = "10.1",
+          changeMPATH = true,
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core/zuda/10.1.lua",
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core",
+          pV = "000000010.000000001.*zfinal",
+          wV = "000000010.000000001.*zfinal",
+        },
+      },
+    },
+  },
+  version = 5,
+}
+mpathMapT = {
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/gcc/10"] = {
+    ["gcc/10.1"] = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core",
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/zuda/10"] = {
+    ["zuda/10.1"] = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core",
+  },
+}
+

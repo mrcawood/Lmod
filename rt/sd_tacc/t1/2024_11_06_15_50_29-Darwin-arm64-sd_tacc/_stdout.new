@@ -1,0 +1,40 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load TACC.orig
+===========================
+false
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing save
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load TACC
+===========================
+false
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing save
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC",}';
+export _ModuleTable_;

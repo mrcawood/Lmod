@@ -1,0 +1,37 @@
+===========================
+step 1
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing --version
+===========================
+Modules based on Lua: Version
+    by Robert McLay mclay@tacc.utexas.edu
+===========================
+step 2
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load PrgEnv
+===========================
+Lmod has detected the following error: Syntax error in file: ProjectDIR/rt/isloaded/mf/Core/PrgEnv.lua
+ with command: load, one or more arguments are not strings.
+While processing the following module(s):
+    Module fullname  Module Filename
+    PrgEnv           ProjectDIR/rt/isloaded/mf/Core/PrgEnv.lua
+===========================
+step 3
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing use ProjectDIR/rt/isloaded/mf/Core2
+===========================
+===========================
+step 4
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load foo/1.0
+===========================
+===========================
+step 5
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load isloaded
+===========================
+Lmod has detected the following error: Syntax error in file: ProjectDIR/rt/isloaded/mf/Core2/isloaded.lua
+ with command: load, one or more arguments are not strings.
+While processing the following module(s):
+    Module fullname  Module Filename
+    isloaded         ProjectDIR/rt/isloaded/mf/Core2/isloaded.lua
+===========================
+step 6
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing del isloaded
+===========================
+Note: the module "isloaded" cannot be unloaded because it was not loaded.

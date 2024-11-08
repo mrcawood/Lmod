@@ -1,0 +1,11 @@
+  Lmod version: 8.7.43 2024-06-24 15:50 -06:00
+running: module --regression_testing -T load ibmA openmpi phdf5
+  (1)(0)Loading: ibmA (fn: /Users/mcawood/Lmod/Lmod/rt/family/mf/Core/ibmA/13.1.6.lua, using Find-Best)
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/family/mf/Core/ibmA/13.1.6.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    ibmA/13.1.6      /Users/mcawood/Lmod/Lmod/rt/family/mf/Core/ibmA/13.1.6.lua
+

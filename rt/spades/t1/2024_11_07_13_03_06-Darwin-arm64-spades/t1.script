@@ -1,0 +1,49 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_07"; export tag
+idTag="t1"; export idTag
+TARGET=""; export TARGET
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/spades/t1/2024_11_07_13_03_06-Darwin-arm64-spades/t1.runtime"; export runtimeFn
+resultFn="/Users/mcawood/Lmod/Lmod/rt/spades/t1/2024_11_07_13_03_06-Darwin-arm64-spades/t1.result"; export resultFn
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/spades"; export testDir
+testName="spades"; export testName
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/spades/t1/2024_11_07_13_03_06-Darwin-arm64-spades/message.lua"; export messageFn
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/spades/spades.tdesc"; export testdescriptFn
+outputDir="/Users/mcawood/Lmod/Lmod/rt/spades/t1/2024_11_07_13_03_06-Darwin-arm64-spades"; export outputDir
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/spades/t1/2024_11_07_13_03_06-Darwin-arm64-spades/results.lua"; export cmdResultFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spades/mf
+
+     remove_generated_lmod_files
+
+     runLmod --version                         # 1
+
+     mkdir -p $HOME/.lmod.d/cache
+     buildSpiderT $MODULEPATH > $HOME/.cache/lmod/spiderT.lua
+     buildDbT $MODULEPATH > $HOME/.cache/lmod/dbT.lua
+
+     runLmod avail                             # 2
+     runLmod spider spades                     # 3
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/spades/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/spades/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/spades/t1/2024_11_07_13_03_06-Darwin-arm64-spades/t1.result -t /Users/mcawood/Lmod/Lmod/rt/spades/t1/2024_11_07_13_03_06-Darwin-arm64-spades/t1.runtime results.csv
+   

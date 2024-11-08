@@ -1,0 +1,58 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_07"; export tag
+idTag="t1"; export idTag
+TARGET=""; export TARGET
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/hook_avail/t1/2024_11_07_13_03_06-Darwin-arm64-hook_avail/t1.runtime"; export runtimeFn
+resultFn="/Users/mcawood/Lmod/Lmod/rt/hook_avail/t1/2024_11_07_13_03_06-Darwin-arm64-hook_avail/t1.result"; export resultFn
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/hook_avail"; export testDir
+testName="hook_avail"; export testName
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/hook_avail/t1/2024_11_07_13_03_06-Darwin-arm64-hook_avail/message.lua"; export messageFn
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/hook_avail/hook_avail.tdesc"; export testdescriptFn
+outputDir="/Users/mcawood/Lmod/Lmod/rt/hook_avail/t1/2024_11_07_13_03_06-Darwin-arm64-hook_avail"; export outputDir
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/hook_avail/t1/2024_11_07_13_03_06-Darwin-arm64-hook_avail/results.lua"; export cmdResultFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+
+     export LMOD_PACKAGE_PATH=/Users/mcawood/Lmod/Lmod/rt/hook_avail
+     export MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/hook_avail/mf
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hook_avail/mf/Core:/Users/mcawood/Lmod/Lmod/rt/hook_avail/mf/Core-helios
+
+     remove_generated_lmod_files
+
+     runLmod --version                     # 1
+     runLmod load StdEnv                   # 2
+     runLmod list                          # 3
+     runLmod purge                         # 4
+     runLmod            avail              # 5
+     runLmod -s en_grouped avail           # 6
+     export LMOD_AVAIL_STYLE="system:<en_grouped>"
+     runLmod            avail              # 7
+     export LMOD_AVAIL_STYLE="fr_grouped"
+     runLmod            avail              # 8
+     export LMOD_CASE_INDEPENDENT_SORTING=1
+     export LMOD_AVAIL_STYLE="system:<en_grouped>"
+     runLmod            avail              # 9
+     runLmod            overview           #10
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/hook_avail/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/hook_avail/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/hook_avail/t1/2024_11_07_13_03_06-Darwin-arm64-hook_avail/t1.result -t /Users/mcawood/Lmod/Lmod/rt/hook_avail/t1/2024_11_07_13_03_06-Darwin-arm64-hook_avail/t1.runtime results.csv
+   

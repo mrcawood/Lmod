@@ -1,0 +1,12 @@
+  Lmod version: 8.7.43 2024-06-24 15:50 -06:00
+running: module --regression_testing -T use /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Other /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/A
+  Prepending: /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Other to MODULEPATH
+  Prepending: /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/A to MODULEPATH
+  reloadAll(1)(HPCBIOS)
+  (1)(1)Unloading: HPCBIOS (status: active) (fn: /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Core/HPCBIOS/2016q2.lua)
+    Removing: /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Other from MODULEPATH
+  reloadAll(2)()
+
+Inactive Modules:
+  1) HPCBIOS
+

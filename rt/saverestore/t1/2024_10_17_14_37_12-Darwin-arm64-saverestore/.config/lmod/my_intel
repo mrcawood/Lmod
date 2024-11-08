@@ -1,0 +1,48 @@
+-- -*- lua -*-
+-- created: Thu Oct 17 14:39:20 2024 --
+-- Lmod 8.7.43 2024-06-24 15:50 -06:00
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {
+    icc = {
+      actionA = {
+        "prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/saverestore/Compiler/intel/18.0\")",
+      },
+      fn = "/Users/mcawood/Lmod/Lmod/rt/saverestore/Core/icc/18.0.1.lua",
+      fullName = "icc/18.0.1",
+      hash = "ac652baa9e44b5ce35538fc1c5927acfa737e7db",
+      loadOrder = 1,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "icc",
+      wV = "000000018.000000000.000000001.*zfinal",
+    },
+    ifort = {
+      actionA = {
+        "prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/saverestore/Compiler/intel/18.0\")",
+      },
+      fn = "/Users/mcawood/Lmod/Lmod/rt/saverestore/Core/ifort/18.0.1.lua",
+      fullName = "ifort/18.0.1",
+      hash = "ac652baa9e44b5ce35538fc1c5927acfa737e7db",
+      loadOrder = 2,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "ifort",
+      wV = "000000018.000000000.000000001.*zfinal",
+    },
+  },
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/saverestore/Compiler/intel/18.0", "/Users/mcawood/Lmod/Lmod/rt/saverestore/Core",
+  },
+  mpathRefCountT = {
+    ["/Users/mcawood/Lmod/Lmod/rt/saverestore/Compiler/intel/18.0"] = 2,
+    ["/Users/mcawood/Lmod/Lmod/rt/saverestore/Core"] = 1,
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/saverestore/Core",
+}

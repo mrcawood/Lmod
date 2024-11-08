@@ -1,0 +1,34 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --config
+===========================
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load tryThis
+===========================
+LOADEDMODULES=tryThis/1.0;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/configDir/mf:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/configDir/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/configDir/mf/tryThis/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={tryThis={fn="/Users/mcawood/Lmod/Lmod/rt/configDir/mf/tryThis/1.0.lua",fullName="tryThis/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="tryThis",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/configDir/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/configDir/mf",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load w
+===========================
+LOADEDMODULES=tryThis/1.0:w/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/configDir/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/configDir/mf/tryThis/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/configDir/mf/w/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={tryThis={fn="/Users/mcawood/Lmod/Lmod/rt/configDir/mf/tryThis/1.0.lua",fullName="tryThis/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="tryThis",wV="000000001.*zfinal",},w={fn="/Users/mcawood/Lmod/Lmod/rt/configDir/mf/w/1.0.lua",fullName="w/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="w",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/configDir/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/configDir/mf",}';
+export _ModuleTable_;

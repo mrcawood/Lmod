@@ -1,0 +1,8 @@
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/checkSyntax/mf/3.7.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    3.7              /Users/mcawood/Lmod/Lmod/rt/checkSyntax/mf/3.7.lua
+

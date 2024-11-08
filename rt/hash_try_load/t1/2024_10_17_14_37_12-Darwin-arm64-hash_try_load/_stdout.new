@@ -1,0 +1,67 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load TACC
+===========================
+LOADEDMODULES=cluster:TACC;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core/cluster:/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core/TACC;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={TACC={fn="/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core/TACC",fullName="TACC",loadOrder=2,propT={},stackDepth=0,status="active",userName="TACC",wV="M.*zfinal",},cluster={fn="/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core/cluster",fullName="cluster",loadOrder=1,propT={},stackDepth=1,status="active",userName="cluster",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing save
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={TACC={fn="/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core/TACC",fullName="TACC",loadOrder=2,propT={},stackDepth=0,status="active",userName="TACC",wV="M.*zfinal",},cluster={fn="/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core/cluster",fullName="cluster",loadOrder=1,propT={},stackDepth=1,status="active",userName="cluster",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core;
+export MODULEPATH;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing restore
+===========================
+LOADEDMODULES=cluster:TACC;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core/cluster:/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core/TACC;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={TACC={fn="/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core/TACC",fullName="TACC",loadOrder=2,propT={},stackDepth=0,status="active",userName="TACC",wV="M.*zfinal",},cluster={fn="/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core/cluster",fullName="cluster",loadOrder=1,propT={},stackDepth=1,status="active",userName="cluster",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core",}';
+export _ModuleTable_;
+__LMOD_DEFAULT_MODULES_LOADED__=1;
+export __LMOD_DEFAULT_MODULES_LOADED__;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core;
+export MODULEPATH;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing restore
+===========================
+false

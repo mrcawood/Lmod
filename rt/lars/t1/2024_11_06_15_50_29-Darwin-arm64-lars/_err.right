@@ -1,0 +1,52 @@
+===========================
+step 1
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing --version
+===========================
+Modules based on Lua: Version
+    by Robert McLay mclay@tacc.utexas.edu
+===========================
+step 2
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load TACC
+===========================
+Lmod has detected the following error: Syntax error in file: ProjectDIR/rt/lars/mf/Core/TACC.lua
+ with command: load, one or more arguments are not strings.
+While processing the following module(s):
+    Module fullname  Module Filename
+    TACC             ProjectDIR/rt/lars/mf/Core/TACC.lua
+===========================
+step 3
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 4
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing swap mvapich2 impi
+===========================
+Lmod has detected the following error: Swap failed: "mvapich2" is not loaded.
+===========================
+step 5
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 6
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing save
+===========================
+Lmod Warning: You are trying to save an empty collection of modules in "default". If this is what you want then enter:
+  $ module --force save default
+===========================
+step 7
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing purge
+===========================
+===========================
+step 8
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing restore
+===========================
+The system default contains no modules
+  (env var: LMOD_SYSTEM_DEFAULT_MODULES is empty)
+  No changes in loaded modules
+===========================
+step 9
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded

@@ -1,0 +1,41 @@
+-- -*- lua -*-
+-- created: Thu Oct 17 14:40:01 2024 --
+-- Lmod 8.7.43 2024-06-24 15:50 -06:00
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {
+    TACC = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core/TACC",
+      fullName = "TACC",
+      hash = "45cee17d2bb15052d0bbbb1e567cc7e00659d2fe",
+      loadOrder = 2,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "TACC",
+      wV = "M.*zfinal",
+    },
+    cluster = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core/cluster",
+      fullName = "cluster",
+      hash = "bf269f5dfd265f82829db12e4d7a97bfe5a3b95d",
+      loadOrder = 1,
+      propT = {},
+      stackDepth = 1,
+      status = "active",
+      userName = "cluster",
+      wV = "M.*zfinal",
+    },
+  },
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core",
+  },
+  mpathRefCountT = {
+    ["/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core"] = 1,
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_10_17_14_37_12-Darwin-arm64-hash_try_load/mf/Core",
+}

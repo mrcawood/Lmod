@@ -1,0 +1,5 @@
+MPATH: /Users/mcawood/Lmod/Lmod/rt/arch_swap/mf/a2/Compiler/gcc/6.1:/Users/mcawood/Lmod/Lmod/rt/arch_swap/mf/a2/Core:/Users/mcawood/Lmod/Lmod/rt/arch_swap/mf/Common
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) boost/1.60     2) gcc/6.1
+

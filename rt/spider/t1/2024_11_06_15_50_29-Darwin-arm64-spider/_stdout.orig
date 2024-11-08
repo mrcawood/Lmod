@@ -1,0 +1,1668 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use -a /Users/mcawood/Lmod/Lmod/rt/spider/mf/Core /Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta /Users/mcawood/Lmod/Lmod/rt/spider/mf/Base /Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:1\;/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:1\;/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0JldGEiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CYXNlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZTIiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0JldGEiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CYXNlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZTIiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -t spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0JldGEiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CYXNlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZTIiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider mpich2
+===========================
+
+false
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider mpich2/1.0.7
+===========================
+
+false
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider parmetis/3.1
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0JldGEiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CYXNlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZTIiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider mpich2me
+===========================
+
+false
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider R
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0JldGEiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CYXNlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZTIiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -r spider ^R
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0JldGEiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CYXNlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZTIiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -r spider ^[Rr]
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0JldGEiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CYXNlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZTIiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider mpich2/1.0.5
+===========================
+
+false
+===========================
+step 13
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider is-dyna
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0JldGEiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CYXNlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZTIiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 14
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider is-dyna/1.0
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0JldGEiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CYXNlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZTIiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 15
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider bwa
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0JldGEiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CYXNlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZTIiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 16
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider gromacs
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0JldGEiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CYXNlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZTIiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 17
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider apps/gromacs
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0JldGEiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CYXNlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZTIiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 18
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider apps/gromacs/4.6.3
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0JldGEiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CYXNlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZTIiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 19
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider apps/gromacs/4.6.3-debug
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0JldGEiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CYXNlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZTIiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 20
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use /Users/mcawood/Lmod/Lmod/rt/spider/mf/UNKNOWN
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/UNKNOWN:1\;/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:1\;/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:1\;/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/UNKNOWN:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvVU5LTk9XTiIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CZXRhIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQmFzZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0NvcmUyIiwKfSwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 21
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/UNKNOWN:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvVU5LTk9XTiIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CZXRhIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQmFzZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0NvcmUyIiwKfSwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 22
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider gromacs
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/UNKNOWN:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvVU5LTk9XTiIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CZXRhIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQmFzZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0NvcmUyIiwKfSwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 23
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider apps/gromacs
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/UNKNOWN:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvVU5LTk9XTiIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CZXRhIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQmFzZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0NvcmUyIiwKfSwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 24
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider apps/gromacs/4.6.3
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/UNKNOWN:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvVU5LTk9XTiIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CZXRhIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQmFzZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0NvcmUyIiwKfSwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 25
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider apps/gromacs/4.6.3-debug
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/UNKNOWN:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvVU5LTk9XTiIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CZXRhIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQmFzZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0NvcmUyIiwKfSwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 26
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider petsc/3.1
+===========================
+
+false
+===========================
+step 27
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use /Users/mcawood/Lmod/Lmod/rt/spider/mf/Core3
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core3:1\;/Users/mcawood/Lmod/Lmod/rt/spider/mf/UNKNOWN:1\;/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:1\;/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:1\;/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core3:/Users/mcawood/Lmod/Lmod/rt/spider/mf/UNKNOWN:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZTMiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9VTktOT1dOIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0JldGEiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CYXNlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9y;
+export _ModuleTable001_;
+_ModuleTable002_=dC9zcGlkZXIvbWYvQ29yZTIiLAp9LAp9Cg==;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 28
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider smrt
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core3:/Users/mcawood/Lmod/Lmod/rt/spider/mf/UNKNOWN:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZTMiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9VTktOT1dOIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0JldGEiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CYXNlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9y;
+export _ModuleTable001_;
+_ModuleTable002_=dC9zcGlkZXIvbWYvQ29yZTIiLAp9LAp9Cg==;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 29
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider petsc/3.1
+===========================
+
+false
+===========================
+step 30
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/CQ/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/CQ/Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQ1EvQ29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0NRL0NvcmUiLAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 31
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider GCC
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/D:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/D;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRCIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0QiLAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 32
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider gcc
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/D;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRCIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0QiLAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 33
+runSpiderCmd -o spiderT /Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core
+===========================
+timestampFn = {
+  false,
+}
+mrcT = {
+  alias2modT = {
+    intelcompiler = "intel",
+  },
+  hiddenT = {
+    ["gcc/4.8"] = true,
+  },
+  version2modT = {
+    ["intel/17"] = "intel/2017.1.132",
+    ["intel/2017"] = "intel/2017.1.132",
+  },
+}
+
+mrcMpathT = {}
+spiderT = {
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Compiler/gcc/4.2"] = {
+    python2 = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["python2/2.7"] = {
+          Version = "2.7",
+          canonical = "2.7",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Compiler/gcc/4.2/python2/2.7.lua",
+          help = [[This is the help message for python 2.7
+]],
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Compiler/gcc/4.2",
+          pV = "000000002.000000007.*zfinal",
+          provides = {
+            "numpy/1.16.4", "scipy/1.2.2",
+          },
+          wV = "000000002.000000007.*zfinal",
+        },
+      },
+    },
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core"] = {
+    gcc = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["gcc/4.2.3"] = {
+          Version = "4.2.3",
+          canonical = "4.2.3",
+          changeMPATH = true,
+          family = "compiler",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/gcc/4.2.3.lua",
+          luaExt = 6,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+          pV = "000000004.000000002.000000003.*zfinal",
+          wV = "000000004.000000002.000000003.*zfinal",
+        },
+        ["gcc/4.2.5"] = {
+          Version = "4.2.5",
+          canonical = "4.2.5",
+          changeMPATH = true,
+          family = "compiler",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/gcc/4.2.5.lua",
+          luaExt = 6,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+          pV = "000000004.000000002.000000005.*zfinal",
+          wV = "000000004.000000002.000000005.*zfinal",
+        },
+      },
+    },
+    intel = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["intel/11.0"] = {
+          Version = "11.0",
+          canonical = "11.0",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/intel/11.0.lua",
+          help = [[        Intel Compilers
+        This module loads Intel Compiler variables.
+        { standard TACC variables: ICC_DIR,  ICC_BIN,  ICC_LIB  }
+]],
+          lpathA = {
+            ["/vol/local/intel/cc/cc/lib"] = 1,
+            ["/vol/local/intel/fc/fc/lib"] = 1,
+            ["/vol/local/intel/idb/idb/lib"] = 1,
+          },
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+          pV = "000000011.*zfinal",
+          pathA = {
+            ["/vol/local/intel/cc/cc/bin"] = 1,
+            ["/vol/local/intel/fc/fc/bin"] = 1,
+            ["/vol/local/intel/idb/idb/bin"] = 1,
+          },
+          wV = "000000011.*zfinal",
+        },
+        ["intel/11.2"] = {
+          Version = "11.2",
+          canonical = "11.2",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/intel/11.2.lua",
+          help = [[        Intel Compilers
+        This module loads Intel Compiler variables.
+        { standard TACC variables: ICC_DIR,  ICC_BIN,  ICC_LIB  }
+]],
+          lpathA = {
+            ["/vol/local/intel/cc/cc/lib"] = 1,
+            ["/vol/local/intel/fc/fc/lib"] = 1,
+            ["/vol/local/intel/idb/idb/lib"] = 1,
+          },
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+          pV = "000000011.000000002.*zfinal",
+          pathA = {
+            ["/vol/local/intel/cc/cc/bin"] = 1,
+            ["/vol/local/intel/fc/fc/bin"] = 1,
+            ["/vol/local/intel/idb/idb/bin"] = 1,
+          },
+          wV = "000000011.000000002.*zfinal",
+        },
+      },
+    },
+    perl = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["perl/5.18.4"] = {
+          Version = "5.18.4",
+          canonical = "5.18.4",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/perl/5.18.4.lua",
+          luaExt = 7,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+          pV = "000000005.000000018.000000004.*zfinal",
+          provides = {
+            "Algorithm::Dependency/1.111", "Algorithm::Diff/1.1903", "YAML::Tiny/1.73",
+          },
+          wV = "000000005.000000018.000000004.*zfinal",
+        },
+      },
+    },
+    python2 = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["python2/2.6.12"] = {
+          Version = "2.6.12",
+          canonical = "2.6.12",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/python2/2.6.12.lua",
+          help = [[This is the help message for python 2.6.12
+]],
+          luaExt = 7,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+          pV = "000000002.000000006.000000012.*zfinal",
+          provides = {
+            "numpy/1.12", "scipy/1.1",
+          },
+          wV = "000000002.000000006.000000012.*zfinal",
+        },
+        ["python2/2.7.14"] = {
+          Version = "2.7.14",
+          canonical = "2.7.14",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/python2/2.7.14.lua",
+          help = [[This is the help message for python 2.7.14
+]],
+          luaExt = 7,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+          pV = "000000002.000000007.000000014.*zfinal",
+          provides = {
+            "numpy/1.16.4", "scipy/1.2.2",
+          },
+          wV = "000000002.000000007.000000014.*zfinal",
+        },
+      },
+    },
+  },
+  version = 5,
+}
+mpathMapT = {
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Compiler/gcc/4.2"] = {
+    ["gcc/4.2.3"] = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+    ["gcc/4.2.5"] = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+  },
+}
+
+===========================
+step 34
+runSpiderCmd -o dbT /Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core
+===========================
+timestampFn = {
+  false,
+}
+dbT = {
+  gcc = {
+    ["/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/gcc/4.2.3.lua"] = {
+      Version = "4.2.3",
+      family = "compiler",
+      fullName = "gcc/4.2.3",
+      hidden = false,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+      pV = "000000004.000000002.000000003.*zfinal",
+      wV = "000000004.000000002.000000003.*zfinal",
+    },
+    ["/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/gcc/4.2.5.lua"] = {
+      Version = "4.2.5",
+      family = "compiler",
+      fullName = "gcc/4.2.5",
+      hidden = false,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+      pV = "000000004.000000002.000000005.*zfinal",
+      wV = "000000004.000000002.000000005.*zfinal",
+    },
+  },
+  intel = {
+    ["/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/intel/11.0.lua"] = {
+      Version = "11.0",
+      fullName = "intel/11.0",
+      help = [[        Intel Compilers
+        This module loads Intel Compiler variables.
+        { standard TACC variables: ICC_DIR,  ICC_BIN,  ICC_LIB  }
+]],
+      hidden = false,
+      lpathA = {
+        ["/vol/local/intel/cc/cc/lib"] = 1,
+        ["/vol/local/intel/fc/fc/lib"] = 1,
+        ["/vol/local/intel/idb/idb/lib"] = 1,
+      },
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+      pV = "000000011.*zfinal",
+      pathA = {
+        ["/vol/local/intel/cc/cc/bin"] = 1,
+        ["/vol/local/intel/fc/fc/bin"] = 1,
+        ["/vol/local/intel/idb/idb/bin"] = 1,
+      },
+      wV = "000000011.*zfinal",
+    },
+    ["/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/intel/11.2.lua"] = {
+      Version = "11.2",
+      fullName = "intel/11.2",
+      help = [[        Intel Compilers
+        This module loads Intel Compiler variables.
+        { standard TACC variables: ICC_DIR,  ICC_BIN,  ICC_LIB  }
+]],
+      hidden = false,
+      lpathA = {
+        ["/vol/local/intel/cc/cc/lib"] = 1,
+        ["/vol/local/intel/fc/fc/lib"] = 1,
+        ["/vol/local/intel/idb/idb/lib"] = 1,
+      },
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+      pV = "000000011.000000002.*zfinal",
+      pathA = {
+        ["/vol/local/intel/cc/cc/bin"] = 1,
+        ["/vol/local/intel/fc/fc/bin"] = 1,
+        ["/vol/local/intel/idb/idb/bin"] = 1,
+      },
+      wV = "000000011.000000002.*zfinal",
+    },
+  },
+  perl = {
+    ["/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/perl/5.18.4.lua"] = {
+      Version = "5.18.4",
+      fullName = "perl/5.18.4",
+      hidden = false,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+      pV = "000000005.000000018.000000004.*zfinal",
+      provides = {
+        "Algorithm::Dependency/1.111", "Algorithm::Diff/1.1903", "YAML::Tiny/1.73",
+      },
+      wV = "000000005.000000018.000000004.*zfinal",
+    },
+  },
+  python2 = {
+    ["/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Compiler/gcc/4.2/python2/2.7.lua"] = {
+      Version = "2.7",
+      fullName = "python2/2.7",
+      help = [[This is the help message for python 2.7
+]],
+      hidden = false,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Compiler/gcc/4.2",
+      pV = "000000002.000000007.*zfinal",
+      parentAA = {
+        {
+          "gcc/4.2.5",
+        },
+        {
+          "gcc/4.2.3",
+        },
+      },
+      provides = {
+        "numpy/1.16.4", "scipy/1.2.2",
+      },
+      wV = "000000002.000000007.*zfinal",
+    },
+    ["/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/python2/2.6.12.lua"] = {
+      Version = "2.6.12",
+      fullName = "python2/2.6.12",
+      help = [[This is the help message for python 2.6.12
+]],
+      hidden = false,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+      pV = "000000002.000000006.000000012.*zfinal",
+      provides = {
+        "numpy/1.12", "scipy/1.1",
+      },
+      wV = "000000002.000000006.000000012.*zfinal",
+    },
+    ["/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/python2/2.7.14.lua"] = {
+      Version = "2.7.14",
+      fullName = "python2/2.7.14",
+      help = [[This is the help message for python 2.7.14
+]],
+      hidden = false,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+      pV = "000000002.000000007.000000014.*zfinal",
+      provides = {
+        "numpy/1.16.4", "scipy/1.2.2",
+      },
+      wV = "000000002.000000007.000000014.*zfinal",
+    },
+  },
+}
+provideByT = {
+  ["Algorithm::Dependency"] = {
+    ["Algorithm::Dependency/1.111"] = {
+      {
+        fullName = "perl/5.18.4",
+        hidden = false,
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+        my_name = "Algorithm::Dependency/1.111",
+        pV = "000000005.000000018.000000004.*zfinal",
+      },
+    },
+  },
+  ["Algorithm::Diff"] = {
+    ["Algorithm::Diff/1.1903"] = {
+      {
+        fullName = "perl/5.18.4",
+        hidden = false,
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+        my_name = "Algorithm::Diff/1.1903",
+        pV = "000000005.000000018.000000004.*zfinal",
+      },
+    },
+  },
+  ["YAML::Tiny"] = {
+    ["YAML::Tiny/1.73"] = {
+      {
+        fullName = "perl/5.18.4",
+        hidden = false,
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+        my_name = "YAML::Tiny/1.73",
+        pV = "000000005.000000018.000000004.*zfinal",
+      },
+    },
+  },
+  numpy = {
+    ["numpy/1.12"] = {
+      {
+        fullName = "python2/2.6.12",
+        hidden = false,
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+        my_name = "numpy/1.12",
+        pV = "000000002.000000006.000000012.*zfinal",
+      },
+    },
+    ["numpy/1.16.4"] = {
+      {
+        fullName = "python2/2.7.14",
+        hidden = false,
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+        my_name = "numpy/1.16.4",
+        pV = "000000002.000000007.000000014.*zfinal",
+      },
+      {
+        fullName = "python2/2.7 (gcc/4.2.5)",
+        hidden = false,
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Compiler/gcc/4.2",
+        my_name = "numpy/1.16.4",
+        pV = "000000002.000000007.*zfinal",
+      },
+      {
+        fullName = "python2/2.7 (gcc/4.2.3)",
+        hidden = false,
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Compiler/gcc/4.2",
+        my_name = "numpy/1.16.4",
+        pV = "000000002.000000007.*zfinal",
+      },
+    },
+  },
+  scipy = {
+    ["scipy/1.1"] = {
+      {
+        fullName = "python2/2.6.12",
+        hidden = false,
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+        my_name = "scipy/1.1",
+        pV = "000000002.000000006.000000012.*zfinal",
+      },
+    },
+    ["scipy/1.2.2"] = {
+      {
+        fullName = "python2/2.7.14",
+        hidden = false,
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+        my_name = "scipy/1.2.2",
+        pV = "000000002.000000007.000000014.*zfinal",
+      },
+      {
+        fullName = "python2/2.7 (gcc/4.2.5)",
+        hidden = false,
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Compiler/gcc/4.2",
+        my_name = "scipy/1.2.2",
+        pV = "000000002.000000007.*zfinal",
+      },
+      {
+        fullName = "python2/2.7 (gcc/4.2.3)",
+        hidden = false,
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Compiler/gcc/4.2",
+        my_name = "scipy/1.2.2",
+        pV = "000000002.000000007.*zfinal",
+      },
+    },
+  },
+}
+
+===========================
+step 35
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider python2/2.7
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 36
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -t spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 37
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 38
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider numpy
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 39
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider numpy/1.16.4
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 40
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load numpy
+===========================
+
+false
+===========================
+step 41
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load numpy/1.16.4
+===========================
+
+false
+===========================
+step 42
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 43
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --nx avail
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 44
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 45
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 46
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing keyword numpy
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 47
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing keyword foo
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRV9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 48
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider abcpy
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/F_Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/F_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRl9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRl9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 49
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider abcpy/2.1
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/F_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRl9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvRl9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 50
+runSpiderCmd -o spiderT /Users/mcawood/Lmod/Lmod/rt/spider/mf/G_Core
+===========================
+timestampFn = {
+  false,
+}
+mrcT = {
+  alias2modT = {
+    intelcompiler = "intel",
+  },
+  hiddenT = {
+    ["gcc/4.8"] = true,
+  },
+  version2modT = {
+    ["intel/17"] = "intel/2017.1.132",
+    ["intel/2017"] = "intel/2017.1.132",
+  },
+}
+
+mrcMpathT = {}
+spiderT = {
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf/G_Core"] = {
+    acme_xyz = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["acme_xyz/1.0"] = {
+          Version = "1.0",
+          canonical = "1.0",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/G_Core/acme_xyz/1.0.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/G_Core",
+          pV = "000000001.*zfinal",
+          wV = "000000001.*zfinal",
+        },
+      },
+    },
+  },
+  version = 5,
+}
+mpathMapT = {}
+
+===========================
+step 51
+runSpiderCmd -o spiderT /Users/mcawood/Lmod/Lmod/rt/spider/mf/H_Core
+===========================
+timestampFn = {
+  false,
+}
+mrcT = {
+  alias2modT = {
+    intelcompiler = "intel",
+  },
+  hiddenT = {
+    ["gcc/4.8"] = true,
+  },
+  version2modT = {
+    ["intel/17"] = "intel/2017.1.132",
+    ["intel/2017"] = "intel/2017.1.132",
+  },
+}
+
+mrcMpathT = {}
+spiderT = {
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf/H_Core"] = {
+    abcpy = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["abcpy/2.1"] = {
+          Version = "2.1",
+          canonical = "2.1",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/H_Core/abcpy/2.1.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/H_Core",
+          pV = "000000002.000000001.*zfinal",
+          wV = "000000002.000000001.*zfinal",
+        },
+      },
+    },
+    mypy = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["mypy/3.14"] = {
+          Version = "3.14",
+          canonical = "3.14",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/H_Core/mypy/3.14.lua",
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/H_Core",
+          pV = "000000003.000000014.*zfinal",
+          wV = "000000003.000000014.*zfinal",
+        },
+      },
+    },
+    py = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["py/.2.7"] = {
+          Version = ".2.7",
+          canonical = ".2.7",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/H_Core/py/.2.7.lua",
+          help = [[This is the help message for python 2.7.14
+]],
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/H_Core",
+          pV = "000000000.000000002.000000007.*zfinal",
+          provides = {
+            "numpy/1.16.4", "scipy/1.2.2", "tornado/3.1.4",
+          },
+          wV = "000000000.000000002.000000007.*zfinal",
+        },
+      },
+    },
+  },
+  version = 5,
+}
+mpathMapT = {}
+
+===========================
+step 52
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/H_Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/H_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvSF9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvSF9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 53
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --show_hidden spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/H_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvSF9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvSF9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 54
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider tornado
+===========================
+
+false
+===========================
+step 55
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --show_hidden spider tornado
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/H_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvSF9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvSF9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 56
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --show_hidden spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/H_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvSF9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvSF9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 57
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider numpy
+===========================
+
+false
+===========================
+step 58
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --show_hidden spider numpy
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/H_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvSF9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvSF9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 59
+runSpiderCmd -o spiderT /Users/mcawood/Lmod/Lmod/rt/spider/mf/I_Core
+===========================
+timestampFn = {
+  false,
+}
+mrcT = {
+  alias2modT = {
+    intelcompiler = "intel",
+  },
+  hiddenT = {
+    ["gcc/4.8"] = true,
+  },
+  version2modT = {
+    ["intel/17"] = "intel/2017.1.132",
+    ["intel/2017"] = "intel/2017.1.132",
+  },
+}
+
+mrcMpathT = {}
+spiderT = {
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf/I_Core"] = {
+    GROMACS = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["GROMACS/.2016.x-drude-20180214-g3f7439a"] = {
+          Version = ".2016.x-drude-20180214-g3f7439a",
+          canonical = ".2016.x-drude-20180214-g3f7439a",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/I_Core/GROMACS/.2016.x-drude-20180214-g3f7439a.lua",
+          luaExt = 32,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/I_Core",
+          pV = "000000000.000002016.*x.*drude.*zfinal-.020180214.*g.000000003.*f.000007439.*a.*zfinal",
+          wV = "000000000.000002016.*x.*drude.*zfinal-.020180214.*g.000000003.*f.000007439.*a.*zfinal",
+        },
+        ["GROMACS/2016.2"] = {
+          Version = "2016.2",
+          canonical = "2016.2",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/I_Core/GROMACS/2016.2.lua",
+          luaExt = 7,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/I_Core",
+          pV = "000002016.000000002.*zfinal",
+          wV = "000002016.000000002.*zfinal",
+        },
+        ["GROMACS/5.1.4"] = {
+          Version = "5.1.4",
+          canonical = "5.1.4",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/I_Core/GROMACS/5.1.4.lua",
+          luaExt = 6,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/I_Core",
+          pV = "000000005.000000001.000000004.*zfinal",
+          wV = "000000005.000000001.000000004.*zfinal",
+        },
+      },
+    },
+  },
+  version = 5,
+}
+mpathMapT = {}
+
+===========================
+step 60
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -t --ignore_cache --show_hidden spider GROMACS
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/I_Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/I_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvSV9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvSV9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 61
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --ignore_cache --show_hidden spider GROMACS
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/I_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvSV9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvSV9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 62
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -t --show_hidden spider GROMACS
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/I_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvSV9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvSV9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 63
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --show_hidden spider GROMACS
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/I_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvSV9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvSV9Db3JlIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 64
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load GROMACS/.2016.x-drude-20180214-g3f7439a
+===========================
+LOADEDMODULES=GROMACS/.2016.x-drude-20180214-g3f7439a;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/I_Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/spider/mf/I_Core/GROMACS/.2016.x-drude-20180214-g3f7439a.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpHUk9NQUNTID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0lfQ29yZS9HUk9NQUNTLy4yMDE2LngtZHJ1ZGUtMjAxODAyMTQtZzNmNzQzOWEubHVhIiwKZnVsbE5hbWUgPSAiR1JPTUFDUy8uMjAxNi54LWRydWRlLTIwMTgwMjE0LWczZjc0MzlhIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJHUk9NQUNTLy4yMDE2LngtZHJ1ZGUtMjAxODAyMTQtZzNmNzQz;
+export _ModuleTable001_;
+_ModuleTable002_=OWEiLAp3ViA9ICIwMDAwMDAwMDAuMDAwMDAyMDE2Lip4LipkcnVkZS4qemZpbmFsLS4wMjAxODAyMTQuKmcuMDAwMDAwMDAzLipmLjAwMDAwNzQzOS4qYS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9JX0NvcmUiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9JX0NvcmUiLAp9Cg==;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 65
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/I_Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpHUk9NQUNTID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0lfQ29yZS9HUk9NQUNTLy4yMDE2LngtZHJ1ZGUtMjAxODAyMTQtZzNmNzQzOWEubHVhIiwKZnVsbE5hbWUgPSAiR1JPTUFDUy8uMjAxNi54LWRydWRlLTIwMTgwMjE0LWczZjc0MzlhIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJHUk9NQUNTLy4yMDE2LngtZHJ1ZGUtMjAxODAyMTQtZzNmNzQz;
+export _ModuleTable001_;
+_ModuleTable002_=OWEiLAp3ViA9ICIwMDAwMDAwMDAuMDAwMDAyMDE2Lip4LipkcnVkZS4qemZpbmFsLS4wMjAxODAyMTQuKmcuMDAwMDAwMDAzLipmLjAwMDAwNzQzOS4qYS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9JX0NvcmUiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9JX0NvcmUiLAp9Cg==;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 66
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+unset LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core;
+export MODULEPATH;
+unset _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYyL0NvcmUiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZjIvQ29yZSIsCn0K;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 67
+runSpiderCmd -o spiderT /Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core
+===========================
+timestampFn = {
+  false,
+}
+mrcT = {
+  alias2modT = {
+    intelcompiler = "intel",
+  },
+  hiddenT = {
+    ["gcc/4.8"] = true,
+  },
+  version2modT = {
+    ["intel/17"] = "intel/2017.1.132",
+    ["intel/2017"] = "intel/2017.1.132",
+  },
+}
+
+mrcMpathT = {}
+spiderT = {
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/gcc/10"] = {
+    GROMACS = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["GROMACS/2018"] = {
+          Description = [[GROMACS(CPU/2018) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a CPU enabled build, containing both MPI and threadMPI binaries for 2018.
+]],
+          Version = "2018",
+          canonical = "2018",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/gcc/10/GROMACS/2018.lua",
+          help = [[
+HELP Description
+================
+GROMACS(CPU/2018) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a CPU enabled build, containing both MPI and threadMPI binaries for 2018.
+
+
+More information
+================
+ - Homepage: http://www.gromacs.org
+]],
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/gcc/10",
+          pV = "000002018.*zfinal",
+          wV = "000002018.*zfinal",
+          whatis = {
+            [[Description: 
+GROMACS(CPU/2018) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a CPU enabled build, containing both MPI and threadMPI binaries for 2018.
+]],
+          },
+        },
+        ["GROMACS/2019"] = {
+          Description = [[GROMACS(CPU/2019) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a CPU enabled build, containing both MPI and threadMPI binaries for 2019.
+]],
+          Version = "2019",
+          canonical = "2019",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/gcc/10/GROMACS/2019.lua",
+          help = [[
+HELP Description
+================
+GROMACS(CPU/2019) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a CPU enabled build, containing both MPI and threadMPI binaries for 2019.
+
+
+More information
+================
+ - Homepage: http://www.gromacs.org
+]],
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/gcc/10",
+          pV = "000002019.*zfinal",
+          wV = "000002019.*zfinal",
+          whatis = {
+            [[Description: 
+GROMACS(CPU/2019) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a CPU enabled build, containing both MPI and threadMPI binaries for 2019.
+]],
+          },
+        },
+      },
+    },
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/zuda/10"] = {
+    GROMACS = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["GROMACS/2019"] = {
+          Description = [[GROMACS(GPU/2019) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a GPU only build, containing both MPI and threadMPI builds for 2019.
+]],
+          Version = "2019",
+          canonical = "2019",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/zuda/10/GROMACS/2019.lua",
+          help = [[
+HELP Description
+================
+GROMACS(GPU/2019) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a GPU only build, containing both MPI and threadMPI builds for 2019.
+
+
+More information
+================
+ - Homepage: http://www.gromacs.org
+]],
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/zuda/10",
+          pV = "000002019.*zfinal",
+          wV = "000002019.*zfinal",
+          whatis = {
+            [[Description: 
+GROMACS(GPU/2019) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a GPU only build, containing both MPI and threadMPI builds for 2019.
+]],
+          },
+        },
+      },
+    },
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core"] = {
+    gcc = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["gcc/10.1"] = {
+          Version = "10.1",
+          canonical = "10.1",
+          changeMPATH = true,
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core/gcc/10.1.lua",
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core",
+          pV = "000000010.000000001.*zfinal",
+          wV = "000000010.000000001.*zfinal",
+        },
+      },
+    },
+    zuda = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["zuda/10.1"] = {
+          Version = "10.1",
+          canonical = "10.1",
+          changeMPATH = true,
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core/zuda/10.1.lua",
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core",
+          pV = "000000010.000000001.*zfinal",
+          wV = "000000010.000000001.*zfinal",
+        },
+      },
+    },
+  },
+  version = 5,
+}
+mpathMapT = {
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/gcc/10"] = {
+    ["gcc/10.1"] = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core",
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/zuda/10"] = {
+    ["zuda/10.1"] = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core",
+  },
+}
+
+===========================
+step 68
+runSpiderCmd -o dbT /Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core
+===========================
+timestampFn = {
+  false,
+}
+dbT = {
+  GROMACS = {
+    ["/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/gcc/10/GROMACS/2018.lua"] = {
+      Description = [[GROMACS(CPU/2018) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a CPU enabled build, containing both MPI and threadMPI binaries for 2018.
+]],
+      Version = "2018",
+      fullName = "GROMACS/2018",
+      help = [[
+HELP Description
+================
+GROMACS(CPU/2018) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a CPU enabled build, containing both MPI and threadMPI binaries for 2018.
+
+
+More information
+================
+ - Homepage: http://www.gromacs.org
+]],
+      hidden = false,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/gcc/10",
+      pV = "000002018.*zfinal",
+      parentAA = {
+        {
+          "gcc/10.1",
+        },
+      },
+      wV = "000002018.*zfinal",
+      whatis = {
+        [[Description: 
+GROMACS(CPU/2018) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a CPU enabled build, containing both MPI and threadMPI binaries for 2018.
+]],
+      },
+    },
+    ["/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/gcc/10/GROMACS/2019.lua"] = {
+      Description = [[GROMACS(CPU/2019) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a CPU enabled build, containing both MPI and threadMPI binaries for 2019.
+]],
+      Version = "2019",
+      fullName = "GROMACS/2019",
+      help = [[
+HELP Description
+================
+GROMACS(CPU/2019) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a CPU enabled build, containing both MPI and threadMPI binaries for 2019.
+
+
+More information
+================
+ - Homepage: http://www.gromacs.org
+]],
+      hidden = false,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/gcc/10",
+      pV = "000002019.*zfinal",
+      parentAA = {
+        {
+          "gcc/10.1",
+        },
+      },
+      wV = "000002019.*zfinal",
+      whatis = {
+        [[Description: 
+GROMACS(CPU/2019) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a CPU enabled build, containing both MPI and threadMPI binaries for 2019.
+]],
+      },
+    },
+    ["/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/zuda/10/GROMACS/2019.lua"] = {
+      Description = [[GROMACS(GPU/2019) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a GPU only build, containing both MPI and threadMPI builds for 2019.
+]],
+      Version = "2019",
+      fullName = "GROMACS/2019",
+      help = [[
+HELP Description
+================
+GROMACS(GPU/2019) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a GPU only build, containing both MPI and threadMPI builds for 2019.
+
+
+More information
+================
+ - Homepage: http://www.gromacs.org
+]],
+      hidden = false,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Compiler/zuda/10",
+      pV = "000002019.*zfinal",
+      parentAA = {
+        {
+          "zuda/10.1",
+        },
+      },
+      wV = "000002019.*zfinal",
+      whatis = {
+        [[Description: 
+GROMACS(GPU/2019) is a versatile package to perform molecular dynamics,
+ i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+
+This is a GPU only build, containing both MPI and threadMPI builds for 2019.
+]],
+      },
+    },
+  },
+  gcc = {
+    ["/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core/gcc/10.1.lua"] = {
+      Version = "10.1",
+      fullName = "gcc/10.1",
+      hidden = false,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core",
+      pV = "000000010.000000001.*zfinal",
+      wV = "000000010.000000001.*zfinal",
+    },
+  },
+  zuda = {
+    ["/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core/zuda/10.1.lua"] = {
+      Version = "10.1",
+      fullName = "zuda/10.1",
+      hidden = false,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core",
+      pV = "000000010.000000001.*zfinal",
+      wV = "000000010.000000001.*zfinal",
+    },
+  },
+}
+provideByT = {}
+
+===========================
+step 69
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider GROMACS/2018
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYyL0NvcmUiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZjIvQ29yZSIsCn0K;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 70
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider GROMACS/2019
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYyL0NvcmUiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZjIvQ29yZSIsCn0K;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 71
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -t spider GROMACS/2019
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYyL0NvcmUiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZjIvQ29yZSIsCn0K;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 72
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf2/Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYyL0NvcmUiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZjIvQ29yZSIsCn0K;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 73
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf6/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf6/Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWY2L0NvcmUiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZjYvQ29yZSIsCn0K;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 74
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf3/system:1\;/Users/mcawood/Lmod/Lmod/rt/spider/mf3/init-modules:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf3/system:/Users/mcawood/Lmod/Lmod/rt/spider/mf3/init-modules;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYzL3N5c3RlbSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mMy9pbml0LW1vZHVsZXMiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZjMvc3lzdGVtOi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYzL2luaXQtbW9kdWxlcyIsCn0K;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 75
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider Appl1
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf3/system:/Users/mcawood/Lmod/Lmod/rt/spider/mf3/init-modules;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYzL3N5c3RlbSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mMy9pbml0LW1vZHVsZXMiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZjMvc3lzdGVtOi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYzL2luaXQtbW9kdWxlcyIsCn0K;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 76
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider Appl1
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf3/system:/Users/mcawood/Lmod/Lmod/rt/spider/mf3/init-modules;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYzL3N5c3RlbSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mMy9pbml0LW1vZHVsZXMiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZjMvc3lzdGVtOi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYzL2luaXQtbW9kdWxlcyIsCn0K;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 77
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf4/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf4/Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWY0L0NvcmUiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZjQvQ29yZSIsCn0K;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 78
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf5/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf5/Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWY1L0NvcmUiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZjUvQ29yZSIsCn0K;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;

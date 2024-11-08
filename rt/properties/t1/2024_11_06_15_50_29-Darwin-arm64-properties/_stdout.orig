@@ -1,0 +1,66 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use -a /Users/mcawood/Lmod/Lmod/rt/properties/mf/Core
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/properties/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/properties/mf/Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wcm9wZXJ0aWVzL21mL0NvcmUiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use -a /Users/mcawood/Lmod/Lmod/rt/properties/mf/bio
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/properties/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/properties/mf/bio:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/properties/mf/Core:/Users/mcawood/Lmod/Lmod/rt/properties/mf/bio;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wcm9wZXJ0aWVzL21mL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3Byb3BlcnRpZXMvbWYvYmlvIiwKfSwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use -a /Users/mcawood/Lmod/Lmod/rt/properties/mf/cae
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/properties/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/properties/mf/bio:1\;/Users/mcawood/Lmod/Lmod/rt/properties/mf/cae:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/properties/mf/Core:/Users/mcawood/Lmod/Lmod/rt/properties/mf/bio:/Users/mcawood/Lmod/Lmod/rt/properties/mf/cae;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wcm9wZXJ0aWVzL21mL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3Byb3BlcnRpZXMvbWYvYmlvIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wcm9wZXJ0aWVzL21mL2NhZSIsCn0sCn0K;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load PrgEnv
+===========================
+
+false
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/properties/mf/Core:/Users/mcawood/Lmod/Lmod/rt/properties/mf/bio:/Users/mcawood/Lmod/Lmod/rt/properties/mf/cae;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wcm9wZXJ0aWVzL21mL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3Byb3BlcnRpZXMvbWYvYmlvIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wcm9wZXJ0aWVzL21mL2NhZSIsCn0sCn0K;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/properties/mf/Core:/Users/mcawood/Lmod/Lmod/rt/properties/mf/bio:/Users/mcawood/Lmod/Lmod/rt/properties/mf/cae;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wcm9wZXJ0aWVzL21mL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3Byb3BlcnRpZXMvbWYvYmlvIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wcm9wZXJ0aWVzL21mL2NhZSIsCn0sCn0K;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;

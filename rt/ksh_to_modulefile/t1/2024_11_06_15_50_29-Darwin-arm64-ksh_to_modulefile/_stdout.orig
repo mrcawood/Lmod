@@ -1,0 +1,15 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+buildSh2MF --from ksh /Users/mcawood/Lmod/Lmod/rt/ksh_to_modulefile/script.ksh
+===========================
+prepend_path("PATH","/Users/mcawood/Lmod/Lmod/rt/ksh_to_modulefile/sbin")
+prepend_path("PATH","/Users/mcawood/Lmod/Lmod/rt/ksh_to_modulefile/bin")
+setenv("_AST_FEATURES","UNIVERSE - ucb")
+set_alias("fooAlias","echo foobin -q -l")
+set_shell_function("fooFunc","\
+  echo \"arg1: $1\"\
+","")

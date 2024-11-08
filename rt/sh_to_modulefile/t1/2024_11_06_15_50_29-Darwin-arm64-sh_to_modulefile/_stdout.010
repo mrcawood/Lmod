@@ -1,0 +1,4 @@
+setenv("FOO_BAR","1")
+setenv("TST_SCRIPT","tst_script")
+set_alias("fB","ls -aFC")
+set_alias("fooBar","ls -aFC")

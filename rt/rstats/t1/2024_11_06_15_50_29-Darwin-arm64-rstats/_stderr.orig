@@ -1,0 +1,38 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T load Rpkgs
+===========================
+  Lmod version: 8.7.43 2024-06-24 15:50 -06:00
+running: module --regression_testing -T load Rpkgs
+  (1)(0)Loading: Rpkgs (fn: /Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core/Rpkgs/3.4.0.lua, using Find-Best)
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core/Rpkgs/3.4.0.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    Rpkgs/3.4.0      /Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core/Rpkgs/3.4.0.lua
+
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T unload Rpkgs
+===========================
+  Lmod version: 8.7.43 2024-06-24 15:50 -06:00
+running: module --regression_testing -T unload Rpkgs
+  (1)(0)Unloading: Rpkgs (status: ) (fn: nil)
+
+Note: the module "Rpkgs" cannot be unloaded because it was not loaded.
+

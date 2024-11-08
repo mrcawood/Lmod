@@ -1,0 +1,9 @@
+Lmod Warning: Failed to find the following module(s): "nosuchmodule" in your MODULEPATH
+Try:
+
+    $ module spider nosuchmodule
+
+to see if the module(s) are available across all compilers and MPI implementations.
+
+
+

@@ -1,0 +1,85 @@
+-- -*- lua -*-
+-- created: Thu Oct 17 14:39:59 2024 --
+-- Lmod 8.7.43 2024-06-24 15:50 -06:00
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {
+    MPI = "mvapich1",
+    compiler = "pgi",
+  },
+  mT = {
+    ["TACC.orig"] = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC/TACC.orig",
+      fullName = "TACC.orig",
+      hash = "69fcaa0fc36eaa85fc22a6566d2a053703de9cb2",
+      loadOrder = 5,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "TACC.orig",
+      wV = "M.*zfinal",
+    },
+    ["cluster.orig"] = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC/cluster.orig",
+      fullName = "cluster.orig",
+      hash = "a851709cb500029e0f674ad3a00165d8c4a72849",
+      loadOrder = 4,
+      propT = {},
+      stackDepth = 1,
+      status = "active",
+      userName = "cluster.orig",
+      wV = "M.*zfinal",
+    },
+    globus = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC/globus/4.0.7",
+      fullName = "globus/4.0.7",
+      hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      loadOrder = 3,
+      propT = {},
+      stackDepth = 2,
+      status = "active",
+      userName = "globus",
+      wV = "000000004.000000000.000000007.*zfinal",
+    },
+    mvapich1 = {
+      actionA = {
+        "prepend_path(\"MODULEPATH\",\"/unknown/apps/intel10_1/mvapich1_1_0_1/modulefiles\")",
+      },
+      fn = "/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC/mvapich1/mvapich1",
+      fullName = "mvapich1/mvapich1",
+      hash = "d0361d0e78969d2b1ff51e1bca0971a6116977ec",
+      loadOrder = 2,
+      propT = {},
+      stackDepth = 2,
+      status = "active",
+      userName = "mvapich1",
+      wV = "*mvapich.000000001.*zfinal",
+    },
+    pgi = {
+      actionA = {
+        "prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC_COMPILER/pgi/7.1\")",
+      },
+      fn = "/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC/pgi/7.1",
+      fullName = "pgi/7.1",
+      hash = "bef37ab2365aac458298999af1647ed368feafba",
+      loadOrder = 1,
+      propT = {},
+      stackDepth = 2,
+      status = "active",
+      userName = "pgi",
+      wV = "^00000007.000000001.*zfinal",
+    },
+  },
+  mpathA = {
+    "/unknown/apps/intel10_1/mvapich1_1_0_1/modulefiles", "/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC_COMPILER/pgi/7.1", "/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC",
+  },
+  mpathRefCountT = {
+    ["/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC"] = 1,
+    ["/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC_COMPILER/pgi/7.1"] = 1,
+    ["/unknown/apps/intel10_1/mvapich1_1_0_1/modulefiles"] = 1,
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/sd_tacc/mf/TACC",
+}

@@ -1,0 +1,16 @@
+A=1.0;
+export A;
+LOADEDMODULES=a/1.0;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core/a/1.0.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewphID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvdXNlX3VudXNlL21mL0NvcmUvYS8xLjAubHVhIiwKZnVsbE5hbWUgPSAiYS8xLjAiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImEiLAp3ViA9ICIwMDAwMDAwMDEuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC91c2VfdW51c2UvbWYvQ29yZSIsCn0sCnN5c3RlbUJhc2VN;
+export _ModuleTable001_;
+_ModuleTable002_=UEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvdXNlX3VudXNlL21mL0NvcmUiLAp9Cg==;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;

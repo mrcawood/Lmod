@@ -1,0 +1,60 @@
+-- -*- lua -*-
+-- created: Thu Oct 17 14:38:11 2024 --
+-- Lmod 8.7.43 2024-06-24 15:50 -06:00
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {
+    M1 = {
+      actionA = {
+        "prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/sticky/mf/Shared\")",
+      },
+      fn = "/Users/mcawood/Lmod/Lmod/rt/sticky/mf/Core/M1.lua",
+      fullName = "M1",
+      hash = "9d49c16afda9c1a5c20f29bd011629175597cad5",
+      loadOrder = 3,
+      propT = {
+        state = {
+          obsolete = 1,
+        },
+      },
+      stackDepth = 0,
+      status = "active",
+      userName = "M1",
+      wV = "M.*zfinal",
+    },
+    c = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/sticky/mf/Shared/c/1.7.lua",
+      fullName = "c/1.7",
+      hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      loadOrder = 1,
+      propT = {},
+      stackDepth = 1,
+      status = "active",
+      userName = "c",
+      wV = "000000001.000000007.*zfinal",
+    },
+    d = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/sticky/mf/Shared/d/1.8.lua",
+      fullName = "d/1.8",
+      hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      loadOrder = 2,
+      propT = {},
+      stackDepth = 1,
+      status = "active",
+      userName = "d",
+      wV = "000000001.000000008.*zfinal",
+    },
+  },
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/sticky/mf/Shared", "/Users/mcawood/Lmod/Lmod/rt/sticky/mf/Core",
+  },
+  mpathRefCountT = {
+    ["/Users/mcawood/Lmod/Lmod/rt/sticky/mf/Core"] = 1,
+    ["/Users/mcawood/Lmod/Lmod/rt/sticky/mf/Shared"] = 1,
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/sticky/mf/Core",
+}

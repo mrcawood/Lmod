@@ -1,0 +1,54 @@
+timestampFn = {
+  false,
+}
+dbT = {
+  impi = {
+    ["/Users/mcawood/Lmod/Lmod/rt/rmap/mf/2Compiler/intel/14.0/impi/4.1.lua"] = {
+      Version = "4.1",
+      family = "MPI",
+      fullName = "impi/4.1",
+      hidden = false,
+      lpathA = {
+        ["/Users/mcawood/Lmod/Lmod/rt/rmap/apps/intel-14_0/impi/4.1/lib"] = 1,
+      },
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/rmap/mf/2Compiler/intel/14.0",
+      pV = "000000004.000000001.*zfinal",
+      parentAA = {},
+      pathA = {
+        ["/Users/mcawood/Lmod/Lmod/rt/rmap/apps/intel-14_0/impi/4.1/bin"] = 1,
+      },
+      wV = "000000004.000000001.*zfinal",
+    },
+  },
+  intel = {
+    ["/Users/mcawood/Lmod/Lmod/rt/rmap/mf/2Core/intel/14.0.1.lua"] = {
+      Version = "14.0.1",
+      family = "compiler",
+      fullName = "intel/14.0.1",
+      hidden = false,
+      lpathA = {
+        ["/Users/mcawood/Lmod/Lmod/rt/rmap/apps/intel/14.0.1/lib"] = 1,
+      },
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/rmap/mf/2Core",
+      pV = "000000014.000000000.000000001.*zfinal",
+      parentAA = {},
+      pathA = {
+        ["/Users/mcawood/Lmod/Lmod/rt/rmap/apps/intel/14.0.1/bin"] = 1,
+      },
+      wV = "000000014.000000000.000000001.*zfinal",
+    },
+  },
+  paraview = {
+    ["/Users/mcawood/Lmod/Lmod/rt/rmap/mf/2MPI/intel/14.0/impi/4.1/paraview/5.6.lua"] = {
+      Version = "5.6",
+      fullName = "paraview/5.6",
+      hidden = false,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/rmap/mf/2MPI/intel/14.0/impi/4.1",
+      pV = "000000005.000000006.*zfinal",
+      parentAA = {},
+      wV = "000000005.000000006.*zfinal",
+    },
+  },
+}
+provideByT = {}
+

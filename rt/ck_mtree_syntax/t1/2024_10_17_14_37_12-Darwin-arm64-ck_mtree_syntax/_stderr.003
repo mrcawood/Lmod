@@ -1,0 +1,4 @@
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/check_module_tree_syntax.in.lua /Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/mf
+===========================

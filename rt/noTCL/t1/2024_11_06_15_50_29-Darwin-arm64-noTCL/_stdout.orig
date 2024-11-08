@@ -1,0 +1,48 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/noTCL/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/noTCL/mf/TACC:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/noTCL/mf/Core:/Users/mcawood/Lmod/Lmod/rt/noTCL/mf/TACC;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9ub1RDTC9tZi9Db3JlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9ub1RDTC9tZi9UQUNDIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9ub1RDTC9tZi9Db3JlOi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9ub1RDTC9tZi9UQUNDIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/noTCL/mf/Core:/Users/mcawood/Lmod/Lmod/rt/noTCL/mf/TACC;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9ub1RDTC9tZi9Db3JlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9ub1RDTC9tZi9UQUNDIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9ub1RDTC9tZi9Db3JlOi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9ub1RDTC9tZi9UQUNDIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load PrgEnv
+===========================
+
+false
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload PrgEnv
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/noTCL/mf/Core:/Users/mcawood/Lmod/Lmod/rt/noTCL/mf/TACC;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9ub1RDTC9tZi9Db3JlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9ub1RDTC9tZi9UQUNDIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9ub1RDTC9tZi9Db3JlOi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9ub1RDTC9tZi9UQUNDIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load PrgEnv
+===========================
+
+false

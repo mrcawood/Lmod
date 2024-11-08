@@ -1,0 +1,9 @@
+Sys.setenv("B_VERSION"="1.0");
+Sys.setenv("LOADEDMODULES"="b/1.0");
+Sys.setenv("__LMOD_REF_COUNT_MODULEPATH"="/Users/mcawood/Lmod/Lmod/rt/r_shell/mf/Core:1");
+Sys.setenv("MODULEPATH"="/Users/mcawood/Lmod/Lmod/rt/r_shell/mf/Core");
+Sys.setenv("_LMFILES_"="/Users/mcawood/Lmod/Lmod/rt/r_shell/mf/Core/b/1.0.lua");
+Sys.setenv("_ModuleTable001_"="X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpiID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcl9zaGVsbC9tZi9Db3JlL2IvMS4wLmx1YSIsCmZ1bGxOYW1lID0gImIvMS4wIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJiIiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcl9zaGVsbC9tZi9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRI");
+Sys.setenv("_ModuleTable002_"="ID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9yX3NoZWxsL21mL0NvcmUiLAp9Cg==");
+Sys.setenv("_ModuleTable_Sz_"="2");
+mlstatus <- TRUE

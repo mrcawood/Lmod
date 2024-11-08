@@ -1,0 +1,30 @@
+-- -*- lua -*-
+-- created: Wed Nov  6 15:53:01 2024 --
+-- Lmod 8.7.43 2024-06-24 15:50 -06:00
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {
+    a = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/saverestore/Core/a/2.0",
+      fullName = "a/2.0",
+      hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      loadOrder = 1,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "a",
+      wV = "^00000002.*zfinal",
+    },
+  },
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/saverestore/Core",
+  },
+  mpathRefCountT = {
+    ["/Users/mcawood/Lmod/Lmod/rt/saverestore/Core"] = 1,
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/saverestore/Core",
+}

@@ -1,0 +1,11 @@
+Lmod has detected the following error: These module(s) or extension(s) exist but cannot be loaded as requested: atleast("b","1.5")
+   Try: "module spider b" to see how to load the module(s).
+
+Executing this command requires loading "b" which failed while processing the following module(s):
+
+    Module fullname  Module Filename
+    ---------------  ---------------
+    M3               /Users/mcawood/Lmod/Lmod/rt/between/mf/Core/M3.lua
+    M4               /Users/mcawood/Lmod/Lmod/rt/between/mf/Core/M4.lua
+
+

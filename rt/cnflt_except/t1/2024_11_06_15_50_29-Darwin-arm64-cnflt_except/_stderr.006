@@ -1,0 +1,6 @@
+Lmod has detected the following error: Too many modules: only one is allowed 
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    A/1.0            /Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core/A/1.0.lua
+

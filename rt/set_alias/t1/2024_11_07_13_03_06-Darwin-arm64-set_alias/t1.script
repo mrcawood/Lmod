@@ -1,0 +1,53 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_07"; export tag
+idTag="t1"; export idTag
+TARGET=""; export TARGET
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/set_alias/t1/2024_11_07_13_03_06-Darwin-arm64-set_alias/t1.runtime"; export runtimeFn
+resultFn="/Users/mcawood/Lmod/Lmod/rt/set_alias/t1/2024_11_07_13_03_06-Darwin-arm64-set_alias/t1.result"; export resultFn
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/set_alias"; export testDir
+testName="set_alias"; export testName
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/set_alias/t1/2024_11_07_13_03_06-Darwin-arm64-set_alias/message.lua"; export messageFn
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/set_alias/set_alias.tdesc"; export testdescriptFn
+outputDir="/Users/mcawood/Lmod/Lmod/rt/set_alias/t1/2024_11_07_13_03_06-Darwin-arm64-set_alias"; export outputDir
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/set_alias/t1/2024_11_07_13_03_06-Darwin-arm64-set_alias/results.lua"; export cmdResultFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/set_alias;        export MODULEPATH_ROOT
+     MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/set_alias/mf;          export MODULEPATH
+
+     remove_generated_lmod_files a b c
+
+     touch a b c
+     runLmod --version      # 1
+     runLmod load test1     # 2
+     runLmod load test2     # 3
+     runLmod unload test2   # 4
+     runLmod load test1     # 5
+     runLmod load sfunc     # 6
+     runLmod load alias     # 7
+     runLmod load spack     # 8
+     runLmod show showMe    # 9
+
+     HOME=$ORIG_HOME
+
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/set_alias/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/set_alias/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/set_alias/t1/2024_11_07_13_03_06-Darwin-arm64-set_alias/t1.result -t /Users/mcawood/Lmod/Lmod/rt/set_alias/t1/2024_11_07_13_03_06-Darwin-arm64-set_alias/t1.runtime results.csv
+   

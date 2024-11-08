@@ -1,0 +1,96 @@
+===========================
+step 0
+===========================
+===========================
+step 1
+===========================
+false
+===========================
+step 2
+===========================
+setenv __LMOD_REF_COUNT_MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2:1;
+setenv MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2;
+setenv _ModuleTable_ '_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core","/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2",}';
+setenv _ModuleTable_Sz_ 1;
+===========================
+step 3
+===========================
+setenv LMOD_FAMILY_COMPILER gcc;
+setenv LMOD_FAMILY_COMPILER_VERSION 4.2.3;
+setenv LOADEDMODULES gcc/4.2.3;
+setenv __LMOD_REF_COUNT_MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3:1\;/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2:1;
+setenv MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2;
+setenv _LMFILES_ /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/gcc/4.2.3.lua;
+setenv _ModuleTable_ '_ModuleTable_={MTversion=3,depthT={},family={compiler="gcc",},mT={gcc={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3\")",},fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/gcc/4.2.3.lua",fullName="gcc/4.2.3",loadOrder=1,propT={},stackDepth=0,status="active",userName="gcc",wV="000000004.000000002.000000003.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3","/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core","/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2",}';
+setenv _ModuleTable_Sz_ 2;
+===========================
+step 4
+===========================
+setenv FULL minfo/1.0;
+setenv LOADEDMODULES gcc/4.2.3:ml/1.0:minfo/1.0;
+setenv MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2;
+setenv NAME minfo;
+setenv USER_SHELL csh;
+setenv _LMFILES_ /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/gcc/4.2.3.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/ml/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/minfo/1.0;
+setenv _ModuleTable_ '_ModuleTable_={MTversion=3,depthT={},family={compiler="gcc",},mT={gcc={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3\")",},fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/gcc/4.2.3.lua",fullName="gcc/4.2.3",loadOrder=1,propT={},stackDepth=0,status="active",userName="gcc",wV="000000004.000000002.000000003.*zfinal",},minfo={fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/minfo/1.0",fullName="minfo/1.0",loadOrder=3,propT={},stackDepth=0,status="active",userName="minfo",wV="000000001.*zfinal",},ml={fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/ml/1.0.lua",fullName="ml/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="ml",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3","/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core","/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2",}';
+setenv _ModuleTable_Sz_ 4;
+alias ml 'eval `$LMOD_DIR/ml_cmd \!*`';
+===========================
+step 5
+===========================
+unsetenv FULL;
+setenv LOADEDMODULES gcc/4.2.3:ml/1.0;
+setenv MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2;
+unsetenv NAME;
+unsetenv USER_SHELL;
+setenv _LMFILES_ /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/gcc/4.2.3.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/ml/1.0.lua;
+setenv _ModuleTable_ '_ModuleTable_={MTversion=3,depthT={},family={compiler="gcc",},mT={gcc={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3\")",},fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/gcc/4.2.3.lua",fullName="gcc/4.2.3",loadOrder=1,propT={},stackDepth=0,status="active",userName="gcc",wV="000000004.000000002.000000003.*zfinal",},ml={fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/ml/1.0.lua",fullName="ml/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="ml",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3","/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core","/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2",}';
+setenv _ModuleTable_Sz_ 3;
+===========================
+step 6
+===========================
+setenv FULL minfo/1.0;
+setenv LOADEDMODULES gcc/4.2.3:ml/1.0:minfo/1.0;
+setenv MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2;
+setenv NAME minfo/1.0;
+setenv USER_SHELL csh;
+setenv _LMFILES_ /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/gcc/4.2.3.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/ml/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/minfo/1.0;
+setenv _ModuleTable_ '_ModuleTable_={MTversion=3,depthT={},family={compiler="gcc",},mT={gcc={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3\")",},fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/gcc/4.2.3.lua",fullName="gcc/4.2.3",loadOrder=1,propT={},stackDepth=0,status="active",userName="gcc",wV="000000004.000000002.000000003.*zfinal",},minfo={fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/minfo/1.0",fullName="minfo/1.0",loadOrder=3,propT={},stackDepth=0,status="active",userName="minfo/1.0",wV="000000001.*zfinal",},ml={fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/ml/1.0.lua",fullName="ml/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="ml",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3","/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core","/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2",}';
+setenv _ModuleTable_Sz_ 4;
+===========================
+step 7
+===========================
+setenv LOADEDMODULES gcc/4.2.3:ml/1.0:minfo/1.0:complete/1.0;
+setenv MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2;
+setenv _LMFILES_ /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/gcc/4.2.3.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/ml/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/minfo/1.0:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/complete/1.0;
+setenv _ModuleTable_ '_ModuleTable_={MTversion=3,depthT={},family={compiler="gcc",},mT={complete={fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/complete/1.0",fullName="complete/1.0",loadOrder=4,propT={},stackDepth=0,status="active",userName="complete",wV="000000001.*zfinal",},gcc={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3\")",},fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/gcc/4.2.3.lua",fullName="gcc/4.2.3",loadOrder=1,propT={},stackDepth=0,status="active",userName="gcc",wV="000000004.000000002.000000003.*zfinal",},minfo={fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/minfo/1.0",fullName="minfo/1.0",loadOrder=3,propT={},stackDepth=0,status="active",userName="minfo/1.0",wV="000000001.*zfinal",},ml={fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/ml/1.0.lua",fullName="ml/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="ml",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3","/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core","/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2",}';
+setenv _ModuleTable_Sz_ 4;
+complete foo p/\*/c/;
+===========================
+step 8
+===========================
+setenv LOADEDMODULES gcc/4.2.3:ml/1.0:minfo/1.0;
+setenv MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2;
+setenv _LMFILES_ /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/gcc/4.2.3.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/ml/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/minfo/1.0;
+setenv _ModuleTable_ '_ModuleTable_={MTversion=3,depthT={},family={compiler="gcc",},mT={gcc={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3\")",},fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/gcc/4.2.3.lua",fullName="gcc/4.2.3",loadOrder=1,propT={},stackDepth=0,status="active",userName="gcc",wV="000000004.000000002.000000003.*zfinal",},minfo={fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/minfo/1.0",fullName="minfo/1.0",loadOrder=3,propT={},stackDepth=0,status="active",userName="minfo/1.0",wV="000000001.*zfinal",},ml={fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/ml/1.0.lua",fullName="ml/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="ml",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3","/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core","/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2",}';
+setenv _ModuleTable_Sz_ 4;
+uncomplete foo;
+===========================
+step 9
+===========================
+setenv __LMOD_REF_COUNT_LD_LIBRARY_PATH /vol/local/intel/mkl/mkl/lib/lib:1\;/vol/local/intel/idb/idb/lib:1\;/vol/local/intel/fc/fc/lib:1\;/vol/local/intel/cc/cc/lib:1;
+setenv LD_LIBRARY_PATH /vol/local/intel/mkl/mkl/lib/lib:/vol/local/intel/idb/idb/lib:/vol/local/intel/fc/fc/lib:/vol/local/intel/cc/cc/lib;
+setenv LMOD_FAMILY_COMPILER intel;
+setenv LMOD_FAMILY_COMPILER_VERSION intel;
+setenv LOADEDMODULES ml/1.0:minfo/1.0:intel/intel;
+setenv __LMOD_REF_COUNT_MANPATH /vol/local/intel/mkl/mkl/man:1\;/vol/local/intel/idb/idb/man:1\;/vol/local/intel/fc/fc/man:1\;/vol/local/intel/cc/cc/man:1;
+setenv MANPATH /vol/local/intel/mkl/mkl/man:/vol/local/intel/idb/idb/man:/vol/local/intel/fc/fc/man:/vol/local/intel/cc/cc/man;
+setenv MKL_DIR /vol/local/intel/mkl/mkl/lib/lib;
+setenv MKL_INCLUDE /vol/local/intel/mkl/mkl/include;
+setenv __LMOD_REF_COUNT_MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/intel/10.1:1\;/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2:1;
+setenv MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/intel/10.1:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2;
+setenv __LMOD_REF_COUNT_PATH /vol/local/intel/idb/idb/bin:1\;/vol/local/intel/fc/fc/bin:1\;/vol/local/intel/cc/cc/bin:1\;/Users/mcawood/Lmod/Lmod/proj_mgmt:1\;/Users/mcawood/Lmod/Hermes/bin:1\;/opt/homebrew/bin:1\;/usr/bin:1\;/bin:1;
+setenv PATH /vol/local/intel/idb/idb/bin:/vol/local/intel/fc/fc/bin:/vol/local/intel/cc/cc/bin:/Users/mcawood/Lmod/Lmod/proj_mgmt:/Users/mcawood/Lmod/Hermes/bin:/opt/homebrew/bin:/usr/bin:/bin;
+setenv _LMFILES_ /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/ml/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/minfo/1.0:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/intel/intel.lua;
+setenv _ModuleTable_ '_ModuleTable_={MTversion=3,depthT={},family={compiler="intel",},mT={intel={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/intel/10.1\")",},fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/intel/intel.lua",fullName="intel/intel",loadOrder=3,propT={},stackDepth=0,status="active",userName="intel",wV="*intel.*zfinal",},minfo={fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/minfo/1.0",fullName="minfo/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="minfo/1.0",wV="000000001.*zfinal",},ml={fn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/ml/1.0.lua",fullName="ml/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="ml",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/intel/10.1","/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core","/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2",}';
+setenv _ModuleTable_Sz_ 4;

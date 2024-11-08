@@ -1,0 +1,31 @@
+timestampFn = {
+  false,
+}
+reverseMapT = {
+  ["/Users/mcawood/Lmod/Lmod/rt/rmap/apps/intel/14.0.1/bin"] = {
+    flavor = {
+      "default",
+    },
+    kind = "bin",
+    moduleFn = "/Users/mcawood/Lmod/Lmod/rt/rmap/mf/2Core/intel/14.0.1.lua",
+    pkg = "intel/14.0.1",
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/rmap/apps/intel/14.0.1/lib"] = {
+    flavor = {
+      "default",
+    },
+    kind = "lib",
+    moduleFn = "/Users/mcawood/Lmod/Lmod/rt/rmap/mf/2Core/intel/14.0.1.lua",
+    pkg = "intel/14.0.1",
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/rmap/t1/2024_10_17_14_37_12-Darwin-arm64-rmap/otherBin"] = {
+    flavor = {
+      "default",
+    },
+    kind = "bin",
+    moduleFn = "/Users/mcawood/Lmod/Lmod/rt/rmap/mf/2Core/intel/14.0.1.lua",
+    pkg = "intel/14.0.1",
+  },
+}
+xlibmap = {}
+

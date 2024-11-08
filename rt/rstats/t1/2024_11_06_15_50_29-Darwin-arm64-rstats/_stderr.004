@@ -1,0 +1,11 @@
+  Lmod version: 8.7.43 2024-06-24 15:50 -06:00
+running: module --regression_testing -T load Rpkgs
+  (1)(0)Loading: Rpkgs (fn: /Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core/Rpkgs/3.4.0.lua, using Find-Best)
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core/Rpkgs/3.4.0.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    Rpkgs/3.4.0      /Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core/Rpkgs/3.4.0.lua
+

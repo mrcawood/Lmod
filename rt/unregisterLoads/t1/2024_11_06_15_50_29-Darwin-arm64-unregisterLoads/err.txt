@@ -1,0 +1,30 @@
+===========================
+step 1
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing --version
+===========================
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+===========================
+step 2
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load a b
+===========================
+Lmod has detected the following error: Syntax error in file: ProjectDIR/rt/unregisterLoads/mf/B/b.lua
+ with command: load, one or more arguments are not strings.
+While processing the following module(s):
+    Module fullname  Module Filename
+    b                ProjectDIR/rt/unregisterLoads/mf/B/b.lua
+===========================
+step 3
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 4
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load a d
+===========================
+===========================
+step 5
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing list
+===========================
+Currently Loaded Modules:
+  1) a   2) d

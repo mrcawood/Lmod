@@ -1,0 +1,78 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load TACC
+===========================
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/lars/mf/Core/TACC.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    TACC             /Users/mcawood/Lmod/Lmod/rt/lars/mf/Core/TACC.lua
+
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing swap mvapich2 impi
+===========================
+Lmod has detected the following error: Swap failed: "mvapich2" is not loaded.
+
+
+
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing save
+===========================
+/opt/homebrew/bin/lua: interrupted!
+stack traceback:
+	[C]: in ?
+	[C]: in function 'require'
+	/Users/mcawood/Lmod/Lmod/src/FrameStk.lua:40: in main chunk
+	[C]: in function 'require'
+	/Users/mcawood/Lmod/Lmod/src/Cache.lua:75: in main chunk
+	[C]: in function 'require'
+	/Users/mcawood/Lmod/Lmod/src/cmdfuncs.lua:51: in main chunk
+	[C]: in function 'require'
+	/Users/mcawood/Lmod/Lmod/src/lmod.in.lua:113: in main chunk
+	[C]: in ?
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing restore
+===========================
+The system default contains no modules
+  (env var: LMOD_SYSTEM_DEFAULT_MODULES is empty)
+  No changes in loaded modules
+
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+/opt/homebrew/bin/lua: /Users/mcawood/Lmod/Lmod/src/../tools/capture.lua:75: interrupted!
+stack traceback:
+	[C]: in method 'read'
+	/Users/mcawood/Lmod/Lmod/src/../tools/capture.lua:75: in function 'capture'
+	/Users/mcawood/Lmod/Lmod/src/utils.lua:1273: in function 'dynamic_shell'
+	/Users/mcawood/Lmod/Lmod/src/lmod.in.lua:342: in function 'main'
+	/Users/mcawood/Lmod/Lmod/src/lmod.in.lua:588: in main chunk
+	[C]: in ?

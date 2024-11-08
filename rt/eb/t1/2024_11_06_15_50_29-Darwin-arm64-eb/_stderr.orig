@@ -1,0 +1,42 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load numpy
+===========================
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/eb/mf/numpy/1.6.2-goolf-1.4.10-Python-2.7.3
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname                        Module Filename
+    ---------------                        ---------------
+    numpy/1.6.2-goolf-1.4.10-Python-2.7.3  /Users/mcawood/Lmod/Lmod/rt/eb/mf/numpy/1.6.2-goolf-1.4.10-Python-2.7.3
+
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load CMake bam2fastq
+===========================
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/eb/mf/CMake/2.8.4-goolf-1.4.10
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname           Module Filename
+    ---------------           ---------------
+    CMake/2.8.4-goolf-1.4.10  /Users/mcawood/Lmod/Lmod/rt/eb/mf/CMake/2.8.4-goolf-1.4.10
+
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded

@@ -1,0 +1,8 @@
+/opt/homebrew/bin/lua: /Users/mcawood/Lmod/Lmod/src/../tools/capture.lua:75: interrupted!
+stack traceback:
+	[C]: in method 'read'
+	/Users/mcawood/Lmod/Lmod/src/../tools/capture.lua:75: in function 'capture'
+	/Users/mcawood/Lmod/Lmod/src/utils.lua:1273: in function 'dynamic_shell'
+	/Users/mcawood/Lmod/Lmod/src/lmod.in.lua:342: in function 'main'
+	/Users/mcawood/Lmod/Lmod/src/lmod.in.lua:588: in main chunk
+	[C]: in ?

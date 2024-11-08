@@ -1,0 +1,3 @@
+Lmod hat den folgenden Fehler erkannt: Der Befehl "module avail" kann nicht ausgeführt werden. Die Variable MODULEPATH ist entweder nicht gesetzt oder enthält einen ungültigen Wert. 
+
+

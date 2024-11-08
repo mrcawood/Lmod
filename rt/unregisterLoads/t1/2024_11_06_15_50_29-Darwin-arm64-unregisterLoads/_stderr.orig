@@ -1,0 +1,39 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load a b
+===========================
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B/b.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    b                /Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B/b.lua
+
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load a d
+===========================
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) a   2) d
+
+ 
+

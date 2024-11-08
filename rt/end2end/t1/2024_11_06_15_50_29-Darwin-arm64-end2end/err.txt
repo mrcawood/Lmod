@@ -1,0 +1,64 @@
+===========================
+step 1
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing --version
+===========================
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+===========================
+step 2
+ OutputDIR/lmod/lmod/libexec/lmod --version
+===========================
+ProjectDIR/rt/common_funcs.sh: line 135: OutputDIR/lmod/lmod/libexec/lmod: No such file or directory
+===========================
+step 3
+ OutputDIR/lmod/lmod/libexec/lmod load admin
+===========================
+ProjectDIR/rt/common_funcs.sh: line 135: OutputDIR/lmod/lmod/libexec/lmod: No such file or directory
+===========================
+step 4
+ OutputDIR/lmod/lmod/libexec/lmod load amber
+===========================
+ProjectDIR/rt/common_funcs.sh: line 135: OutputDIR/lmod/lmod/libexec/lmod: No such file or directory
+===========================
+step 5
+ OutputDIR/lmod/lmod/libexec/lmod load bad
+===========================
+ProjectDIR/rt/common_funcs.sh: line 135: OutputDIR/lmod/lmod/libexec/lmod: No such file or directory
+===========================
+step 6
+ OutputDIR/lmod/lmod/libexec/lmod load myinfo
+===========================
+ProjectDIR/rt/common_funcs.sh: line 135: OutputDIR/lmod/lmod/libexec/lmod: No such file or directory
+===========================
+step 7
+ OutputDIR/lmod/lmod/libexec/lmod list
+===========================
+ProjectDIR/rt/common_funcs.sh: line 135: OutputDIR/lmod/lmod/libexec/lmod: No such file or directory
+===========================
+step 8
+ OutputDIR/lmod/lmod/libexec/lmod avail
+===========================
+ProjectDIR/rt/common_funcs.sh: line 135: OutputDIR/lmod/lmod/libexec/lmod: No such file or directory
+===========================
+step 9
+ OutputDIR/lmod/lmod/libexec/lmod load b
+===========================
+ProjectDIR/rt/common_funcs.sh: line 135: OutputDIR/lmod/lmod/libexec/lmod: No such file or directory
+===========================
+step 10
+echo TEST: 0
+===========================
+===========================
+step 11
+ OutputDIR/lmod/lmod/libexec/lmod unload b
+===========================
+ProjectDIR/rt/common_funcs.sh: line 135: OutputDIR/lmod/lmod/libexec/lmod: No such file or directory
+===========================
+step 12
+echo TEST: 0
+===========================
+===========================
+step 13
+ OutputDIR/lmod/lmod/libexec/lmod avail
+===========================
+ProjectDIR/rt/common_funcs.sh: line 135: OutputDIR/lmod/lmod/libexec/lmod: No such file or directory

@@ -1,0 +1,12 @@
+/opt/homebrew/bin/lua: interrupted!
+stack traceback:
+	[C]: in ?
+	[C]: in function 'require'
+	/Users/mcawood/Lmod/Lmod/src/FrameStk.lua:40: in main chunk
+	[C]: in function 'require'
+	/Users/mcawood/Lmod/Lmod/src/Cache.lua:75: in main chunk
+	[C]: in function 'require'
+	/Users/mcawood/Lmod/Lmod/src/cmdfuncs.lua:51: in main chunk
+	[C]: in function 'require'
+	/Users/mcawood/Lmod/Lmod/src/lmod.in.lua:113: in main chunk
+	[C]: in ?

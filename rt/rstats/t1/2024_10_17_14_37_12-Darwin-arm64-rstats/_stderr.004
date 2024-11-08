@@ -1,0 +1,4 @@
+  Lmod version: 8.7.43 2024-06-24 15:50 -06:00
+running: module --regression_testing -T load Rpkgs
+  (1)(0)Loading: Rpkgs (fn: /Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core/Rpkgs/3.4.0.lua, using Find-Best)
+    (2)(0)Loading: Rstats/3.4.0 (fn: /Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core/Rstats/3.4.0.lua, using Find-Best)

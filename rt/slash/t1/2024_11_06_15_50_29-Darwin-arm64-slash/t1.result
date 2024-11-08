@@ -1,0 +1,5 @@
+-- -*- lua -*-
+-- created: Wed Nov  6 15:50:32 2024 --
+myResult = {
+  ["testresult"] = "passed",
+}

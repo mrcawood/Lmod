@@ -1,0 +1,88 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use /Users/mcawood/Lmod/Lmod/rt/personal_mf/.modulefiles
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/personal_mf/.modulefiles:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/personal_mf/.modulefiles;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wZXJzb25hbF9tZi8ubW9kdWxlZmlsZXMiLAp9LAp9Cg==;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load git git-annex htop luajit luarocks hdf5/1.8.15
+===========================
+__LMOD_REF_COUNT_CMAKE_PREFIX_PATH=/home/pcolberg/usr/centos6-x86_64/hdf5-1.8.15:1\;/home/pcolberg/usr/centos6-x86_64/luajit-2.0.4:1;
+export __LMOD_REF_COUNT_CMAKE_PREFIX_PATH;
+CMAKE_PREFIX_PATH=/home/pcolberg/usr/centos6-x86_64/hdf5-1.8.15:/home/pcolberg/usr/centos6-x86_64/luajit-2.0.4;
+export CMAKE_PREFIX_PATH;
+__LMOD_REF_COUNT_CPATH=/home/pcolberg/usr/centos6-x86_64/hdf5-1.8.15/include:1\;/home/pcolberg/usr/centos6-x86_64/luajit-2.0.4/include/luajit-2.0:1;
+export __LMOD_REF_COUNT_CPATH;
+CPATH=/home/pcolberg/usr/centos6-x86_64/hdf5-1.8.15/include:/home/pcolberg/usr/centos6-x86_64/luajit-2.0.4/include/luajit-2.0;
+export CPATH;
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/home/pcolberg/usr/centos6-x86_64/hdf5-1.8.15/lib:1\;/home/pcolberg/usr/centos6-x86_64/luajit-2.0.4/lib:1;
+export __LMOD_REF_COUNT_LD_LIBRARY_PATH;
+LD_LIBRARY_PATH=/home/pcolberg/usr/centos6-x86_64/hdf5-1.8.15/lib:/home/pcolberg/usr/centos6-x86_64/luajit-2.0.4/lib;
+export LD_LIBRARY_PATH;
+__LMOD_REF_COUNT_LD_RUN_PATH=/home/pcolberg/usr/centos6-x86_64/luajit-2.0.4/lib:1;
+export __LMOD_REF_COUNT_LD_RUN_PATH;
+LD_RUN_PATH=/home/pcolberg/usr/centos6-x86_64/luajit-2.0.4/lib;
+export LD_RUN_PATH;
+__LMOD_REF_COUNT_LIBRARY_PATH=/home/pcolberg/usr/centos6-x86_64/hdf5-1.8.15/lib:1\;/home/pcolberg/usr/centos6-x86_64/luajit-2.0.4/lib:1;
+export __LMOD_REF_COUNT_LIBRARY_PATH;
+LIBRARY_PATH=/home/pcolberg/usr/centos6-x86_64/hdf5-1.8.15/lib:/home/pcolberg/usr/centos6-x86_64/luajit-2.0.4/lib;
+export LIBRARY_PATH;
+LOADEDMODULES=git/2.4.0:git-annex/5.20150219:htop/1.0.3:luajit/2.0.4:luarocks/2.2.2:hdf5/1.8.15;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MANPATH=/home/pcolberg/usr/centos6-x86_64/luajit-2.0.4/share/man:1\;/home/pcolberg/usr/centos6-x86_64/htop-1.0.3/share/man:1\;/home/pcolberg/usr/centos6-x86_64/git-annex-5.20150219/share/man:1\;/home/pcolberg/usr/centos6-x86_64/git-2.4.0/share/man:1;
+export __LMOD_REF_COUNT_MANPATH;
+MANPATH=/home/pcolberg/usr/centos6-x86_64/luajit-2.0.4/share/man:/home/pcolberg/usr/centos6-x86_64/htop-1.0.3/share/man:/home/pcolberg/usr/centos6-x86_64/git-annex-5.20150219/share/man:/home/pcolberg/usr/centos6-x86_64/git-2.4.0/share/man;
+export MANPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/personal_mf/.modulefiles;
+export MODULEPATH;
+__LMOD_REF_COUNT_PATH=/home/pcolberg/usr/centos6-x86_64/hdf5-1.8.15/bin:1\;/home/pcolberg/usr/centos6-x86_64/luarocks-2.2.2/bin:1\;/home/pcolberg/usr/centos6-x86_64/luajit-2.0.4/bin:1\;/home/pcolberg/usr/centos6-x86_64/htop-1.0.3/bin:1\;/home/pcolberg/usr/centos6-x86_64/git-annex-5.20150219/bin:1\;/home/pcolberg/usr/centos6-x86_64/git-2.4.0/bin:1\;/Users/mcawood/Lmod/Lmod/proj_mgmt:1\;/Users/mcawood/Lmod/Hermes/bin:1\;/opt/homebrew/bin:1\;/usr/bin:1\;/bin:1;
+export __LMOD_REF_COUNT_PATH;
+PATH=/home/pcolberg/usr/centos6-x86_64/hdf5-1.8.15/bin:/home/pcolberg/usr/centos6-x86_64/luarocks-2.2.2/bin:/home/pcolberg/usr/centos6-x86_64/luajit-2.0.4/bin:/home/pcolberg/usr/centos6-x86_64/htop-1.0.3/bin:/home/pcolberg/usr/centos6-x86_64/git-annex-5.20150219/bin:/home/pcolberg/usr/centos6-x86_64/git-2.4.0/bin:/Users/mcawood/Lmod/Lmod/proj_mgmt:/Users/mcawood/Lmod/Hermes/bin:/opt/homebrew/bin:/usr/bin:/bin;
+export PATH;
+__LMOD_REF_COUNT_PKG_CONFIG_PATH=/home/pcolberg/usr/centos6-x86_64/luajit-2.0.4/lib/pkgconfig:1;
+export __LMOD_REF_COUNT_PKG_CONFIG_PATH;
+PKG_CONFIG_PATH=/home/pcolberg/usr/centos6-x86_64/luajit-2.0.4/lib/pkgconfig;
+export PKG_CONFIG_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/personal_mf/.modulefiles/git/2.4.0.lua:/Users/mcawood/Lmod/Lmod/rt/personal_mf/.modulefiles/git-annex/5.20150219.lua:/Users/mcawood/Lmod/Lmod/rt/personal_mf/.modulefiles/htop/1.0.3.lua:/Users/mcawood/Lmod/Lmod/rt/personal_mf/.modulefiles/luajit/2.0.4.lua:/Users/mcawood/Lmod/Lmod/rt/personal_mf/.modulefiles/luarocks/2.2.2.lua:/Users/mcawood/Lmod/Lmod/rt/personal_mf/.modulefiles/hdf5/1.8.15.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpnaXQgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wZXJzb25hbF9tZi8ubW9kdWxlZmlsZXMvZ2l0LzIuNC4wLmx1YSIsCmZ1bGxOYW1lID0gImdpdC8yLjQuMCIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiZ2l0IiwKd1YgPSAiMDAwMDAwMDAyLjAwMDAwMDAwNC4qemZpbmFsIiwKfSwKWyJnaXQtYW5uZXgiXSA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9k;
+export _ModuleTable001_;
+_ModuleTable002_=L3J0L3BlcnNvbmFsX21mLy5tb2R1bGVmaWxlcy9naXQtYW5uZXgvNS4yMDE1MDIxOS5sdWEiLApmdWxsTmFtZSA9ICJnaXQtYW5uZXgvNS4yMDE1MDIxOSIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiZ2l0LWFubmV4IiwKd1YgPSAiMDAwMDAwMDA1LjAyMDE1MDIxOS4qemZpbmFsIiwKfSwKaGRmNSA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BlcnNvbmFsX21mLy5tb2R1bGVmaWxlcy9oZGY1LzEuOC4xNS5sdWEiLApmdWxsTmFtZSA9ICJoZGY1LzEuOC4xNSIsCmxvYWRPcmRlciA9IDYsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0;
+export _ModuleTable002_;
+_ModuleTable003_=aXZlIiwKdXNlck5hbWUgPSAiaGRmNS8xLjguMTUiLAp3ViA9ICIwMDAwMDAwMDEuMDAwMDAwMDA4LjAwMDAwMDAxNS4qemZpbmFsIiwKfSwKaHRvcCA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BlcnNvbmFsX21mLy5tb2R1bGVmaWxlcy9odG9wLzEuMC4zLmx1YSIsCmZ1bGxOYW1lID0gImh0b3AvMS4wLjMiLApsb2FkT3JkZXIgPSAzLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImh0b3AiLAp3ViA9ICIwMDAwMDAwMDEuMDAwMDAwMDAwLjAwMDAwMDAwMy4qemZpbmFsIiwKfSwKbHVhaml0ID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcGVyc29uYWxfbWYvLm1vZHVs;
+export _ModuleTable003_;
+_ModuleTable004_=ZWZpbGVzL2x1YWppdC8yLjAuNC5sdWEiLApmdWxsTmFtZSA9ICJsdWFqaXQvMi4wLjQiLApsb2FkT3JkZXIgPSA0LApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImx1YWppdCIsCndWID0gIjAwMDAwMDAwMi4wMDAwMDAwMDAuMDAwMDAwMDA0Lip6ZmluYWwiLAp9LApsdWFyb2NrcyA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BlcnNvbmFsX21mLy5tb2R1bGVmaWxlcy9sdWFyb2Nrcy8yLjIuMi5sdWEiLApmdWxsTmFtZSA9ICJsdWFyb2Nrcy8yLjIuMiIsCmxvYWRPcmRlciA9IDUsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibHVh;
+export _ModuleTable004_;
+_ModuleTable005_=cm9ja3MiLAp3ViA9ICIwMDAwMDAwMDIuMDAwMDAwMDAyLjAwMDAwMDAwMi4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BlcnNvbmFsX21mLy5tb2R1bGVmaWxlcyIsCn0sCn0K;
+export _ModuleTable005_;
+_ModuleTable_Sz_=5;
+export _ModuleTable_Sz_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/personal_mf/.modulefiles;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpnaXQgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wZXJzb25hbF9tZi8ubW9kdWxlZmlsZXMvZ2l0LzIuNC4wLmx1YSIsCmZ1bGxOYW1lID0gImdpdC8yLjQuMCIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiZ2l0IiwKd1YgPSAiMDAwMDAwMDAyLjAwMDAwMDAwNC4qemZpbmFsIiwKfSwKWyJnaXQtYW5uZXgiXSA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9k;
+export _ModuleTable001_;
+_ModuleTable002_=L3J0L3BlcnNvbmFsX21mLy5tb2R1bGVmaWxlcy9naXQtYW5uZXgvNS4yMDE1MDIxOS5sdWEiLApmdWxsTmFtZSA9ICJnaXQtYW5uZXgvNS4yMDE1MDIxOSIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiZ2l0LWFubmV4IiwKd1YgPSAiMDAwMDAwMDA1LjAyMDE1MDIxOS4qemZpbmFsIiwKfSwKaGRmNSA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BlcnNvbmFsX21mLy5tb2R1bGVmaWxlcy9oZGY1LzEuOC4xNS5sdWEiLApmdWxsTmFtZSA9ICJoZGY1LzEuOC4xNSIsCmxvYWRPcmRlciA9IDYsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0;
+export _ModuleTable002_;
+_ModuleTable003_=aXZlIiwKdXNlck5hbWUgPSAiaGRmNS8xLjguMTUiLAp3ViA9ICIwMDAwMDAwMDEuMDAwMDAwMDA4LjAwMDAwMDAxNS4qemZpbmFsIiwKfSwKaHRvcCA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BlcnNvbmFsX21mLy5tb2R1bGVmaWxlcy9odG9wLzEuMC4zLmx1YSIsCmZ1bGxOYW1lID0gImh0b3AvMS4wLjMiLApsb2FkT3JkZXIgPSAzLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImh0b3AiLAp3ViA9ICIwMDAwMDAwMDEuMDAwMDAwMDAwLjAwMDAwMDAwMy4qemZpbmFsIiwKfSwKbHVhaml0ID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcGVyc29uYWxfbWYvLm1vZHVs;
+export _ModuleTable003_;
+_ModuleTable004_=ZWZpbGVzL2x1YWppdC8yLjAuNC5sdWEiLApmdWxsTmFtZSA9ICJsdWFqaXQvMi4wLjQiLApsb2FkT3JkZXIgPSA0LApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImx1YWppdCIsCndWID0gIjAwMDAwMDAwMi4wMDAwMDAwMDAuMDAwMDAwMDA0Lip6ZmluYWwiLAp9LApsdWFyb2NrcyA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BlcnNvbmFsX21mLy5tb2R1bGVmaWxlcy9sdWFyb2Nrcy8yLjIuMi5sdWEiLApmdWxsTmFtZSA9ICJsdWFyb2Nrcy8yLjIuMiIsCmxvYWRPcmRlciA9IDUsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibHVh;
+export _ModuleTable004_;
+_ModuleTable005_=cm9ja3MiLAp3ViA9ICIwMDAwMDAwMDIuMDAwMDAwMDAyLjAwMDAwMDAwMi4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BlcnNvbmFsX21mLy5tb2R1bGVmaWxlcyIsCn0sCn0K;
+export _ModuleTable005_;
+_ModuleTable_Sz_=5;
+export _ModuleTable_Sz_;

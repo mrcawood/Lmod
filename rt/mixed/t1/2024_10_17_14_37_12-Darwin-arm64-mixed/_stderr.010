@@ -1,0 +1,9 @@
+
+Currently Loaded Modules:
+  1) compilers/intel/14.0.0   2) mpi/openmpi/1.6.5   3) StdEnv (S)
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+
+ 
+

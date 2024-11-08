@@ -1,0 +1,48 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_07"; export tag
+idTag="t1"; export idTag
+TARGET=""; export TARGET
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/p4est/t1/2024_11_07_13_03_06-Darwin-arm64-p4est/t1.runtime"; export runtimeFn
+resultFn="/Users/mcawood/Lmod/Lmod/rt/p4est/t1/2024_11_07_13_03_06-Darwin-arm64-p4est/t1.result"; export resultFn
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/p4est"; export testDir
+testName="p4est"; export testName
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/p4est/t1/2024_11_07_13_03_06-Darwin-arm64-p4est/message.lua"; export messageFn
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/p4est/p4est.tdesc"; export testdescriptFn
+outputDir="/Users/mcawood/Lmod/Lmod/rt/p4est/t1/2024_11_07_13_03_06-Darwin-arm64-p4est"; export outputDir
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/p4est/t1/2024_11_07_13_03_06-Darwin-arm64-p4est/results.lua"; export cmdResultFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+
+     remove_generated_lmod_files
+
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core:/Users/mcawood/Lmod/Lmod/rt/p4est/mf/User
+
+     runLmod --version               # 1
+     runLmod av                      # 2
+     runLmod --show_hidden av        # 3
+     runLmod load p4est              # 4
+     runLmod load local              # 5
+     runLmod list                    # 6
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/p4est/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/p4est/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/p4est/t1/2024_11_07_13_03_06-Darwin-arm64-p4est/t1.result -t /Users/mcawood/Lmod/Lmod/rt/p4est/t1/2024_11_07_13_03_06-Darwin-arm64-p4est/t1.runtime results.csv
+   

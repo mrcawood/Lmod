@@ -1,0 +1,17 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ /Users/mcawood/Lmod/Lmod/rt/modulerc/mf5 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   Core/Java/1.7.0_143 (1.7)    Core/Java/1.8.0_181 (D:1.8)
+
+  Where:
+   Aliases:  Aliases exist: foo/1.2.3 (1.2) means that "module load foo/1.2" will load foo/1.2.3
+   D:        Default Module
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the default modules.
+"module overview" or "ml ov" to display the number of modules for each name.
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
+
+

@@ -1,0 +1,18 @@
+LOADEDMODULES=setprompt/1.0;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ps1/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ps1/mf/Core;
+export MODULEPATH;
+PS1=hello\>\ ;
+export PS1;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/ps1/mf/Core/setprompt/1.0.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpzZXRwcm9tcHQgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wczEvbWYvQ29yZS9zZXRwcm9tcHQvMS4wLmx1YSIsCmZ1bGxOYW1lID0gInNldHByb21wdC8xLjAiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gInNldHByb21wdCIsCndWID0gIjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BzMS9tZi9D;
+export _ModuleTable001_;
+_ModuleTable002_=b3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wczEvbWYvQ29yZSIsCn0K;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+__LMOD_STACK_PS1=aGVsbG8-IA==:dGVzdCBcdUBcaD4g;
+export __LMOD_STACK_PS1;

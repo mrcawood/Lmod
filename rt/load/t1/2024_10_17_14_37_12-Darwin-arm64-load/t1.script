@@ -1,0 +1,164 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+resultFn="/Users/mcawood/Lmod/Lmod/rt/load/t1/2024_10_17_14_37_12-Darwin-arm64-load/t1.result"; export resultFn
+testName="load"; export testName
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/load/load.tdesc"; export testdescriptFn
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/load/t1/2024_10_17_14_37_12-Darwin-arm64-load/t1.runtime"; export runtimeFn
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/load/t1/2024_10_17_14_37_12-Darwin-arm64-load/results.lua"; export cmdResultFn
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/load/t1/2024_10_17_14_37_12-Darwin-arm64-load/message.lua"; export messageFn
+tag="2024_10_17"; export tag
+testDir="/Users/mcawood/Lmod/Lmod/rt/load"; export testDir
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+outputDir="/Users/mcawood/Lmod/Lmod/rt/load/t1/2024_10_17_14_37_12-Darwin-arm64-load"; export outputDir
+TARGET=""; export TARGET
+idTag="t1"; export idTag
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     SED=sed
+     osType=`uname -s`
+     if [ ${osType:-} = "Darwin" ]; then
+       SED=gsed
+     fi
+
+     unsetMT
+     initStdEnvVars
+     MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/load/mf;  export MODULEPATH_ROOT
+
+     remove_generated_lmod_files mf
+
+     cp /Users/mcawood/Lmod/Lmod/init/lmodrc.lua .lmodrc.lua
+     mkdir -p mf/bad_symlink
+     ln -s 1.0.lua mf/bad_symlink/2.0.lua
+
+     runLmod --version                                      #  1
+     runLmod use -a $testDir/mf/Core $testDir/mf/Beta       #  2
+     runLmod use $testDir/mf/notDir  $outputDir/mf          #  3
+     runLmod load admin PrgEnv                              #  4
+     runLmod load gotoblas/1.30-beta                        #  5
+     runLmod rm   gotoblas/1.30-beta                        #  6
+     runLmod try-add gotoblas123 intel                      #  7
+     runLmod load gotoblas                                  #  8
+     runLmod load multi                                     #  9
+     runLmod unload multi                                   # 10
+     runLmod load boost                                     # 11
+     runLmod use -a $testDir/mf/Core2                       # 12
+     runLmod load _a                                        # 13
+     runLmod load __b                                       # 14
+     runLmod avail                                          # 15
+     runLmod -d avail                                       # 16
+     runLmod unload boost                                   # 17
+     runLmod load boost/1.33.0                              # 18
+     runLmod load boost/1.57.0                              # 19
+     runLmod load boost                                     # 20
+     runLmod load alex                                      # 21
+     runLmod load D                                         # 22
+     runLmod --latest load rtm_intel                        # 23
+     runLmod list                                           # 24
+     runLmod use    $testDir/mf/Share                       # 25
+     runLmod use -a $testDir/mf/Scratch                     # 26
+     runLmod -r avail A B                                   # 27
+     runLmod load  A B                                      # 28
+     runLmod list                                           # 29
+     runLmod load  DoesNotExist                             # 30
+     runLmod list                                           # 31
+     runLmod tablelist                                      # 32
+     runLmod avail                                          # 33
+     runLmod avail C                                        # 34
+     runLmod load C                                         # 35
+     runLmod list                                           # 36
+     runLmod load rtm_intel                                 # 37
+     runLmod load go                                        # 38
+     runLmod load bad_symlink                               # 39
+     runLmod load empty                                     # 40
+     runLmod load version_only                              # 41
+     runLmod load dflt                                      # 42
+     runLmod list                                           # 43
+     runLmod load noweb/2.10c.lua                           # 44
+     runLmod load   Try/1.0                                 # 45
+     runLmod load   Try/2.0                                 # 46
+     runLmod unload B/2.3.4                                 # 47
+     runLmod list                                           # 48
+
+
+     export LMOD_DISABLE_SAME_NAME_AUTOSWAP=yes
+     runLmod load moduleA/1.0                               # 49
+     runLmod load moduleB/1.0                               # 50
+     
+     runLmod purge                                          # 51
+     unsetMT
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/load/mf2/Core 
+     runLmod --show_hidden avail                            # 52
+     runLmod load .eb_builder/default                       # 53
+     runLmod load a/default                                 # 54
+     runLmod load b/default                                 # 55
+     runLmod list                                           # 56
+                                                               
+     runLmod purge                                          # 57
+     unsetMT
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/load/mf3
+     runLmod load A                                         # 58
+     runLmod load A/1.0                                     # 59
+     runLmod load B                                         # 60
+     runLmod load B/2.0                                     # 61
+     runLmod load tex                                       # 62
+     export LMOD_QUARANTINE_VARS=RTM_A:RTM_B:RTM_C             
+     export RTM_A="I like this variable the way it is"
+     export RTM_B="You can't change me"
+     export RTM_B="You are not the boss of me"
+     runLmod load rtmTest                                   # 63
+
+     export PATH=/Users/mcawood/Lmod/Lmod/rt/load:$PATH
+     runLmod load MakeSystemCall                            # 64
+     runLmod list                                           # 65
+
+     runLmod purge                                          # 66
+     unsetMT
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/load/mf4
+     env | sort >  start.env.xyzzy
+     runLmod load   compiler/intel                          # 67
+     runLmod unload compiler/intel                          # 68
+     env | sort > end.env.xyzzy
+     diff start.env.xyzzy end.env.xyzzy | $SED \
+          -e 's/^.*_ModuleTable.*//'           \
+          -e 's/^[0-9]\+[ac][0-9]\+.*//'       \
+          -e '/^ *$/d'                         \
+          > diff.env.xyzzy
+
+     runBase cat diff.env.xyzzy                             # 69
+
+
+     runLmod purge                                          # 70
+     unsetMT
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/load/mf5
+     runLmod load  multiline                                # 71
+
+     runLmod purge                                          # 72
+     unsetMT
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/load/mf6
+     runLmod load  longVersion                              # 73
+     runLmod load  setPrompt                                # 74
+     runLmod list                                           # 75
+     runLmod avail                                          # 76
+
+
+
+
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/load/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/load/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/load/t1/2024_10_17_14_37_12-Darwin-arm64-load/t1.result -t /Users/mcawood/Lmod/Lmod/rt/load/t1/2024_10_17_14_37_12-Darwin-arm64-load/t1.runtime results.csv
+   

@@ -1,0 +1,56 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load a
+===========================
+LOADEDMODULES=a/1.0;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core;
+export MODULEPATH;
+MY_VERSION=1.0;
+export MY_VERSION;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core/a/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core/a/1.0.lua",fullName="a/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load use
+===========================
+LOADEDMODULES=use/1.0:a/1.1;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C3:1\;/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C3:/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core;
+export MODULEPATH;
+MY_VERSION=1.1;
+export MY_VERSION;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core/use/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C3/a/1.1.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C3/a/1.1.lua",fullName="a/1.1",loadOrder=2,propT={},stackDepth=0,status="active",userName="a",wV="000000001.000000001.*zfinal",},use={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C3\")",},fn="/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core/use/1.0.lua",fullName="use/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="use",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C3","/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use /Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C2
+===========================
+LOADEDMODULES=use/1.0:a/1.2;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C2:1\;/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C3:1\;/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C2:/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C3:/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core;
+export MODULEPATH;
+MY_VERSION=1.2;
+export MY_VERSION;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core/use/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C2/a/1.2.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C2/a/1.2.lua",fullName="a/1.2",loadOrder=2,propT={},stackDepth=0,status="active",userName="a",wV="000000001.000000002.*zfinal",},use={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C3\")",},fn="/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core/use/1.0.lua",fullName="use/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="use",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C2","/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C3","/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C2:/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C3:/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C2/a/1.2.lua",fullName="a/1.2",loadOrder=2,propT={},stackDepth=0,status="active",userName="a",wV="000000001.000000002.*zfinal",},use={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C3\")",},fn="/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core/use/1.0.lua",fullName="use/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="use",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C2","/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C3","/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/Core",}';
+export _ModuleTable_;

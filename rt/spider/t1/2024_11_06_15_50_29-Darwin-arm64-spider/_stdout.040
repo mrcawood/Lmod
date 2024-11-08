@@ -1,0 +1,8 @@
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/UNKNOWN:1\;/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:1\;/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:1\;/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/spider/mf/UNKNOWN:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Beta:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Base:/Users/mcawood/Lmod/Lmod/rt/spider/mf/Core2;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvVU5LTk9XTiIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NwaWRlci9tZi9CZXRhIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zcGlkZXIvbWYvQmFzZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvc3BpZGVyL21mL0NvcmUyIiwKfSwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;

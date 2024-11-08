@@ -1,0 +1,89 @@
+-- -*- lua -*-
+-- created: Thu Oct 17 14:37:27 2024 --
+-- Lmod 8.7.43 2024-06-24 15:50 -06:00
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  conflictT = {
+    acme = {
+      {
+        action = "between",
+        ie = "<3.2",
+        is = "1.1>",
+        sType = "mt",
+        userName = "D",
+      },
+      {
+        action = "match",
+        ie = false,
+        is = false,
+        sType = "mt",
+        userName = "E",
+      },
+      {
+        action = "match",
+        ie = false,
+        is = false,
+        sType = "mt",
+        userName = "F/3.1.4",
+      },
+      {
+        action = "atmost",
+        ie = "<3.1.5",
+        is = false,
+        sType = "mt",
+        userName = "G",
+      },
+    },
+    base = {
+      {
+        action = "match",
+        ie = false,
+        is = false,
+        sType = "mt",
+        userName = "A",
+      },
+      {
+        action = "match",
+        ie = false,
+        is = false,
+        sType = "mt",
+        userName = "B",
+      },
+    },
+  },
+  depthT = {},
+  family = {},
+  mT = {
+    acme = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua",
+      fullName = "acme/1.0",
+      hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      loadOrder = 2,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "acme",
+      wV = "000000001.*zfinal",
+    },
+    base = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/base/1.0.lua",
+      fullName = "base/1.0",
+      hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      loadOrder = 1,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "base",
+      wV = "000000001.*zfinal",
+    },
+  },
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",
+  },
+  mpathRefCountT = {
+    ["/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core"] = 1,
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",
+}

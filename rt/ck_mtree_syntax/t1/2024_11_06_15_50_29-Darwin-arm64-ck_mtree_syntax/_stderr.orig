@@ -1,0 +1,30 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/check_module_tree_syntax.in.lua /Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/mf
+===========================
+
+The following directories have more than one marked default file:
+-----------------------------------------------------------------
+  /Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/mf/A
+
+
+The following modulefile(s) have syntax errors:
+-----------------------------------------------
+  ModuleName: A/1.0, Fn: /Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/mf/A/1.0.lua Error: [string "setenv("MY_VERSION", myModuleVersion())..."]:2: unexpected symbol near '#' 
+  ModuleName: A/2.0, Fn: /Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/mf/A/2.0 Error: /Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/mf/A/2.0: (A/2.0): invalid command name "nonExistantCmd"
+  ModuleName: StdEnv, Fn: /Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/mf/StdEnv.lua Error: command: load, one or more arguments are not strings. 
+  ModuleName: hashrf/6.0.1, Fn: /Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/mf/hashrf/6.0.1.lua Error: [string "local name = "hashrf"..."]:16: attempt to call a nil value (global 'WTF') 
+  ModuleName: papi/4.4.0, Fn: /Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/mf/papi/4.4.0.lua Error: command: help, one or more arguments are not strings. 
+
+===========================
+step 3
+runSpiderCmd -o spiderT /Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/mf
+===========================

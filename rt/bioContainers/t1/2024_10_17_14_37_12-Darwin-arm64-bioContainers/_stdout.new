@@ -1,0 +1,44 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/bioContainers/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/bioContainers/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/bioContainers/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/bioContainers/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load bioContainers
+===========================
+BIOCONTAINER_DIR=/Users/mcawood/Lmod/Lmod/rt/bioContainers/bcd;
+export BIOCONTAINER_DIR;
+LMOD_CACHED_LOADS=yes;
+export LMOD_CACHED_LOADS;
+__LMOD_REF_COUNT_LMOD_RC=/Users/mcawood/Lmod/Lmod/rt/bioContainers/bcd/lmod/lmodrc.lua:1\;/Users/mcawood/Lmod/Lmod/rt/bioContainers/lmodrc.lua:1;
+export __LMOD_REF_COUNT_LMOD_RC;
+LMOD_RC=/Users/mcawood/Lmod/Lmod/rt/bioContainers/bcd/lmod/lmodrc.lua:/Users/mcawood/Lmod/Lmod/rt/bioContainers/lmodrc.lua;
+export LMOD_RC;
+LOADEDMODULES=bioContainers/0.1;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/bioContainers/bcd/mf:1\;/Users/mcawood/Lmod/Lmod/rt/bioContainers/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/bioContainers/bcd/mf:/Users/mcawood/Lmod/Lmod/rt/bioContainers/mf/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/bioContainers/mf/Core/bioContainers/0.1.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={bioContainers={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/bioContainers/bcd/mf\")",},fn="/Users/mcawood/Lmod/Lmod/rt/bioContainers/mf/Core/bioContainers/0.1.lua",fullName="bioContainers/0.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="bioContainers",wV="000000000.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/bioContainers/bcd/mf","/Users/mcawood/Lmod/Lmod/rt/bioContainers/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/bioContainers/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T avail
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/bioContainers/bcd/mf:/Users/mcawood/Lmod/Lmod/rt/bioContainers/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={bioContainers={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/bioContainers/bcd/mf\")",},fn="/Users/mcawood/Lmod/Lmod/rt/bioContainers/mf/Core/bioContainers/0.1.lua",fullName="bioContainers/0.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="bioContainers",wV="000000000.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/bioContainers/bcd/mf","/Users/mcawood/Lmod/Lmod/rt/bioContainers/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/bioContainers/mf/Core",}';
+export _ModuleTable_;

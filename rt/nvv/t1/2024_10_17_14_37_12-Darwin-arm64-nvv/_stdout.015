@@ -1,0 +1,4 @@
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load HPCBIOS/2015q2
+===========================

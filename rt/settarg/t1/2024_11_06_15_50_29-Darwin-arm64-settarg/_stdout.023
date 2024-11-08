@@ -1,0 +1,4 @@
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/settarg/settarg_cmd.in.lua -s bash --generic_arch f_f b:b
+===========================

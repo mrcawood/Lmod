@@ -1,0 +1,8 @@
+./t1.script: line 31: /Users/mcawood/Lmod/Lmod/rt/spades/t1/2024_10_17_14_37_12-Darwin-arm64-spades/.cache/lmod/spiderT.lua: No such file or directory
+./t1.script: line 32: /Users/mcawood/Lmod/Lmod/rt/spades/t1/2024_10_17_14_37_12-Darwin-arm64-spades/.cache/lmod/dbT.lua: No such file or directory
+sed -e 's/Lua: Version.*/Lua: Version/g' -e 's/suite: Version.*//g' < /Users/mcawood/Lmod/Lmod/rt/spades/out.txt > _out.left
+sed -e 's/Lua: Version.*/Lua: Version/g' -e 's/suite: Version.*//g' < out.txt > _out.right
+diff -c  _out.left _out.right > diff.log 2>&1
+sed -e 's/Lua: Version.*/Lua: Version/g' -e 's/suite: Version.*//g' < /Users/mcawood/Lmod/Lmod/rt/spades/err.txt > _err.left
+sed -e 's/Lua: Version.*/Lua: Version/g' -e 's/suite: Version.*//g' < err.txt > _err.right
+diff -c  _err.left _err.right > diff.log 2>&1

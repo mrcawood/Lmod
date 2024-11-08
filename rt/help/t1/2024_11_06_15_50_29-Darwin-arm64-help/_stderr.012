@@ -1,0 +1,18 @@
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+Changes from Default Configuration
+----------------------------------
+
+Name                         Where Set  Default      Value
+----                         ---------  -------      -----
+LFS_VERSION                  D          1.6.3        1.8.0
+LMOD_PACKAGE_PATH            D          nil          <empty>
+LMOD_SYSTEM_DEFAULT_MODULES  D          __unknown__  <empty>
+LMOD_USING_FAST_TCL_INTERP   Other      yes          no
+
+
+Where Set -> D: default, E: environment, C: configuration
+             lmod_cfg: lmod_config.lua SitePkg: SitePackage StdPkg: StandardPackage
+             Other: Set somewhere outside of normal locations

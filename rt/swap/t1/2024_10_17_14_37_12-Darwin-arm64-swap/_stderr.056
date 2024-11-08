@@ -1,0 +1,13 @@
+
+Lmod is automatically replacing "intel/intel" with "gcc/4.2.3".
+
+
+Lmod is automatically replacing "mpich2/1.0.7" with "openmpi/1.2.6".
+
+
+Inactive Modules:
+  1) gotoblas/1.31     2) petsc     3) phdf5
+
+The following have been reloaded with a version change:
+  1) parmetis/4.0.1 => parmetis/3.1
+

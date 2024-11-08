@@ -1,0 +1,9 @@
+
+Currently Loaded Modules:
+  1) intel/13.1.0   2) mpich/3.0.4   3) boost/1.53.0 (m)   4) pmetis/4.0.3
+
+  Where:
+   m:  built for host and native MIC
+
+ 
+

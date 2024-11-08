@@ -1,0 +1,11 @@
+
+Currently Loaded Modules:
+  1) admin/admin-1.0   4) intel/intel   7) openmpi/1.2.6
+  2) unix/unix         5) noweb/2.10c   8) parmetis/3.1  (m)
+  3) local/local       6) PrgEnv        9) foo/1.0
+
+  Where:
+   m:  built for host and native MIC
+
+ 
+

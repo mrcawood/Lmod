@@ -1,0 +1,8 @@
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/set_alias/mf/alias/1.0
+ with command: set_alias, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    alias/1.0        /Users/mcawood/Lmod/Lmod/rt/set_alias/mf/alias/1.0
+

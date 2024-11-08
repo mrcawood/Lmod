@@ -1,0 +1,460 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load std
+===========================
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) std/1.0 (m,S)
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+   m:  built for host and native MIC
+
+ 
+
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload std
+===========================
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) std/1.0
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) std/1.0 (m,S)
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+   m:  built for host and native MIC
+
+ 
+
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load gcc boost
+===========================
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) std/1.0 (m,S)   2) gcc/4.6   3) boost/1.53.0 (S,T)
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+   T:  Testing
+   m:  built for host and native MIC
+
+ 
+
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) std/1.0
+
+The following sticky modules could not be reloaded:
+
+  1) boost
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --force purge
+===========================
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load std
+===========================
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing rm std
+===========================
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) std/1.0
+===========================
+step 13
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) std/1.0 (m,S)
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+   m:  built for host and native MIC
+
+ 
+
+===========================
+step 14
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge foo
+===========================
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) std/1.0
+===========================
+step 15
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) std/1.0 (m,S)
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+   m:  built for host and native MIC
+
+ 
+
+===========================
+step 16
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --force rm std
+===========================
+===========================
+step 17
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 18
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load StdEnv
+===========================
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/sticky/mf/Core/StdEnv.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    StdEnv           /Users/mcawood/Lmod/Lmod/rt/sticky/mf/Core/StdEnv.lua
+
+===========================
+step 19
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 20
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load StdEnv
+===========================
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/sticky/mf/Core/StdEnv.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    StdEnv           /Users/mcawood/Lmod/Lmod/rt/sticky/mf/Core/StdEnv.lua
+
+===========================
+step 21
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 22
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload a b
+===========================
+
+Note: the module "a" cannot be unloaded because it was not loaded.
+
+
+Note: the module "b" cannot be unloaded because it was not loaded.
+
+===========================
+step 23
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 24
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+===========================
+step 25
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 26
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing save
+===========================
+Lmod Warning: You are trying to save an empty collection of modules in "default". If this is what you want then enter:
+  $ module --force save default
+
+
+
+===========================
+step 27
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --force purge
+===========================
+===========================
+step 28
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing restore
+===========================
+The system default contains no modules
+  (env var: LMOD_SYSTEM_DEFAULT_MODULES is empty)
+  No changes in loaded modules
+
+===========================
+step 29
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 30
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing restore
+===========================
+The system default contains no modules
+  (env var: LMOD_SYSTEM_DEFAULT_MODULES is empty)
+  No changes in loaded modules
+
+===========================
+step 31
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 32
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --force purge
+===========================
+===========================
+step 33
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load M1
+===========================
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/sticky/mf/Core/M1.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    M1               /Users/mcawood/Lmod/Lmod/rt/sticky/mf/Core/M1.lua
+
+===========================
+step 34
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 35
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing save
+===========================
+Lmod Warning: You are trying to save an empty collection of modules in "default". If this is what you want then enter:
+  $ module --force save default
+
+
+
+===========================
+step 36
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing restore
+===========================
+The system default contains no modules
+  (env var: LMOD_SYSTEM_DEFAULT_MODULES is empty)
+  No changes in loaded modules
+
+===========================
+step 37
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 38
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --force purge
+===========================
+===========================
+step 39
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load c d M1
+===========================
+Lmod has detected the following error: These module(s) or extension(s) exist but cannot be loaded as requested: "c"
+   Try: "module spider c" to see how to load the module(s).
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    M1               /Users/mcawood/Lmod/Lmod/rt/sticky/mf/Core/M1.lua
+
+===========================
+step 40
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 41
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing save
+===========================
+Lmod Warning: You are trying to save an empty collection of modules in "default". If this is what you want then enter:
+  $ module --force save default
+
+
+
+===========================
+step 42
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing restore
+===========================
+The system default contains no modules
+  (env var: LMOD_SYSTEM_DEFAULT_MODULES is empty)
+  No changes in loaded modules
+
+===========================
+step 43
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 44
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --force purge
+===========================
+===========================
+step 45
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing reset
+===========================
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/sticky/mf/Core/StdEnv.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    StdEnv           /Users/mcawood/Lmod/Lmod/rt/sticky/mf/Core/StdEnv.lua
+
+===========================
+step 46
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing reset
+===========================
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/sticky/mf/Core/StdEnv.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    StdEnv           /Users/mcawood/Lmod/Lmod/rt/sticky/mf/Core/StdEnv.lua
+
+===========================
+step 47
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load old
+===========================
+===========================
+step 48
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing swap old new
+===========================
+===========================
+step 49
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) new (S)
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+
+ 
+
+===========================
+step 50
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load old
+===========================
+
+Lmod is automatically replacing "new" with "old".
+
+===========================
+step 51
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) old (S)
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+
+ 
+
+===========================
+step 52
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- /Users/mcawood/Lmod/Lmod/rt/sticky/mf/Core ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   M1     (O)    a/1.0    gcc/4.6    old     (L)
+   StdEnv (S)    b/1.1    new        std/1.0
+
+  Where:
+   L:  Module is loaded
+   O:  Obsolete
+   S:  Module is Sticky, requires --force to unload or purge
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the default modules.
+"module overview" or "ml ov" to display the number of modules for each name.
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
+
+
+===========================
+step 53
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load top second
+===========================
+===========================
+step 54
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) top/1.0 (S)   2) second/1.0 (S)
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+
+ 
+
+===========================
+step 55
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) top/1.0   2) second/1.0
+===========================
+step 56
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) top/1.0 (S)   2) second/1.0 (S)
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+
+ 
+

@@ -1,0 +1,4 @@
+===========================
+step 3
+buildSh2MF --to TCL /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/tstScript.sh
+===========================

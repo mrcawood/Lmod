@@ -1,0 +1,46 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+resultFn="/Users/mcawood/Lmod/Lmod/rt/slash/t1/2024_10_17_14_37_12-Darwin-arm64-slash/t1.result"; export resultFn
+testName="slash"; export testName
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/slash/slash.tdesc"; export testdescriptFn
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/slash/t1/2024_10_17_14_37_12-Darwin-arm64-slash/t1.runtime"; export runtimeFn
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/slash/t1/2024_10_17_14_37_12-Darwin-arm64-slash/results.lua"; export cmdResultFn
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/slash/t1/2024_10_17_14_37_12-Darwin-arm64-slash/message.lua"; export messageFn
+tag="2024_10_17"; export tag
+testDir="/Users/mcawood/Lmod/Lmod/rt/slash"; export testDir
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+outputDir="/Users/mcawood/Lmod/Lmod/rt/slash/t1/2024_10_17_14_37_12-Darwin-arm64-slash"; export outputDir
+TARGET=""; export TARGET
+idTag="t1"; export idTag
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/slash/mf///Core/; export MODULEPATH
+     MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/slash/mf;    export MODULEPATH_ROOT
+
+     remove_generated_lmod_files 
+
+     runLmod --version                 # 1
+     runLmod load admin                # 2
+     runLmod use /Users/mcawood/Lmod/Lmod/rt/slash/mf/Core    # 3
+
+     HOME=$ORIG_HOME
+
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results -bash _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/slash/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/slash/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/slash/t1/2024_10_17_14_37_12-Darwin-arm64-slash/t1.result -t /Users/mcawood/Lmod/Lmod/rt/slash/t1/2024_10_17_14_37_12-Darwin-arm64-slash/t1.runtime results.csv
+   

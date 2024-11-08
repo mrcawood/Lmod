@@ -1,0 +1,21 @@
+5.0rc2: 000000005.*c.000000002.*zfinal 
+5.0: 000000005.*zfinal 
+5.1: 000000005.000000001.*zfinal 
+5.1.0: 000000005.000000001.*zfinal 
+5.1.1: 000000005.000000001.000000001.*zfinal 
+default: *default.*zfinal 
+"default" < "5.1.1" is true 
+(1) Passed Module Test
+(2) Passed Module Test
+Lmod reports a LMOD_VERSION 
+Lmod reports a LMOD_VERSION_MAJOR 
+Lmod reports a LMOD_VERSION_MINOR 
+Lmod reports a LMOD_VERSION_SUBMINOR 
+Lmod reports a ModuleTool 
+Lmod reports a ModuleToolVersion 
+-%%- LMOD_VERSION : 8.7.43 
+-%%- LMOD_VERSION_MAJOR : 8 
+-%%- LMOD_VERSION_MINOR : 7 
+-%%- LMOD_VERSION_SUBMINOR : 43 
+-%%- ModuleTool : Lmod 
+-%%- ModuleToolVersion : 8.7.43 

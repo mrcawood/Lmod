@@ -1,0 +1,219 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+buildSh2MF /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/tstScript.sh
+===========================
+setenv("MY_NAME","tstScript.sh")
+prepend_path("PATH","/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/bin")
+append_path("PATH","/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/sbin")
+setenv("TST_SCRIPT","1")
+set_alias("fooAlias","foobin -q -l")
+set_shell_function("banner"," \
+    local str=\"$1\";\
+    local RED='\27[1;31m';\
+    local NONE='\27[0m';\
+    echo \"${RED}${str}${NONE}\"\
+","")
+set_shell_function("fooFunc"," \
+    echo \"arg1: $1\"\
+","")
+set_shell_function("junk"," \
+    if [ -n \"${ZSH_VERSION:-}\" ]; then\
+        \\echo \"junk\";\
+    fi\
+","")
+set_shell_function("my_help"," \
+    echo \"do not forget \\\"foo\\\"\"\
+","")
+set_shell_function("save_args"," \
+    for arg in \"$@\";\
+    do\
+        printf \"%s\\n\" \"$arg\" | sed -e \"s/'/'\\\\\\\\''/g\" -e \"1s/^/'/\" -e \"\\$s/\\$/' \\\\\\\\/\";\
+    done;\
+    echo \" \"\
+","")
+complete("bash","XyZ123","-F _xyz123")
+===========================
+step 3
+buildSh2MF --to TCL /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/tstScript.sh
+===========================
+#%Module
+setenv MY_NAME {tstScript.sh}
+prepend-path PATH {/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/bin}
+append-path PATH {/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/sbin}
+setenv TST_SCRIPT {1}
+set-alias fooAlias {foobin -q -l}
+set-function banner { 
+    local str="$1";
+    local RED='[1;31m';
+    local NONE='[0m';
+    echo "${RED}${str}${NONE}"
+}
+set-function fooFunc { 
+    echo "arg1: $1"
+}
+set-function junk { 
+    if [ -n "${ZSH_VERSION:-}" ]; then
+        \echo "junk";
+    fi
+}
+set-function my_help { 
+    echo "do not forget \"foo\""
+}
+set-function save_args { 
+    for arg in "$@";
+    do
+        printf "%s\n" "$arg" | sed -e "s/'/'\\\\''/g" -e "1s/^/'/" -e "\$s/\$/' \\\\/";
+    done;
+    echo " "
+}
+complete bash XyZ123 {-F _xyz123}
+===========================
+step 4
+buildSh2MF /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/path_both_ends.sh
+===========================
+prepend_path("PATH","/scratch1/projects/compilers/intel20u0/debugger_2020/gdb/intel64/bin")
+prepend_path("PATH","/scratch1/projects/compilers/intel20u0/compilers_and_libraries_2020.0.166/linux/mpi/intel64/bin")
+prepend_path("PATH","/scratch1/projects/compilers/intel20u0/compilers_and_libraries_2020.0.166/linux/mpi/intel64/libfabric/bin")
+prepend_path("PATH","/scratch1/projects/compilers/intel20u0/compilers_and_libraries_2020.0.166/linux/bin")
+prepend_path("PATH","/scratch1/projects/compilers/intel20u0/compilers_and_libraries_2020.0.166/linux/bin/intel64")
+prepend_path("PATH","/scratch1/projects/compilers/intel20u0/parallel_studio_xe_2020.0.088/bin/intel64")
+prepend_path("PATH","/scratch1/projects/compilers/intel20u0/itac/2020.0.015/intel64/bin")
+prepend_path("PATH","/scratch1/projects/compilers/intel20u0/itac/2020.0.015/intel64/bin")
+prepend_path("PATH","/scratch1/projects/compilers/intel20u0/parallel_studio_xe_2020/bin64")
+prepend_path("PATH","/scratch1/projects/compilers/intel20u0/parallel_studio_xe_2020/bin64")
+prepend_path("PATH","/scratch1/projects/compilers/intel20u0/parallel_studio_xe_2020/bin64")
+prepend_path("PATH","/scratch1/projects/compilers/intel20u0/intelpython3/condabin")
+prepend_path("PATH","/scratch1/projects/compilers/intel20u0/intelpython3/bin")
+append_path("PATH","/scratch1/projects/compilers/intel20u0/parallel_studio_xe_2020.0.088/bin")
+===========================
+step 5
+buildSh2MF --from csh /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/cshScript.csh
+===========================
+setenv("FOO_BAR","1")
+setenv("TST_SCRIPT","tst_script")
+set_alias("fB","ls -aFC")
+set_alias("fooBar","ls -aFC")
+===========================
+step 6
+buildSh2MF /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/broken.sh
+===========================
+===========================
+step 7
+buildSh2MF /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/unalias.sh
+===========================
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show wrapperSh/1.0
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zaF90b19tb2R1bGVmaWxlL21mIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zaF90b19tb2R1bGVmaWxlL21mIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load wrapperSh/1.0
+===========================
+
+false
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show wrapperSh/1.0
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zaF90b19tb2R1bGVmaWxlL21mIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zaF90b19tb2R1bGVmaWxlL21mIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing refresh
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zaF90b19tb2R1bGVmaWxlL21mIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zaF90b19tb2R1bGVmaWxlL21mIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zaF90b19tb2R1bGVmaWxlL21mIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zaF90b19tb2R1bGVmaWxlL21mIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 13
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --mt
+===========================
+===========================
+step 14
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload wrapperSh/1.0
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zaF90b19tb2R1bGVmaWxlL21mIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zaF90b19tb2R1bGVmaWxlL21mIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 15
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load brokenSh/1.0
+===========================
+
+false
+===========================
+step 16
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load wrapperSh/1.0
+===========================
+
+false
+===========================
+step 17
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing save
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zaF90b19tb2R1bGVmaWxlL21mIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zaF90b19tb2R1bGVmaWxlL21mIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 18
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing restore
+===========================
+
+false
+===========================
+step 19
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --mt
+===========================
+===========================
+step 20
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load A
+===========================
+
+false
+===========================
+step 21
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/t1/2024_10_17_14_37_12-Darwin-arm64-sh_to_modulefile/mf:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/t1/2024_10_17_14_37_12-Darwin-arm64-sh_to_modulefile/mf;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9zaF90b19tb2R1bGVmaWxlL3QxLzIwMjRfMTBfMTdfMTRfMzdfMTItRGFyd2luLWFybTY0LXNoX3RvX21vZHVsZWZpbGUvbWYiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3NoX3RvX21vZHVsZWZpbGUvdDEvMjAyNF8xMF8xN18xNF8zN18xMi1EYXJ3aW4tYXJtNjQtc2hfdG9fbW9kdWxlZmlsZS9tZiIsCn0K;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;

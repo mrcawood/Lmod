@@ -1,0 +1,3 @@
+  Lmod version: 8.7.43 2024-06-24 15:50 -06:00
+running: module --regression_testing -T unload Rpkgs
+  (1)(0)Unloading: Rpkgs (status: active) (fn: /Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core/Rpkgs/3.4.0.lua)

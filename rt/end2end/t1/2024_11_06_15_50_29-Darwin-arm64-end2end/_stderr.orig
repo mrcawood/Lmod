@@ -1,0 +1,66 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod --version
+===========================
+/Users/mcawood/Lmod/Lmod/rt/common_funcs.sh: line 135: /Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod: No such file or directory
+===========================
+step 3
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod load admin
+===========================
+/Users/mcawood/Lmod/Lmod/rt/common_funcs.sh: line 135: /Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod: No such file or directory
+===========================
+step 4
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod load amber
+===========================
+/Users/mcawood/Lmod/Lmod/rt/common_funcs.sh: line 135: /Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod: No such file or directory
+===========================
+step 5
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod load bad
+===========================
+/Users/mcawood/Lmod/Lmod/rt/common_funcs.sh: line 135: /Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod: No such file or directory
+===========================
+step 6
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod load myinfo
+===========================
+/Users/mcawood/Lmod/Lmod/rt/common_funcs.sh: line 135: /Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod: No such file or directory
+===========================
+step 7
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod list
+===========================
+/Users/mcawood/Lmod/Lmod/rt/common_funcs.sh: line 135: /Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod: No such file or directory
+===========================
+step 8
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod avail
+===========================
+/Users/mcawood/Lmod/Lmod/rt/common_funcs.sh: line 135: /Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod: No such file or directory
+===========================
+step 9
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod load b
+===========================
+/Users/mcawood/Lmod/Lmod/rt/common_funcs.sh: line 135: /Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod: No such file or directory
+===========================
+step 10
+echo TEST: 0
+===========================
+===========================
+step 11
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod unload b
+===========================
+/Users/mcawood/Lmod/Lmod/rt/common_funcs.sh: line 135: /Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod: No such file or directory
+===========================
+step 12
+echo TEST: 0
+===========================
+===========================
+step 13
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod avail
+===========================
+/Users/mcawood/Lmod/Lmod/rt/common_funcs.sh: line 135: /Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod: No such file or directory

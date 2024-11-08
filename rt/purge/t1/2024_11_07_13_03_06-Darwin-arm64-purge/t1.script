@@ -1,0 +1,67 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_07"; export tag
+idTag="t1"; export idTag
+TARGET=""; export TARGET
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/purge/t1/2024_11_07_13_03_06-Darwin-arm64-purge/t1.runtime"; export runtimeFn
+resultFn="/Users/mcawood/Lmod/Lmod/rt/purge/t1/2024_11_07_13_03_06-Darwin-arm64-purge/t1.result"; export resultFn
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/purge"; export testDir
+testName="purge"; export testName
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/purge/t1/2024_11_07_13_03_06-Darwin-arm64-purge/message.lua"; export messageFn
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/purge/purge.tdesc"; export testdescriptFn
+outputDir="/Users/mcawood/Lmod/Lmod/rt/purge/t1/2024_11_07_13_03_06-Darwin-arm64-purge"; export outputDir
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/purge/t1/2024_11_07_13_03_06-Darwin-arm64-purge/results.lua"; export cmdResultFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     LUA=`findcmd lua`
+     ORIGINAL_PATH=$PATH
+     MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/purge/mf;     export MODULEPATH_ROOT
+     MODULEPATH=$MODULEPATH_ROOT/Core;  export MODULEPATH
+
+     remove_generated_lmod_files
+
+     cp /Users/mcawood/Lmod/Lmod/init/lmodrc.lua .lmodrc.lua
+
+     runLmod --version                           # 1
+     runLmod load PrgEnv openmpi                 # 2
+     runLmod list                                # 3
+     runLmod unload PrgEnv openmpi               # 4
+     runLmod list                                # 5
+     runLmod load admin PrgEnv openmpi parmetis  # 6
+     runLmod list                                # 7
+     runLmod purge                               # 8
+     runLmod list                                # 9
+     runLmod load PrgEnv openmpi                 #10
+     runLmod show test                           #11
+     runLmod load test                           #12
+     runLmod list                                #13
+     runLmod load PrgEnv openmpi                 #14
+     runLmod show tclpurge                       #15
+     runLmod load tclpurge                       #16
+     runLmod list                                #17
+
+     
+
+     HOME=$ORIG_HOME
+     PATH=$ORIGINAL_PATH
+
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/purge/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/purge/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/purge/t1/2024_11_07_13_03_06-Darwin-arm64-purge/t1.result -t /Users/mcawood/Lmod/Lmod/rt/purge/t1/2024_11_07_13_03_06-Darwin-arm64-purge/t1.runtime results.csv
+   

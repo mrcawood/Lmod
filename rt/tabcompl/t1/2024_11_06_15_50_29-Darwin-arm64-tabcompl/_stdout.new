@@ -1,0 +1,24 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -t avail
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/base:1\;/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/bio:1\;/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/compiler:1\;/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/data:1\;/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/debugger:1\;/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/devel:1\;/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/lang:1\;/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/lib:1\;/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/math:1\;/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/mpi:1\;/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/numlib:1\;/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/perf:1\;/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/system:1\;/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/toolchain:1\;/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/tools:1\;/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/vis:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/base:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/bio:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/compiler:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/data:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/debugger:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/devel:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/lang:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/lib:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/math:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/mpi:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/numlib:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/perf:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/system:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/toolchain:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/tools:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/vis;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/base","/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/bio","/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/compiler","/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/data","/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/debugger","/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/devel","/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/lang","/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/lib","/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/math","/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/mpi","/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/numlib","/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/perf","/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/system","/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/toolchain","/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/tools","/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/vis",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/base:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/bio:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/compiler:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/data:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/debugger:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/devel:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/lang:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/lib:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/math:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/mpi:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/numlib:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/perf:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/system:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/toolchain:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/tools:/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf/vis",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --ignore_cache load mupdf
+===========================
+false
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load mupdf
+===========================
+false

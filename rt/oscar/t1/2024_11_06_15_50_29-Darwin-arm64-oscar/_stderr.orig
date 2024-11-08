@@ -1,0 +1,60 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load oscar
+===========================
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core/oscar.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    oscar            /Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core/oscar.lua
+
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show oscar
+===========================
+Lmod Warning: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core/oscar.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    oscar            /Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core/oscar.lua
+
+Lmod Warning: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core/oscar.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    oscar            /Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core/oscar.lua
+
+Lmod Warning: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core/oscar.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    oscar            /Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core/oscar.lua
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core/oscar.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+help([[	This module sets up the OSCAR modules subsystem.]])
+whatis("Description: Sets up the OSCAR modules subsystem.")
+prepend_path{"MODULEPATH","/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar",n="2",kind="list"}
+
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded

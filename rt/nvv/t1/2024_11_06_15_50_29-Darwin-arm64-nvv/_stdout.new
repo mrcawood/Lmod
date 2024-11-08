@@ -1,0 +1,116 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv/mf:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv/mf;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/nvv/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/nvv/mf",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv/mf;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/nvv/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/nvv/mf",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load intel/17
+===========================
+LOADEDMODULES=intel/16/16.0.4;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv/el1:1\;/Users/mcawood/Lmod/Lmod/rt/nvv/el2:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv/el1:/Users/mcawood/Lmod/Lmod/rt/nvv/el2;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/nvv/el1/intel/16/16.0.4;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={intel={fn="/Users/mcawood/Lmod/Lmod/rt/nvv/el1/intel/16/16.0.4",fullName="intel/16/16.0.4",loadOrder=1,propT={},stackDepth=0,status="active",userName="intel/16/16.0.4",wV="000000016/000000016.000000000.000000004.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/nvv/el1","/Users/mcawood/Lmod/Lmod/rt/nvv/el2",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/nvv/el1:/Users/mcawood/Lmod/Lmod/rt/nvv/el2",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv/el1:/Users/mcawood/Lmod/Lmod/rt/nvv/el2;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={intel={fn="/Users/mcawood/Lmod/Lmod/rt/nvv/el1/intel/16/16.0.4",fullName="intel/16/16.0.4",loadOrder=1,propT={},stackDepth=0,status="active",userName="intel/16/16.0.4",wV="000000016/000000016.000000000.000000004.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/nvv/el1","/Users/mcawood/Lmod/Lmod/rt/nvv/el2",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/nvv/el1:/Users/mcawood/Lmod/Lmod/rt/nvv/el2",}';
+export _ModuleTable_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv/el1:/Users/mcawood/Lmod/Lmod/rt/nvv/el2;
+export MODULEPATH;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/nvv/el1","/Users/mcawood/Lmod/Lmod/rt/nvv/el2",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/nvv/el1:/Users/mcawood/Lmod/Lmod/rt/nvv/el2",}';
+export _ModuleTable_;
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv/bc/mf:1\;/Users/mcawood/Lmod/Lmod/rt/nvv/bc/cm:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv/bc/mf:/Users/mcawood/Lmod/Lmod/rt/nvv/bc/cm;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/nvv/bc/mf","/Users/mcawood/Lmod/Lmod/rt/nvv/bc/cm",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/nvv/bc/mf:/Users/mcawood/Lmod/Lmod/rt/nvv/bc/cm",}';
+export _ModuleTable_;
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load HPCBIOS/2015q2
+===========================
+LOADEDMODULES=HPCBIOS/2015q2;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv/bc/mf:/Users/mcawood/Lmod/Lmod/rt/nvv/bc/cm;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/nvv/bc/mf/HPCBIOS/2015q2;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={HPCBIOS={fn="/Users/mcawood/Lmod/Lmod/rt/nvv/bc/mf/HPCBIOS/2015q2",fullName="HPCBIOS/2015q2",loadOrder=1,propT={},stackDepth=0,status="active",userName="HPCBIOS/2015q2",wV="000002015.*q.000000002.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/nvv/bc/mf","/Users/mcawood/Lmod/Lmod/rt/nvv/bc/cm",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/nvv/bc/mf:/Users/mcawood/Lmod/Lmod/rt/nvv/bc/cm",}';
+export _ModuleTable_;
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv/bc/mf:/Users/mcawood/Lmod/Lmod/rt/nvv/bc/cm;
+export MODULEPATH;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/nvv/bc/mf","/Users/mcawood/Lmod/Lmod/rt/nvv/bc/cm",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/nvv/bc/mf:/Users/mcawood/Lmod/Lmod/rt/nvv/bc/cm",}';
+export _ModuleTable_;
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv/mf2:1\;/Users/mcawood/Lmod/Lmod/rt/nvv/mf3:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv/mf2:/Users/mcawood/Lmod/Lmod/rt/nvv/mf3;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/nvv/mf2","/Users/mcawood/Lmod/Lmod/rt/nvv/mf3",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/nvv/mf2:/Users/mcawood/Lmod/Lmod/rt/nvv/mf3",}';
+export _ModuleTable_;
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load aaa
+===========================
+LOADEDMODULES=aaa/1.1;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv/mf2:/Users/mcawood/Lmod/Lmod/rt/nvv/mf3;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/nvv/mf2/aaa/1.1.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={aaa={fn="/Users/mcawood/Lmod/Lmod/rt/nvv/mf2/aaa/1.1.lua",fullName="aaa/1.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="aaa",wV="000000001.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/nvv/mf2","/Users/mcawood/Lmod/Lmod/rt/nvv/mf3",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/nvv/mf2:/Users/mcawood/Lmod/Lmod/rt/nvv/mf3",}';
+export _ModuleTable_;
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv/mf2:/Users/mcawood/Lmod/Lmod/rt/nvv/mf3;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={aaa={fn="/Users/mcawood/Lmod/Lmod/rt/nvv/mf2/aaa/1.1.lua",fullName="aaa/1.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="aaa",wV="000000001.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/nvv/mf2","/Users/mcawood/Lmod/Lmod/rt/nvv/mf3",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/nvv/mf2:/Users/mcawood/Lmod/Lmod/rt/nvv/mf3",}';
+export _ModuleTable_;

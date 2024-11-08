@@ -1,0 +1,47 @@
+-- -*- lua -*-
+-- created: Thu Oct 17 14:39:04 2024 --
+-- Lmod 8.7.43 2024-06-24 15:50 -06:00
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {
+    compiler = "gcc",
+  },
+  mT = {
+    gcc = {
+      actionA = {
+        "prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/uitSitePkg/mf/Compiler/gcc/4.7.2\")",
+      },
+      fn = "/Users/mcawood/Lmod/Lmod/rt/uitSitePkg/mf/Core/gcc/4.7.2.lua",
+      fullName = "gcc/4.7.2",
+      hash = "136cc6ab63ffa6e5a49f90811dcb0be021d9b8b0",
+      loadOrder = 1,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "gcc",
+      wV = "000000004.000000007.000000002.*zfinal",
+    },
+    python = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/uitSitePkg/mf/Core/python/2.7.3.lua",
+      fullName = "python/2.7.3",
+      hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      loadOrder = 2,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "python",
+      wV = "^00000002.000000007.000000003.*zfinal",
+    },
+  },
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/uitSitePkg/mf/Compiler/gcc/4.7.2", "/Users/mcawood/Lmod/Lmod/rt/uitSitePkg/mf/Core",
+  },
+  mpathRefCountT = {
+    ["/Users/mcawood/Lmod/Lmod/rt/uitSitePkg/mf/Compiler/gcc/4.7.2"] = 1,
+    ["/Users/mcawood/Lmod/Lmod/rt/uitSitePkg/mf/Core"] = 1,
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/uitSitePkg/mf/Core",
+}

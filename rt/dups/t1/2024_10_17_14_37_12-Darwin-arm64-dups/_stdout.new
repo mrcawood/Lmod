@@ -1,0 +1,179 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load a b c
+===========================
+LOADEDMODULES=a/1.0:b/1.0:c/1.0;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dups/mf:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dups/mf;
+export MODULEPATH;
+RTM_PATH=A:B:C:A:B:A;
+export RTM_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/dups/mf/a/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/dups/mf/b/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/dups/mf/c/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/a/1.0.lua",fullName="a/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="000000001.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/b/1.0.lua",fullName="b/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="b",wV="000000001.*zfinal",},c={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/c/1.0.lua",fullName="c/1.0",loadOrder=3,propT={},stackDepth=0,status="active",userName="c",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dups/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dups/mf",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load d
+===========================
+LOADEDMODULES=a/1.0:b/1.0:c/1.0:d/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dups/mf;
+export MODULEPATH;
+RTM_PATH=A:B:C:A:B:A:A;
+export RTM_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/dups/mf/a/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/dups/mf/b/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/dups/mf/c/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/dups/mf/d/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/a/1.0.lua",fullName="a/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="000000001.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/b/1.0.lua",fullName="b/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="b",wV="000000001.*zfinal",},c={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/c/1.0.lua",fullName="c/1.0",loadOrder=3,propT={},stackDepth=0,status="active",userName="c",wV="000000001.*zfinal",},d={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/d/1.0.lua",fullName="d/1.0",loadOrder=4,propT={},stackDepth=0,status="active",userName="d",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dups/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dups/mf",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload a
+===========================
+LOADEDMODULES=b/1.0:c/1.0:d/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dups/mf;
+export MODULEPATH;
+RTM_PATH=B:C:A:B:A:A;
+export RTM_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/dups/mf/b/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/dups/mf/c/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/dups/mf/d/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={b={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/b/1.0.lua",fullName="b/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="b",wV="000000001.*zfinal",},c={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/c/1.0.lua",fullName="c/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="c",wV="000000001.*zfinal",},d={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/d/1.0.lua",fullName="d/1.0",loadOrder=3,propT={},stackDepth=0,status="active",userName="d",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dups/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dups/mf",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload b
+===========================
+LOADEDMODULES=c/1.0:d/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dups/mf;
+export MODULEPATH;
+RTM_PATH=C:B:A:A;
+export RTM_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/dups/mf/c/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/dups/mf/d/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={c={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/c/1.0.lua",fullName="c/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="c",wV="000000001.*zfinal",},d={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/d/1.0.lua",fullName="d/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="d",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dups/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dups/mf",}';
+export _ModuleTable_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload c
+===========================
+LOADEDMODULES=d/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dups/mf;
+export MODULEPATH;
+RTM_PATH=A;
+export RTM_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/dups/mf/d/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={d={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/d/1.0.lua",fullName="d/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="d",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dups/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dups/mf",}';
+export _ModuleTable_;
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload d
+===========================
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dups/mf;
+export MODULEPATH;
+unset RTM_PATH;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dups/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dups/mf",}';
+export _ModuleTable_;
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load a b c
+===========================
+LOADEDMODULES=a/1.0:b/1.0:c/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dups/mf;
+export MODULEPATH;
+__LMOD_REF_COUNT_RTM_PATH=A:3\;B:2\;C:1;
+export __LMOD_REF_COUNT_RTM_PATH;
+RTM_PATH=A:B:C;
+export RTM_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/dups/mf/a/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/dups/mf/b/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/dups/mf/c/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/a/1.0.lua",fullName="a/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="000000001.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/b/1.0.lua",fullName="b/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="b",wV="000000001.*zfinal",},c={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/c/1.0.lua",fullName="c/1.0",loadOrder=3,propT={},stackDepth=0,status="active",userName="c",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dups/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dups/mf",}';
+export _ModuleTable_;
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load d
+===========================
+LOADEDMODULES=a/1.0:b/1.0:c/1.0:d/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dups/mf;
+export MODULEPATH;
+__LMOD_REF_COUNT_RTM_PATH=B:2\;C:1\;A:4;
+export __LMOD_REF_COUNT_RTM_PATH;
+RTM_PATH=B:C:A;
+export RTM_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/dups/mf/a/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/dups/mf/b/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/dups/mf/c/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/dups/mf/d/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/a/1.0.lua",fullName="a/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="000000001.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/b/1.0.lua",fullName="b/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="b",wV="000000001.*zfinal",},c={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/c/1.0.lua",fullName="c/1.0",loadOrder=3,propT={},stackDepth=0,status="active",userName="c",wV="000000001.*zfinal",},d={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/d/1.0.lua",fullName="d/1.0",loadOrder=4,propT={},stackDepth=0,status="active",userName="d",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dups/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dups/mf",}';
+export _ModuleTable_;
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload a
+===========================
+LOADEDMODULES=b/1.0:c/1.0:d/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dups/mf;
+export MODULEPATH;
+__LMOD_REF_COUNT_RTM_PATH=B:2\;C:1\;A:3;
+export __LMOD_REF_COUNT_RTM_PATH;
+RTM_PATH=B:C:A;
+export RTM_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/dups/mf/b/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/dups/mf/c/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/dups/mf/d/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={b={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/b/1.0.lua",fullName="b/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="b",wV="000000001.*zfinal",},c={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/c/1.0.lua",fullName="c/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="c",wV="000000001.*zfinal",},d={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/d/1.0.lua",fullName="d/1.0",loadOrder=3,propT={},stackDepth=0,status="active",userName="d",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dups/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dups/mf",}';
+export _ModuleTable_;
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload b
+===========================
+LOADEDMODULES=c/1.0:d/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dups/mf;
+export MODULEPATH;
+__LMOD_REF_COUNT_RTM_PATH=B:1\;C:1\;A:2;
+export __LMOD_REF_COUNT_RTM_PATH;
+RTM_PATH=B:C:A;
+export RTM_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/dups/mf/c/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/dups/mf/d/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={c={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/c/1.0.lua",fullName="c/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="c",wV="000000001.*zfinal",},d={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/d/1.0.lua",fullName="d/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="d",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dups/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dups/mf",}';
+export _ModuleTable_;
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload c
+===========================
+LOADEDMODULES=d/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dups/mf;
+export MODULEPATH;
+__LMOD_REF_COUNT_RTM_PATH=A:1;
+export __LMOD_REF_COUNT_RTM_PATH;
+RTM_PATH=A;
+export RTM_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/dups/mf/d/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={d={fn="/Users/mcawood/Lmod/Lmod/rt/dups/mf/d/1.0.lua",fullName="d/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="d",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dups/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dups/mf",}';
+export _ModuleTable_;
+===========================
+step 13
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload d
+===========================
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dups/mf;
+export MODULEPATH;
+unset __LMOD_REF_COUNT_RTM_PATH;
+unset RTM_PATH;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dups/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dups/mf",}';
+export _ModuleTable_;

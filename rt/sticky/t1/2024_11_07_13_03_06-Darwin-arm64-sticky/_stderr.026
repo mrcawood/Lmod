@@ -1,0 +1,10 @@
+
+Currently Loaded Modules:
+  1) std/1.0 (m,S)
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+   m:  built for host and native MIC
+
+ 
+

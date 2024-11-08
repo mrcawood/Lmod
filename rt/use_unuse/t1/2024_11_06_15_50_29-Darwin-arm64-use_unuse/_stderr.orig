@@ -1,0 +1,58 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load a
+===========================
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unuse /Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core
+===========================
+
+Inactive Modules:
+  1) a
+
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use /Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM
+===========================
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unuse /Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM
+===========================
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use ../../mf/RTM
+===========================
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unuse /Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM
+===========================
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use /Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM2
+===========================
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unuse /Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM2
+===========================
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use --help
+===========================
+Lmod Warning: Adding "--help" to $MODULEPATH. Did you mean: "module --help use"? 
+
+
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use -h
+===========================
+Lmod Warning: Adding "-h" to $MODULEPATH. Did you mean: "module -h use"? 
+
+

@@ -1,0 +1,46 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+resultFn="/Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/t1/2024_10_17_14_37_12-Darwin-arm64-ck_mtree_syntax/t1.result"; export resultFn
+testName="ck_mtree_syntax"; export testName
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/ck_mtree_syntax.tdesc"; export testdescriptFn
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/t1/2024_10_17_14_37_12-Darwin-arm64-ck_mtree_syntax/t1.runtime"; export runtimeFn
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/t1/2024_10_17_14_37_12-Darwin-arm64-ck_mtree_syntax/results.lua"; export cmdResultFn
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/t1/2024_10_17_14_37_12-Darwin-arm64-ck_mtree_syntax/message.lua"; export messageFn
+tag="2024_10_17"; export tag
+testDir="/Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax"; export testDir
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+outputDir="/Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/t1/2024_10_17_14_37_12-Darwin-arm64-ck_mtree_syntax"; export outputDir
+TARGET=""; export TARGET
+idTag="t1"; export idTag
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/mf; export MODULEPATH
+
+     remove_generated_lmod_files
+
+     export LMOD_MODULERCFILE=$testDir/dot.modulerc
+
+     runLmod --version                             # 1
+     runCkMTSyntax $MODULEPATH                     # 2
+     runBase runSpiderCmd -o spiderT $MODULEPATH   # 3
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/t1/2024_10_17_14_37_12-Darwin-arm64-ck_mtree_syntax/t1.result -t /Users/mcawood/Lmod/Lmod/rt/ck_mtree_syntax/t1/2024_10_17_14_37_12-Darwin-arm64-ck_mtree_syntax/t1.runtime results.csv
+   

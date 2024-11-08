@@ -1,0 +1,51 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_07"; export tag
+idTag="t1"; export idTag
+TARGET=""; export TARGET
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/gccCore/t1/2024_11_07_13_03_06-Darwin-arm64-gccCore/t1.runtime"; export runtimeFn
+resultFn="/Users/mcawood/Lmod/Lmod/rt/gccCore/t1/2024_11_07_13_03_06-Darwin-arm64-gccCore/t1.result"; export resultFn
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/gccCore"; export testDir
+testName="gccCore"; export testName
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/gccCore/t1/2024_11_07_13_03_06-Darwin-arm64-gccCore/message.lua"; export messageFn
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/gccCore/gccCore.tdesc"; export testdescriptFn
+outputDir="/Users/mcawood/Lmod/Lmod/rt/gccCore/t1/2024_11_07_13_03_06-Darwin-arm64-gccCore"; export outputDir
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/gccCore/t1/2024_11_07_13_03_06-Darwin-arm64-gccCore/results.lua"; export cmdResultFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     export MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/gccCore/mf; 
+     export MODULEPATH=$MODULEPATH_ROOT/Core; 
+
+     remove_generated_lmod_files
+
+     runLmod --version                           # 1
+     runLmod spider                              # 2
+     runLmod spider boost/1.60.0                 # 3
+     runLmod --show_hidden spider                # 4
+     runLmod --show_hidden spider GCCcore        # 5
+     runLmod               spider GCCcore        # 6
+     runLmod               spider GCCcore/.6.3   # 7
+
+
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/gccCore/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/gccCore/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/gccCore/t1/2024_11_07_13_03_06-Darwin-arm64-gccCore/t1.result -t /Users/mcawood/Lmod/Lmod/rt/gccCore/t1/2024_11_07_13_03_06-Darwin-arm64-gccCore/t1.runtime results.csv
+   

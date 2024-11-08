@@ -1,0 +1,4 @@
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider mpich2/1.0.5
+===========================

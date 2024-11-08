@@ -1,0 +1,10 @@
+===========================
+step 1
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing --version
+===========================
+Modules based on Lua: Version
+    by Robert McLay mclay@tacc.utexas.edu
+===========================
+step 2
+buildSh2MF --from ksh ProjectDIR/rt/ksh_to_modulefile/script.ksh
+===========================

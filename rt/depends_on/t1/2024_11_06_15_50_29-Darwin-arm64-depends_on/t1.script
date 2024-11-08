@@ -1,0 +1,160 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/depends_on"; export testDir
+messageFn="/Users/mcawood/Lmod/Lmod/rt/depends_on/t1/2024_11_06_15_50_29-Darwin-arm64-depends_on/message.lua"; export messageFn
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_06"; export tag
+target=""; export target
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/depends_on/depends_on.tdesc"; export testdescriptFn
+TARGET=""; export TARGET
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/depends_on/t1/2024_11_06_15_50_29-Darwin-arm64-depends_on/results.lua"; export cmdResultFn
+packageName="rt"; export packageName
+resultFn="/Users/mcawood/Lmod/Lmod/rt/depends_on/t1/2024_11_06_15_50_29-Darwin-arm64-depends_on/t1.result"; export resultFn
+testName="depends_on"; export testName
+idTag="t1"; export idTag
+outputDir="/Users/mcawood/Lmod/Lmod/rt/depends_on/t1/2024_11_06_15_50_29-Darwin-arm64-depends_on"; export outputDir
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/depends_on/t1/2024_11_06_15_50_29-Darwin-arm64-depends_on/t1.runtime"; export runtimeFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/depends_on/mf/Core
+
+     remove_generated_lmod_files
+
+     runLmod --version                         # 1
+     runLmod load A X                          # 2
+     runLmod list                              # 3
+     runLmod unload X                          # 4
+     runLmod list                              # 5
+     runLmod unload A                          # 6
+     runLmod load X Y                          # 7
+     runLmod list                              # 8
+     runLmod save                              # 9
+     runLmod unload X                          #10
+     runLmod list                              #11
+     runLmod unload Y                          #12
+     runLmod list                              #13
+     runLmod load X                            #14
+     runLmod unload A                          #15
+     runLmod restore                           #16
+     runLmod unload A                          #17
+     runLmod purge                             #18
+     runLmod load Y                            #19
+     runLmod list                              #20
+     runLmod save                              #21
+     runLmod restore                           #22
+     runLmod unload Y                          #23
+     runLmod list                              #24
+     runLmod purge                             #25
+     runLmod load X Y                          #26
+     runLmod save                              #27
+     runLmod purge                             #28
+     runLmod restore                           #29
+     runLmod list                              #30
+     runLmod purge                             #31
+     runLmod load Z                            #32
+     runLmod load bar/1.0                      #33
+     runLmod load foo                          #34
+     runLmod list                              #35
+     runLmod purge                             #36
+     runLmod load bar/1.2                      #37
+     runLmod load foo                          #38
+     runLmod list                              #39
+
+     
+     runLmod purge                             #40
+     unsetMT
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/depends_on/mf/Core2
+     export LMOD_PIN_VERSIONS=yes
+     runLmod load  SomeSoftware OtherSoftware  #41
+     runLmod list                              #42
+
+     runLmod purge                             #43
+     unsetMT
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/depends_on/mf/Core3
+     unset LMOD_PIN_VERSIONS
+     runLmod load  A                           #44
+     runLmod list                              #45
+
+     runLmod purge                             #46
+     unsetMT
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/depends_on/mf/Core4
+     runLmod load python/3.9.6                 #47
+     runLmod load ipykernel/2022a              #48
+     runLmod list                              #49
+##############################################
+# Case where unloading the oneapi module
+# cause the impi module to be reloaded
+# and this impi depends_on("ucx") which does
+# not exist.
+
+     runLmod purge                             #50
+     unsetMT
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/depends_on/mf/Core5
+     runLmod use /Users/mcawood/Lmod/Lmod/rt/depends_on/mf/special         #51
+     runLmod load oneapi impi                  #52
+     runLmod unload oneapi                     #53
+##############################################
+# Issue #604
+# Dependency is lost when modules are compiler
+# dependent
+
+     runLmod purge                             #54
+     unsetMT
+     export MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/depends_on/mf/Issue604
+     export MODULEPATH=$MODULEPATH_ROOT/Core
+     runLmod load compiler_a package           #55
+     runLmod unload package                    #56
+     runLmod load package                      #57
+     runLmod load compiler_b                   #58
+     runLmod unload package                    #59
+     runLmod list                              #60
+##############################################
+# More Issue #604
+# Test if activating inactive modules works
+# with depends_on()
+     runLmod purge                             #61
+     runLmod load   compiler_a package pkgB    #62
+     runLmod unload compiler_a                 #63
+     runLmod load compiler_b                   #64
+     runLmod unload package                    #65
+     runLmod list                              #66   
+     runLmod unload pkgB                       #67
+     runLmod list                              #68
+##############################################
+# More Issue #604
+# A torture test
+
+     runLmod purge                             #69
+     runLmod load A                            #70
+     runLmod list                              #71
+     runLmod load gcc                          #72
+     runLmod av                                #73
+     runLmod list                              #74
+     runLmod load intel                        #75
+     runLmod list                              #76
+
+
+
+
+
+
+     
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/depends_on/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/depends_on/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/depends_on/t1/2024_11_06_15_50_29-Darwin-arm64-depends_on/t1.result -t /Users/mcawood/Lmod/Lmod/rt/depends_on/t1/2024_11_06_15_50_29-Darwin-arm64-depends_on/t1.runtime results.csv
+   

@@ -1,0 +1,8 @@
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_11_07_13_03_06-Darwin-arm64-hash_try_load/mf/Core/TACC
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    TACC             /Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_11_07_13_03_06-Darwin-arm64-hash_try_load/mf/Core/TACC
+

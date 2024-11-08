@@ -1,0 +1,51 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load HPCBIOS
+===========================
+LOADEDMODULES=HPCBIOS/2016q2;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Other:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Core:/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Other;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Core/HPCBIOS/2016q2.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={HPCBIOS={actionA={"append_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Other\")",},fn="/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Core/HPCBIOS/2016q2.lua",fullName="HPCBIOS/2016q2",loadOrder=1,propT={lmod={sticky=1,},},stackDepth=0,status="active",userName="HPCBIOS",wV="000002016.*q.000000002.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Core","/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Other",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Core:/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Other;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={HPCBIOS={actionA={"append_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Other\")",},fn="/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Core/HPCBIOS/2016q2.lua",fullName="HPCBIOS/2016q2",loadOrder=1,propT={lmod={sticky=1,},},stackDepth=0,status="active",userName="HPCBIOS",wV="000002016.*q.000000002.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Core","/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Other",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Core:/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Other;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={HPCBIOS={actionA={"append_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Other\")",},fn="/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Core/HPCBIOS/2016q2.lua",fullName="HPCBIOS/2016q2",loadOrder=1,propT={lmod={sticky=1,},},stackDepth=0,status="active",userName="HPCBIOS",wV="000002016.*q.000000002.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Core","/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Other",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T use /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Other /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/A
+===========================
+unset LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/A:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/A;
+export MODULEPATH;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={HPCBIOS={fn="/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Core/HPCBIOS/2016q2.lua",fullName="HPCBIOS/2016q2",loadOrder=-1,propT={},stackDepth=0,status="inactive",userName="HPCBIOS",wV="000002016.*q.000000002.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/A",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 6
+echo MODULEPATH: /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/A
+===========================
+MODULEPATH: /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/A

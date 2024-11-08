@@ -1,0 +1,67 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/mpathColl"; export testDir
+messageFn="/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_11_06_15_50_29-Darwin-arm64-mpathColl/message.lua"; export messageFn
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_06"; export tag
+target=""; export target
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/mpathColl/mpathColl.tdesc"; export testdescriptFn
+TARGET=""; export TARGET
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_11_06_15_50_29-Darwin-arm64-mpathColl/results.lua"; export cmdResultFn
+packageName="rt"; export packageName
+resultFn="/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_11_06_15_50_29-Darwin-arm64-mpathColl/t1.result"; export resultFn
+testName="mpathColl"; export testName
+idTag="t1"; export idTag
+outputDir="/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_11_06_15_50_29-Darwin-arm64-mpathColl"; export outputDir
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_11_06_15_50_29-Darwin-arm64-mpathColl/t1.runtime"; export runtimeFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     export MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_11_06_15_50_29-Darwin-arm64-mpathColl/mf
+     export MODULEPATH=$MODULEPATH_ROOT/Core
+
+     remove_generated_lmod_files mf
+     cp -a /Users/mcawood/Lmod/Lmod/rt/mpathColl/mf /Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_11_06_15_50_29-Darwin-arm64-mpathColl/
+     L_gcc=Core/gcc/13.0.lua
+     L_mpich=Compiler/gcc/13/mpich/13.0.lua
+
+
+     runLmod  --version                              # 1
+########################################
+# Test unloading gcc where gcc nolonger
+# exists and gcc changes $MODULEPATH
+
+     runLmod  load gcc mpich                         # 2
+     runLmod  --mt                                   # 3
+     runBase  rm /Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_11_06_15_50_29-Darwin-arm64-mpathColl/mf/$L_gcc              # 4
+     runBase  rm /Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_11_06_15_50_29-Darwin-arm64-mpathColl/mf/$L_mpich            # 5
+     runLmod  rm   gcc                               # 6
+     runLmod  rm   mpich                             # 7
+     runLmod  --mt                                   # 8
+########################################
+# Test unloading a module (acme) that
+# nolonger exist and does not change
+# $MODULEPATH
+     
+     runLmod  load acme                              # 9
+     runBase  rm /Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_11_06_15_50_29-Darwin-arm64-mpathColl/mf/Core/acme/1.0.lua   #10
+     runLmod  rm   acme                              #11
+     runLmod  --mt                                   #12
+    
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/mpathColl/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/mpathColl/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_11_06_15_50_29-Darwin-arm64-mpathColl/t1.result -t /Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_11_06_15_50_29-Darwin-arm64-mpathColl/t1.runtime results.csv
+   

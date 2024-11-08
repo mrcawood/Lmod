@@ -1,0 +1,31 @@
+#%Module
+setenv MY_NAME {tstScript.sh}
+prepend-path PATH {/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/bin}
+append-path PATH {/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/sbin}
+setenv TST_SCRIPT {1}
+set-alias fooAlias {foobin -q -l}
+set-function banner { 
+    local str="$1";
+    local RED='[1;31m';
+    local NONE='[0m';
+    echo "${RED}${str}${NONE}"
+}
+set-function fooFunc { 
+    echo "arg1: $1"
+}
+set-function junk { 
+    if [ -n "${ZSH_VERSION:-}" ]; then
+        \echo "junk";
+    fi
+}
+set-function my_help { 
+    echo "do not forget \"foo\""
+}
+set-function save_args { 
+    for arg in "$@";
+    do
+        printf "%s\n" "$arg" | sed -e "s/'/'\\\\''/g" -e "1s/^/'/" -e "\$s/\$/' \\\\/";
+    done;
+    echo " "
+}
+complete bash XyZ123 {-F _xyz123}

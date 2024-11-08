@@ -1,0 +1,109 @@
+===========================
+step 1
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing --version
+===========================
+Modules based on Lua: Version
+    by Robert McLay mclay@tacc.utexas.edu
+===========================
+step 2
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing show BRK
+===========================
+   ProjectDIR/rt/break/mf/BRK/1.0:
+setenv("BRK","1.0")
+LmodBreak("")
+===========================
+step 3
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load StdEnv
+===========================
+Lmod has detected the following error: Syntax error in file: ProjectDIR/rt/break/mf/StdEnv.lua
+ with command: load, one or more arguments are not strings.
+While processing the following module(s):
+    Module fullname  Module Filename
+    StdEnv           ProjectDIR/rt/break/mf/StdEnv.lua
+===========================
+step 4
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 5
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing unload StdEnv
+===========================
+Note: the module "StdEnv" cannot be unloaded because it was not loaded.
+===========================
+step 6
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 7
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing -T load StdEnv
+===========================
+running: module --regression_testing -T load StdEnv
+  (1)(0)Loading: StdEnv (fn: ProjectDIR/rt/break/mf/StdEnv.lua, using Find-Best)
+Lmod has detected the following error: Syntax error in file: ProjectDIR/rt/break/mf/StdEnv.lua
+ with command: load, one or more arguments are not strings.
+While processing the following module(s):
+    Module fullname  Module Filename
+    StdEnv           ProjectDIR/rt/break/mf/StdEnv.lua
+===========================
+step 8
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing -T unload StdEnv
+===========================
+running: module --regression_testing -T unload StdEnv
+  (1)(0)Unloading: StdEnv (status: ) (fn: nil)
+Note: the module "StdEnv" cannot be unloaded because it was not loaded.
+===========================
+step 9
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 10
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load BRK
+===========================
+===========================
+step 11
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load bad
+===========================
+===========================
+step 12
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing unload bad
+===========================
+already set
+===========================
+step 13
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 14
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load X other
+===========================
+break
+===========================
+step 15
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing list
+===========================
+Currently Loaded Modules:
+  1) other/1.0
+===========================
+step 16
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing unload other
+===========================
+===========================
+step 17
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 18
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load X/X other
+===========================
+break
+===========================
+step 19
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing list
+===========================
+Currently Loaded Modules:
+  1) other/1.0

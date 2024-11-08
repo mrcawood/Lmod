@@ -1,0 +1,46 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T load Rpkgs
+===========================
+LOADEDMODULES=Rstats/3.4.0:Rpkgs/3.4.0;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core;
+export MODULEPATH;
+__LMOD_REF_COUNT_PATH=/opt/apps/intel17/impi17_0/RstatsPackages/3.4.0/packages/snow:1\;/opt/apps/intel17/impi17_0/Rstats/3.4.0/bin:1\;/Users/mcawood/Lmod/Lmod/proj_mgmt:1\;/Users/mcawood/Lmod/Hermes/bin:1\;/opt/homebrew/bin:1\;/usr/bin:1\;/bin:1;
+export __LMOD_REF_COUNT_PATH;
+PATH=/opt/apps/intel17/impi17_0/RstatsPackages/3.4.0/packages/snow:/opt/apps/intel17/impi17_0/Rstats/3.4.0/bin:/Users/mcawood/Lmod/Lmod/proj_mgmt:/Users/mcawood/Lmod/Hermes/bin:/opt/homebrew/bin:/usr/bin:/bin;
+export PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core/Rstats/3.4.0.lua:/Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core/Rpkgs/3.4.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={Rpkgs={fn="/Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core/Rpkgs/3.4.0.lua",fullName="Rpkgs/3.4.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="Rpkgs",wV="000000003.000000004.*zfinal",},Rstats={fn="/Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core/Rstats/3.4.0.lua",fullName="Rstats/3.4.0",loadOrder=1,propT={},stackDepth=1,status="active",userName="Rstats/3.4.0",wV="000000003.000000004.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={Rpkgs={fn="/Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core/Rpkgs/3.4.0.lua",fullName="Rpkgs/3.4.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="Rpkgs",wV="000000003.000000004.*zfinal",},Rstats={fn="/Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core/Rstats/3.4.0.lua",fullName="Rstats/3.4.0",loadOrder=1,propT={},stackDepth=1,status="active",userName="Rstats/3.4.0",wV="000000003.000000004.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T unload Rpkgs
+===========================
+LOADEDMODULES=Rstats/3.4.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core;
+export MODULEPATH;
+__LMOD_REF_COUNT_PATH=/opt/apps/intel17/impi17_0/Rstats/3.4.0/bin:1\;/Users/mcawood/Lmod/Lmod/proj_mgmt:1\;/Users/mcawood/Lmod/Hermes/bin:1\;/opt/homebrew/bin:1\;/usr/bin:1\;/bin:1;
+export __LMOD_REF_COUNT_PATH;
+PATH=/opt/apps/intel17/impi17_0/Rstats/3.4.0/bin:/Users/mcawood/Lmod/Lmod/proj_mgmt:/Users/mcawood/Lmod/Hermes/bin:/opt/homebrew/bin:/usr/bin:/bin;
+export PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core/Rstats/3.4.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={Rstats={fn="/Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core/Rstats/3.4.0.lua",fullName="Rstats/3.4.0",loadOrder=1,propT={},stackDepth=1,status="active",userName="Rstats/3.4.0",wV="000000003.000000004.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/rstats/mf/Core",}';
+export _ModuleTable_;

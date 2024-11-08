@@ -1,0 +1,76 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load test1
+===========================
+false
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load test2
+===========================
+false
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload test2
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/set_alias/mf:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/set_alias/mf;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/set_alias/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/set_alias/mf",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load test1
+===========================
+false
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load sfunc
+===========================
+LOADEDMODULES=sfunc/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/set_alias/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/set_alias/mf/sfunc/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={sfunc={fn="/Users/mcawood/Lmod/Lmod/rt/set_alias/mf/sfunc/1.0.lua",fullName="sfunc/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="sfunc",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/set_alias/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/set_alias/mf",}';
+export _ModuleTable_;
+g++ () { whatever; 
+};
+ml () { eval $($LMOD_DIR/ml_cmd "$@"); 
+};
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load alias
+===========================
+false
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load spack
+===========================
+LOADEDMODULES=sfunc/1.0:spack/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/set_alias/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/set_alias/mf/sfunc/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/set_alias/mf/spack/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={sfunc={fn="/Users/mcawood/Lmod/Lmod/rt/set_alias/mf/sfunc/1.0.lua",fullName="sfunc/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="sfunc",wV="000000001.*zfinal",},spack={fn="/Users/mcawood/Lmod/Lmod/rt/set_alias/mf/spack/1.0.lua",fullName="spack/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="spack",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/set_alias/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/set_alias/mf",}';
+export _ModuleTable_;
+_some_spack_func () { 
+   local ARG1=$1;
+   if [[ $ARG1 == [a-z]* ]]; then
+     echo found;
+   fi; 
+};
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show showMe
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/set_alias/mf;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={sfunc={fn="/Users/mcawood/Lmod/Lmod/rt/set_alias/mf/sfunc/1.0.lua",fullName="sfunc/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="sfunc",wV="000000001.*zfinal",},spack={fn="/Users/mcawood/Lmod/Lmod/rt/set_alias/mf/spack/1.0.lua",fullName="spack/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="spack",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/set_alias/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/set_alias/mf",}';
+export _ModuleTable_;

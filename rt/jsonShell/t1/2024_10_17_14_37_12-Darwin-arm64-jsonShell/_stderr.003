@@ -1,0 +1,4 @@
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/proj_mgmt/jsonLoadConversion load.json
+===========================

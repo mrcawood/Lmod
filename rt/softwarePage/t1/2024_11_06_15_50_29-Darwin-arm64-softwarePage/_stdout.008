@@ -1,0 +1,94 @@
+timestampFn = {
+  false,
+}
+dbT = {
+  foo = {
+    ["/Users/mcawood/Lmod/Lmod/rt/softwarePage/mf/foo/.2.0.lua"] = {
+      Category = "foo",
+      Description = "foo description",
+      Version = "1.0",
+      family = "bar",
+      fullName = "foo/.2.0",
+      help = "foo v.2.0",
+      hidden = true,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/softwarePage/mf",
+      pV = "000000000.000000002.*zfinal",
+      wV = "000000000.000000002.*zfinal",
+      whatis = {
+        "Description: foo description", "Version: 1.0", "Category: foo",
+      },
+    },
+    ["/Users/mcawood/Lmod/Lmod/rt/softwarePage/mf/foo/.pkginfo.lua"] = {
+      Version = ".pkginfo",
+      fullName = "foo/.pkginfo",
+      hidden = true,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/softwarePage/mf",
+      pV = "*pkginfo.*zfinal",
+      wV = "*pkginfo.*zfinal",
+    },
+    ["/Users/mcawood/Lmod/Lmod/rt/softwarePage/mf/foo/1.0.lua"] = {
+      Category = "foo",
+      Description = "foo description",
+      Version = "1.0",
+      family = "bar",
+      fullName = "foo/1.0",
+      help = "foo v1.0",
+      hidden = false,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/softwarePage/mf",
+      pV = "000000001.*zfinal",
+      propT = {
+        arch = {
+          gpu = 1,
+        },
+      },
+      wV = "^00000001.*zfinal",
+      whatis = {
+        "Description: foo description", "Version: 1.0", "Category: foo",
+      },
+    },
+    ["/Users/mcawood/Lmod/Lmod/rt/softwarePage/mf/foo/1.1.lua"] = {
+      Category = "foo",
+      Description = "foo description",
+      Version = "1.1",
+      family = "bar",
+      fullName = "foo/1.1",
+      help = "foo v1.1",
+      hidden = false,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/softwarePage/mf",
+      pV = "000000001.000000001.*zfinal",
+      propT = {
+        arch = {
+          mic = 1,
+        },
+      },
+      wV = "000000001.000000001.*zfinal",
+      whatis = {
+        "Description: foo description", "Version: 1.1", "Category: foo",
+      },
+    },
+    ["/Users/mcawood/Lmod/Lmod/rt/softwarePage/mf/foo/1.3"] = {
+      Category = "system",
+      Description = "This is a descript",
+      Version = "1.3",
+      family = "bar",
+      fullName = "foo/1.3",
+      help = [[This is the help message for the foo 1.3 module
+And even more help
+]],
+      hidden = false,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/softwarePage/mf",
+      pV = "000000001.000000003.*zfinal",
+      propT = {
+        state = {
+          testing = 1,
+        },
+      },
+      wV = "000000001.000000003.*zfinal",
+      whatis = {
+        "Name: foo", "Version: 1.3", "Category: system", "Description: This is a descript",
+      },
+    },
+  },
+}
+provideByT = {}
+

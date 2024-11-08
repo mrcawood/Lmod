@@ -1,0 +1,16 @@
+LOADEDMODULES=ncarIntel/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core;
+export MODULEPATH;
+__LMOD_REF_COUNT_NCAR_LIB_INTEL=-Wl,-rpath,/opt/intel/composer_xe_2011_sp1.6.233/compiler/lib/intel64:1;
+export __LMOD_REF_COUNT_NCAR_LIB_INTEL;
+NCAR_LIB_INTEL=-Wl,-rpath,/opt/intel/composer_xe_2011_sp1.6.233/compiler/lib/intel64;
+export NCAR_LIB_INTEL;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core/ncarIntel/1.0.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpuY2FySW50ZWwgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9kZWxpbS9tZi9Db3JlL25jYXJJbnRlbC8xLjAubHVhIiwKZnVsbE5hbWUgPSAibmNhckludGVsLzEuMCIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibmNhckludGVsIiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZGVsaW0v;
+export _ModuleTable001_;
+_ModuleTable002_=bWYvQ29yZSIsCn0sCn0K;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;

@@ -1,0 +1,13 @@
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {},
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/columnT/modules", "/Users/mcawood/Lmod/Lmod/rt/columnT/modules-npa",
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/columnT/modules:/Users/mcawood/Lmod/Lmod/rt/columnT/modules-npa",
+}
+

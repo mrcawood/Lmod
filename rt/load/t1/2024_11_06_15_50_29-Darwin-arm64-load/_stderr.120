@@ -1,0 +1,10 @@
+Lmod has detected the following error: Module "B" must be loaded with the version specified, e.g. "module load B/2.0". Use
+
+   $ module spider B
+
+for available versions. 
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    B/2.0            /Users/mcawood/Lmod/Lmod/rt/load/mf3/B/2.0
+

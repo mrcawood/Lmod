@@ -1,0 +1,4 @@
+unsetenv _ModuleTable_Sz_;
+unsetenv LOADEDMODULES;
+unsetenv _LMFILES_;
+unsetenv _ModuleTable001_;

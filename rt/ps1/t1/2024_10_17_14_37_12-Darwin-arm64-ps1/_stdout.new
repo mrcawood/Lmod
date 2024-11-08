@@ -1,0 +1,36 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load setprompt
+===========================
+LOADEDMODULES=setprompt/1.0;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ps1/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ps1/mf/Core;
+export MODULEPATH;
+PS1=hello\>\ ;
+export PS1;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/ps1/mf/Core/setprompt/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={setprompt={fn="/Users/mcawood/Lmod/Lmod/rt/ps1/mf/Core/setprompt/1.0.lua",fullName="setprompt/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="setprompt",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/ps1/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/ps1/mf/Core",}';
+export _ModuleTable_;
+__LMOD_STACK_PS1=hello\>\ :test\ \\u@\\h\>\ ;
+export __LMOD_STACK_PS1;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing rm setprompt
+===========================
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ps1/mf/Core;
+export MODULEPATH;
+PS1=test\ \\u@\\h\>\ ;
+export PS1;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/ps1/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/ps1/mf/Core",}';
+export _ModuleTable_;
+__LMOD_STACK_PS1=test\ \\u@\\h\>\ ;
+export __LMOD_STACK_PS1;

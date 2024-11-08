@@ -1,0 +1,65 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/multiL"; export testDir
+messageFn="/Users/mcawood/Lmod/Lmod/rt/multiL/t1/2024_11_06_15_50_29-Darwin-arm64-multiL/message.lua"; export messageFn
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_06"; export tag
+target=""; export target
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/multiL/multiL.tdesc"; export testdescriptFn
+TARGET=""; export TARGET
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/multiL/t1/2024_11_06_15_50_29-Darwin-arm64-multiL/results.lua"; export cmdResultFn
+packageName="rt"; export packageName
+resultFn="/Users/mcawood/Lmod/Lmod/rt/multiL/t1/2024_11_06_15_50_29-Darwin-arm64-multiL/t1.result"; export resultFn
+testName="multiL"; export testName
+idTag="t1"; export idTag
+outputDir="/Users/mcawood/Lmod/Lmod/rt/multiL/t1/2024_11_06_15_50_29-Darwin-arm64-multiL"; export outputDir
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/multiL/t1/2024_11_06_15_50_29-Darwin-arm64-multiL/t1.runtime"; export runtimeFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/multiL/mf;       export MODULEPATH_ROOT
+     MODULEPATH=$MODULEPATH_ROOT/Core;    export MODULEPATH
+
+     remove_generated_lmod_files
+
+     cp /Users/mcawood/Lmod/Lmod/init/lmodrc.lua .lmodrc.lua
+
+     mkdir -p $HOME/.cache/lmod
+     buildSpiderT $MODULEPATH > $HOME/.cache/lmod/spiderT.lua
+
+     runLmod --version                  # 1
+     runLmod avail                      # 2
+     runLmod spider                     # 3
+     runLmod load cmplr/gcc             # 4
+     runLmod avail                      # 5
+     runLmod load mpi/mpich2            # 6
+     runLmod load parLib/petsc          # 7
+     runLmod list                       # 8
+     runLmod avail                      # 9
+     runLmod unload cmplr/gcc           #10
+     runLmod load cmplr/gcc             #11
+     runLmod swap cmplr/gcc cmplr/intel #12
+     runLmod list                       #13
+     runLmod unload cmplr/intel/13.1    #14
+     runLmod list                       #15
+     runLmod load cmplr/intel/13.1      #16
+     runLmod list                       #17
+
+     HOME=$ORIG_HOME
+
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/multiL/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/multiL/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/multiL/t1/2024_11_06_15_50_29-Darwin-arm64-multiL/t1.result -t /Users/mcawood/Lmod/Lmod/rt/multiL/t1/2024_11_06_15_50_29-Darwin-arm64-multiL/t1.runtime results.csv
+   

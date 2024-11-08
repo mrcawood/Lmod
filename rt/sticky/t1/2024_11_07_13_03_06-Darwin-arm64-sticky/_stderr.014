@@ -1,0 +1,11 @@
+
+Currently Loaded Modules:
+  1) std/1.0 (m,S)   2) gcc/4.6   3) boost/1.53.0 (S,T)
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+   T:  Testing
+   m:  built for host and native MIC
+
+ 
+

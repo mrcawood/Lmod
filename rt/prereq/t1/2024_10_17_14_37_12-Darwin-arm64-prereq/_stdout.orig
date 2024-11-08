@@ -1,0 +1,226 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load petsc
+===========================
+LOADEDMODULES=petsc/3.1.0;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/prereq/mf:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/prereq/mf;
+export MODULEPATH;
+PETSC_DIR=foo;
+export PETSC_DIR;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/prereq/mf/petsc/3.1.0;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpwZXRzYyA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZi9wZXRzYy8zLjEuMCIsCmZ1bGxOYW1lID0gInBldHNjLzMuMS4wIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJwZXRzYyIsCndWID0gIjAwMDAwMDAwMy4wMDAwMDAwMDEuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wcmVyZXEvbWYiLAp9LApz;
+export _ModuleTable001_;
+_ModuleTable002_=eXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZiIsCn0K;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load slepc/3.0.0
+===========================
+
+false
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload slepc
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/prereq/mf;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpwZXRzYyA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZi9wZXRzYy8zLjEuMCIsCmZ1bGxOYW1lID0gInBldHNjLzMuMS4wIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJwZXRzYyIsCndWID0gIjAwMDAwMDAwMy4wMDAwMDAwMDEuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wcmVyZXEvbWYiLAp9LApz;
+export _ModuleTable001_;
+_ModuleTable002_=eXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZiIsCn0K;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload petsc
+===========================
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/prereq/mf;
+export MODULEPATH;
+unset PETSC_DIR;
+unset _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wcmVyZXEvbWYiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZiIsCn0K;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load slepc
+===========================
+
+false
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load petsc/2.9.0
+===========================
+LOADEDMODULES=petsc/2.9.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/prereq/mf;
+export MODULEPATH;
+PETSC_DIR=foo;
+export PETSC_DIR;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/prereq/mf/petsc/2.9.0;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpwZXRzYyA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZi9wZXRzYy8yLjkuMCIsCmZ1bGxOYW1lID0gInBldHNjLzIuOS4wIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJwZXRzYy8yLjkuMCIsCndWID0gIjAwMDAwMDAwMi4wMDAwMDAwMDkuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wcmVyZXEvbWYi;
+export _ModuleTable001_;
+_ModuleTable002_=LAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZiIsCn0K;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load slepc
+===========================
+
+false
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load slepc/2.9.0
+===========================
+LOADEDMODULES=petsc/2.9.0:slepc/2.9.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/prereq/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/prereq/mf/petsc/2.9.0:/Users/mcawood/Lmod/Lmod/rt/prereq/mf/slepc/2.9.0;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpwZXRzYyA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZi9wZXRzYy8yLjkuMCIsCmZ1bGxOYW1lID0gInBldHNjLzIuOS4wIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJwZXRzYy8yLjkuMCIsCndWID0gIjAwMDAwMDAwMi4wMDAwMDAwMDkuKnpmaW5hbCIsCn0sCnNsZXBjID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcHJlcmVxL21m;
+export _ModuleTable001_;
+_ModuleTable002_=L3NsZXBjLzIuOS4wIiwKZnVsbE5hbWUgPSAic2xlcGMvMi45LjAiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gInNsZXBjLzIuOS4wIiwKd1YgPSAiMDAwMDAwMDAyLjAwMDAwMDAwOS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZiIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcHJlcmVxL21mIiwKfQo=;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load petsc/3.1.0
+===========================
+LOADEDMODULES=slepc/2.9.0:petsc/3.1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/prereq/mf;
+export MODULEPATH;
+PETSC_DIR=foo;
+export PETSC_DIR;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/prereq/mf/slepc/2.9.0:/Users/mcawood/Lmod/Lmod/rt/prereq/mf/petsc/3.1.0;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpwZXRzYyA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZi9wZXRzYy8zLjEuMCIsCmZ1bGxOYW1lID0gInBldHNjLzMuMS4wIiwKbG9hZE9yZGVyID0gMiwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJwZXRzYy8zLjEuMCIsCndWID0gIjAwMDAwMDAwMy4wMDAwMDAwMDEuKnpmaW5hbCIsCn0sCnNsZXBjID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcHJlcmVxL21m;
+export _ModuleTable001_;
+_ModuleTable002_=L3NsZXBjLzIuOS4wIiwKZnVsbE5hbWUgPSAic2xlcGMvMi45LjAiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gInNsZXBjLzIuOS4wIiwKd1YgPSAiMDAwMDAwMDAyLjAwMDAwMDAwOS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZiIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcHJlcmVxL21mIiwKfQo=;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load slepc
+===========================
+LOADEDMODULES=petsc/3.1.0:slepc/3.1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/prereq/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/prereq/mf/petsc/3.1.0:/Users/mcawood/Lmod/Lmod/rt/prereq/mf/slepc/3.1.0;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpwZXRzYyA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZi9wZXRzYy8zLjEuMCIsCmZ1bGxOYW1lID0gInBldHNjLzMuMS4wIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJwZXRzYy8zLjEuMCIsCndWID0gIjAwMDAwMDAwMy4wMDAwMDAwMDEuKnpmaW5hbCIsCn0sCnNsZXBjID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcHJlcmVxL21m;
+export _ModuleTable001_;
+_ModuleTable002_=L3NsZXBjLzMuMS4wIiwKZnVsbE5hbWUgPSAic2xlcGMvMy4xLjAiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gInNsZXBjIiwKd1YgPSAiMDAwMDAwMDAzLjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZiIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcHJlcmVxL21mIiwKfQo=;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload slepc petsc
+===========================
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/prereq/mf;
+export MODULEPATH;
+unset PETSC_DIR;
+unset _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wcmVyZXEvbWYiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZiIsCn0K;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 13
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load petsc/3.1.0
+===========================
+LOADEDMODULES=petsc/3.1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/prereq/mf;
+export MODULEPATH;
+PETSC_DIR=foo;
+export PETSC_DIR;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/prereq/mf/petsc/3.1.0;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpwZXRzYyA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZi9wZXRzYy8zLjEuMCIsCmZ1bGxOYW1lID0gInBldHNjLzMuMS4wIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJwZXRzYy8zLjEuMCIsCndWID0gIjAwMDAwMDAwMy4wMDAwMDAwMDEuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wcmVyZXEvbWYi;
+export _ModuleTable001_;
+_ModuleTable002_=LAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZiIsCn0K;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 14
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load slepc/2.9.0
+===========================
+LOADEDMODULES=petsc/3.1.0:slepc/2.9.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/prereq/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/prereq/mf/petsc/3.1.0:/Users/mcawood/Lmod/Lmod/rt/prereq/mf/slepc/2.9.0;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpwZXRzYyA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZi9wZXRzYy8zLjEuMCIsCmZ1bGxOYW1lID0gInBldHNjLzMuMS4wIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJwZXRzYy8zLjEuMCIsCndWID0gIjAwMDAwMDAwMy4wMDAwMDAwMDEuKnpmaW5hbCIsCn0sCnNsZXBjID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcHJlcmVxL21m;
+export _ModuleTable001_;
+_ModuleTable002_=L3NsZXBjLzIuOS4wIiwKZnVsbE5hbWUgPSAic2xlcGMvMi45LjAiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gInNsZXBjLzIuOS4wIiwKd1YgPSAiMDAwMDAwMDAyLjAwMDAwMDAwOS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZiIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcHJlcmVxL21mIiwKfQo=;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 15
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load junk/1.0
+===========================
+
+false
+===========================
+step 16
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load jdk32
+===========================
+JDK32=1;
+export JDK32;
+LOADEDMODULES=petsc/3.1.0:slepc/2.9.0:jdk32/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/prereq/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/prereq/mf/petsc/3.1.0:/Users/mcawood/Lmod/Lmod/rt/prereq/mf/slepc/2.9.0:/Users/mcawood/Lmod/Lmod/rt/prereq/mf/jdk32/1.0.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpqZGszMiA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZi9qZGszMi8xLjAubHVhIiwKZnVsbE5hbWUgPSAiamRrMzIvMS4wIiwKbG9hZE9yZGVyID0gMywKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJqZGszMiIsCndWID0gIjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKcGV0c2MgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wcmVyZXEvbWYvcGV0c2MvMy4xLjAiLApm;
+export _ModuleTable001_;
+_ModuleTable002_=dWxsTmFtZSA9ICJwZXRzYy8zLjEuMCIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAicGV0c2MvMy4xLjAiLAp3ViA9ICIwMDAwMDAwMDMuMDAwMDAwMDAxLip6ZmluYWwiLAp9LApzbGVwYyA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZi9zbGVwYy8yLjkuMCIsCmZ1bGxOYW1lID0gInNsZXBjLzIuOS4wIiwKbG9hZE9yZGVyID0gMiwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJzbGVwYy8yLjkuMCIsCndWID0gIjAwMDAwMDAwMi4wMDAwMDAwMDkuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9;
+export _ModuleTable002_;
+_ModuleTable003_=IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wcmVyZXEvbWYiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZiIsCn0K;
+export _ModuleTable003_;
+_ModuleTable_Sz_=3;
+export _ModuleTable_Sz_;
+===========================
+step 17
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load junk/1.0
+===========================
+LOADEDMODULES=petsc/3.1.0:slepc/2.9.0:jdk32/1.0:junk/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/prereq/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/prereq/mf/petsc/3.1.0:/Users/mcawood/Lmod/Lmod/rt/prereq/mf/slepc/2.9.0:/Users/mcawood/Lmod/Lmod/rt/prereq/mf/jdk32/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/prereq/mf/junk/1.0.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpqZGszMiA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZi9qZGszMi8xLjAubHVhIiwKZnVsbE5hbWUgPSAiamRrMzIvMS4wIiwKbG9hZE9yZGVyID0gMywKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJqZGszMiIsCndWID0gIjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKanVuayA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByZXJlcS9tZi9qdW5rLzEuMC5sdWEiLApm;
+export _ModuleTable001_;
+_ModuleTable002_=dWxsTmFtZSA9ICJqdW5rLzEuMCIsCmxvYWRPcmRlciA9IDQsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAianVuay8xLjAiLAp3ViA9ICIwMDAwMDAwMDEuKnpmaW5hbCIsCn0sCnBldHNjID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcHJlcmVxL21mL3BldHNjLzMuMS4wIiwKZnVsbE5hbWUgPSAicGV0c2MvMy4xLjAiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gInBldHNjLzMuMS4wIiwKd1YgPSAiMDAwMDAwMDAzLjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKc2xlcGMgPSB7CmZuID0gIi9Vc2Vycy9tY2F3;
+export _ModuleTable002_;
+_ModuleTable003_=b29kL0xtb2QvTG1vZC9ydC9wcmVyZXEvbWYvc2xlcGMvMi45LjAiLApmdWxsTmFtZSA9ICJzbGVwYy8yLjkuMCIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAic2xlcGMvMi45LjAiLAp3ViA9ICIwMDAwMDAwMDIuMDAwMDAwMDA5Lip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcHJlcmVxL21mIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wcmVyZXEvbWYiLAp9Cg==;
+export _ModuleTable003_;
+_ModuleTable_Sz_=3;
+export _ModuleTable_Sz_;

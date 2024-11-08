@@ -1,0 +1,122 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load gcc mpich
+===========================
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --mt
+===========================
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {
+    gcc = {
+      actionA = {
+        "prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_10_17_14_37_12-Darwin-arm64-mpathColl/mf/Compiler/gcc/13\")",
+      },
+      fn = "/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_10_17_14_37_12-Darwin-arm64-mpathColl/mf/Core/gcc/13.0.lua",
+      fullName = "gcc/13.0",
+      loadOrder = 1,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "gcc",
+      wV = "000000013.*zfinal",
+    },
+    mpich = {
+      actionA = {
+        "prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_10_17_14_37_12-Darwin-arm64-mpathColl/mf/MPI/gcc/13/mpich/13\")",
+      },
+      fn = "/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_10_17_14_37_12-Darwin-arm64-mpathColl/mf/Compiler/gcc/13/mpich/13.0.lua",
+      fullName = "mpich/13.0",
+      loadOrder = 2,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "mpich",
+      wV = "000000013.*zfinal",
+    },
+  },
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_10_17_14_37_12-Darwin-arm64-mpathColl/mf/MPI/gcc/13/mpich/13", "/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_10_17_14_37_12-Darwin-arm64-mpathColl/mf/Compiler/gcc/13", "/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_10_17_14_37_12-Darwin-arm64-mpathColl/mf/Core",
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_10_17_14_37_12-Darwin-arm64-mpathColl/mf/Core",
+}
+
+===========================
+step 4
+rm /Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_10_17_14_37_12-Darwin-arm64-mpathColl/mf/Core/gcc/13.0.lua
+===========================
+===========================
+step 5
+rm /Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_10_17_14_37_12-Darwin-arm64-mpathColl/mf/Compiler/gcc/13/mpich/13.0.lua
+===========================
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing rm gcc
+===========================
+
+Inactive Modules:
+  1) mpich
+
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing rm mpich
+===========================
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --mt
+===========================
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {},
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_10_17_14_37_12-Darwin-arm64-mpathColl/mf/Core",
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_10_17_14_37_12-Darwin-arm64-mpathColl/mf/Core",
+}
+
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load acme
+===========================
+===========================
+step 10
+rm /Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_10_17_14_37_12-Darwin-arm64-mpathColl/mf/Core/acme/1.0.lua
+===========================
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing rm acme
+===========================
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --mt
+===========================
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {},
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_10_17_14_37_12-Darwin-arm64-mpathColl/mf/Core",
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_10_17_14_37_12-Darwin-arm64-mpathColl/mf/Core",
+}
+

@@ -1,0 +1,188 @@
+timestampFn = {
+  false,
+}
+mrcT = {
+  alias2modT = {
+    intelcompiler = "intel",
+  },
+  hiddenT = {
+    ["gcc/4.8"] = true,
+  },
+  version2modT = {
+    ["intel/17"] = "intel/2017.1.132",
+    ["intel/2017"] = "intel/2017.1.132",
+  },
+}
+
+mrcMpathT = {}
+spiderT = {
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Compiler/gcc/4.2"] = {
+    python2 = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["python2/2.7"] = {
+          Version = "2.7",
+          canonical = "2.7",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Compiler/gcc/4.2/python2/2.7.lua",
+          help = [[This is the help message for python 2.7
+]],
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Compiler/gcc/4.2",
+          pV = "000000002.000000007.*zfinal",
+          provides = {
+            "numpy/1.16.4", "scipy/1.2.2",
+          },
+          wV = "000000002.000000007.*zfinal",
+        },
+      },
+    },
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core"] = {
+    gcc = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["gcc/4.2.3"] = {
+          Version = "4.2.3",
+          canonical = "4.2.3",
+          changeMPATH = true,
+          family = "compiler",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/gcc/4.2.3.lua",
+          luaExt = 6,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+          pV = "000000004.000000002.000000003.*zfinal",
+          wV = "000000004.000000002.000000003.*zfinal",
+        },
+        ["gcc/4.2.5"] = {
+          Version = "4.2.5",
+          canonical = "4.2.5",
+          changeMPATH = true,
+          family = "compiler",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/gcc/4.2.5.lua",
+          luaExt = 6,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+          pV = "000000004.000000002.000000005.*zfinal",
+          wV = "000000004.000000002.000000005.*zfinal",
+        },
+      },
+    },
+    intel = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["intel/11.0"] = {
+          Version = "11.0",
+          canonical = "11.0",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/intel/11.0.lua",
+          help = [[        Intel Compilers
+        This module loads Intel Compiler variables.
+        { standard TACC variables: ICC_DIR,  ICC_BIN,  ICC_LIB  }
+]],
+          lpathA = {
+            ["/vol/local/intel/cc/cc/lib"] = 1,
+            ["/vol/local/intel/fc/fc/lib"] = 1,
+            ["/vol/local/intel/idb/idb/lib"] = 1,
+          },
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+          pV = "000000011.*zfinal",
+          pathA = {
+            ["/vol/local/intel/cc/cc/bin"] = 1,
+            ["/vol/local/intel/fc/fc/bin"] = 1,
+            ["/vol/local/intel/idb/idb/bin"] = 1,
+          },
+          wV = "000000011.*zfinal",
+        },
+        ["intel/11.2"] = {
+          Version = "11.2",
+          canonical = "11.2",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/intel/11.2.lua",
+          help = [[        Intel Compilers
+        This module loads Intel Compiler variables.
+        { standard TACC variables: ICC_DIR,  ICC_BIN,  ICC_LIB  }
+]],
+          lpathA = {
+            ["/vol/local/intel/cc/cc/lib"] = 1,
+            ["/vol/local/intel/fc/fc/lib"] = 1,
+            ["/vol/local/intel/idb/idb/lib"] = 1,
+          },
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+          pV = "000000011.000000002.*zfinal",
+          pathA = {
+            ["/vol/local/intel/cc/cc/bin"] = 1,
+            ["/vol/local/intel/fc/fc/bin"] = 1,
+            ["/vol/local/intel/idb/idb/bin"] = 1,
+          },
+          wV = "000000011.000000002.*zfinal",
+        },
+      },
+    },
+    perl = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["perl/5.18.4"] = {
+          Version = "5.18.4",
+          canonical = "5.18.4",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/perl/5.18.4.lua",
+          luaExt = 7,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+          pV = "000000005.000000018.000000004.*zfinal",
+          provides = {
+            "Algorithm::Dependency/1.111", "Algorithm::Diff/1.1903", "YAML::Tiny/1.73",
+          },
+          wV = "000000005.000000018.000000004.*zfinal",
+        },
+      },
+    },
+    python2 = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["python2/2.6.12"] = {
+          Version = "2.6.12",
+          canonical = "2.6.12",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/python2/2.6.12.lua",
+          help = [[This is the help message for python 2.6.12
+]],
+          luaExt = 7,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+          pV = "000000002.000000006.000000012.*zfinal",
+          provides = {
+            "numpy/1.12", "scipy/1.1",
+          },
+          wV = "000000002.000000006.000000012.*zfinal",
+        },
+        ["python2/2.7.14"] = {
+          Version = "2.7.14",
+          canonical = "2.7.14",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core/python2/2.7.14.lua",
+          help = [[This is the help message for python 2.7.14
+]],
+          luaExt = 7,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+          pV = "000000002.000000007.000000014.*zfinal",
+          provides = {
+            "numpy/1.16.4", "scipy/1.2.2",
+          },
+          wV = "000000002.000000007.000000014.*zfinal",
+        },
+      },
+    },
+  },
+  version = 5,
+}
+mpathMapT = {
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Compiler/gcc/4.2"] = {
+    ["gcc/4.2.3"] = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+    ["gcc/4.2.5"] = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/E_Core",
+  },
+}
+

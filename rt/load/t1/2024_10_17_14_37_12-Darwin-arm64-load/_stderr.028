@@ -1,0 +1,5 @@
+Lmod has detected the following error: The following module(s) are illegal: __b
+Lmod does not support modulefiles that start with two or more underscores
+
+
+

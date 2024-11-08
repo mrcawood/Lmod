@@ -1,0 +1,226 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use -a /Users/mcawood/Lmod/Lmod/rt/delim/mf/Core
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9kZWxpbS9tZi9Db3JlIiwKfSwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load init_lua
+===========================
+LOADEDMODULES=init_lua/5.1.4;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core;
+export MODULEPATH;
+__LMOD_REF_COUNT_RTM_LUA_CPATH=:1;
+export __LMOD_REF_COUNT_RTM_LUA_CPATH;
+RTM_LUA_CPATH=::;
+export RTM_LUA_CPATH;
+__LMOD_REF_COUNT_RTM_LUA_PATH=:1;
+export __LMOD_REF_COUNT_RTM_LUA_PATH;
+RTM_LUA_PATH=::;
+export RTM_LUA_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core/init_lua/5.1.4.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewppbml0X2x1YSA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2RlbGltL21mL0NvcmUvaW5pdF9sdWEvNS4xLjQubHVhIiwKZnVsbE5hbWUgPSAiaW5pdF9sdWEvNS4xLjQiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImluaXRfbHVhIiwKd1YgPSAiMDAwMDAwMDA1LjAwMDAwMDAwMS4wMDAwMDAwMDQuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29k;
+export _ModuleTable001_;
+_ModuleTable002_=L0xtb2QvTG1vZC9ydC9kZWxpbS9tZi9Db3JlIiwKfSwKfQo=;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load luaposix
+===========================
+LOADEDMODULES=init_lua/5.1.4:luaposix/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core;
+export MODULEPATH;
+__LMOD_REF_COUNT_RTM_LUA_CPATH=/unknown/apps/luaposix/luaposix/\?.so:1\;:1;
+export __LMOD_REF_COUNT_RTM_LUA_CPATH;
+RTM_LUA_CPATH=/unknown/apps/luaposix/luaposix/\?.so::;
+export RTM_LUA_CPATH;
+__LMOD_REF_COUNT_RTM_LUA_PATH=/unknown/apps/luaposix/luaposix/\?.lua\;/unknown/apps/luaposix/luaposix/\?:1\;:1;
+export __LMOD_REF_COUNT_RTM_LUA_PATH;
+RTM_LUA_PATH=/unknown/apps/luaposix/luaposix/\?.lua\;/unknown/apps/luaposix/luaposix/\?::;
+export RTM_LUA_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core/init_lua/5.1.4.lua:/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core/luaposix/1.0.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewppbml0X2x1YSA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2RlbGltL21mL0NvcmUvaW5pdF9sdWEvNS4xLjQubHVhIiwKZnVsbE5hbWUgPSAiaW5pdF9sdWEvNS4xLjQiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImluaXRfbHVhIiwKd1YgPSAiMDAwMDAwMDA1LjAwMDAwMDAwMS4wMDAwMDAwMDQuKnpmaW5hbCIsCn0sCmx1YXBvc2l4ID0gewpmbiA9ICIvVXNlcnMvbWNh;
+export _ModuleTable001_;
+_ModuleTable002_=d29vZC9MbW9kL0xtb2QvcnQvZGVsaW0vbWYvQ29yZS9sdWFwb3NpeC8xLjAubHVhIiwKZnVsbE5hbWUgPSAibHVhcG9zaXgvMS4wIiwKbG9hZE9yZGVyID0gMiwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJsdWFwb3NpeCIsCndWID0gIjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2RlbGltL21mL0NvcmUiLAp9LAp9Cg==;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload luaposix
+===========================
+LOADEDMODULES=init_lua/5.1.4;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core;
+export MODULEPATH;
+__LMOD_REF_COUNT_RTM_LUA_CPATH=:1;
+export __LMOD_REF_COUNT_RTM_LUA_CPATH;
+RTM_LUA_CPATH=::;
+export RTM_LUA_CPATH;
+__LMOD_REF_COUNT_RTM_LUA_PATH=:1;
+export __LMOD_REF_COUNT_RTM_LUA_PATH;
+RTM_LUA_PATH=::;
+export RTM_LUA_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core/init_lua/5.1.4.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewppbml0X2x1YSA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2RlbGltL21mL0NvcmUvaW5pdF9sdWEvNS4xLjQubHVhIiwKZnVsbE5hbWUgPSAiaW5pdF9sdWEvNS4xLjQiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImluaXRfbHVhIiwKd1YgPSAiMDAwMDAwMDA1LjAwMDAwMDAwMS4wMDAwMDAwMDQuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29k;
+export _ModuleTable001_;
+_ModuleTable002_=L0xtb2QvTG1vZC9ydC9kZWxpbS9tZi9Db3JlIiwKfSwKfQo=;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load init_lua
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core;
+export MODULEPATH;
+RTM_LUA_CPATH=::;
+export RTM_LUA_CPATH;
+RTM_LUA_PATH=::;
+export RTM_LUA_PATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewppbml0X2x1YSA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2RlbGltL21mL0NvcmUvaW5pdF9sdWEvNS4xLjQubHVhIiwKZnVsbE5hbWUgPSAiaW5pdF9sdWEvNS4xLjQiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImluaXRfbHVhIiwKd1YgPSAiMDAwMDAwMDA1LjAwMDAwMDAwMS4wMDAwMDAwMDQuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29k;
+export _ModuleTable001_;
+_ModuleTable002_=L0xtb2QvTG1vZC9ydC9kZWxpbS9tZi9Db3JlIiwKfSwKfQo=;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load luaposix
+===========================
+LOADEDMODULES=init_lua/5.1.4:luaposix/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core;
+export MODULEPATH;
+__LMOD_REF_COUNT_RTM_LUA_CPATH=/unknown/apps/luaposix/luaposix/\?.so:1\;:1;
+export __LMOD_REF_COUNT_RTM_LUA_CPATH;
+RTM_LUA_CPATH=/unknown/apps/luaposix/luaposix/\?.so::;
+export RTM_LUA_CPATH;
+__LMOD_REF_COUNT_RTM_LUA_PATH=/unknown/apps/luaposix/luaposix/\?.lua\;/unknown/apps/luaposix/luaposix/\?:1\;:1;
+export __LMOD_REF_COUNT_RTM_LUA_PATH;
+RTM_LUA_PATH=/unknown/apps/luaposix/luaposix/\?.lua\;/unknown/apps/luaposix/luaposix/\?::;
+export RTM_LUA_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core/init_lua/5.1.4.lua:/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core/luaposix/1.0.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewppbml0X2x1YSA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2RlbGltL21mL0NvcmUvaW5pdF9sdWEvNS4xLjQubHVhIiwKZnVsbE5hbWUgPSAiaW5pdF9sdWEvNS4xLjQiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImluaXRfbHVhIiwKd1YgPSAiMDAwMDAwMDA1LjAwMDAwMDAwMS4wMDAwMDAwMDQuKnpmaW5hbCIsCn0sCmx1YXBvc2l4ID0gewpmbiA9ICIvVXNlcnMvbWNh;
+export _ModuleTable001_;
+_ModuleTable002_=d29vZC9MbW9kL0xtb2QvcnQvZGVsaW0vbWYvQ29yZS9sdWFwb3NpeC8xLjAubHVhIiwKZnVsbE5hbWUgPSAibHVhcG9zaXgvMS4wIiwKbG9hZE9yZGVyID0gMiwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJsdWFwb3NpeCIsCndWID0gIjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2RlbGltL21mL0NvcmUiLAp9LAp9Cg==;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewppbml0X2x1YSA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2RlbGltL21mL0NvcmUvaW5pdF9sdWEvNS4xLjQubHVhIiwKZnVsbE5hbWUgPSAiaW5pdF9sdWEvNS4xLjQiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImluaXRfbHVhIiwKd1YgPSAiMDAwMDAwMDA1LjAwMDAwMDAwMS4wMDAwMDAwMDQuKnpmaW5hbCIsCn0sCmx1YXBvc2l4ID0gewpmbiA9ICIvVXNlcnMvbWNh;
+export _ModuleTable001_;
+_ModuleTable002_=d29vZC9MbW9kL0xtb2QvcnQvZGVsaW0vbWYvQ29yZS9sdWFwb3NpeC8xLjAubHVhIiwKZnVsbE5hbWUgPSAibHVhcG9zaXgvMS4wIiwKbG9hZE9yZGVyID0gMiwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJsdWFwb3NpeCIsCndWID0gIjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2RlbGltL21mL0NvcmUiLAp9LAp9Cg==;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload init_lua luaposix
+===========================
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core;
+export MODULEPATH;
+unset __LMOD_REF_COUNT_RTM_LUA_CPATH;
+unset RTM_LUA_CPATH;
+unset __LMOD_REF_COUNT_RTM_LUA_PATH;
+unset RTM_LUA_PATH;
+unset _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9kZWxpbS9tZi9Db3JlIiwKfSwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9kZWxpbS9tZi9Db3JlIiwKfSwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load ncarIntel
+===========================
+LOADEDMODULES=ncarIntel/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core;
+export MODULEPATH;
+__LMOD_REF_COUNT_NCAR_LIB_INTEL=-Wl,-rpath,/opt/intel/composer_xe_2011_sp1.6.233/compiler/lib/intel64:1;
+export __LMOD_REF_COUNT_NCAR_LIB_INTEL;
+NCAR_LIB_INTEL=-Wl,-rpath,/opt/intel/composer_xe_2011_sp1.6.233/compiler/lib/intel64;
+export NCAR_LIB_INTEL;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core/ncarIntel/1.0.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpuY2FySW50ZWwgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9kZWxpbS9tZi9Db3JlL25jYXJJbnRlbC8xLjAubHVhIiwKZnVsbE5hbWUgPSAibmNhckludGVsLzEuMCIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibmNhckludGVsIiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZGVsaW0v;
+export _ModuleTable001_;
+_ModuleTable002_=bWYvQ29yZSIsCn0sCn0K;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load ncarNetcdf
+===========================
+LOADEDMODULES=ncarIntel/1.0:ncarNetcdf/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core;
+export MODULEPATH;
+__LMOD_REF_COUNT_NCAR_LIB_INTEL=-Wl,-rpath,/opt/intel/composer_xe_2011_sp1.6.233/compiler/lib/intel64:1\;-L/opt/netcdf/3.6.3/intel/12.1.0/lib:1\;-lnetcdf\ -lnetcdff:1\;-Wl,-rpath,/opt/netcdf/3.6.3/intel/12.1.0/lib:1;
+export __LMOD_REF_COUNT_NCAR_LIB_INTEL;
+NCAR_LIB_INTEL=-Wl,-rpath,/opt/intel/composer_xe_2011_sp1.6.233/compiler/lib/intel64:-L/opt/netcdf/3.6.3/intel/12.1.0/lib:-lnetcdf\ -lnetcdff:-Wl,-rpath,/opt/netcdf/3.6.3/intel/12.1.0/lib;
+export NCAR_LIB_INTEL;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core/ncarIntel/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core/ncarNetcdf/1.0.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpuY2FySW50ZWwgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9kZWxpbS9tZi9Db3JlL25jYXJJbnRlbC8xLjAubHVhIiwKZnVsbE5hbWUgPSAibmNhckludGVsLzEuMCIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibmNhckludGVsIiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LApuY2FyTmV0Y2RmID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQv;
+export _ModuleTable001_;
+_ModuleTable002_=ZGVsaW0vbWYvQ29yZS9uY2FyTmV0Y2RmLzEuMC5sdWEiLApmdWxsTmFtZSA9ICJuY2FyTmV0Y2RmLzEuMCIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibmNhck5ldGNkZiIsCndWID0gIjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2RlbGltL21mL0NvcmUiLAp9LAp9Cg==;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 13
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload ncarNetcdf
+===========================
+LOADEDMODULES=ncarIntel/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core;
+export MODULEPATH;
+__LMOD_REF_COUNT_NCAR_LIB_INTEL=-Wl,-rpath,/opt/intel/composer_xe_2011_sp1.6.233/compiler/lib/intel64:1;
+export __LMOD_REF_COUNT_NCAR_LIB_INTEL;
+NCAR_LIB_INTEL=-Wl,-rpath,/opt/intel/composer_xe_2011_sp1.6.233/compiler/lib/intel64;
+export NCAR_LIB_INTEL;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core/ncarIntel/1.0.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpuY2FySW50ZWwgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9kZWxpbS9tZi9Db3JlL25jYXJJbnRlbC8xLjAubHVhIiwKZnVsbE5hbWUgPSAibmNhckludGVsLzEuMCIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibmNhckludGVsIiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZGVsaW0v;
+export _ModuleTable001_;
+_ModuleTable002_=bWYvQ29yZSIsCn0sCn0K;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;

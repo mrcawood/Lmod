@@ -1,0 +1,188 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_07"; export tag
+idTag="t1"; export idTag
+TARGET=""; export TARGET
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/t1/2024_11_07_13_03_06-Darwin-arm64-csh_swap/t1.runtime"; export runtimeFn
+resultFn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/t1/2024_11_07_13_03_06-Darwin-arm64-csh_swap/t1.result"; export resultFn
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/csh_swap"; export testDir
+testName="csh_swap"; export testName
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/t1/2024_11_07_13_03_06-Darwin-arm64-csh_swap/message.lua"; export messageFn
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/csh_swap.tdesc"; export testdescriptFn
+outputDir="/Users/mcawood/Lmod/Lmod/rt/csh_swap/t1/2024_11_07_13_03_06-Darwin-arm64-csh_swap"; export outputDir
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/csh_swap/t1/2024_11_07_13_03_06-Darwin-arm64-csh_swap/results.lua"; export cmdResultFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+
+     unsetMT
+     initStdEnvVars
+
+     cp /Users/mcawood/Lmod/Lmod/init/lmodrc.lua .lmodrc.lua
+
+     _histchars="@%"
+
+     CMD=lmod.in.lua
+
+
+cat > csh_swap.csh << EOF
+#!/bin/tcsh -f
+
+     lua /Users/mcawood/Lmod/Lmod/src/$CMD csh purge > _stdclr.00
+     eval \`cat _stdclr.00\`
+
+     lua /Users/mcawood/Lmod/Lmod/src/clearLMOD_cmd.in.lua --shell csh --simple > _stdclr.01
+     eval \`cat _stdclr.01\`
+
+     setenv ORIG_HOME `(cd $HOME; /bin/pwd)`
+     setenv HOME      `pwd`
+
+     unsetenv MANPATH
+
+     setenv PATH $PATH
+     setenv MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2
+     setenv MODULEPATH_ROOT /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf
+
+
+     echo "==========================="
+     echo "step 0"
+     echo "==========================="
+
+     echo "===========================" >  _stdout.00
+     echo "step 0"                      >> _stdout.00
+     echo "===========================" >> _stdout.00
+
+     lua /Users/mcawood/Lmod/Lmod/src/$CMD csh --version > _stdout.01
+     eval \`cat _stdout.01\`
+
+     echo "==========================="
+     echo "step 1"
+     echo "==========================="
+
+     echo "===========================" >  _stdout.02
+     echo "step 1"                      >> _stdout.02
+     echo "===========================" >> _stdout.02
+
+     lua /Users/mcawood/Lmod/Lmod/src/$CMD csh load admin dollar PrgEnv openmpi parmetis > _stdout.03
+     eval \`cat _stdout.03\`
+
+     echo "===========================" >  _stdout.04
+     echo "step 2"                      >> _stdout.04
+     echo "===========================" >> _stdout.04
+
+     echo "==========================="
+     echo "step 2"
+     echo "==========================="
+
+     lua /Users/mcawood/Lmod/Lmod/src/$CMD csh unload intel > _stdout.05
+     eval \`cat _stdout.05\`
+
+     echo "===========================" >  _stdout.06
+     echo "step 3"                      >> _stdout.06
+     echo "===========================" >> _stdout.06
+
+     echo "==========================="
+     echo "step 3"
+     echo "==========================="
+
+     lua /Users/mcawood/Lmod/Lmod/src/$CMD csh load gcc  > _stdout.07
+     eval \`cat _stdout.07\`
+
+     echo "===========================" >  _stdout.08
+     echo "step 4"                      >> _stdout.08
+     echo "===========================" >> _stdout.08
+
+     echo "==========================="
+     echo "step 4"
+     echo "==========================="
+
+
+     lua /Users/mcawood/Lmod/Lmod/src/$CMD csh load ml minfo > _stdout.09
+     eval \`cat _stdout.09\`
+
+     echo "===========================" >  _stdout.10
+     echo "step 5"                      >> _stdout.10
+     echo "===========================" >> _stdout.10
+
+     echo "==========================="
+     echo "step 5"
+     echo "==========================="
+
+     lua /Users/mcawood/Lmod/Lmod/src/$CMD csh unload minfo > _stdout.11
+     eval \`cat _stdout.11\`
+
+     echo "===========================" >  _stdout.12
+     echo "step 6"                      >> _stdout.12
+     echo "===========================" >> _stdout.12
+
+     echo "==========================="
+     echo "step 6"
+     echo "==========================="
+
+     lua /Users/mcawood/Lmod/Lmod/src/$CMD csh load minfo/1.0 > _stdout.13
+     eval \`cat _stdout.13\`
+
+     echo "===========================" >  _stdout.14
+     echo "step 7"                      >> _stdout.14
+     echo "===========================" >> _stdout.14
+
+     echo "==========================="
+     echo "step 7"
+     echo "==========================="
+
+     lua /Users/mcawood/Lmod/Lmod/src/$CMD csh load complete > _stdout.15
+     eval \`cat _stdout.15\`
+
+     echo "===========================" >  _stdout.16
+     echo "step 8"                      >> _stdout.16
+     echo "===========================" >> _stdout.16
+
+     echo "==========================="
+     echo "step 8"
+     echo "==========================="
+
+     lua /Users/mcawood/Lmod/Lmod/src/$CMD csh unload complete > _stdout.17
+     eval \`cat _stdout.17\`
+
+     echo "===========================" >  _stdout.18
+     echo "step 9"                      >> _stdout.18
+     echo "===========================" >> _stdout.18
+
+     echo "==========================="
+     echo "step 9"
+     echo "==========================="
+
+     lua /Users/mcawood/Lmod/Lmod/src/$CMD csh swap gcc  intel > _stdout.19
+     eval \`cat _stdout.19\`
+
+     cat _stdout.[01][0-9] > _stdout.orig
+
+     setenv HOME $ORIG_HOME
+EOF
+
+     remove_generated_lmod_files
+
+     unset SHELL_STARTUP_DEBUG
+     chmod +x csh_swap.csh
+
+     ORIG_HOME=$HOME
+     HOME=/Users/mcawood/Lmod/Lmod/rt/csh_swap/t1/2024_11_07_13_03_06-Darwin-arm64-csh_swap
+
+     ./csh_swap.csh > _stderr.orig 2>&1
+     HOME=$ORIG_HOME
+
+     joinBase64Results -csh  _stdout.orig _stdout.new
+     cleanUp _stdout.new  out.txt
+     cleanUp _stderr.orig err.txt
+
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/csh_swap/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/csh_swap/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/csh_swap/t1/2024_11_07_13_03_06-Darwin-arm64-csh_swap/t1.result -t /Users/mcawood/Lmod/Lmod/rt/csh_swap/t1/2024_11_07_13_03_06-Darwin-arm64-csh_swap/t1.runtime results.csv
+   

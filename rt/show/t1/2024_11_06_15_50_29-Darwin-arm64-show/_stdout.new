@@ -1,0 +1,134 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show gcc
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/show/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/show/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show alex
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/show/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/show/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show boost
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/show/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load boost/1.47.1
+===========================
+LOADEDMODULES=boost/1.47.1;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/show/mf/Core;
+export MODULEPATH;
+TACC_BOOST_DIR=/unknown/apps/boost/1.47.1;
+export TACC_BOOST_DIR;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/show/mf/Core/boost/1.47.1.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={boost={fn="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core/boost/1.47.1.lua",fullName="boost/1.47.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="boost/1.47.1",wV="000000001.000000047.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/show/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={boost={fn="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core/boost/1.47.1.lua",fullName="boost/1.47.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="boost/1.47.1",wV="000000001.000000047.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show boost
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/show/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={boost={fn="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core/boost/1.47.1.lua",fullName="boost/1.47.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="boost/1.47.1",wV="000000001.000000047.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show boost/1.49.0
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/show/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={boost={fn="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core/boost/1.47.1.lua",fullName="boost/1.47.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="boost/1.47.1",wV="000000001.000000047.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use /Users/mcawood/Lmod/Lmod/rt/show/mf/Core2
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/show/mf/Core2:1\;/Users/mcawood/Lmod/Lmod/rt/show/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/show/mf/Core2:/Users/mcawood/Lmod/Lmod/rt/show/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={boost={fn="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core/boost/1.47.1.lua",fullName="boost/1.47.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="boost/1.47.1",wV="000000001.000000047.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/show/mf/Core2","/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show a
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/show/mf/Core2:/Users/mcawood/Lmod/Lmod/rt/show/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={boost={fn="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core/boost/1.47.1.lua",fullName="boost/1.47.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="boost/1.47.1",wV="000000001.000000047.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/show/mf/Core2","/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show b_tcl
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/show/mf/Core2:/Users/mcawood/Lmod/Lmod/rt/show/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={boost={fn="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core/boost/1.47.1.lua",fullName="boost/1.47.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="boost/1.47.1",wV="000000001.000000047.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/show/mf/Core2","/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 13
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show nosuchmodule
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/show/mf/Core2:/Users/mcawood/Lmod/Lmod/rt/show/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={boost={fn="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core/boost/1.47.1.lua",fullName="boost/1.47.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="boost/1.47.1",wV="000000001.000000047.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/show/mf/Core2","/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 14
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --location show a
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/show/mf/Core2:/Users/mcawood/Lmod/Lmod/rt/show/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={boost={fn="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core/boost/1.47.1.lua",fullName="boost/1.47.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="boost/1.47.1",wV="000000001.000000047.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/show/mf/Core2","/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 15
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --terse show a
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/show/mf/Core2:/Users/mcawood/Lmod/Lmod/rt/show/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={boost={fn="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core/boost/1.47.1.lua",fullName="boost/1.47.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="boost/1.47.1",wV="000000001.000000047.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/show/mf/Core2","/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 16
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show showMe
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/show/mf/Core2:/Users/mcawood/Lmod/Lmod/rt/show/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={boost={fn="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core/boost/1.47.1.lua",fullName="boost/1.47.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="boost/1.47.1",wV="000000001.000000047.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/show/mf/Core2","/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/show/mf/Core",}';
+export _ModuleTable_;

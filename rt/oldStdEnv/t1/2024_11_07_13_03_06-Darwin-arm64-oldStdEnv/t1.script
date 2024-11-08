@@ -1,0 +1,56 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_07"; export tag
+idTag="t1"; export idTag
+TARGET=""; export TARGET
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/oldStdEnv/t1/2024_11_07_13_03_06-Darwin-arm64-oldStdEnv/t1.runtime"; export runtimeFn
+resultFn="/Users/mcawood/Lmod/Lmod/rt/oldStdEnv/t1/2024_11_07_13_03_06-Darwin-arm64-oldStdEnv/t1.result"; export resultFn
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/oldStdEnv"; export testDir
+testName="oldStdEnv"; export testName
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/oldStdEnv/t1/2024_11_07_13_03_06-Darwin-arm64-oldStdEnv/message.lua"; export messageFn
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/oldStdEnv/oldStdEnv.tdesc"; export testdescriptFn
+outputDir="/Users/mcawood/Lmod/Lmod/rt/oldStdEnv/t1/2024_11_07_13_03_06-Darwin-arm64-oldStdEnv"; export outputDir
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/oldStdEnv/t1/2024_11_07_13_03_06-Darwin-arm64-oldStdEnv/results.lua"; export cmdResultFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/oldStdEnv/mf/Core
+     export LMOD_PACKAGE_PATH=/Users/mcawood/Lmod/Lmod/rt/oldStdEnv
+
+     remove_generated_lmod_files system.modulerc.lua
+
+     runLmod --version                         # 1
+     runLmod load StdEnv                       # 2
+     runLmod list                              # 3
+
+     cat > system.modulerc.lua << 'EOF'
+     module_version("StdEnv/2016.4","default")
+EOF
+     export LMOD_MODULERCFILE=/Users/mcawood/Lmod/Lmod/rt/oldStdEnv/t1/2024_11_07_13_03_06-Darwin-arm64-oldStdEnv/system.modulerc.lua 
+
+     runLmod load StdEnv                       # 4
+     runLmod list                              # 5
+     runLmod load StdEnv/2016.4                # 6
+     runLmod list                              # 7
+
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/oldStdEnv/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/oldStdEnv/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/oldStdEnv/t1/2024_11_07_13_03_06-Darwin-arm64-oldStdEnv/t1.result -t /Users/mcawood/Lmod/Lmod/rt/oldStdEnv/t1/2024_11_07_13_03_06-Darwin-arm64-oldStdEnv/t1.runtime results.csv
+   

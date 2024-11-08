@@ -1,0 +1,57 @@
+===========================
+step 1
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load TACC
+===========================
+false
+===========================
+step 3
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing unload B
+===========================
+__LMOD_REF_COUNT_MODULEPATH=ProjectDIR/rt/mgrload_func/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=ProjectDIR/rt/mgrload_func/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"ProjectDIR/rt/mgrload_func/mf/Core",},systemBaseMPATH="ProjectDIR/rt/mgrload_func/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 4
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=ProjectDIR/rt/mgrload_func/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"ProjectDIR/rt/mgrload_func/mf/Core",},systemBaseMPATH="ProjectDIR/rt/mgrload_func/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 5
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing --mt
+===========================
+===========================
+step 6
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load avx
+===========================
+LOADEDMODULES=avx;
+export LOADEDMODULES;
+MODULEPATH=ProjectDIR/rt/mgrload_func/mf/Core;
+export MODULEPATH;
+RSNT_ARCH=avx;
+export RSNT_ARCH;
+_LMFILES_=ProjectDIR/rt/mgrload_func/mf/Core/avx.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={avx={fn="ProjectDIR/rt/mgrload_func/mf/Core/avx.lua",fullName="avx",loadOrder=1,propT={},stackDepth=0,status="active",userName="avx",wV="M.*zfinal",},},mpathA={"ProjectDIR/rt/mgrload_func/mf/Core",},systemBaseMPATH="ProjectDIR/rt/mgrload_func/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 7
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=ProjectDIR/rt/mgrload_func/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={avx={fn="ProjectDIR/rt/mgrload_func/mf/Core/avx.lua",fullName="avx",loadOrder=1,propT={},stackDepth=0,status="active",userName="avx",wV="M.*zfinal",},},mpathA={"ProjectDIR/rt/mgrload_func/mf/Core",},systemBaseMPATH="ProjectDIR/rt/mgrload_func/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 8
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing --mt
+===========================

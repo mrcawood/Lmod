@@ -1,0 +1,115 @@
+===========================
+step 0
+===========================
+===========================
+step 1
+===========================
+
+false
+===========================
+step 2
+===========================
+setenv __LMOD_REF_COUNT_MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2:1;
+setenv MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2;
+setenv _ModuleTable001_ X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db3JlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db3JlMiIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29yZTovVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29yZTIiLAp9Cg==;
+setenv _ModuleTable_Sz_ 1;
+===========================
+step 3
+===========================
+setenv LMOD_FAMILY_COMPILER gcc;
+setenv LMOD_FAMILY_COMPILER_VERSION 4.2.3;
+setenv LOADEDMODULES gcc/4.2.3;
+setenv __LMOD_REF_COUNT_MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3:1\;/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2:1;
+setenv MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2;
+setenv _LMFILES_ /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/gcc/4.2.3.lua;
+setenv _ModuleTable001_ X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpjb21waWxlciA9ICJnY2MiLAp9LAptVCA9IHsKZ2NjID0gewphY3Rpb25BID0gewoicHJlcGVuZF9wYXRoKFwiTU9EVUxFUEFUSFwiLFwiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvbXBpbGVyL2djYy80LjIuM1wiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db3JlL2djYy80LjIuMy5sdWEiLApmdWxsTmFtZSA9ICJnY2MvNC4yLjMiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3Rh;
+setenv _ModuleTable002_ dHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImdjYyIsCndWID0gIjAwMDAwMDAwNC4wMDAwMDAwMDIuMDAwMDAwMDAzLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29tcGlsZXIvZ2NjLzQuMi4zIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db3JlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db3JlMiIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29yZTovVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29yZTIiLAp9Cg==;
+setenv _ModuleTable_Sz_ 2;
+===========================
+step 4
+===========================
+setenv FULL minfo/1.0;
+setenv LOADEDMODULES gcc/4.2.3:ml/1.0:minfo/1.0;
+setenv MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2;
+setenv NAME minfo;
+setenv USER_SHELL csh;
+setenv _LMFILES_ /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/gcc/4.2.3.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/ml/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/minfo/1.0;
+setenv _ModuleTable001_ X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpjb21waWxlciA9ICJnY2MiLAp9LAptVCA9IHsKZ2NjID0gewphY3Rpb25BID0gewoicHJlcGVuZF9wYXRoKFwiTU9EVUxFUEFUSFwiLFwiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvbXBpbGVyL2djYy80LjIuM1wiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db3JlL2djYy80LjIuMy5sdWEiLApmdWxsTmFtZSA9ICJnY2MvNC4yLjMiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3Rh;
+setenv _ModuleTable002_ dHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImdjYyIsCndWID0gIjAwMDAwMDAwNC4wMDAwMDAwMDIuMDAwMDAwMDAzLip6ZmluYWwiLAp9LAptaW5mbyA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvcmUyL21pbmZvLzEuMCIsCmZ1bGxOYW1lID0gIm1pbmZvLzEuMCIsCmxvYWRPcmRlciA9IDMsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibWluZm8iLAp3ViA9ICIwMDAwMDAwMDEuKnpmaW5hbCIsCn0sCm1sID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29yZTIvbWwvMS4wLmx1YSIsCmZ1bGxOYW1lID0gIm1sLzEuMCIs;
+setenv _ModuleTable003_ CmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibWwiLAp3ViA9ICIwMDAwMDAwMDEuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db21waWxlci9nY2MvNC4yLjMiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvcmUyIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db3JlOi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dh;
+setenv _ModuleTable004_ cC9tZi9Db3JlMiIsCn0K;
+setenv _ModuleTable_Sz_ 4;
+alias ml 'eval `$LMOD_DIR/ml_cmd \!*`';
+===========================
+step 5
+===========================
+unsetenv FULL;
+setenv LOADEDMODULES gcc/4.2.3:ml/1.0;
+setenv MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2;
+unsetenv NAME;
+unsetenv USER_SHELL;
+setenv _LMFILES_ /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/gcc/4.2.3.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/ml/1.0.lua;
+setenv _ModuleTable001_ X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpjb21waWxlciA9ICJnY2MiLAp9LAptVCA9IHsKZ2NjID0gewphY3Rpb25BID0gewoicHJlcGVuZF9wYXRoKFwiTU9EVUxFUEFUSFwiLFwiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvbXBpbGVyL2djYy80LjIuM1wiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db3JlL2djYy80LjIuMy5sdWEiLApmdWxsTmFtZSA9ICJnY2MvNC4yLjMiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3Rh;
+setenv _ModuleTable002_ dHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImdjYyIsCndWID0gIjAwMDAwMDAwNC4wMDAwMDAwMDIuMDAwMDAwMDAzLip6ZmluYWwiLAp9LAptbCA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvcmUyL21sLzEuMC5sdWEiLApmdWxsTmFtZSA9ICJtbC8xLjAiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gIm1sIiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29tcGlsZXIvZ2NjLzQuMi4zIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1v;
+setenv _ModuleTable003_ ZC9ydC9jc2hfc3dhcC9tZi9Db3JlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db3JlMiIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29yZTovVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29yZTIiLAp9Cg==;
+setenv _ModuleTable_Sz_ 3;
+===========================
+step 6
+===========================
+setenv FULL minfo/1.0;
+setenv LOADEDMODULES gcc/4.2.3:ml/1.0:minfo/1.0;
+setenv MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2;
+setenv NAME minfo/1.0;
+setenv USER_SHELL csh;
+setenv _LMFILES_ /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/gcc/4.2.3.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/ml/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/minfo/1.0;
+setenv _ModuleTable001_ X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpjb21waWxlciA9ICJnY2MiLAp9LAptVCA9IHsKZ2NjID0gewphY3Rpb25BID0gewoicHJlcGVuZF9wYXRoKFwiTU9EVUxFUEFUSFwiLFwiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvbXBpbGVyL2djYy80LjIuM1wiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db3JlL2djYy80LjIuMy5sdWEiLApmdWxsTmFtZSA9ICJnY2MvNC4yLjMiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3Rh;
+setenv _ModuleTable002_ dHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImdjYyIsCndWID0gIjAwMDAwMDAwNC4wMDAwMDAwMDIuMDAwMDAwMDAzLip6ZmluYWwiLAp9LAptaW5mbyA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvcmUyL21pbmZvLzEuMCIsCmZ1bGxOYW1lID0gIm1pbmZvLzEuMCIsCmxvYWRPcmRlciA9IDMsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibWluZm8vMS4wIiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LAptbCA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvcmUyL21sLzEuMC5sdWEiLApmdWxsTmFtZSA9ICJtbC8x;
+setenv _ModuleTable003_ LjAiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gIm1sIiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29tcGlsZXIvZ2NjLzQuMi4zIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db3JlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db3JlMiIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29yZTovVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3No;
+setenv _ModuleTable004_ X3N3YXAvbWYvQ29yZTIiLAp9Cg==;
+setenv _ModuleTable_Sz_ 4;
+===========================
+step 7
+===========================
+setenv LOADEDMODULES gcc/4.2.3:ml/1.0:minfo/1.0:complete/1.0;
+setenv MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2;
+setenv _LMFILES_ /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/gcc/4.2.3.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/ml/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/minfo/1.0:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/complete/1.0;
+setenv _ModuleTable001_ X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpjb21waWxlciA9ICJnY2MiLAp9LAptVCA9IHsKY29tcGxldGUgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db3JlMi9jb21wbGV0ZS8xLjAiLApmdWxsTmFtZSA9ICJjb21wbGV0ZS8xLjAiLApsb2FkT3JkZXIgPSA0LApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImNvbXBsZXRlIiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LApnY2MgPSB7CmFjdGlvbkEgPSB7CiJwcmVwZW5kX3BhdGgo;
+setenv _ModuleTable002_ XCJNT0RVTEVQQVRIXCIsXCIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29tcGlsZXIvZ2NjLzQuMi4zXCIpIiwKfSwKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvcmUvZ2NjLzQuMi4zLmx1YSIsCmZ1bGxOYW1lID0gImdjYy80LjIuMyIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiZ2NjIiwKd1YgPSAiMDAwMDAwMDA0LjAwMDAwMDAwMi4wMDAwMDAwMDMuKnpmaW5hbCIsCn0sCm1pbmZvID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29yZTIvbWluZm8vMS4wIiwKZnVsbE5h;
+setenv _ModuleTable003_ bWUgPSAibWluZm8vMS4wIiwKbG9hZE9yZGVyID0gMywKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJtaW5mby8xLjAiLAp3ViA9ICIwMDAwMDAwMDEuKnpmaW5hbCIsCn0sCm1sID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29yZTIvbWwvMS4wLmx1YSIsCmZ1bGxOYW1lID0gIm1sLzEuMCIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibWwiLAp3ViA9ICIwMDAwMDAwMDEuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dh;
+setenv _ModuleTable004_ cC9tZi9Db21waWxlci9nY2MvNC4yLjMiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvcmUyIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db3JlOi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db3JlMiIsCn0K;
+setenv _ModuleTable_Sz_ 4;
+complete foo p/\*/c/;
+===========================
+step 8
+===========================
+setenv LOADEDMODULES gcc/4.2.3:ml/1.0:minfo/1.0;
+setenv MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/gcc/4.2.3:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2;
+setenv _LMFILES_ /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/gcc/4.2.3.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/ml/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/minfo/1.0;
+setenv _ModuleTable001_ X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpjb21waWxlciA9ICJnY2MiLAp9LAptVCA9IHsKZ2NjID0gewphY3Rpb25BID0gewoicHJlcGVuZF9wYXRoKFwiTU9EVUxFUEFUSFwiLFwiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvbXBpbGVyL2djYy80LjIuM1wiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db3JlL2djYy80LjIuMy5sdWEiLApmdWxsTmFtZSA9ICJnY2MvNC4yLjMiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3Rh;
+setenv _ModuleTable002_ dHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImdjYyIsCndWID0gIjAwMDAwMDAwNC4wMDAwMDAwMDIuMDAwMDAwMDAzLip6ZmluYWwiLAp9LAptaW5mbyA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvcmUyL21pbmZvLzEuMCIsCmZ1bGxOYW1lID0gIm1pbmZvLzEuMCIsCmxvYWRPcmRlciA9IDMsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibWluZm8vMS4wIiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LAptbCA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvcmUyL21sLzEuMC5sdWEiLApmdWxsTmFtZSA9ICJtbC8x;
+setenv _ModuleTable003_ LjAiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gIm1sIiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29tcGlsZXIvZ2NjLzQuMi4zIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db3JlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db3JlMiIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29yZTovVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3No;
+setenv _ModuleTable004_ X3N3YXAvbWYvQ29yZTIiLAp9Cg==;
+setenv _ModuleTable_Sz_ 4;
+uncomplete foo;
+===========================
+step 9
+===========================
+setenv __LMOD_REF_COUNT_LD_LIBRARY_PATH /vol/local/intel/mkl/mkl/lib/lib:1\;/vol/local/intel/idb/idb/lib:1\;/vol/local/intel/fc/fc/lib:1\;/vol/local/intel/cc/cc/lib:1;
+setenv LD_LIBRARY_PATH /vol/local/intel/mkl/mkl/lib/lib:/vol/local/intel/idb/idb/lib:/vol/local/intel/fc/fc/lib:/vol/local/intel/cc/cc/lib;
+setenv LMOD_FAMILY_COMPILER intel;
+setenv LMOD_FAMILY_COMPILER_VERSION intel;
+setenv LOADEDMODULES ml/1.0:minfo/1.0:intel/intel;
+setenv __LMOD_REF_COUNT_MANPATH /vol/local/intel/mkl/mkl/man:1\;/vol/local/intel/idb/idb/man:1\;/vol/local/intel/fc/fc/man:1\;/vol/local/intel/cc/cc/man:1;
+setenv MANPATH /vol/local/intel/mkl/mkl/man:/vol/local/intel/idb/idb/man:/vol/local/intel/fc/fc/man:/vol/local/intel/cc/cc/man;
+setenv MKL_DIR /vol/local/intel/mkl/mkl/lib/lib;
+setenv MKL_INCLUDE /vol/local/intel/mkl/mkl/include;
+setenv __LMOD_REF_COUNT_MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/intel/10.1:1\;/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2:1;
+setenv MODULEPATH /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Compiler/intel/10.1:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2;
+setenv __LMOD_REF_COUNT_PATH /vol/local/intel/idb/idb/bin:1\;/vol/local/intel/fc/fc/bin:1\;/vol/local/intel/cc/cc/bin:1\;/Users/mcawood/Lmod/Lmod/proj_mgmt:1\;/Users/mcawood/Lmod/Hermes/bin:1\;/opt/homebrew/bin:1\;/usr/bin:1\;/bin:1;
+setenv PATH /vol/local/intel/idb/idb/bin:/vol/local/intel/fc/fc/bin:/vol/local/intel/cc/cc/bin:/Users/mcawood/Lmod/Lmod/proj_mgmt:/Users/mcawood/Lmod/Hermes/bin:/opt/homebrew/bin:/usr/bin:/bin;
+setenv _LMFILES_ /Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/ml/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core2/minfo/1.0:/Users/mcawood/Lmod/Lmod/rt/csh_swap/mf/Core/intel/intel.lua;
+setenv _ModuleTable001_ X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpjb21waWxlciA9ICJpbnRlbCIsCn0sCm1UID0gewppbnRlbCA9IHsKYWN0aW9uQSA9IHsKInByZXBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9jc2hfc3dhcC9tZi9Db21waWxlci9pbnRlbC8xMC4xXCIpIiwKfSwKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvcmUvaW50ZWwvaW50ZWwubHVhIiwKZnVsbE5hbWUgPSAiaW50ZWwvaW50ZWwiLApsb2FkT3JkZXIgPSAzLApwcm9wVCA9IHt9LApzdGFja0RlcHRo;
+setenv _ModuleTable002_ ID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImludGVsIiwKd1YgPSAiKmludGVsLip6ZmluYWwiLAp9LAptaW5mbyA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvcmUyL21pbmZvLzEuMCIsCmZ1bGxOYW1lID0gIm1pbmZvLzEuMCIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibWluZm8vMS4wIiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LAptbCA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvcmUyL21sLzEuMC5sdWEiLApmdWxsTmFtZSA9ICJtbC8xLjAiLApsb2FkT3Jk;
+setenv _ModuleTable003_ ZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gIm1sIiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29tcGlsZXIvaW50ZWwvMTAuMSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvY3NoX3N3YXAvbWYvQ29yZTIiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0NvcmU6L1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2NzaF9zd2FwL21mL0Nv;
+setenv _ModuleTable004_ cmUyIiwKfQo=;
+setenv _ModuleTable_Sz_ 4;

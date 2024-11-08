@@ -1,0 +1,48 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/configDir"; export testDir
+messageFn="/Users/mcawood/Lmod/Lmod/rt/configDir/t1/2024_11_06_15_50_29-Darwin-arm64-configDir/message.lua"; export messageFn
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_06"; export tag
+target=""; export target
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/configDir/configDir.tdesc"; export testdescriptFn
+TARGET=""; export TARGET
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/configDir/t1/2024_11_06_15_50_29-Darwin-arm64-configDir/results.lua"; export cmdResultFn
+packageName="rt"; export packageName
+resultFn="/Users/mcawood/Lmod/Lmod/rt/configDir/t1/2024_11_06_15_50_29-Darwin-arm64-configDir/t1.result"; export resultFn
+testName="configDir"; export testName
+idTag="t1"; export idTag
+outputDir="/Users/mcawood/Lmod/Lmod/rt/configDir/t1/2024_11_06_15_50_29-Darwin-arm64-configDir"; export outputDir
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/configDir/t1/2024_11_06_15_50_29-Darwin-arm64-configDir/t1.runtime"; export runtimeFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/configDir/mf
+
+     remove_generated_lmod_files
+
+     runLmod --version                         # 1
+     export LMOD_CONFIG_DIR=/Users/mcawood/Lmod/Lmod/rt/configDir/lmod_cfg_dir
+     runLmod --config                          # 2
+     runLmod load tryThis                      # 3
+     runLmod load w                            # 4
+
+
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/configDir/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/configDir/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/configDir/t1/2024_11_06_15_50_29-Darwin-arm64-configDir/t1.result -t /Users/mcawood/Lmod/Lmod/rt/configDir/t1/2024_11_06_15_50_29-Darwin-arm64-configDir/t1.runtime results.csv
+   

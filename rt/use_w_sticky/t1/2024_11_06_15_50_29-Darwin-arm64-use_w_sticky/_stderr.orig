@@ -1,0 +1,53 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load HPCBIOS
+===========================
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) HPCBIOS/2016q2
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) HPCBIOS/2016q2 (S)
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+
+ 
+
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T use /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Other /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/A
+===========================
+  Lmod version: 8.7.43 2024-06-24 15:50 -06:00
+running: module --regression_testing -T use /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Other /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/A
+  Prepending: /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Other to MODULEPATH
+  Prepending: /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/A to MODULEPATH
+  reloadAll(1)(HPCBIOS)
+  (1)(1)Unloading: HPCBIOS (status: active) (fn: /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Core/HPCBIOS/2016q2.lua)
+    Removing: /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/Other from MODULEPATH
+  reloadAll(2)()
+
+Inactive Modules:
+  1) HPCBIOS
+
+===========================
+step 6
+echo MODULEPATH: /Users/mcawood/Lmod/Lmod/rt/use_w_sticky/mf/A
+===========================

@@ -1,0 +1,58 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load abc
+===========================
+LOADEDMODULES=abc;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/disappear/t1/2024_11_06_15_50_29-Darwin-arm64-disappear/mf:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/disappear/t1/2024_11_06_15_50_29-Darwin-arm64-disappear/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/disappear/t1/2024_11_06_15_50_29-Darwin-arm64-disappear/mf/abc.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewphYmMgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9kaXNhcHBlYXIvdDEvMjAyNF8xMV8wNl8xNV81MF8yOS1EYXJ3aW4tYXJtNjQtZGlzYXBwZWFyL21mL2FiYy5sdWEiLApmdWxsTmFtZSA9ICJhYmMiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImFiYyIsCndWID0gIk0uKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9k;
+export _ModuleTable001_;
+_ModuleTable002_=aXNhcHBlYXIvdDEvMjAyNF8xMV8wNl8xNV81MF8yOS1EYXJ3aW4tYXJtNjQtZGlzYXBwZWFyL21mIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9kaXNhcHBlYXIvdDEvMjAyNF8xMV8wNl8xNV81MF8yOS1EYXJ3aW4tYXJtNjQtZGlzYXBwZWFyL21mIiwKfQo=;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+abc=1.0;
+export abc;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/disappear/t1/2024_11_06_15_50_29-Darwin-arm64-disappear/mf;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewphYmMgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9kaXNhcHBlYXIvdDEvMjAyNF8xMV8wNl8xNV81MF8yOS1EYXJ3aW4tYXJtNjQtZGlzYXBwZWFyL21mL2FiYy5sdWEiLApmdWxsTmFtZSA9ICJhYmMiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImFiYyIsCndWID0gIk0uKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9k;
+export _ModuleTable001_;
+_ModuleTable002_=aXNhcHBlYXIvdDEvMjAyNF8xMV8wNl8xNV81MF8yOS1EYXJ3aW4tYXJtNjQtZGlzYXBwZWFyL21mIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9kaXNhcHBlYXIvdDEvMjAyNF8xMV8wNl8xNV81MF8yOS1EYXJ3aW4tYXJtNjQtZGlzYXBwZWFyL21mIiwKfQo=;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload abc
+===========================
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/disappear/t1/2024_11_06_15_50_29-Darwin-arm64-disappear/mf;
+export MODULEPATH;
+unset _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9kaXNhcHBlYXIvdDEvMjAyNF8xMV8wNl8xNV81MF8yOS1EYXJ3aW4tYXJtNjQtZGlzYXBwZWFyL21mIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9kaXNhcHBlYXIvdDEvMjAyNF8xMV8wNl8xNV81MF8yOS1EYXJ3aW4tYXJtNjQtZGlzYXBwZWFyL21mIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/disappear/t1/2024_11_06_15_50_29-Darwin-arm64-disappear/mf;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9kaXNhcHBlYXIvdDEvMjAyNF8xMV8wNl8xNV81MF8yOS1EYXJ3aW4tYXJtNjQtZGlzYXBwZWFyL21mIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9kaXNhcHBlYXIvdDEvMjAyNF8xMV8wNl8xNV81MF8yOS1EYXJ3aW4tYXJtNjQtZGlzYXBwZWFyL21mIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;

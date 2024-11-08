@@ -1,0 +1,6 @@
+prepend_path("PATH","/Users/mcawood/Lmod/Lmod/rt/zsh_to_modulefile/bin")
+append_path("PATH","/Users/mcawood/Lmod/Lmod/rt/zsh_to_modulefile/sbin")
+set_alias("fooAlias","foobin -q -l")
+set_shell_function("fooFunc","\
+    echo \"arg1: $1\"\
+","")

@@ -1,0 +1,220 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T load ibmA openmpi phdf5
+===========================
+CC=xlc;
+export CC;
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/opt/apps/ibm-13/openmpi-2_1/phdf5/1.8.18/lib:1;
+export __LMOD_REF_COUNT_LD_LIBRARY_PATH;
+LD_LIBRARY_PATH=/opt/apps/ibm-13/openmpi-2_1/phdf5/1.8.18/lib;
+export LD_LIBRARY_PATH;
+LMOD_FAMILY_COMPILER=ibmA;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=13.1.6;
+export LMOD_FAMILY_COMPILER_VERSION;
+LMOD_FAMILY_HDF5=phdf5;
+export LMOD_FAMILY_HDF5;
+LMOD_FAMILY_HDF5_VERSION=1.8.18;
+export LMOD_FAMILY_HDF5_VERSION;
+LMOD_FAMILY_MPI=openmpi;
+export LMOD_FAMILY_MPI;
+LMOD_FAMILY_MPI_VERSION=2.1.1;
+export LMOD_FAMILY_MPI_VERSION;
+LOADEDMODULES=compiler-common/.ibm:ibmA/13.1.6:mpi-common/.openmpi:openmpi/2.1.1:phdf5/1.8.18;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/family/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/family/mf/Compiler/ibm/13:1\;/Users/mcawood/Lmod/Lmod/rt/family/mf/MPI/ibm/13/openmpi/2.1:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/family/mf/Core:/Users/mcawood/Lmod/Lmod/rt/family/mf/Compiler/ibm/13:/Users/mcawood/Lmod/Lmod/rt/family/mf/MPI/ibm/13/openmpi/2.1;
+export MODULEPATH;
+MyMPI_Type=openmpi;
+export MyMPI_Type;
+__LMOD_REF_COUNT_PATH=/opt/apps/ibm-13/openmpi-2_1/phdf5/1.8.18/bin:1\;/opt/apps/ibm-13/openmpi/2.1.1/bin:1\;/Users/mcawood/Lmod/Lmod/proj_mgmt:1\;/Users/mcawood/Lmod/Hermes/bin:1\;/opt/homebrew/bin:1\;/usr/bin:1\;/bin:1;
+export __LMOD_REF_COUNT_PATH;
+PATH=/opt/apps/ibm-13/openmpi-2_1/phdf5/1.8.18/bin:/opt/apps/ibm-13/openmpi/2.1.1/bin:/Users/mcawood/Lmod/Lmod/proj_mgmt:/Users/mcawood/Lmod/Hermes/bin:/opt/homebrew/bin:/usr/bin:/bin;
+export PATH;
+TACC_HDF5_BIN=/opt/apps/ibm-13/openmpi-2_1/phdf5/1.8.18/bin;
+export TACC_HDF5_BIN;
+TACC_HDF5_DIR=/opt/apps/ibm-13/openmpi-2_1/phdf5/1.8.18;
+export TACC_HDF5_DIR;
+TACC_HDF5_DOC=/opt/apps/ibm-13/openmpi-2_1/phdf5/1.8.18/doc;
+export TACC_HDF5_DOC;
+TACC_HDF5_INC=/opt/apps/ibm-13/openmpi-2_1/phdf5/1.8.18/include;
+export TACC_HDF5_INC;
+TACC_HDF5_LIB=/opt/apps/ibm-13/openmpi-2_1/phdf5/1.8.18/lib;
+export TACC_HDF5_LIB;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/family/mf/Core/compiler-common/.ibm.lua:/Users/mcawood/Lmod/Lmod/rt/family/mf/Core/ibmA/13.1.6.lua:/Users/mcawood/Lmod/Lmod/rt/family/mf/Core/mpi-common/.openmpi.lua:/Users/mcawood/Lmod/Lmod/rt/family/mf/Compiler/ibm/13/openmpi/2.1.1.lua:/Users/mcawood/Lmod/Lmod/rt/family/mf/MPI/ibm/13/openmpi/2.1/phdf5/1.8.18.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpIREY1ID0gInBoZGY1IiwKY29tcGlsZXIgPSAiaWJtQSIsCm1waSA9ICJvcGVubXBpIiwKfSwKbVQgPSB7ClsiY29tcGlsZXItY29tbW9uIl0gPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvQ29yZS9jb21waWxlci1jb21tb24vLmlibS5sdWEiLApmdWxsTmFtZSA9ICJjb21waWxlci1jb21tb24vLmlibSIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiY29tcGlsZXItY29t;
+export _ModuleTable001_;
+_ModuleTable002_=bW9uLy5pYm0iLAp3ViA9ICIqaWJtLip6ZmluYWwiLAp9LAppYm1BID0gewphY3Rpb25BID0gewoiYXBwZW5kX3BhdGgoXCJNT0RVTEVQQVRIXCIsXCIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZmFtaWx5L21mL0NvbXBpbGVyL2libS8xM1wiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvQ29yZS9pYm1BLzEzLjEuNi5sdWEiLApmdWxsTmFtZSA9ICJpYm1BLzEzLjEuNiIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiaWJtQSIsCndWID0gIjAwMDAwMDAxMy4wMDAwMDAwMDEuMDAwMDAwMDA2Lip6ZmluYWwiLAp9LApbIm1waS1jb21tb24i;
+export _ModuleTable002_;
+_ModuleTable003_=XSA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2ZhbWlseS9tZi9Db3JlL21waS1jb21tb24vLm9wZW5tcGkubHVhIiwKZnVsbE5hbWUgPSAibXBpLWNvbW1vbi8ub3Blbm1waSIsCmxvYWRPcmRlciA9IDMsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibXBpLWNvbW1vbi8ub3Blbm1waSIsCndWID0gIipvcGVubXBpLip6ZmluYWwiLAp9LApvcGVubXBpID0gewphY3Rpb25BID0gewoiYXBwZW5kX3BhdGgoXCJNT0RVTEVQQVRIXCIsXCIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZmFtaWx5L21mL01QSS9pYm0vMTMvb3Blbm1waS8yLjFcIikiLAp9LApmbiA9ICIvVXNlcnMvbWNhd29vZC9M;
+export _ModuleTable003_;
+_ModuleTable004_=bW9kL0xtb2QvcnQvZmFtaWx5L21mL0NvbXBpbGVyL2libS8xMy9vcGVubXBpLzIuMS4xLmx1YSIsCmZ1bGxOYW1lID0gIm9wZW5tcGkvMi4xLjEiLApsb2FkT3JkZXIgPSA0LApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gIm9wZW5tcGkiLAp3ViA9ICIwMDAwMDAwMDIuMDAwMDAwMDAxLjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKcGhkZjUgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvTVBJL2libS8xMy9vcGVubXBpLzIuMS9waGRmNS8xLjguMTgubHVhIiwKZnVsbE5hbWUgPSAicGhkZjUvMS44LjE4IiwKbG9hZE9yZGVyID0gNSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAs;
+export _ModuleTable004_;
+_ModuleTable005_=CnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJwaGRmNSIsCndWID0gIjAwMDAwMDAwMS4wMDAwMDAwMDguMDAwMDAwMDE4Lip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZmFtaWx5L21mL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2ZhbWlseS9tZi9Db21waWxlci9pYm0vMTMiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2ZhbWlseS9tZi9NUEkvaWJtLzEzL29wZW5tcGkvMi4xIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvQ29yZSIsCn0K;
+export _ModuleTable005_;
+_ModuleTable_Sz_=5;
+export _ModuleTable_Sz_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/family/mf/Core:/Users/mcawood/Lmod/Lmod/rt/family/mf/Compiler/ibm/13:/Users/mcawood/Lmod/Lmod/rt/family/mf/MPI/ibm/13/openmpi/2.1;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpIREY1ID0gInBoZGY1IiwKY29tcGlsZXIgPSAiaWJtQSIsCm1waSA9ICJvcGVubXBpIiwKfSwKbVQgPSB7ClsiY29tcGlsZXItY29tbW9uIl0gPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvQ29yZS9jb21waWxlci1jb21tb24vLmlibS5sdWEiLApmdWxsTmFtZSA9ICJjb21waWxlci1jb21tb24vLmlibSIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiY29tcGlsZXItY29t;
+export _ModuleTable001_;
+_ModuleTable002_=bW9uLy5pYm0iLAp3ViA9ICIqaWJtLip6ZmluYWwiLAp9LAppYm1BID0gewphY3Rpb25BID0gewoiYXBwZW5kX3BhdGgoXCJNT0RVTEVQQVRIXCIsXCIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZmFtaWx5L21mL0NvbXBpbGVyL2libS8xM1wiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvQ29yZS9pYm1BLzEzLjEuNi5sdWEiLApmdWxsTmFtZSA9ICJpYm1BLzEzLjEuNiIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiaWJtQSIsCndWID0gIjAwMDAwMDAxMy4wMDAwMDAwMDEuMDAwMDAwMDA2Lip6ZmluYWwiLAp9LApbIm1waS1jb21tb24i;
+export _ModuleTable002_;
+_ModuleTable003_=XSA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2ZhbWlseS9tZi9Db3JlL21waS1jb21tb24vLm9wZW5tcGkubHVhIiwKZnVsbE5hbWUgPSAibXBpLWNvbW1vbi8ub3Blbm1waSIsCmxvYWRPcmRlciA9IDMsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibXBpLWNvbW1vbi8ub3Blbm1waSIsCndWID0gIipvcGVubXBpLip6ZmluYWwiLAp9LApvcGVubXBpID0gewphY3Rpb25BID0gewoiYXBwZW5kX3BhdGgoXCJNT0RVTEVQQVRIXCIsXCIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZmFtaWx5L21mL01QSS9pYm0vMTMvb3Blbm1waS8yLjFcIikiLAp9LApmbiA9ICIvVXNlcnMvbWNhd29vZC9M;
+export _ModuleTable003_;
+_ModuleTable004_=bW9kL0xtb2QvcnQvZmFtaWx5L21mL0NvbXBpbGVyL2libS8xMy9vcGVubXBpLzIuMS4xLmx1YSIsCmZ1bGxOYW1lID0gIm9wZW5tcGkvMi4xLjEiLApsb2FkT3JkZXIgPSA0LApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gIm9wZW5tcGkiLAp3ViA9ICIwMDAwMDAwMDIuMDAwMDAwMDAxLjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKcGhkZjUgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvTVBJL2libS8xMy9vcGVubXBpLzIuMS9waGRmNS8xLjguMTgubHVhIiwKZnVsbE5hbWUgPSAicGhkZjUvMS44LjE4IiwKbG9hZE9yZGVyID0gNSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAs;
+export _ModuleTable004_;
+_ModuleTable005_=CnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJwaGRmNSIsCndWID0gIjAwMDAwMDAwMS4wMDAwMDAwMDguMDAwMDAwMDE4Lip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZmFtaWx5L21mL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2ZhbWlseS9tZi9Db21waWxlci9pYm0vMTMiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2ZhbWlseS9tZi9NUEkvaWJtLzEzL29wZW5tcGkvMi4xIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvQ29yZSIsCn0K;
+export _ModuleTable005_;
+_ModuleTable_Sz_=5;
+export _ModuleTable_Sz_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T load gccA
+===========================
+CC=gcc;
+export CC;
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/opt/apps/gcc-7/openmpi-2_1/phdf5/1.8.18/lib:1;
+export __LMOD_REF_COUNT_LD_LIBRARY_PATH;
+LD_LIBRARY_PATH=/opt/apps/gcc-7/openmpi-2_1/phdf5/1.8.18/lib;
+export LD_LIBRARY_PATH;
+LMOD_FAMILY_COMPILER=gccA;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=7.1.0;
+export LMOD_FAMILY_COMPILER_VERSION;
+LMOD_FAMILY_HDF5=phdf5;
+export LMOD_FAMILY_HDF5;
+LMOD_FAMILY_HDF5_VERSION=1.8.18;
+export LMOD_FAMILY_HDF5_VERSION;
+LMOD_FAMILY_MPI=openmpi;
+export LMOD_FAMILY_MPI;
+LMOD_FAMILY_MPI_VERSION=2.1.1;
+export LMOD_FAMILY_MPI_VERSION;
+LOADEDMODULES=compiler-common/.gcc:gccA/7.1.0:mpi-common/.openmpi:openmpi/2.1.1:phdf5/1.8.18;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/family/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/family/mf/Compiler/gcc/7:1\;/Users/mcawood/Lmod/Lmod/rt/family/mf/MPI/gcc/7/openmpi/2.1:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/family/mf/Core:/Users/mcawood/Lmod/Lmod/rt/family/mf/Compiler/gcc/7:/Users/mcawood/Lmod/Lmod/rt/family/mf/MPI/gcc/7/openmpi/2.1;
+export MODULEPATH;
+MyMPI_Type=openmpi;
+export MyMPI_Type;
+__LMOD_REF_COUNT_PATH=/opt/apps/gcc-7/openmpi-2_1/phdf5/1.8.18/bin:1\;/opt/apps/gcc-7/openmpi/2.1.1/bin:1\;/Users/mcawood/Lmod/Lmod/proj_mgmt:1\;/Users/mcawood/Lmod/Hermes/bin:1\;/opt/homebrew/bin:1\;/usr/bin:1\;/bin:1;
+export __LMOD_REF_COUNT_PATH;
+PATH=/opt/apps/gcc-7/openmpi-2_1/phdf5/1.8.18/bin:/opt/apps/gcc-7/openmpi/2.1.1/bin:/Users/mcawood/Lmod/Lmod/proj_mgmt:/Users/mcawood/Lmod/Hermes/bin:/opt/homebrew/bin:/usr/bin:/bin;
+export PATH;
+TACC_HDF5_BIN=/opt/apps/gcc-7/openmpi-2_1/phdf5/1.8.18/bin;
+export TACC_HDF5_BIN;
+TACC_HDF5_DIR=/opt/apps/gcc-7/openmpi-2_1/phdf5/1.8.18;
+export TACC_HDF5_DIR;
+TACC_HDF5_DOC=/opt/apps/gcc-7/openmpi-2_1/phdf5/1.8.18/doc;
+export TACC_HDF5_DOC;
+TACC_HDF5_INC=/opt/apps/gcc-7/openmpi-2_1/phdf5/1.8.18/include;
+export TACC_HDF5_INC;
+TACC_HDF5_LIB=/opt/apps/gcc-7/openmpi-2_1/phdf5/1.8.18/lib;
+export TACC_HDF5_LIB;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/family/mf/Core/compiler-common/.gcc.lua:/Users/mcawood/Lmod/Lmod/rt/family/mf/Core/gccA/7.1.0.lua:/Users/mcawood/Lmod/Lmod/rt/family/mf/Core/mpi-common/.openmpi.lua:/Users/mcawood/Lmod/Lmod/rt/family/mf/Compiler/gcc/7/openmpi/2.1.1.lua:/Users/mcawood/Lmod/Lmod/rt/family/mf/MPI/gcc/7/openmpi/2.1/phdf5/1.8.18.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpIREY1ID0gInBoZGY1IiwKY29tcGlsZXIgPSAiZ2NjQSIsCm1waSA9ICJvcGVubXBpIiwKfSwKbVQgPSB7ClsiY29tcGlsZXItY29tbW9uIl0gPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvQ29yZS9jb21waWxlci1jb21tb24vLmdjYy5sdWEiLApmdWxsTmFtZSA9ICJjb21waWxlci1jb21tb24vLmdjYyIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiY29tcGlsZXItY29t;
+export _ModuleTable001_;
+_ModuleTable002_=bW9uLy5nY2MiLAp3ViA9ICIqZ2NjLip6ZmluYWwiLAp9LApnY2NBID0gewphY3Rpb25BID0gewoiYXBwZW5kX3BhdGgoXCJNT0RVTEVQQVRIXCIsXCIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZmFtaWx5L21mL0NvbXBpbGVyL2djYy83XCIpIiwKfSwKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2ZhbWlseS9tZi9Db3JlL2djY0EvNy4xLjAubHVhIiwKZnVsbE5hbWUgPSAiZ2NjQS83LjEuMCIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiZ2NjQSIsCndWID0gIjAwMDAwMDAwNy4wMDAwMDAwMDEuKnpmaW5hbCIsCn0sClsibXBpLWNvbW1vbiJdID0gewpmbiA9ICIv;
+export _ModuleTable002_;
+_ModuleTable003_=VXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZmFtaWx5L21mL0NvcmUvbXBpLWNvbW1vbi8ub3Blbm1waS5sdWEiLApmdWxsTmFtZSA9ICJtcGktY29tbW9uLy5vcGVubXBpIiwKbG9hZE9yZGVyID0gMywKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJtcGktY29tbW9uLy5vcGVubXBpIiwKd1YgPSAiKm9wZW5tcGkuKnpmaW5hbCIsCn0sCm9wZW5tcGkgPSB7CmFjdGlvbkEgPSB7CiJhcHBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvTVBJL2djYy83L29wZW5tcGkvMi4xXCIpIiwKfSwKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2Zh;
+export _ModuleTable003_;
+_ModuleTable004_=bWlseS9tZi9Db21waWxlci9nY2MvNy9vcGVubXBpLzIuMS4xLmx1YSIsCmZ1bGxOYW1lID0gIm9wZW5tcGkvMi4xLjEiLApsb2FkT3JkZXIgPSA0LApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gIm9wZW5tcGkiLAp3ViA9ICIwMDAwMDAwMDIuMDAwMDAwMDAxLjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKcGhkZjUgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvTVBJL2djYy83L29wZW5tcGkvMi4xL3BoZGY1LzEuOC4xOC5sdWEiLApmdWxsTmFtZSA9ICJwaGRmNS8xLjguMTgiLApsb2FkT3JkZXIgPSA1LApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2;
+export _ModuleTable004_;
+_ModuleTable005_=ZSIsCnVzZXJOYW1lID0gInBoZGY1IiwKd1YgPSAiMDAwMDAwMDAxLjAwMDAwMDAwOC4wMDAwMDAwMTguKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZmFtaWx5L21mL0NvbXBpbGVyL2djYy83IiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvTVBJL2djYy83L29wZW5tcGkvMi4xIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvQ29yZSIsCn0K;
+export _ModuleTable005_;
+_ModuleTable_Sz_=5;
+export _ModuleTable_Sz_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/family/mf/Core:/Users/mcawood/Lmod/Lmod/rt/family/mf/Compiler/gcc/7:/Users/mcawood/Lmod/Lmod/rt/family/mf/MPI/gcc/7/openmpi/2.1;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpIREY1ID0gInBoZGY1IiwKY29tcGlsZXIgPSAiZ2NjQSIsCm1waSA9ICJvcGVubXBpIiwKfSwKbVQgPSB7ClsiY29tcGlsZXItY29tbW9uIl0gPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvQ29yZS9jb21waWxlci1jb21tb24vLmdjYy5sdWEiLApmdWxsTmFtZSA9ICJjb21waWxlci1jb21tb24vLmdjYyIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiY29tcGlsZXItY29t;
+export _ModuleTable001_;
+_ModuleTable002_=bW9uLy5nY2MiLAp3ViA9ICIqZ2NjLip6ZmluYWwiLAp9LApnY2NBID0gewphY3Rpb25BID0gewoiYXBwZW5kX3BhdGgoXCJNT0RVTEVQQVRIXCIsXCIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZmFtaWx5L21mL0NvbXBpbGVyL2djYy83XCIpIiwKfSwKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2ZhbWlseS9tZi9Db3JlL2djY0EvNy4xLjAubHVhIiwKZnVsbE5hbWUgPSAiZ2NjQS83LjEuMCIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiZ2NjQSIsCndWID0gIjAwMDAwMDAwNy4wMDAwMDAwMDEuKnpmaW5hbCIsCn0sClsibXBpLWNvbW1vbiJdID0gewpmbiA9ICIv;
+export _ModuleTable002_;
+_ModuleTable003_=VXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZmFtaWx5L21mL0NvcmUvbXBpLWNvbW1vbi8ub3Blbm1waS5sdWEiLApmdWxsTmFtZSA9ICJtcGktY29tbW9uLy5vcGVubXBpIiwKbG9hZE9yZGVyID0gMywKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJtcGktY29tbW9uLy5vcGVubXBpIiwKd1YgPSAiKm9wZW5tcGkuKnpmaW5hbCIsCn0sCm9wZW5tcGkgPSB7CmFjdGlvbkEgPSB7CiJhcHBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvTVBJL2djYy83L29wZW5tcGkvMi4xXCIpIiwKfSwKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2Zh;
+export _ModuleTable003_;
+_ModuleTable004_=bWlseS9tZi9Db21waWxlci9nY2MvNy9vcGVubXBpLzIuMS4xLmx1YSIsCmZ1bGxOYW1lID0gIm9wZW5tcGkvMi4xLjEiLApsb2FkT3JkZXIgPSA0LApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gIm9wZW5tcGkiLAp3ViA9ICIwMDAwMDAwMDIuMDAwMDAwMDAxLjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKcGhkZjUgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvTVBJL2djYy83L29wZW5tcGkvMi4xL3BoZGY1LzEuOC4xOC5sdWEiLApmdWxsTmFtZSA9ICJwaGRmNS8xLjguMTgiLApsb2FkT3JkZXIgPSA1LApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2;
+export _ModuleTable004_;
+_ModuleTable005_=ZSIsCnVzZXJOYW1lID0gInBoZGY1IiwKd1YgPSAiMDAwMDAwMDAxLjAwMDAwMDAwOC4wMDAwMDAwMTguKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZmFtaWx5L21mL0NvbXBpbGVyL2djYy83IiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvTVBJL2djYy83L29wZW5tcGkvMi4xIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvQ29yZSIsCn0K;
+export _ModuleTable005_;
+_ModuleTable_Sz_=5;
+export _ModuleTable_Sz_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T load ibmA
+===========================
+CC=xlc;
+export CC;
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/opt/apps/ibm-13/openmpi-2_1/phdf5/1.8.18/lib:1;
+export __LMOD_REF_COUNT_LD_LIBRARY_PATH;
+LD_LIBRARY_PATH=/opt/apps/ibm-13/openmpi-2_1/phdf5/1.8.18/lib;
+export LD_LIBRARY_PATH;
+LMOD_FAMILY_COMPILER=ibmA;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=13.1.6;
+export LMOD_FAMILY_COMPILER_VERSION;
+LMOD_FAMILY_HDF5=phdf5;
+export LMOD_FAMILY_HDF5;
+LMOD_FAMILY_HDF5_VERSION=1.8.18;
+export LMOD_FAMILY_HDF5_VERSION;
+LMOD_FAMILY_MPI=openmpi;
+export LMOD_FAMILY_MPI;
+LMOD_FAMILY_MPI_VERSION=2.1.1;
+export LMOD_FAMILY_MPI_VERSION;
+LOADEDMODULES=compiler-common/.ibm:ibmA/13.1.6:mpi-common/.openmpi:openmpi/2.1.1:phdf5/1.8.18;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/family/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/family/mf/Compiler/ibm/13:1\;/Users/mcawood/Lmod/Lmod/rt/family/mf/MPI/ibm/13/openmpi/2.1:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/family/mf/Core:/Users/mcawood/Lmod/Lmod/rt/family/mf/Compiler/ibm/13:/Users/mcawood/Lmod/Lmod/rt/family/mf/MPI/ibm/13/openmpi/2.1;
+export MODULEPATH;
+MyMPI_Type=openmpi;
+export MyMPI_Type;
+__LMOD_REF_COUNT_PATH=/opt/apps/ibm-13/openmpi-2_1/phdf5/1.8.18/bin:1\;/opt/apps/ibm-13/openmpi/2.1.1/bin:1\;/Users/mcawood/Lmod/Lmod/proj_mgmt:1\;/Users/mcawood/Lmod/Hermes/bin:1\;/opt/homebrew/bin:1\;/usr/bin:1\;/bin:1;
+export __LMOD_REF_COUNT_PATH;
+PATH=/opt/apps/ibm-13/openmpi-2_1/phdf5/1.8.18/bin:/opt/apps/ibm-13/openmpi/2.1.1/bin:/Users/mcawood/Lmod/Lmod/proj_mgmt:/Users/mcawood/Lmod/Hermes/bin:/opt/homebrew/bin:/usr/bin:/bin;
+export PATH;
+TACC_HDF5_BIN=/opt/apps/ibm-13/openmpi-2_1/phdf5/1.8.18/bin;
+export TACC_HDF5_BIN;
+TACC_HDF5_DIR=/opt/apps/ibm-13/openmpi-2_1/phdf5/1.8.18;
+export TACC_HDF5_DIR;
+TACC_HDF5_DOC=/opt/apps/ibm-13/openmpi-2_1/phdf5/1.8.18/doc;
+export TACC_HDF5_DOC;
+TACC_HDF5_INC=/opt/apps/ibm-13/openmpi-2_1/phdf5/1.8.18/include;
+export TACC_HDF5_INC;
+TACC_HDF5_LIB=/opt/apps/ibm-13/openmpi-2_1/phdf5/1.8.18/lib;
+export TACC_HDF5_LIB;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/family/mf/Core/compiler-common/.ibm.lua:/Users/mcawood/Lmod/Lmod/rt/family/mf/Core/ibmA/13.1.6.lua:/Users/mcawood/Lmod/Lmod/rt/family/mf/Core/mpi-common/.openmpi.lua:/Users/mcawood/Lmod/Lmod/rt/family/mf/Compiler/ibm/13/openmpi/2.1.1.lua:/Users/mcawood/Lmod/Lmod/rt/family/mf/MPI/ibm/13/openmpi/2.1/phdf5/1.8.18.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpIREY1ID0gInBoZGY1IiwKY29tcGlsZXIgPSAiaWJtQSIsCm1waSA9ICJvcGVubXBpIiwKfSwKbVQgPSB7ClsiY29tcGlsZXItY29tbW9uIl0gPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvQ29yZS9jb21waWxlci1jb21tb24vLmlibS5sdWEiLApmdWxsTmFtZSA9ICJjb21waWxlci1jb21tb24vLmlibSIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiY29tcGlsZXItY29t;
+export _ModuleTable001_;
+_ModuleTable002_=bW9uLy5pYm0iLAp3ViA9ICIqaWJtLip6ZmluYWwiLAp9LAppYm1BID0gewphY3Rpb25BID0gewoiYXBwZW5kX3BhdGgoXCJNT0RVTEVQQVRIXCIsXCIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZmFtaWx5L21mL0NvbXBpbGVyL2libS8xM1wiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvQ29yZS9pYm1BLzEzLjEuNi5sdWEiLApmdWxsTmFtZSA9ICJpYm1BLzEzLjEuNiIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiaWJtQSIsCndWID0gIjAwMDAwMDAxMy4wMDAwMDAwMDEuMDAwMDAwMDA2Lip6ZmluYWwiLAp9LApbIm1waS1jb21tb24i;
+export _ModuleTable002_;
+_ModuleTable003_=XSA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2ZhbWlseS9tZi9Db3JlL21waS1jb21tb24vLm9wZW5tcGkubHVhIiwKZnVsbE5hbWUgPSAibXBpLWNvbW1vbi8ub3Blbm1waSIsCmxvYWRPcmRlciA9IDMsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibXBpLWNvbW1vbi8ub3Blbm1waSIsCndWID0gIipvcGVubXBpLip6ZmluYWwiLAp9LApvcGVubXBpID0gewphY3Rpb25BID0gewoiYXBwZW5kX3BhdGgoXCJNT0RVTEVQQVRIXCIsXCIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZmFtaWx5L21mL01QSS9pYm0vMTMvb3Blbm1waS8yLjFcIikiLAp9LApmbiA9ICIvVXNlcnMvbWNhd29vZC9M;
+export _ModuleTable003_;
+_ModuleTable004_=bW9kL0xtb2QvcnQvZmFtaWx5L21mL0NvbXBpbGVyL2libS8xMy9vcGVubXBpLzIuMS4xLmx1YSIsCmZ1bGxOYW1lID0gIm9wZW5tcGkvMi4xLjEiLApsb2FkT3JkZXIgPSA0LApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gIm9wZW5tcGkiLAp3ViA9ICIwMDAwMDAwMDIuMDAwMDAwMDAxLjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKcGhkZjUgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvTVBJL2libS8xMy9vcGVubXBpLzIuMS9waGRmNS8xLjguMTgubHVhIiwKZnVsbE5hbWUgPSAicGhkZjUvMS44LjE4IiwKbG9hZE9yZGVyID0gNSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAs;
+export _ModuleTable004_;
+_ModuleTable005_=CnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJwaGRmNSIsCndWID0gIjAwMDAwMDAwMS4wMDAwMDAwMDguMDAwMDAwMDE4Lip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZmFtaWx5L21mL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2ZhbWlseS9tZi9Db21waWxlci9pYm0vMTMiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2ZhbWlseS9tZi9NUEkvaWJtLzEzL29wZW5tcGkvMi4xIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9mYW1pbHkvbWYvQ29yZSIsCn0K;
+export _ModuleTable005_;
+_ModuleTable_Sz_=5;
+export _ModuleTable_Sz_;
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load tcc
+===========================
+
+false

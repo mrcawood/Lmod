@@ -1,0 +1,6 @@
+  Lmod version: 8.7.43 2024-06-24 15:50 -06:00
+running: module --regression_testing -T unload Rpkgs
+  (1)(0)Unloading: Rpkgs (status: ) (fn: nil)
+
+Note: the module "Rpkgs" cannot be unloaded because it was not loaded.
+

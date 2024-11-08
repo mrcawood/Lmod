@@ -1,0 +1,47 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load TACC
+===========================
+false
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing save
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_11_07_13_03_06-Darwin-arm64-hash_try_load/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_11_07_13_03_06-Darwin-arm64-hash_try_load/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_11_07_13_03_06-Darwin-arm64-hash_try_load/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_11_07_13_03_06-Darwin-arm64-hash_try_load/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_11_07_13_03_06-Darwin-arm64-hash_try_load/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_11_07_13_03_06-Darwin-arm64-hash_try_load/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_11_07_13_03_06-Darwin-arm64-hash_try_load/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing restore
+===========================
+false
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_11_07_13_03_06-Darwin-arm64-hash_try_load/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_11_07_13_03_06-Darwin-arm64-hash_try_load/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_11_07_13_03_06-Darwin-arm64-hash_try_load/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hash_try_load/t1/2024_11_07_13_03_06-Darwin-arm64-hash_try_load/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing restore
+===========================
+false

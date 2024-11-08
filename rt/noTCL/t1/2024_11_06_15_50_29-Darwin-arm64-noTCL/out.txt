@@ -1,0 +1,40 @@
+===========================
+step 1
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing avail
+===========================
+__LMOD_REF_COUNT_MODULEPATH=ProjectDIR/rt/noTCL/mf/Core:1\;ProjectDIR/rt/noTCL/mf/TACC:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=ProjectDIR/rt/noTCL/mf/Core:ProjectDIR/rt/noTCL/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"ProjectDIR/rt/noTCL/mf/Core","ProjectDIR/rt/noTCL/mf/TACC",},systemBaseMPATH="ProjectDIR/rt/noTCL/mf/Core:ProjectDIR/rt/noTCL/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 3
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing spider
+===========================
+MODULEPATH=ProjectDIR/rt/noTCL/mf/Core:ProjectDIR/rt/noTCL/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"ProjectDIR/rt/noTCL/mf/Core","ProjectDIR/rt/noTCL/mf/TACC",},systemBaseMPATH="ProjectDIR/rt/noTCL/mf/Core:ProjectDIR/rt/noTCL/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 4
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load PrgEnv
+===========================
+false
+===========================
+step 5
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing unload PrgEnv
+===========================
+MODULEPATH=ProjectDIR/rt/noTCL/mf/Core:ProjectDIR/rt/noTCL/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"ProjectDIR/rt/noTCL/mf/Core","ProjectDIR/rt/noTCL/mf/TACC",},systemBaseMPATH="ProjectDIR/rt/noTCL/mf/Core:ProjectDIR/rt/noTCL/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 6
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load PrgEnv
+===========================
+false

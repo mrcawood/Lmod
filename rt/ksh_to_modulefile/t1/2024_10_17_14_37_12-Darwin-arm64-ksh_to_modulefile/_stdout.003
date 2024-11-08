@@ -1,0 +1,4 @@
+===========================
+step 2
+buildSh2MF --from ksh /Users/mcawood/Lmod/Lmod/rt/ksh_to_modulefile/script.ksh
+===========================

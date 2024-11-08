@@ -1,0 +1,10 @@
+Lmod has detected the following error: These module(s) or extension(s) exist but cannot be loaded as requested: between("c","1.5","1.7")
+   Try: "module spider c" to see how to load the module(s).
+
+Executing this command requires loading "c" which failed while processing the following module(s):
+
+    Module fullname  Module Filename
+    ---------------  ---------------
+    M8               /Users/mcawood/Lmod/Lmod/rt/between/mf/Core/M8.lua
+
+

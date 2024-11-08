@@ -1,0 +1,830 @@
+timestampFn = {
+  false,
+}
+mrcT = {
+  alias2modT = {},
+  hiddenT = {},
+  version2modT = {},
+}
+
+mrcMpathT = {}
+spiderT = {
+  ["/Users/mcawood/Lmod/Lmod/rt/cache/mf/Compiler/gcc/4.2.3"] = {
+    openmpi = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["openmpi/1.2.6"] = {
+          Version = "1.2.6",
+          canonical = "1.2.6",
+          changeMPATH = true,
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Compiler/gcc/4.2.3/openmpi/1.2.6.lua",
+          lpathA = {
+            ["/vol/local/mpi/gcc/4.2.3/openmpi/1.2.6.opt/lib"] = 1,
+          },
+          luaExt = 6,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Compiler/gcc/4.2.3",
+          pV = "000000001.000000002.000000006.*zfinal",
+          pathA = {
+            ["/vol/local/mpi/gcc/4.2.3/openmpi/1.2.6.opt/bin"] = 1,
+          },
+          wV = "000000001.000000002.000000006.*zfinal",
+        },
+      },
+    },
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core"] = {
+    [".base/bar"] = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        [".base/bar/1.4"] = {
+          Version = "1.4",
+          canonical = "1.4",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/.base/bar/1.4.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000004.*zfinal",
+          pathA = {
+            ["/foo/bar/1.4/bin"] = 1,
+          },
+          wV = "000000001.000000004.*zfinal",
+        },
+        [".base/bar/1.4-dbg"] = {
+          Version = "1.4-dbg",
+          canonical = "1.4-dbg",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/.base/bar/1.4-dbg.lua",
+          luaExt = 8,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000004.*dbg.*zfinal",
+          pathA = {
+            ["/foo/bar/1.4-dbg/bin"] = 1,
+          },
+          wV = "000000001.000000004.*dbg.*zfinal",
+        },
+      },
+    },
+    [".base/baz"] = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        [".base/baz/1.4"] = {
+          Version = "1.4",
+          canonical = "1.4",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/.base/baz/1.4.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000004.*zfinal",
+          pathA = {
+            ["/foo/bar/1.4/bin"] = 1,
+          },
+          wV = "000000001.000000004.*zfinal",
+        },
+        [".base/baz/1.4-dbg"] = {
+          Version = "1.4-dbg",
+          canonical = "1.4-dbg",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/.base/baz/1.4-dbg.lua",
+          luaExt = 8,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000004.*dbg.*zfinal",
+          pathA = {
+            ["/foo/bar/1.4-dbg/bin"] = 1,
+          },
+          wV = "000000001.000000004.*dbg.*zfinal",
+        },
+      },
+    },
+    PrgEnv = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        PrgEnv = {
+          Version = false,
+          canonical = "",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/PrgEnv.lua",
+          luaExt = 7,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "M.*zfinal",
+          wV = "M.*zfinal",
+        },
+      },
+    },
+    admin = {
+      defaultA = {
+        {
+          barefn = "default",
+          defaultIdx = 1,
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/admin/default",
+          fullName = "admin/default",
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          value = "admin-1.0",
+        },
+      },
+      defaultT = {
+        barefn = "default",
+        defaultIdx = 1,
+        fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/admin/default",
+        fullName = "admin/default",
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+        value = "admin-1.0",
+      },
+      dirT = {},
+      fileT = {
+        ["admin/admin-1.0"] = {
+          Version = "admin-1.0",
+          canonical = "admin-1.0",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/admin/admin-1.0.lua",
+          luaExt = 10,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "*admin.*zfinal-.000000001.*zfinal",
+          wV = "^admin.*zfinal-.000000001.*zfinal",
+        },
+      },
+    },
+    alex = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["alex/1.0"] = {
+          Version = "1.0",
+          canonical = "1.0",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/alex/1.0.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.*zfinal",
+          wV = "000000001.*zfinal",
+        },
+      },
+    },
+    bar = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["bar/1.4"] = {
+          Version = "1.4",
+          canonical = "1.4",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/bar/1.4.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000004.*zfinal",
+          pathA = {
+            ["/foo/bar/1.4/bin"] = 1,
+          },
+          wV = "000000001.000000004.*zfinal",
+        },
+        ["bar/1.4-dbg"] = {
+          Version = "1.4-dbg",
+          canonical = "1.4-dbg",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/bar/1.4-dbg.lua",
+          luaExt = 8,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000004.*dbg.*zfinal",
+          pathA = {
+            ["/foo/bar/1.4-dbg/bin"] = 1,
+          },
+          wV = "000000001.000000004.*dbg.*zfinal",
+        },
+      },
+    },
+    baz = {
+      defaultA = {
+        {
+          barefn = "default",
+          defaultIdx = 1,
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/baz/default",
+          fullName = "baz/default",
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          value = "1.4",
+        },
+      },
+      defaultT = {
+        barefn = "default",
+        defaultIdx = 1,
+        fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/baz/default",
+        fullName = "baz/default",
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+        value = "1.4",
+      },
+      dirT = {},
+      fileT = {
+        ["baz/1.4"] = {
+          Version = "1.4",
+          canonical = "1.4",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/baz/1.4.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000004.*zfinal",
+          pathA = {
+            ["/foo/bar/1.4/bin"] = 1,
+          },
+          wV = "^00000001.000000004.*zfinal",
+        },
+        ["baz/1.4-dbg"] = {
+          Version = "1.4-dbg",
+          canonical = "1.4-dbg",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/baz/1.4-dbg.lua",
+          luaExt = 8,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000004.*dbg.*zfinal",
+          pathA = {
+            ["/foo/bar/1.4-dbg/bin"] = 1,
+          },
+          wV = "000000001.000000004.*dbg.*zfinal",
+        },
+      },
+    },
+    foo = {
+      defaultA = {
+        {
+          barefn = "default",
+          defaultIdx = 1,
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/foo/default",
+          fullName = "foo/default",
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          value = "1.4",
+        },
+      },
+      defaultT = {
+        barefn = "default",
+        defaultIdx = 1,
+        fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/foo/default",
+        fullName = "foo/default",
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+        value = "1.4",
+      },
+      dirT = {},
+      fileT = {
+        ["foo/1.4"] = {
+          Version = "1.4",
+          canonical = "1.4",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/foo/1.4.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000004.*zfinal",
+          pathA = {
+            ["/foo/bar/1.4/bin"] = 1,
+          },
+          wV = "^00000001.000000004.*zfinal",
+        },
+        ["foo/1.4-dbg"] = {
+          Version = "1.4-dbg",
+          canonical = "1.4-dbg",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/foo/1.4-dbg.lua",
+          luaExt = 8,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000004.*dbg.*zfinal",
+          pathA = {
+            ["/foo/bar/1.4-dbg/bin"] = 1,
+          },
+          wV = "000000001.000000004.*dbg.*zfinal",
+        },
+      },
+    },
+    gcc = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["gcc/4.2.3"] = {
+          Version = "4.2.3",
+          canonical = "4.2.3",
+          changeMPATH = true,
+          family = "compiler",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/gcc/4.2.3.lua",
+          luaExt = 6,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000004.000000002.000000003.*zfinal",
+          wV = "000000004.000000002.000000003.*zfinal",
+        },
+      },
+    },
+    git = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["git/1.6.3.1"] = {
+          Version = "1.6.3.1",
+          canonical = "1.6.3.1",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/git/1.6.3.1",
+          help = [[
+	Version 1.6.3.1
+
+]],
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000006.000000003.000000001.*zfinal",
+          pathA = {
+            ["/unknown/apps/git/1.6.3.1/bin"] = 1,
+          },
+          wV = "000000001.000000006.000000003.000000001.*zfinal",
+          whatis = {
+            "loads git 1.6.3.1",
+          },
+        },
+        ["git/1.7.4"] = {
+          Category = "library, tools",
+          Description = "Fast Version Control System",
+          Name = "Git",
+          URL = "http://git-scm.com",
+          Version = "1.7.4",
+          canonical = "1.7.4",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/git/1.7.4.lua",
+          help = [[The git module file defines the following environment variables:
+TACC_GIT_DIR, TACC_GIT_LIB, and for
+the location of the git distribution and its libraries.
+
+Version 1.7.4
+]],
+          luaExt = 6,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000007.000000004.*zfinal",
+          pathA = {
+            ["/unknown/apps/git/1.7.4/bin"] = 1,
+          },
+          wV = "000000001.000000007.000000004.*zfinal",
+          whatis = {
+            "Name: Git", "Version: 1.7.4", "Category: library, tools", "URL: http://git-scm.com", "Description: Fast Version Control System",
+          },
+        },
+        ["git/1.7.4.1"] = {
+          Category = "library, tools",
+          Description = "Fast Version Control System",
+          Name = "Git",
+          URL = "http://git-scm.com",
+          Version = "1.7.4.1",
+          canonical = "1.7.4.1",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/git/1.7.4.1.lua",
+          help = [[The git module file defines the following environment variables:
+TACC_GIT_DIR, TACC_GIT_LIB, and for
+the location of the git distribution and its libraries.
+
+Version 1.7.4.1
+]],
+          luaExt = 8,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000007.000000004.000000001.*zfinal",
+          wV = "000000001.000000007.000000004.000000001.*zfinal",
+          whatis = {
+            "Name: Git", "Version: 1.7.4.1", "Category: library, tools", "URL: http://git-scm.com", "Description: Fast Version Control System",
+          },
+        },
+        ["git/1.7.4.2"] = {
+          Category = "library, tools",
+          Description = "Fast Version Control System",
+          Name = "Git",
+          URL = "http://git-scm.com",
+          Version = "1.7.4.2",
+          canonical = "1.7.4.2",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/git/1.7.4.2.lua",
+          help = [[The git module file defines the following environment variables:
+TACC_GIT_DIR, TACC_GIT_LIB, and for
+the location of the git distribution and its libraries.
+
+Version 1.7.4.2
+]],
+          luaExt = 8,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000007.000000004.000000002.*zfinal",
+          wV = "000000001.000000007.000000004.000000002.*zfinal",
+          whatis = {
+            "Name: Git", "Version: 1.7.4.2", "Category: library, tools", "URL: http://git-scm.com", "Description: Fast Version Control System",
+          },
+        },
+        ["git/1.7.4.3"] = {
+          Category = "library, tools",
+          Description = "Fast Version Control System",
+          Name = "Git",
+          URL = "http://git-scm.com",
+          Version = "1.7.4.3",
+          canonical = "1.7.4.3",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/git/1.7.4.3.lua",
+          help = [[The git module file defines the following environment variables:
+TACC_GIT_DIR, TACC_GIT_LIB, and for
+the location of the git distribution and its libraries.
+
+Version 1.7.4.3
+     ]],
+          luaExt = 8,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000007.000000004.000000003.*zfinal",
+          pathA = {
+            ["/unknown/apps/git/1.7.4.3/bin"] = 1,
+          },
+          wV = "000000001.000000007.000000004.000000003.*zfinal",
+          whatis = {
+            "Name: Git", "Version: 1.7.4.3", "Category: library, tools", "URL: http://git-scm.com", "Description: Fast Version Control System",
+          },
+        },
+      },
+    },
+    gotoblas = {
+      defaultA = {
+        {
+          barefn = "default",
+          defaultIdx = 1,
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/gotoblas/default",
+          fullName = "gotoblas/default",
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          value = "1.26",
+        },
+      },
+      defaultT = {
+        barefn = "default",
+        defaultIdx = 1,
+        fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/gotoblas/default",
+        fullName = "gotoblas/default",
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+        value = "1.26",
+      },
+      dirT = {},
+      fileT = {
+        ["gotoblas/1.20"] = {
+          Category = "library, mathematics",
+          Description = "Blas Level 1, 2, 3 routines",
+          Name = "Gotoblas",
+          URL = "http://www.tacc.utexas.edu",
+          Version = "1.20",
+          canonical = "1.20",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/gotoblas/1.20.lua",
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000020.*zfinal",
+          wV = "000000001.000000020.*zfinal",
+          whatis = {
+            "Name: Gotoblas", "Version: 1.20", "Category: library, mathematics", "Description: Blas Level 1, 2, 3 routines", "URL: http://www.tacc.utexas.edu",
+          },
+        },
+        ["gotoblas/1.26"] = {
+          Category = "library, mathematics",
+          Description = "Blas Level 1, 2, 3 routines",
+          Name = "Gotoblas",
+          URL = "http://www.tacc.utexas.edu",
+          Version = "1.26",
+          canonical = "1.26",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/gotoblas/1.26.lua",
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000026.*zfinal",
+          wV = "^00000001.000000026.*zfinal",
+          whatis = {
+            "Name: Gotoblas", "Version: 1.26", "Category: library, mathematics", "Description: Blas Level 1, 2, 3 routines", "URL: http://www.tacc.utexas.edu",
+          },
+        },
+        ["gotoblas/1.30"] = {
+          Category = "library, mathematics",
+          Description = "Blas Level 1, 2, 3 routines",
+          Name = "Gotoblas",
+          URL = "http://www.tacc.utexas.edu",
+          Version = "1.30",
+          canonical = "1.30",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/gotoblas/1.30.lua",
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000030.*zfinal",
+          wV = "000000001.000000030.*zfinal",
+          whatis = {
+            "Name: Gotoblas", "Version: 1.30", "Category: library, mathematics", "Description: Blas Level 1, 2, 3 routines", "URL: http://www.tacc.utexas.edu",
+          },
+        },
+      },
+    },
+    hidden = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["hidden/.1.0"] = {
+          Version = ".1.0",
+          canonical = ".1.0",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/hidden/.1.0.lua",
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000000.000000001.*zfinal",
+          wV = "000000000.000000001.*zfinal",
+        },
+      },
+    },
+    intel = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["intel/intel"] = {
+          Version = "intel",
+          canonical = "intel",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/intel/intel.lua",
+          help = [[        Intel Compilers
+        This module loads Intel Compiler variables.
+        { standard TACC variables: ICC_DIR,  ICC_BIN,  ICC_LIB  }
+]],
+          lpathA = {
+            ["/vol/local/intel/cc/cc/lib"] = 1,
+            ["/vol/local/intel/fc/fc/lib"] = 1,
+            ["/vol/local/intel/idb/idb/lib"] = 1,
+          },
+          luaExt = 6,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "*intel.*zfinal",
+          pathA = {
+            ["/vol/local/intel/cc/cc/bin"] = 1,
+            ["/vol/local/intel/fc/fc/bin"] = 1,
+            ["/vol/local/intel/idb/idb/bin"] = 1,
+          },
+          wV = "*intel.*zfinal",
+        },
+      },
+    },
+    ["junk/a/c"] = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["junk/a/c/1.0"] = {
+          Version = "1.0",
+          canonical = "1.0",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/junk/a/c/1.0.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.*zfinal",
+          wV = "000000001.*zfinal",
+        },
+      },
+    },
+    ["junk/b/c"] = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["junk/b/c/2.0"] = {
+          Version = "2.0",
+          canonical = "2.0",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/junk/b/c/2.0.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000002.*zfinal",
+          wV = "000000002.*zfinal",
+        },
+      },
+    },
+    ["junk/d"] = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["junk/d/3.0"] = {
+          Version = "3.0",
+          canonical = "3.0",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/junk/d/3.0.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000003.*zfinal",
+          wV = "000000003.*zfinal",
+        },
+      },
+    },
+    ["local"] = {
+      defaultA = {
+        {
+          barefn = ".modulerc",
+          defaultIdx = 3,
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/local/.modulerc",
+          fullName = "local/.modulerc",
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          value = "local/1.3",
+        },
+      },
+      defaultT = {
+        barefn = ".modulerc",
+        defaultIdx = 3,
+        fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/local/.modulerc",
+        fullName = "local/.modulerc",
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+        value = "local/1.3",
+      },
+      dirT = {},
+      fileT = {
+        ["local/1.1"] = {
+          Version = "1.1",
+          canonical = "1.1",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/local/1.1.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000001.*zfinal",
+          wV = "000000001.000000001.*zfinal",
+        },
+        ["local/1.2"] = {
+          Version = "1.2",
+          canonical = "1.2",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/local/1.2.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000002.*zfinal",
+          wV = "000000001.000000002.*zfinal",
+        },
+        ["local/1.3"] = {
+          Version = "1.3",
+          canonical = "1.3",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/local/1.3.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000003.*zfinal",
+          wV = "^00000001.000000003.*zfinal",
+        },
+        ["local/1.4"] = {
+          Version = "1.4",
+          canonical = "1.4",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/local/1.4.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000001.000000004.*zfinal",
+          wV = "000000001.000000004.*zfinal",
+        },
+        ["local/local"] = {
+          Version = "local",
+          canonical = "local",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/local/local.lua",
+          luaExt = 6,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "*local.*zfinal",
+          pathA = {
+            ["/usr/local/share/bin"] = 1,
+          },
+          wV = "*local.*zfinal",
+        },
+      },
+    },
+    multi = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["multi/multi"] = {
+          Version = "multi",
+          canonical = "multi",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/multi/multi.lua",
+          luaExt = 6,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "*multi.*zfinal",
+          pathA = {
+            ["/a/b/c"] = 1,
+            ["/abc/def"] = 1,
+            ["/d/e/f"] = 1,
+            ["/g/h/i"] = 1,
+            ["/qrs/tuv"] = 1,
+          },
+          wV = "*multi.*zfinal",
+        },
+      },
+    },
+    noweb = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["noweb/2.10c"] = {
+          Version = "2.10c",
+          canonical = "2.10c",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/noweb/2.10c.lua",
+          luaExt = 6,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000002.000000010.*c.*zfinal",
+          pathA = {
+            ["/vol/local/noweb/2.10c/bin"] = 1,
+            ["/vol/local/noweb/icon/bin"] = 1,
+          },
+          wV = "000000002.000000010.*c.*zfinal",
+        },
+      },
+    },
+    parmetis = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["parmetis/3.1"] = {
+          Category = "library, mathematics",
+          Description = "Parallel graph partitioning and fill-reduction matrix ordering routines",
+          Name = "ParMETIS: Parallel Graph Partitioning",
+          URL = "http://glaros.dtc.umn.edu/gkhome/views/metis",
+          Version = "3.1",
+          canonical = "3.1",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/parmetis/3.1.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000003.000000001.*zfinal",
+          wV = "000000003.000000001.*zfinal",
+          whatis = {
+            "Name: ParMETIS: Parallel Graph Partitioning", "Version: 3.1", "Category: library, mathematics", "Description: Parallel graph partitioning and fill-reduction matrix ordering routines", "URL: http://glaros.dtc.umn.edu/gkhome/views/metis",
+          },
+        },
+      },
+    },
+    ucc = {
+      defaultA = {
+        {
+          barefn = "default",
+          defaultIdx = 1,
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/ucc/default",
+          fullName = "ucc/default",
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          value = "13.1.2",
+        },
+      },
+      defaultT = {
+        barefn = "default",
+        defaultIdx = 1,
+        fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/ucc/default",
+        fullName = "ucc/default",
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+        value = "13.1.2",
+      },
+      dirT = {},
+      fileT = {
+        ["ucc/12.1.5"] = {
+          Version = "12.1.5",
+          canonical = "12.1.5",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/ucc/12.1.5.lua",
+          luaExt = 7,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000012.000000001.000000005.*zfinal",
+          wV = "000000012.000000001.000000005.*zfinal",
+        },
+        ["ucc/13.1.2"] = {
+          Version = "13.1.2",
+          canonical = "13.1.2",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/ucc/13.1.2.lua",
+          luaExt = 7,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000013.000000001.000000002.*zfinal",
+          wV = "^00000013.000000001.000000002.*zfinal",
+        },
+        ["ucc/14.0.2"] = {
+          Version = "14.0.2",
+          canonical = "14.0.2",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/ucc/14.0.2.lua",
+          luaExt = 7,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "000000014.000000000.000000002.*zfinal",
+          wV = "000000014.000000000.000000002.*zfinal",
+        },
+      },
+    },
+    unix = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["unix/unix"] = {
+          Version = "unix",
+          canonical = "unix",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core/unix/unix.lua",
+          luaExt = 5,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+          pV = "*unix.*zfinal",
+          wV = "*unix.*zfinal",
+        },
+      },
+    },
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/cache/mf/MPI/gcc/4.2.3/openmpi/1.2.6"] = {
+    parmetis = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["parmetis/3.1"] = {
+          Category = "library, mathematics",
+          Description = "Parallel graph partitioning and fill-reduction matrix ordering routines",
+          Name = "ParMETIS: Parallel Graph Partitioning",
+          URL = "http://glaros.dtc.umn.edu/gkhome/views/metis",
+          Version = "3.1",
+          canonical = "3.1",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/MPI/gcc/4.2.3/openmpi/1.2.6/parmetis/3.1.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/MPI/gcc/4.2.3/openmpi/1.2.6",
+          pV = "000000003.000000001.*zfinal",
+          wV = "000000003.000000001.*zfinal",
+          whatis = {
+            "Name: ParMETIS: Parallel Graph Partitioning", "Version: 3.1", "Category: library, mathematics", "Description: Parallel graph partitioning and fill-reduction matrix ordering routines", "URL: http://glaros.dtc.umn.edu/gkhome/views/metis",
+          },
+        },
+      },
+    },
+  },
+  version = 5,
+}
+mpathMapT = {
+  ["/Users/mcawood/Lmod/Lmod/rt/cache/mf/Compiler/gcc/4.2.3"] = {
+    ["gcc/4.2.3"] = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Core",
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/cache/mf/MPI/gcc/4.2.3/openmpi/1.2.6"] = {
+    ["openmpi/1.2.6"] = "/Users/mcawood/Lmod/Lmod/rt/cache/mf/Compiler/gcc/4.2.3",
+  },
+}
+

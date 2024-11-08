@@ -1,0 +1,54 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load a b
+===========================
+LMOD_FAMILY_COMPILER=b;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=false;
+export LMOD_FAMILY_COMPILER_VERSION;
+LOADEDMODULES=a:c:b;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B:1\;/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B:/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core/a.lua:/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B/c.lua:/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B/b.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={compiler="b",},mT={a={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B\")",},fn="/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core/a.lua",fullName="a",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="M.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B/b.lua",fullName="b",loadOrder=3,propT={},stackDepth=0,status="active",userName="b",wV="M.*zfinal",},c={fn="/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B/c.lua",fullName="c",loadOrder=2,propT={},stackDepth=1,status="active",userName="c",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B","/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B:/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={compiler="b",},mT={a={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B\")",},fn="/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core/a.lua",fullName="a",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="M.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B/b.lua",fullName="b",loadOrder=3,propT={},stackDepth=0,status="active",userName="b",wV="M.*zfinal",},c={fn="/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B/c.lua",fullName="c",loadOrder=2,propT={},stackDepth=1,status="active",userName="c",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B","/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load a d
+===========================
+LMOD_FAMILY_COMPILER=d;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=false;
+export LMOD_FAMILY_COMPILER_VERSION;
+LOADEDMODULES=a:d;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B:/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core/a.lua:/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B/d.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={compiler="d",},mT={a={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B\")",},fn="/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core/a.lua",fullName="a",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="M.*zfinal",},d={fn="/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B/d.lua",fullName="d",loadOrder=2,propT={},stackDepth=0,status="active",userName="d",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B","/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B:/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={compiler="d",},mT={a={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B\")",},fn="/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core/a.lua",fullName="a",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="M.*zfinal",},d={fn="/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B/d.lua",fullName="d",loadOrder=2,propT={},stackDepth=0,status="active",userName="d",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/B","/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/unregisterLoads/mf/Core",}';
+export _ModuleTable_;

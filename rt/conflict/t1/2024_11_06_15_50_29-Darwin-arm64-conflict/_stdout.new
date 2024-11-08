@@ -1,0 +1,487 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load a b
+===========================
+LOADEDMODULES=a:b;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf;
+export MODULEPATH;
+TEST_A=1;
+export TEST_A;
+TEST_B=1;
+export TEST_B;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua",fullName="a",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="M.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua",fullName="b",loadOrder=2,propT={},stackDepth=0,status="active",userName="b",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load c
+===========================
+false
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua",fullName="a",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="M.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua",fullName="b",loadOrder=2,propT={},stackDepth=0,status="active",userName="b",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing swap a c
+===========================
+false
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua",fullName="a",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="M.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua",fullName="b",loadOrder=2,propT={},stackDepth=0,status="active",userName="b",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf",}';
+export _ModuleTable_;
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load e/2.0
+===========================
+LOADEDMODULES=a:b:e/2.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/e/2.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua",fullName="a",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="M.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua",fullName="b",loadOrder=2,propT={},stackDepth=0,status="active",userName="b",wV="M.*zfinal",},e={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/e/2.0.lua",fullName="e/2.0",loadOrder=3,propT={},stackDepth=0,status="active",userName="e/2.0",wV="000000002.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf",}';
+export _ModuleTable_;
+e=2.0;
+export e;
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load d
+===========================
+false
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load e/1.0
+===========================
+LOADEDMODULES=a:b:e/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/e/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua",fullName="a",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="M.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua",fullName="b",loadOrder=2,propT={},stackDepth=0,status="active",userName="b",wV="M.*zfinal",},e={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/e/1.0.lua",fullName="e/1.0",loadOrder=3,propT={},stackDepth=0,status="active",userName="e/1.0",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf",}';
+export _ModuleTable_;
+e=1.0;
+export e;
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load d
+===========================
+LOADEDMODULES=a:b:e/1.0:d/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/e/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/d/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua",fullName="a",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="M.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua",fullName="b",loadOrder=2,propT={},stackDepth=0,status="active",userName="b",wV="M.*zfinal",},d={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/d/1.0.lua",fullName="d/1.0",loadOrder=4,propT={},stackDepth=0,status="active",userName="d",wV="000000001.*zfinal",},e={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/e/1.0.lua",fullName="e/1.0",loadOrder=3,propT={},stackDepth=0,status="active",userName="e/1.0",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf",}';
+export _ModuleTable_;
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load f
+===========================
+LOADEDMODULES=a:b:e/1.0:d/1.0:f;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/e/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/d/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/f.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua",fullName="a",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="M.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua",fullName="b",loadOrder=2,propT={},stackDepth=0,status="active",userName="b",wV="M.*zfinal",},d={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/d/1.0.lua",fullName="d/1.0",loadOrder=4,propT={},stackDepth=0,status="active",userName="d",wV="000000001.*zfinal",},e={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/e/1.0.lua",fullName="e/1.0",loadOrder=3,propT={},stackDepth=0,status="active",userName="e/1.0",wV="000000001.*zfinal",},f={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/f.lua",fullName="f",loadOrder=5,propT={},stackDepth=0,status="active",userName="f",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf",}';
+export _ModuleTable_;
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load x/1.5
+===========================
+LOADEDMODULES=a:b:e/1.0:d/1.0:f:x/1.5;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf;
+export MODULEPATH;
+X=1.0;
+export X;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/e/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/d/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/f.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/x/1.5.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua",fullName="a",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="M.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua",fullName="b",loadOrder=2,propT={},stackDepth=0,status="active",userName="b",wV="M.*zfinal",},d={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/d/1.0.lua",fullName="d/1.0",loadOrder=4,propT={},stackDepth=0,status="active",userName="d",wV="000000001.*zfinal",},e={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/e/1.0.lua",fullName="e/1.0",loadOrder=3,propT={},stackDepth=0,status="active",userName="e/1.0",wV="000000001.*zfinal",},f={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/f.lua",fullName="f",loadOrder=5,propT={},stackDepth=0,status="active",userName="f",wV="M.*zfinal",},x={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/x/1.5.lua",fullName="x/1.5",loadOrder=6,propT={},stackDepth=0,status="active",userName="x/1.5",wV="000000001.000000005.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf",}';
+export _ModuleTable_;
+===========================
+step 13
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load y
+===========================
+false
+===========================
+step 14
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load e/1.0
+===========================
+LOADEDMODULES=a:b:d/1.0:f:x/1.5:e/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/d/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/f.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/x/1.5.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/e/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua",fullName="a",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="M.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua",fullName="b",loadOrder=2,propT={},stackDepth=0,status="active",userName="b",wV="M.*zfinal",},d={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/d/1.0.lua",fullName="d/1.0",loadOrder=3,propT={},stackDepth=0,status="active",userName="d",wV="000000001.*zfinal",},e={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/e/1.0.lua",fullName="e/1.0",loadOrder=6,propT={},stackDepth=0,status="active",userName="e/1.0",wV="000000001.*zfinal",},f={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/f.lua",fullName="f",loadOrder=4,propT={},stackDepth=0,status="active",userName="f",wV="M.*zfinal",},x={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/x/1.5.lua",fullName="x/1.5",loadOrder=5,propT={},stackDepth=0,status="active",userName="x/1.5",wV="000000001.000000005.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf",}';
+export _ModuleTable_;
+e=1.0;
+export e;
+===========================
+step 15
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load cc
+===========================
+false
+===========================
+step 16
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load e/2.0
+===========================
+LOADEDMODULES=a:b:d/1.0:f:x/1.5:e/2.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/d/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/f.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/x/1.5.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/e/2.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua",fullName="a",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="M.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua",fullName="b",loadOrder=2,propT={},stackDepth=0,status="active",userName="b",wV="M.*zfinal",},d={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/d/1.0.lua",fullName="d/1.0",loadOrder=3,propT={},stackDepth=0,status="active",userName="d",wV="000000001.*zfinal",},e={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/e/2.0.lua",fullName="e/2.0",loadOrder=6,propT={},stackDepth=0,status="active",userName="e/2.0",wV="000000002.*zfinal",},f={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/f.lua",fullName="f",loadOrder=4,propT={},stackDepth=0,status="active",userName="f",wV="M.*zfinal",},x={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/x/1.5.lua",fullName="x/1.5",loadOrder=5,propT={},stackDepth=0,status="active",userName="x/1.5",wV="000000001.000000005.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf",}';
+export _ModuleTable_;
+e=2.0;
+export e;
+===========================
+step 17
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load cc
+===========================
+LOADEDMODULES=a:b:d/1.0:f:x/1.5:e/2.0:cc;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/d/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/f.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/x/1.5.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/e/2.0.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf/cc.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/a.lua",fullName="a",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="M.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/b.lua",fullName="b",loadOrder=2,propT={},stackDepth=0,status="active",userName="b",wV="M.*zfinal",},cc={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/cc.lua",fullName="cc",loadOrder=7,propT={},stackDepth=0,status="active",userName="cc",wV="M.*zfinal",},d={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/d/1.0.lua",fullName="d/1.0",loadOrder=3,propT={},stackDepth=0,status="active",userName="d",wV="000000001.*zfinal",},e={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/e/2.0.lua",fullName="e/2.0",loadOrder=6,propT={},stackDepth=0,status="active",userName="e/2.0",wV="000000002.*zfinal",},f={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/f.lua",fullName="f",loadOrder=4,propT={},stackDepth=0,status="active",userName="f",wV="M.*zfinal",},x={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf/x/1.5.lua",fullName="x/1.5",loadOrder=5,propT={},stackDepth=0,status="active",userName="x/1.5",wV="000000001.000000005.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf",}';
+export _ModuleTable_;
+===========================
+step 18
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf;
+export MODULEPATH;
+unset TEST_A;
+unset TEST_B;
+unset X;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf",}';
+export _ModuleTable_;
+unset e;
+===========================
+step 19
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load base acme
+===========================
+LOADEDMODULES=base/1.0:acme/1.0;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/base/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,conflictT={acme={{action="between",ie="<3.2",is="1.1>",sType="mt",userName="D",},{action="match",ie=false,is=false,sType="mt",userName="E",},{action="match",ie=false,is=false,sType="mt",userName="F/3.1.4",},{action="atmost",ie="<3.1.5",is=false,sType="mt",userName="G",},},base={{action="match",ie=false,is=false,sType="mt",userName="A",},{action="match",ie=false,is=false,sType="mt",userName="B",},},},depthT={},family={},mT={acme={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua",fullName="acme/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="acme",wV="000000001.*zfinal",},base={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/base/1.0.lua",fullName="base/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="base",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 20
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing save
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,conflictT={acme={{action="between",ie="<3.2",is="1.1>",sType="mt",userName="D",},{action="match",ie=false,is=false,sType="mt",userName="E",},{action="match",ie=false,is=false,sType="mt",userName="F/3.1.4",},{action="atmost",ie="<3.1.5",is=false,sType="mt",userName="G",},},base={{action="match",ie=false,is=false,sType="mt",userName="A",},{action="match",ie=false,is=false,sType="mt",userName="B",},},},depthT={},family={},mT={acme={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua",fullName="acme/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="acme",wV="000000001.*zfinal",},base={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/base/1.0.lua",fullName="base/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="base",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 21
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing restore
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,conflictT={acme={{action="between",ie="<3.2",is="1.1>",sType="mt",userName="D",},{action="match",ie=false,is=false,sType="mt",userName="E",},{action="match",ie=false,is=false,sType="mt",userName="F/3.1.4",},{action="atmost",ie="<3.1.5",is=false,sType="mt",userName="G",},},base={{action="match",ie=false,is=false,sType="mt",userName="A",},{action="match",ie=false,is=false,sType="mt",userName="B",},},},depthT={},family={},mT={acme={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua",fullName="acme/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="acme",wV="000000001.*zfinal",},base={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/base/1.0.lua",fullName="base/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="base",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+__LMOD_DEFAULT_MODULES_LOADED__=1;
+export __LMOD_DEFAULT_MODULES_LOADED__;
+===========================
+step 22
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload acme
+===========================
+LOADEDMODULES=base/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/base/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,conflictT={base={{action="match",ie=false,is=false,sType="mt",userName="A",},{action="match",ie=false,is=false,sType="mt",userName="B",},},},depthT={},family={},mT={base={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/base/1.0.lua",fullName="base/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="base",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 23
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload base
+===========================
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 24
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load D/1.3
+===========================
+D=1.3;
+export D;
+LOADEDMODULES=D/1.3;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/1.3.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={D={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/1.3.lua",fullName="D/1.3",loadOrder=1,propT={},stackDepth=0,status="active",userName="D/1.3",wV="000000001.000000003.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 25
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load acme
+===========================
+false
+===========================
+step 26
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load D/1.1
+===========================
+D=1.1;
+export D;
+LOADEDMODULES=D/1.1;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/1.1.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={D={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/1.1.lua",fullName="D/1.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="D/1.1",wV="000000001.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 27
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load acme
+===========================
+LOADEDMODULES=D/1.1:acme/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/1.1.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,conflictT={acme={{action="between",ie="<3.2",is="1.1>",sType="mt",userName="D",},{action="match",ie=false,is=false,sType="mt",userName="E",},{action="match",ie=false,is=false,sType="mt",userName="F/3.1.4",},{action="atmost",ie="<3.1.5",is=false,sType="mt",userName="G",},},},depthT={},family={},mT={D={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/1.1.lua",fullName="D/1.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="D/1.1",wV="000000001.000000001.*zfinal",},acme={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua",fullName="acme/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="acme",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 28
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+unset D;
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 29
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load acme
+===========================
+LOADEDMODULES=acme/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,conflictT={acme={{action="between",ie="<3.2",is="1.1>",sType="mt",userName="D",},{action="match",ie=false,is=false,sType="mt",userName="E",},{action="match",ie=false,is=false,sType="mt",userName="F/3.1.4",},{action="atmost",ie="<3.1.5",is=false,sType="mt",userName="G",},},},depthT={},family={},mT={acme={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua",fullName="acme/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="acme",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 30
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load D/1.1
+===========================
+D=1.1;
+export D;
+LOADEDMODULES=acme/1.0:D/1.1;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/1.1.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,conflictT={acme={{action="between",ie="<3.2",is="1.1>",sType="mt",userName="D",},{action="match",ie=false,is=false,sType="mt",userName="E",},{action="match",ie=false,is=false,sType="mt",userName="F/3.1.4",},{action="atmost",ie="<3.1.5",is=false,sType="mt",userName="G",},},},depthT={},family={},mT={D={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/1.1.lua",fullName="D/1.1",loadOrder=2,propT={},stackDepth=0,status="active",userName="D/1.1",wV="000000001.000000001.*zfinal",},acme={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua",fullName="acme/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="acme",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 31
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load D/3.2
+===========================
+D=3.2;
+export D;
+LOADEDMODULES=acme/1.0:D/3.2;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/3.2.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,conflictT={acme={{action="between",ie="<3.2",is="1.1>",sType="mt",userName="D",},{action="match",ie=false,is=false,sType="mt",userName="E",},{action="match",ie=false,is=false,sType="mt",userName="F/3.1.4",},{action="atmost",ie="<3.1.5",is=false,sType="mt",userName="G",},},},depthT={},family={},mT={D={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/3.2.lua",fullName="D/3.2",loadOrder=2,propT={},stackDepth=0,status="active",userName="D/3.2",wV="000000003.000000002.*zfinal",},acme={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua",fullName="acme/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="acme",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 32
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load D/1.3
+===========================
+false
+===========================
+step 33
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,conflictT={acme={{action="between",ie="<3.2",is="1.1>",sType="mt",userName="D",},{action="match",ie=false,is=false,sType="mt",userName="E",},{action="match",ie=false,is=false,sType="mt",userName="F/3.1.4",},{action="atmost",ie="<3.1.5",is=false,sType="mt",userName="G",},},},depthT={},family={},mT={D={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/3.2.lua",fullName="D/3.2",loadOrder=2,propT={},stackDepth=0,status="active",userName="D/3.2",wV="000000003.000000002.*zfinal",},acme={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua",fullName="acme/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="acme",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 34
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load E
+===========================
+false
+===========================
+step 35
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load E/3.3
+===========================
+false
+===========================
+step 36
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,conflictT={acme={{action="between",ie="<3.2",is="1.1>",sType="mt",userName="D",},{action="match",ie=false,is=false,sType="mt",userName="E",},{action="match",ie=false,is=false,sType="mt",userName="F/3.1.4",},{action="atmost",ie="<3.1.5",is=false,sType="mt",userName="G",},},},depthT={},family={},mT={D={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/3.2.lua",fullName="D/3.2",loadOrder=2,propT={},stackDepth=0,status="active",userName="D/3.2",wV="000000003.000000002.*zfinal",},acme={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua",fullName="acme/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="acme",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 37
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load F
+===========================
+F=4.1.4;
+export F;
+LOADEDMODULES=acme/1.0:D/3.2:F/4.1.4;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/3.2.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/F/4.1.4.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,conflictT={acme={{action="between",ie="<3.2",is="1.1>",sType="mt",userName="D",},{action="match",ie=false,is=false,sType="mt",userName="E",},{action="match",ie=false,is=false,sType="mt",userName="F/3.1.4",},{action="atmost",ie="<3.1.5",is=false,sType="mt",userName="G",},},},depthT={},family={},mT={D={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/3.2.lua",fullName="D/3.2",loadOrder=2,propT={},stackDepth=0,status="active",userName="D/3.2",wV="000000003.000000002.*zfinal",},F={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/F/4.1.4.lua",fullName="F/4.1.4",loadOrder=3,propT={},stackDepth=0,status="active",userName="F",wV="000000004.000000001.000000004.*zfinal",},acme={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua",fullName="acme/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="acme",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 38
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load F/4.1.4
+===========================
+F=4.1.4;
+export F;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,conflictT={acme={{action="between",ie="<3.2",is="1.1>",sType="mt",userName="D",},{action="match",ie=false,is=false,sType="mt",userName="E",},{action="match",ie=false,is=false,sType="mt",userName="F/3.1.4",},{action="atmost",ie="<3.1.5",is=false,sType="mt",userName="G",},},},depthT={},family={},mT={D={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/3.2.lua",fullName="D/3.2",loadOrder=2,propT={},stackDepth=0,status="active",userName="D/3.2",wV="000000003.000000002.*zfinal",},F={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/F/4.1.4.lua",fullName="F/4.1.4",loadOrder=3,propT={},stackDepth=0,status="active",userName="F/4.1.4",wV="000000004.000000001.000000004.*zfinal",},acme={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua",fullName="acme/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="acme",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 39
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load F/3.1.4
+===========================
+false
+===========================
+step 40
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,conflictT={acme={{action="between",ie="<3.2",is="1.1>",sType="mt",userName="D",},{action="match",ie=false,is=false,sType="mt",userName="E",},{action="match",ie=false,is=false,sType="mt",userName="F/3.1.4",},{action="atmost",ie="<3.1.5",is=false,sType="mt",userName="G",},},},depthT={},family={},mT={D={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/3.2.lua",fullName="D/3.2",loadOrder=2,propT={},stackDepth=0,status="active",userName="D/3.2",wV="000000003.000000002.*zfinal",},F={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/F/4.1.4.lua",fullName="F/4.1.4",loadOrder=3,propT={},stackDepth=0,status="active",userName="F/4.1.4",wV="000000004.000000001.000000004.*zfinal",},acme={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua",fullName="acme/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="acme",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 41
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload acme
+===========================
+LOADEDMODULES=D/3.2:F/4.1.4;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/3.2.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/F/4.1.4.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={D={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/3.2.lua",fullName="D/3.2",loadOrder=1,propT={},stackDepth=0,status="active",userName="D/3.2",wV="000000003.000000002.*zfinal",},F={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/F/4.1.4.lua",fullName="F/4.1.4",loadOrder=2,propT={},stackDepth=0,status="active",userName="F/4.1.4",wV="000000004.000000001.000000004.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 42
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load D/1.3
+===========================
+D=1.3;
+export D;
+LOADEDMODULES=F/4.1.4:D/1.3;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/F/4.1.4.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/1.3.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={D={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/1.3.lua",fullName="D/1.3",loadOrder=2,propT={},stackDepth=0,status="active",userName="D/1.3",wV="000000001.000000003.*zfinal",},F={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/F/4.1.4.lua",fullName="F/4.1.4",loadOrder=1,propT={},stackDepth=0,status="active",userName="F/4.1.4",wV="000000004.000000001.000000004.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 43
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={D={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/D/1.3.lua",fullName="D/1.3",loadOrder=2,propT={},stackDepth=0,status="active",userName="D/1.3",wV="000000001.000000003.*zfinal",},F={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/F/4.1.4.lua",fullName="F/4.1.4",loadOrder=1,propT={},stackDepth=0,status="active",userName="F/4.1.4",wV="000000004.000000001.000000004.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 44
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload D
+===========================
+unset D;
+LOADEDMODULES=F/4.1.4;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/F/4.1.4.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={F={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/F/4.1.4.lua",fullName="F/4.1.4",loadOrder=1,propT={},stackDepth=0,status="active",userName="F/4.1.4",wV="000000004.000000001.000000004.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 45
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load acme
+===========================
+LOADEDMODULES=F/4.1.4:acme/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/F/4.1.4.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,conflictT={acme={{action="between",ie="<3.2",is="1.1>",sType="mt",userName="D",},{action="match",ie=false,is=false,sType="mt",userName="E",},{action="match",ie=false,is=false,sType="mt",userName="F/3.1.4",},{action="atmost",ie="<3.1.5",is=false,sType="mt",userName="G",},},},depthT={},family={},mT={F={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/F/4.1.4.lua",fullName="F/4.1.4",loadOrder=1,propT={},stackDepth=0,status="active",userName="F/4.1.4",wV="000000004.000000001.000000004.*zfinal",},acme={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua",fullName="acme/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="acme",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 46
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load G/3.1.4
+===========================
+false
+===========================
+step 47
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load G/3.1.5
+===========================
+G=3.1.5;
+export G;
+LOADEDMODULES=F/4.1.4:acme/1.0:G/3.1.5;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/F/4.1.4.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/G/3.1.5.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,conflictT={acme={{action="between",ie="<3.2",is="1.1>",sType="mt",userName="D",},{action="match",ie=false,is=false,sType="mt",userName="E",},{action="match",ie=false,is=false,sType="mt",userName="F/3.1.4",},{action="atmost",ie="<3.1.5",is=false,sType="mt",userName="G",},},},depthT={},family={},mT={F={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/F/4.1.4.lua",fullName="F/4.1.4",loadOrder=1,propT={},stackDepth=0,status="active",userName="F/4.1.4",wV="000000004.000000001.000000004.*zfinal",},G={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/G/3.1.5.lua",fullName="G/3.1.5",loadOrder=3,propT={},stackDepth=0,status="active",userName="G/3.1.5",wV="000000003.000000001.000000005.*zfinal",},acme={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua",fullName="acme/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="acme",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 48
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,conflictT={acme={{action="between",ie="<3.2",is="1.1>",sType="mt",userName="D",},{action="match",ie=false,is=false,sType="mt",userName="E",},{action="match",ie=false,is=false,sType="mt",userName="F/3.1.4",},{action="atmost",ie="<3.1.5",is=false,sType="mt",userName="G",},},},depthT={},family={},mT={F={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/F/4.1.4.lua",fullName="F/4.1.4",loadOrder=1,propT={},stackDepth=0,status="active",userName="F/4.1.4",wV="000000004.000000001.000000004.*zfinal",},G={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/G/3.1.5.lua",fullName="G/3.1.5",loadOrder=3,propT={},stackDepth=0,status="active",userName="G/3.1.5",wV="000000003.000000001.000000005.*zfinal",},acme={fn="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/acme/1.0.lua",fullName="acme/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="acme",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core",}';
+export _ModuleTable_;

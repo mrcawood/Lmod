@@ -1,0 +1,211 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load TACC
+===========================
+false
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing help mvapich1
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --brief list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --latest load pgi
+===========================
+LMOD_FAMILY_COMPILER=pgi;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=7.2-5;
+export LMOD_FAMILY_COMPILER_VERSION;
+LOADEDMODULES=pgi/7.2-5;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC;
+export MODULEPATH;
+PGI=/unknown/apps/pgi/7.2-5;
+export PGI;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC/pgi/7.2-5;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={compiler="pgi",},mT={pgi={fn="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC/pgi/7.2-5",fullName="pgi/7.2-5",loadOrder=1,propT={},stackDepth=0,status="active",userName="pgi/7.2-5",wV="000000007.000000002.*zfinal-.000000005.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={compiler="pgi",},mT={pgi={fn="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC/pgi/7.2-5",fullName="pgi/7.2-5",loadOrder=1,propT={},stackDepth=0,status="active",userName="pgi/7.2-5",wV="000000007.000000002.*zfinal-.000000005.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load pgi
+===========================
+LMOD_FAMILY_COMPILER=pgi;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=7.1;
+export LMOD_FAMILY_COMPILER_VERSION;
+LOADEDMODULES=pgi/7.1;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC;
+export MODULEPATH;
+PGI=/unknown/apps/pgi/7.1;
+export PGI;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC/pgi/7.1;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={compiler="pgi",},mT={pgi={fn="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC/pgi/7.1",fullName="pgi/7.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="pgi",wV="^00000007.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={compiler="pgi",},mT={pgi={fn="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC/pgi/7.1",fullName="pgi/7.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="pgi",wV="^00000007.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --latest swap pgi pgi
+===========================
+LMOD_FAMILY_COMPILER=pgi;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=7.2-5;
+export LMOD_FAMILY_COMPILER_VERSION;
+LOADEDMODULES=pgi/7.2-5;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC;
+export MODULEPATH;
+PGI=/unknown/apps/pgi/7.2-5;
+export PGI;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC/pgi/7.2-5;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={compiler="pgi",},mT={pgi={fn="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC/pgi/7.2-5",fullName="pgi/7.2-5",loadOrder=1,propT={},stackDepth=0,status="active",userName="pgi/7.2-5",wV="000000007.000000002.*zfinal-.000000005.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={compiler="pgi",},mT={pgi={fn="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC/pgi/7.2-5",fullName="pgi/7.2-5",loadOrder=1,propT={},stackDepth=0,status="active",userName="pgi/7.2-5",wV="000000007.000000002.*zfinal-.000000005.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 13
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload cluster
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={compiler="pgi",},mT={pgi={fn="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC/pgi/7.2-5",fullName="pgi/7.2-5",loadOrder=1,propT={},stackDepth=0,status="active",userName="pgi/7.2-5",wV="000000007.000000002.*zfinal-.000000005.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 14
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+unset LMOD_FAMILY_COMPILER;
+unset LMOD_FAMILY_COMPILER_VERSION;
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC;
+export MODULEPATH;
+unset PGI;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 15
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use /Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base:1\;/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base:/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base","/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 16
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show gatk
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base:/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base","/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 17
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load gatk
+===========================
+LOADEDMODULES=gatk/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base:/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base/gatk/1.0;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={gatk={fn="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base/gatk/1.0",fullName="gatk/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="gatk",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base","/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 18
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload gatk
+===========================
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base:/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC;
+export MODULEPATH;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base","/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 19
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load stir
+===========================
+LOADEDMODULES=stir/2.1;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base:/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base/stir/2.1;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={stir={fn="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base/stir/2.1",fullName="stir/2.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="stir",wV="000000002.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base","/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 20
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load foo
+===========================
+LOADEDMODULES=stir/2.1:foo/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base:/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base/stir/2.1:/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base/foo/1.0;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={foo={fn="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base/foo/1.0",fullName="foo/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="foo",wV="000000001.*zfinal",},stir={fn="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base/stir/2.1",fullName="stir/2.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="stir",wV="000000002.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tacc/mf/Base","/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tacc/mf/TACC",}';
+export _ModuleTable_;
+===========================
+step 21
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load empty_unload
+===========================
+false

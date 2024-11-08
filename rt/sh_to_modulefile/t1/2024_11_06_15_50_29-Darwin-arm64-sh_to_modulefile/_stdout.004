@@ -1,0 +1,30 @@
+setenv("MY_NAME","tstScript.sh")
+prepend_path("PATH","/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/bin")
+append_path("PATH","/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/sbin")
+setenv("TST_SCRIPT","1")
+set_alias("fooAlias","foobin -q -l")
+set_shell_function("banner"," \
+    local str=\"$1\";\
+    local RED='\27[1;31m';\
+    local NONE='\27[0m';\
+    echo \"${RED}${str}${NONE}\"\
+","")
+set_shell_function("fooFunc"," \
+    echo \"arg1: $1\"\
+","")
+set_shell_function("junk"," \
+    if [ -n \"${ZSH_VERSION:-}\" ]; then\
+        \\echo \"junk\";\
+    fi\
+","")
+set_shell_function("my_help"," \
+    echo \"do not forget \\\"foo\\\"\"\
+","")
+set_shell_function("save_args"," \
+    for arg in \"$@\";\
+    do\
+        printf \"%s\\n\" \"$arg\" | sed -e \"s/'/'\\\\\\\\''/g\" -e \"1s/^/'/\" -e \"\\$s/\\$/' \\\\\\\\/\";\
+    done;\
+    echo \" \"\
+","")
+complete("bash","XyZ123","-F _xyz123")

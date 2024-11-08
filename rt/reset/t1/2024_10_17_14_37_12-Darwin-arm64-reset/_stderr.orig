@@ -1,0 +1,84 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load admin PrgEnv openmpi parmetis
+===========================
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load admin PrgEnv openmpi parmetis
+===========================
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) admin/admin-1.0   3) local/local   5) noweb/2.10c   7) openmpi/1.2.6
+  2) unix/unix         4) intel/intel   6) PrgEnv        8) parmetis/3.1  (m)
+
+  Where:
+   m:  built for host and native MIC
+
+ 
+
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use /Users/mcawood/Lmod/Lmod/rt/reset/mf/User
+===========================
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use /Users/mcawood/Lmod/Lmod/rt/reset/mf/User2
+===========================
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load foo
+===========================
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) admin/admin-1.0   4) intel/intel   7) openmpi/1.2.6
+  2) unix/unix         5) noweb/2.10c   8) parmetis/3.1  (m)
+  3) local/local       6) PrgEnv        9) foo/1.0
+
+  Where:
+   m:  built for host and native MIC
+
+ 
+
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing reset
+===========================
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: /Users/mcawood/Lmod/Lmod/rt/reset/mf/User2 /Users/mcawood/Lmod/Lmod/rt/reset/mf/User
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) admin/admin-1.0   2) intel/intel   3) openmpi/1.2.6   4) parmetis/3.1 (m)
+
+  Where:
+   m:  built for host and native MIC
+
+ 
+

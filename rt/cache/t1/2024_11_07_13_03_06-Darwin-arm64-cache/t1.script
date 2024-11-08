@@ -1,0 +1,69 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_07"; export tag
+idTag="t1"; export idTag
+TARGET=""; export TARGET
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/cache/t1/2024_11_07_13_03_06-Darwin-arm64-cache/t1.runtime"; export runtimeFn
+resultFn="/Users/mcawood/Lmod/Lmod/rt/cache/t1/2024_11_07_13_03_06-Darwin-arm64-cache/t1.result"; export resultFn
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/cache"; export testDir
+testName="cache"; export testName
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/cache/t1/2024_11_07_13_03_06-Darwin-arm64-cache/message.lua"; export messageFn
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/cache/cache.tdesc"; export testdescriptFn
+outputDir="/Users/mcawood/Lmod/Lmod/rt/cache/t1/2024_11_07_13_03_06-Darwin-arm64-cache"; export outputDir
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/cache/t1/2024_11_07_13_03_06-Darwin-arm64-cache/results.lua"; export cmdResultFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/cache/mf;     export MODULEPATH_ROOT
+     MODULEPATH=$MODULEPATH_ROOT/Core;  export MODULEPATH
+
+     remove_generated_lmod_files cacheDir fn
+
+     cp /Users/mcawood/Lmod/Lmod/init/lmodrc.lua .lmodrc.lua
+
+     cat > fn << EOF
+/Users/mcawood/Lmod/Lmod/rt/cache/t1/2024_11_07_13_03_06-Darwin-arm64-cache/cacheDir: /Users/mcawood/Lmod/Lmod/rt/cache/t1/2024_11_07_13_03_06-Darwin-arm64-cache/last_update
+EOF
+
+     lua /Users/mcawood/Lmod/Lmod/src/spiderCacheSupport.in.lua --descriptFn fn >> .lmodrc.lua
+     mkdir cacheDir
+
+     runLmod --version        # 1
+     runLmod spider           # 2
+     buildSpiderT $MODULEPATH > cacheDir/spiderT.lua.old
+     touch last_update
+     cp cacheDir/spiderT.lua.old  cacheDir/spiderT.lua
+     runLmod spider           # 3
+
+     mkdir -p .cache/lmod
+     mv cacheDir/spiderT.lua .cache/lmod
+     runLmod spider           # 4
+
+     cat > .cache/lmod/spiderT.lua << EOF
+spiderT = {
+#
+}
+EOF
+     runLmod spider           # 5
+
+     HOME=$ORIG_HOME
+
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results -bash _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/cache/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/cache/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/cache/t1/2024_11_07_13_03_06-Darwin-arm64-cache/t1.result -t /Users/mcawood/Lmod/Lmod/rt/cache/t1/2024_11_07_13_03_06-Darwin-arm64-cache/t1.runtime results.csv
+   

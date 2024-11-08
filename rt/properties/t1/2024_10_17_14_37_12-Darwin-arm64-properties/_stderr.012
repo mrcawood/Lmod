@@ -1,0 +1,13 @@
+
+Currently Loaded Modules:
+  1) mkl/10.3 (*)   3) b/1.0 (m)   5) d/1.0  (@)
+  2) a/1.0          4) c/1.0 (o)   6) PrgEnv
+
+  Where:
+   *:  built for host, native MIC and offload to the MIC
+   @:  built natively for MIC and GPU and offload to the MIC
+   m:  built for host and native MIC
+   o:  built for offload to the MIC only
+
+ 
+

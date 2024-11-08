@@ -1,0 +1,40 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load oscar
+===========================
+LOADEDMODULES=a:b:c:oscar;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar:1\;/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar:/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core;
+export MODULEPATH;
+RTM_A=a;
+export RTM_A;
+RTM_B=b;
+export RTM_B;
+RTM_C=c;
+export RTM_C;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar/a:/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar/b:/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar/c:/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core/oscar.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar/a",fullName="a",loadOrder=1,propT={},stackDepth=1,status="active",userName="a",wV="M.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar/b",fullName="b",loadOrder=2,propT={},stackDepth=1,status="active",userName="b",wV="M.*zfinal",},c={fn="/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar/c",fullName="c",loadOrder=3,propT={},stackDepth=1,status="active",userName="c",wV="M.*zfinal",},oscar={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar\")",},fn="/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core/oscar.lua",fullName="oscar",loadOrder=4,propT={},stackDepth=0,status="active",userName="oscar",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar","/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show oscar
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar:/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar/a",fullName="a",loadOrder=1,propT={},stackDepth=1,status="active",userName="a",wV="M.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar/b",fullName="b",loadOrder=2,propT={},stackDepth=1,status="active",userName="b",wV="M.*zfinal",},c={fn="/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar/c",fullName="c",loadOrder=3,propT={},stackDepth=1,status="active",userName="c",wV="M.*zfinal",},oscar={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar\")",},fn="/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core/oscar.lua",fullName="oscar",loadOrder=4,propT={},stackDepth=0,status="active",userName="oscar",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar","/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar:/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar/a",fullName="a",loadOrder=1,propT={},stackDepth=1,status="active",userName="a",wV="M.*zfinal",},b={fn="/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar/b",fullName="b",loadOrder=2,propT={},stackDepth=1,status="active",userName="b",wV="M.*zfinal",},c={fn="/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar/c",fullName="c",loadOrder=3,propT={},stackDepth=1,status="active",userName="c",wV="M.*zfinal",},oscar={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar\")",},fn="/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core/oscar.lua",fullName="oscar",loadOrder=4,propT={},stackDepth=0,status="active",userName="oscar",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Oscar","/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/oscar/mf/Core",}';
+export _ModuleTable_;

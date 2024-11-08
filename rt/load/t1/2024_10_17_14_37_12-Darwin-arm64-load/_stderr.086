@@ -1,0 +1,14 @@
+
+Currently Loaded Modules:
+  1) admin/admin-1.0   7) gotoblas/1.32      13) B/1.4
+  2) unix/unix         8) _a/1.0             14) C/1.8.5
+  3) local/local       9) boost/1.49.0  (o)  15) rtm_intel/11.1
+  4) noweb/2.10c      10) alex/2.0           16) go/1.5.1
+  5) PrgEnv           11) D/1.0              17) dflt/default
+  6) intel/intel      12) A/1.1.1
+
+  Where:
+   o:  built for offload to the MIC only
+
+ 
+

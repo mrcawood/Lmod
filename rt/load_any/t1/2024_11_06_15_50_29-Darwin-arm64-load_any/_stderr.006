@@ -1,0 +1,8 @@
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/load_any/mf/B/1.0.lua
+ with command: load_any, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    B/1.0            /Users/mcawood/Lmod/Lmod/rt/load_any/mf/B/1.0.lua
+

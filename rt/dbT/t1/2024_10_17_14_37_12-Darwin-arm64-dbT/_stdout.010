@@ -1,0 +1,35 @@
+timestampFn = {
+  false,
+}
+dbT = {
+  foobar = {
+    ["/Users/mcawood/Lmod/Lmod/rt/dbT/mf3/foobar/1.2.3.lua"] = {
+      Version = "1.2.3",
+      fullName = "foobar/1.2.3",
+      hidden = true,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/dbT/mf3",
+      pV = "000000001.000000002.000000003.*zfinal",
+      parentAA = {
+        {
+          "newdir/1.0",
+        },
+      },
+      pathA = {
+        ["/opt/foobar"] = 1,
+      },
+      wV = "000000001.000000002.000000003.*zfinal",
+    },
+  },
+  newdir = {
+    ["/Users/mcawood/Lmod/Lmod/rt/dbT/mf4/newdir/1.0.lua"] = {
+      Version = "1.0",
+      fullName = "newdir/1.0",
+      hidden = false,
+      mpath = "/Users/mcawood/Lmod/Lmod/rt/dbT/mf4",
+      pV = "000000001.*zfinal",
+      wV = "000000001.*zfinal",
+    },
+  },
+}
+provideByT = {}
+

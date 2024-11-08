@@ -1,0 +1,187 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+
+-------- /Users/mcawood/Lmod/Lmod/rt/colorize/mf ---------
+   StdEnv                    apps/m4/1.4.17         ([1;31mt[0m)
+   apps/autoconf/2.69 ([1;31mt[0m)    apps/make/3.82         ([1;31mt[0m)
+   apps/automake/1.14 ([1;31mt[0m)    compilers/gcc/4.8.1    ([1;31mt[0m)
+   apps/devtools/1.0  ([1;31mt[0m)    compilers/intel/14.0.0 ([1;31mt[0m)
+   apps/git/1.8.4.1   ([1;31mt[0m)    libs/gcc/4.8.1         ([1;31mt[0m)
+
+  Where:
+   [1;31mt[0m:  Tools for development
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the
+default modules.
+"module overview" or "ml ov" to display the number of
+modules for each name.
+
+Use "module spider" to find all possible modules and
+extensions.
+Use "module keyword key1 key2 ..." to search for all
+possible modules matching any of the "keys".
+
+
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+
+-------------- /Users/mcawood/Lmod/Lmod/rt/colorize/mf ---------------
+   StdEnv                    apps/m4/1.4.17         ([1;31mt[0m)
+   apps/autoconf/2.69 ([1;31mt[0m)    apps/make/3.82         ([1;31mt[0m)
+   apps/automake/1.14 ([1;31mt[0m)    compilers/gcc/4.8.1    ([1;31mt[0m)
+   apps/devtools/1.0  ([1;31mt[0m)    compilers/intel/14.0.0 ([1;31mt[0m)
+   apps/git/1.8.4.1   ([1;31mt[0m)    libs/gcc/4.8.1         ([1;31mt[0m)
+
+  Where:
+   [1;31mt[0m:  Tools for development
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the default
+modules.
+"module overview" or "ml ov" to display the number of modules for each
+name.
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules
+matching any of the "keys".
+
+
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+
+----------------- /Users/mcawood/Lmod/Lmod/rt/colorize/mf -----------------
+   StdEnv                    apps/m4/1.4.17         ([1;31mt[0m)
+   apps/autoconf/2.69 ([1;31mt[0m)    apps/make/3.82         ([1;31mt[0m)
+   apps/automake/1.14 ([1;31mt[0m)    compilers/gcc/4.8.1    ([1;31mt[0m)
+   apps/devtools/1.0  ([1;31mt[0m)    compilers/intel/14.0.0 ([1;31mt[0m)
+   apps/git/1.8.4.1   ([1;31mt[0m)    libs/gcc/4.8.1         ([1;31mt[0m)
+
+  Where:
+   [1;31mt[0m:  Tools for development
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the default modules.
+"module overview" or "ml ov" to display the number of modules for each
+name.
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules
+matching any of the "keys".
+
+
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+
+--------------------- /Users/mcawood/Lmod/Lmod/rt/colorize/mf ----------------------
+   StdEnv                    apps/m4/1.4.17         ([1;31mt[0m)
+   apps/autoconf/2.69 ([1;31mt[0m)    apps/make/3.82         ([1;31mt[0m)
+   apps/automake/1.14 ([1;31mt[0m)    compilers/gcc/4.8.1    ([1;31mt[0m)
+   apps/devtools/1.0  ([1;31mt[0m)    compilers/intel/14.0.0 ([1;31mt[0m)
+   apps/git/1.8.4.1   ([1;31mt[0m)    libs/gcc/4.8.1         ([1;31mt[0m)
+
+  Where:
+   [1;31mt[0m:  Tools for development
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the default modules.
+"module overview" or "ml ov" to display the number of modules for each name.
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching any
+of the "keys".
+
+
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+
+--------------------------- /Users/mcawood/Lmod/Lmod/rt/colorize/mf ----------------------------
+   StdEnv                    apps/m4/1.4.17         ([1;31mt[0m)
+   apps/autoconf/2.69 ([1;31mt[0m)    apps/make/3.82         ([1;31mt[0m)
+   apps/automake/1.14 ([1;31mt[0m)    compilers/gcc/4.8.1    ([1;31mt[0m)
+   apps/devtools/1.0  ([1;31mt[0m)    compilers/intel/14.0.0 ([1;31mt[0m)
+   apps/git/1.8.4.1   ([1;31mt[0m)    libs/gcc/4.8.1         ([1;31mt[0m)
+
+  Where:
+   [1;31mt[0m:  Tools for development
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the default modules.
+"module overview" or "ml ov" to display the number of modules for each name.
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching any of the
+"keys".
+
+
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+
+--------------------------------- /Users/mcawood/Lmod/Lmod/rt/colorize/mf ---------------------------------
+   StdEnv                    apps/m4/1.4.17         ([1;31mt[0m)
+   apps/autoconf/2.69 ([1;31mt[0m)    apps/make/3.82         ([1;31mt[0m)
+   apps/automake/1.14 ([1;31mt[0m)    compilers/gcc/4.8.1    ([1;31mt[0m)
+   apps/devtools/1.0  ([1;31mt[0m)    compilers/intel/14.0.0 ([1;31mt[0m)
+   apps/git/1.8.4.1   ([1;31mt[0m)    libs/gcc/4.8.1         ([1;31mt[0m)
+
+  Where:
+   [1;31mt[0m:  Tools for development
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the default modules.
+"module overview" or "ml ov" to display the number of modules for each name.
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
+
+
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+
+-------------------------------------- /Users/mcawood/Lmod/Lmod/rt/colorize/mf ---------------------------------------
+   StdEnv                    apps/m4/1.4.17         ([1;31mt[0m)
+   apps/autoconf/2.69 ([1;31mt[0m)    apps/make/3.82         ([1;31mt[0m)
+   apps/automake/1.14 ([1;31mt[0m)    compilers/gcc/4.8.1    ([1;31mt[0m)
+   apps/devtools/1.0  ([1;31mt[0m)    compilers/intel/14.0.0 ([1;31mt[0m)
+   apps/git/1.8.4.1   ([1;31mt[0m)    libs/gcc/4.8.1         ([1;31mt[0m)
+
+  Where:
+   [1;31mt[0m:  Tools for development
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the default modules.
+"module overview" or "ml ov" to display the number of modules for each name.
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
+
+

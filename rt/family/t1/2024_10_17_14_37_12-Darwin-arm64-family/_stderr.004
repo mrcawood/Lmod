@@ -1,0 +1,10 @@
+  Lmod version: 8.7.43 2024-06-24 15:50 -06:00
+running: module --regression_testing -T load ibmA openmpi phdf5
+  (1)(0)Loading: ibmA (fn: /Users/mcawood/Lmod/Lmod/rt/family/mf/Core/ibmA/13.1.6.lua, using Find-Best)
+    (2)(0)Loading: compiler-common/.ibm (fn: /Users/mcawood/Lmod/Lmod/rt/family/mf/Core/compiler-common/.ibm.lua, using Find-Best)
+    Appending: /Users/mcawood/Lmod/Lmod/rt/family/mf/Compiler/ibm/13 to MODULEPATH
+  (3)(0)Loading: openmpi (fn: /Users/mcawood/Lmod/Lmod/rt/family/mf/Compiler/ibm/13/openmpi/2.1.1.lua, using Find-Best)
+    Appending: /Users/mcawood/Lmod/Lmod/rt/family/mf/MPI/ibm/13/openmpi/2.1 to MODULEPATH
+    (4)(0)Loading: mpi-common/.openmpi (fn: /Users/mcawood/Lmod/Lmod/rt/family/mf/Core/mpi-common/.openmpi.lua, using Find-Best)
+  (5)(0)Loading: phdf5 (fn: /Users/mcawood/Lmod/Lmod/rt/family/mf/MPI/ibm/13/openmpi/2.1/phdf5/1.8.18.lua, using Find-Best)
+  reloadAll(1)(compiler-common/.ibm, ibmA, mpi-common/.openmpi, openmpi, phdf5)

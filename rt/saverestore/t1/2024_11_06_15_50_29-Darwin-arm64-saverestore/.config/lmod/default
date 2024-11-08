@@ -1,0 +1,42 @@
+-- -*- lua -*-
+-- created: Wed Nov  6 15:53:00 2024 --
+-- Lmod 8.7.43 2024-06-24 15:50 -06:00
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {
+    a = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/saverestore/t1/2024_11_06_15_50_29-Darwin-arm64-saverestore/Core/a/2.0",
+      fullName = "a/2.0",
+      hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      loadOrder = 1,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "a",
+      wV = "^00000002.*zfinal",
+    },
+    b = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/saverestore/t1/2024_11_06_15_50_29-Darwin-arm64-saverestore/Core/b/3.3",
+      fullName = "b/3.3",
+      hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      loadOrder = 2,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "b",
+      wV = "000000003.000000003.*zfinal",
+    },
+  },
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/saverestore/PREREQ", "/Users/mcawood/Lmod/Lmod/rt/saverestore/t1/2024_11_06_15_50_29-Darwin-arm64-saverestore/Core",
+  },
+  mpathRefCountT = {
+    ["/Users/mcawood/Lmod/Lmod/rt/saverestore/PREREQ"] = 1,
+    ["/Users/mcawood/Lmod/Lmod/rt/saverestore/t1/2024_11_06_15_50_29-Darwin-arm64-saverestore/Core"] = 1,
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/saverestore/t1/2024_11_06_15_50_29-Darwin-arm64-saverestore/Core",
+}

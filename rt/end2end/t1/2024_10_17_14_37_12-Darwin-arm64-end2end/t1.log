@@ -1,0 +1,108 @@
+LmodV=8.7.43
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+DUPLICATE_PATHS=no
+LMOD_ALLOW_ROOT_USE=yes
+SITE_MSG_FILE=<empty>
+LMOD_OVERRIDE_LANG=<empty>
+CASE_INDEPENDENT_SORTING=no
+COLORIZE=yes
+DYNAMIC_SPIDER_CACHE=yes
+HIDDEN_ITALIC=no
+EXACT_MATCH=no
+MODE=user_default
+LMOD_CONFIG_DIR=/etc/lmod
+AUTO_SWAP=yes
+EXPORT_MODULE=yes
+REDIRECT=no
+MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_10_17_14_37_12-Darwin-arm64-end2end/b0/modulefiles
+ANCIENT=86400
+SHORT_TIME=2
+SPIDER_CACHE_DIRS=
+SPIDER_CACHE_DESCRIPT_FN=
+UPDATE_SYSTEM_FN=
+PREPEND_BLOCK=normal
+SITE_NAME=<empty>
+SYSHOST=<empty>
+ALLOW_TCL_MFILES=yes
+DISABLE_NAME_AUTOSWAP=no
+MPATH_AVAIL=no
+SETTARG=no
+IGNORE_DIRS=.svn,.git,.hg,.bzr
+PIN_VERSIONS=no
+LMOD_DOWNSTREAM_CONFLICTS=no
+MODULES_AUTO_HANDLING=no
+TMOD_PATH_RULE=no
+TMOD_FIND_FIRST=no
+LUA_INCLUDE=no
+CACHED_LOADS=no
+EXTENDED_DEFAULT=yes
+SUPPORT_KSH=no
+MODULEPATH_INIT=@PKG@/init/.modulespath
+SITE_CONTROLLED_PREFIX=no
+USE_BUILT_IN_PKGS=yes
+USE_DOT_CONFIG_DIR_ONLY=no
+SILENCE_SHELL_DEBUGGING=yes
+FAST_TCL_INTERP=yes
+MODULE_AUTO_HANDLING=no
+AVAIL_EXTENSIONS=yes
+PATH_TO_LUA=lua
+PATH_TO_LUAC=luac
+LUA_SUFFIX=no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for tcl.h... yes
+checking for library containing Tcl_CreateInterp... -ltcl
+checking for ps... /bin/ps
+checking for readlink... /usr/bin/readlink
+checking for gexpr... /opt/homebrew/bin/gexpr
+checking for gbasename... /opt/homebrew/bin/gbasename
+checking for bc... /usr/bin/bc
+checking for pod2man... /usr/bin/pod2man
+checking for git... /usr/bin/git
+checking for less... /usr/bin/less
+checking for sha1sum... /opt/homebrew/bin/sha1sum
+checking for tclsh... /opt/homebrew/bin/tclsh
+checking for gtr... /opt/homebrew/bin/gtr
+checking for gls... /opt/homebrew/bin/gls
+checking for lua... /opt/homebrew/bin/lua
+checking for luac... /opt/homebrew/bin/luac
+checking for valid Lua version... 5.4
+checking for lua modules: posix... yes
+checking for pkg-config... no
+
+Error can not find lua.h which is needed to build lua-term.
+You can either install lua-term or the lua development package.
+Quitting!
+
+make: /Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_10_17_14_37_12-Darwin-arm64-end2end/b0/makefile: No such file or directory
+make: *** No rule to make target `/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_10_17_14_37_12-Darwin-arm64-end2end/b0/makefile'.  Stop.
+tar: Error opening archive: Failed to open '/Users/mcawood/Lmod/Lmod/Lmod-8.7.43.tar.bz2'
+./t1.script: line 46: ../Lmod-8.7.43/configure: No such file or directory
+make: *** No rule to make target `install'.  Stop.
+status: 2
+mkdir: lmod: No such file or directory
+cp: lmod/etc/rc: No such file or directory
+/Users/mcawood/Lmod/Lmod/rt/common_funcs.sh: line 156: TEST:: command not found
+/Users/mcawood/Lmod/Lmod/rt/common_funcs.sh: line 156: TEST:: command not found
+cp: lmod/etc/rc: No such file or directory
+sed -e 's/Lua: Version.*/Lua: Version/g' -e 's/suite: Version.*//g' < /Users/mcawood/Lmod/Lmod/rt/end2end/out.txt > _out.left
+sed -e 's/Lua: Version.*/Lua: Version/g' -e 's/suite: Version.*//g' < out.txt > _out.right
+diff -c  _out.left _out.right > diff.log 2>&1
+sed -e 's/Lua: Version.*/Lua: Version/g' -e 's/suite: Version.*//g' < /Users/mcawood/Lmod/Lmod/rt/end2end/err.txt > _err.left
+sed -e 's/Lua: Version.*/Lua: Version/g' -e 's/suite: Version.*//g' < err.txt > _err.right
+diff -c  _err.left _err.right > diff.log 2>&1

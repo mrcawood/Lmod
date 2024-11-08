@@ -1,0 +1,7 @@
+
+Lmod is automatically replacing "gcc/1.0" with "intel/1.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) python3/1.0
+

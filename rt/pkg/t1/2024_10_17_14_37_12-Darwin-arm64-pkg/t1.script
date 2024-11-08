@@ -1,0 +1,53 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+resultFn="/Users/mcawood/Lmod/Lmod/rt/pkg/t1/2024_10_17_14_37_12-Darwin-arm64-pkg/t1.result"; export resultFn
+testName="pkg"; export testName
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/pkg/pkg.tdesc"; export testdescriptFn
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/pkg/t1/2024_10_17_14_37_12-Darwin-arm64-pkg/t1.runtime"; export runtimeFn
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/pkg/t1/2024_10_17_14_37_12-Darwin-arm64-pkg/results.lua"; export cmdResultFn
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/pkg/t1/2024_10_17_14_37_12-Darwin-arm64-pkg/message.lua"; export messageFn
+tag="2024_10_17"; export tag
+testDir="/Users/mcawood/Lmod/Lmod/rt/pkg"; export testDir
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+outputDir="/Users/mcawood/Lmod/Lmod/rt/pkg/t1/2024_10_17_14_37_12-Darwin-arm64-pkg"; export outputDir
+TARGET=""; export TARGET
+idTag="t1"; export idTag
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/pkg/mf;    export MODULEPATH_ROOT
+     MODULEPATH=$MODULEPATH_ROOT/Core; export MODULEPATH
+
+     remove_generated_lmod_files
+
+     cp /Users/mcawood/Lmod/Lmod/init/lmodrc.lua .lmodrc.lua
+
+     runLmod --version            # 1
+     runLmod load gcc mpich       # 2
+     runLmod load boost pmetis    # 3
+     runLmod show boost           # 4
+     runLmod show pmetis          # 5
+     runLmod show mpich           # 6
+     runLmod swap gcc intel       # 7
+     runLmod show intel           # 8
+     runLmod list                 # 9
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/pkg/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/pkg/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/pkg/t1/2024_10_17_14_37_12-Darwin-arm64-pkg/t1.result -t /Users/mcawood/Lmod/Lmod/rt/pkg/t1/2024_10_17_14_37_12-Darwin-arm64-pkg/t1.runtime results.csv
+   

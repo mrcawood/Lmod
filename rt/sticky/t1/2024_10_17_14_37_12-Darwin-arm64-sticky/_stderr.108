@@ -1,0 +1,9 @@
+
+Currently Loaded Modules:
+  1) top/1.0 (S)   2) second/1.0 (S)
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+
+ 
+

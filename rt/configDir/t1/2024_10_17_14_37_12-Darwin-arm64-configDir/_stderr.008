@@ -1,0 +1,8 @@
+Lmod Warning: The module w/1.0 is outdated. Please use a version from 2019a or newer.
+If there is no newer version, request one at hpc@vub.ac.be.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    w/1.0            /Users/mcawood/Lmod/Lmod/rt/configDir/mf/w/1.0.lua
+

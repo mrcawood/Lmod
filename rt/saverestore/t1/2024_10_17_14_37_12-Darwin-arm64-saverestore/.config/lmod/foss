@@ -1,0 +1,54 @@
+-- -*- lua -*-
+-- created: Thu Oct 17 14:39:19 2024 --
+-- Lmod 8.7.43 2024-06-24 15:50 -06:00
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {
+    binutils = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/saverestore/EB/binutils/.2.26.lua",
+      fullName = "binutils/.2.26",
+      hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      loadOrder = 1,
+      propT = {},
+      stackDepth = 1,
+      status = "active",
+      userName = "binutils/.2.26",
+      wV = "000000000.000000002.000000026.*zfinal",
+    },
+    gcc = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/saverestore/EB/gcc/5.4.lua",
+      fullName = "gcc/5.4",
+      hash = "0d1d43bbf77faa970184ea654110d99845c86c7b",
+      loadOrder = 3,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "gcc/5.4",
+      wV = "000000005.000000004.*zfinal",
+    },
+    numactl = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/saverestore/EB/numactl/.2.0.11.lua",
+      fullName = "numactl/.2.0.11",
+      hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      loadOrder = 2,
+      propT = {},
+      stackDepth = 1,
+      status = "active",
+      userName = "numactl/.2.0.11",
+      wV = "000000000.000000002.000000000.000000011.*zfinal",
+    },
+  },
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/saverestore/EB", "/Users/mcawood/Lmod/Lmod/rt/saverestore/PREREQ", "/Users/mcawood/Lmod/Lmod/rt/saverestore/t1/2024_10_17_14_37_12-Darwin-arm64-saverestore/Core",
+  },
+  mpathRefCountT = {
+    ["/Users/mcawood/Lmod/Lmod/rt/saverestore/EB"] = 1,
+    ["/Users/mcawood/Lmod/Lmod/rt/saverestore/PREREQ"] = 1,
+    ["/Users/mcawood/Lmod/Lmod/rt/saverestore/t1/2024_10_17_14_37_12-Darwin-arm64-saverestore/Core"] = 1,
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/saverestore/t1/2024_10_17_14_37_12-Darwin-arm64-saverestore/Core",
+}

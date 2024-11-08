@@ -1,0 +1,10 @@
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/vasp/mf:1\;/Users/mcawood/Lmod/Lmod/mf/Core:1\;/Users/mcawood/Lmod/Lmod/mf/Compiler/intel/10.1:1\;/Users/mcawood/Lmod/Lmod/mf/MPI/intel/10.1/openmpi/1.2.6:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/vasp/mf:/Users/mcawood/Lmod/Lmod/mf/Core:/Users/mcawood/Lmod/Lmod/mf/Compiler/intel/10.1:/Users/mcawood/Lmod/Lmod/mf/MPI/intel/10.1/openmpi/1.2.6;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC92YXNwL21mIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9tZi9Db3JlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9tZi9Db21waWxlci9pbnRlbC8xMC4xIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9tZi9NUEkvaW50ZWwvMTAuMS9vcGVubXBpLzEuMi42IiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC92YXNwL21mOi9Vc2Vycy9tY2F3b29kL0xt;
+export _ModuleTable001_;
+_ModuleTable002_=b2QvTG1vZC9tZi9Db3JlOi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9tZi9Db21waWxlci9pbnRlbC8xMC4xOi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9tZi9NUEkvaW50ZWwvMTAuMS9vcGVubXBpLzEuMi42IiwKfQo=;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;

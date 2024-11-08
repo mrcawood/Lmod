@@ -1,0 +1,54 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/disappear"; export testDir
+messageFn="/Users/mcawood/Lmod/Lmod/rt/disappear/t1/2024_11_06_15_50_29-Darwin-arm64-disappear/message.lua"; export messageFn
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_06"; export tag
+target=""; export target
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/disappear/disappear.tdesc"; export testdescriptFn
+TARGET=""; export TARGET
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/disappear/t1/2024_11_06_15_50_29-Darwin-arm64-disappear/results.lua"; export cmdResultFn
+packageName="rt"; export packageName
+resultFn="/Users/mcawood/Lmod/Lmod/rt/disappear/t1/2024_11_06_15_50_29-Darwin-arm64-disappear/t1.result"; export resultFn
+testName="disappear"; export testName
+idTag="t1"; export idTag
+outputDir="/Users/mcawood/Lmod/Lmod/rt/disappear/t1/2024_11_06_15_50_29-Darwin-arm64-disappear"; export outputDir
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/disappear/t1/2024_11_06_15_50_29-Darwin-arm64-disappear/t1.runtime"; export runtimeFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/disappear/t1/2024_11_06_15_50_29-Darwin-arm64-disappear/mf
+
+     remove_generated_lmod_files
+
+     cp /Users/mcawood/Lmod/Lmod/init/lmodrc.lua .lmodrc.lua
+
+     mkdir -p mf
+     cp /Users/mcawood/Lmod/Lmod/rt/disappear/mf/abc.lua mf
+
+
+     runLmod --version                # 1
+     runLmod load   abc               # 2
+     runLmod list                     # 3
+     rm $MODULEPATH/abc.lua
+     runLmod unload abc               # 4
+     runLmod list                     # 5
+
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/disappear/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/disappear/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/disappear/t1/2024_11_06_15_50_29-Darwin-arm64-disappear/t1.result -t /Users/mcawood/Lmod/Lmod/rt/disappear/t1/2024_11_06_15_50_29-Darwin-arm64-disappear/t1.runtime results.csv
+   

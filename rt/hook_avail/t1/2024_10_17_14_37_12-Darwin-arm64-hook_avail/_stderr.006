@@ -1,0 +1,10 @@
+
+Currently Loaded Modules:
+  1) apps/moab                (S)   3) compilers/intel/14.0   5) StdEnv (S)
+  2) apps/buildtools/20140527       4) mpi/openmpi/1.6.5
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+
+ 
+

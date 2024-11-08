@@ -1,0 +1,16 @@
+LOADEDMODULES=unix/1.0;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MANPATH=/unknown/apps/junk/share/man:1\;:1;
+export __LMOD_REF_COUNT_MANPATH;
+MANPATH=/unknown/apps/junk/share/man::;
+export MANPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/manpath/mf/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/manpath/mf/Core/unix/1.0.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewp1bml4ID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvbWFucGF0aC9tZi9Db3JlL3VuaXgvMS4wLmx1YSIsCmZ1bGxOYW1lID0gInVuaXgvMS4wIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJ1bml4IiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvbWFucGF0aC9tZi9Db3JlIiwKfSwKc3lz;
+export _ModuleTable001_;
+_ModuleTable002_=dGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9tYW5wYXRoL21mL0NvcmUiLAp9Cg==;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;

@@ -1,0 +1,4 @@
+Load hook B called on admin
+Load hook A called on admin
+Load hook B called on intel
+Load hook A called on intel

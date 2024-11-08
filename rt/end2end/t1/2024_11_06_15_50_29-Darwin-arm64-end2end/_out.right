@@ -1,0 +1,54 @@
+===========================
+step 1
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+ OutputDIR/lmod/lmod/libexec/lmod --version
+===========================
+===========================
+step 3
+ OutputDIR/lmod/lmod/libexec/lmod load admin
+===========================
+===========================
+step 4
+ OutputDIR/lmod/lmod/libexec/lmod load amber
+===========================
+===========================
+step 5
+ OutputDIR/lmod/lmod/libexec/lmod load bad
+===========================
+===========================
+step 6
+ OutputDIR/lmod/lmod/libexec/lmod load myinfo
+===========================
+===========================
+step 7
+ OutputDIR/lmod/lmod/libexec/lmod list
+===========================
+===========================
+step 8
+ OutputDIR/lmod/lmod/libexec/lmod avail
+===========================
+===========================
+step 9
+ OutputDIR/lmod/lmod/libexec/lmod load b
+===========================
+===========================
+step 10
+echo TEST: 0
+===========================
+TEST: 0
+===========================
+step 11
+ OutputDIR/lmod/lmod/libexec/lmod unload b
+===========================
+===========================
+step 12
+echo TEST: 0
+===========================
+TEST: 0
+===========================
+step 13
+ OutputDIR/lmod/lmod/libexec/lmod avail
+===========================

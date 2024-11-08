@@ -1,0 +1,124 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/avail"; export testDir
+messageFn="/Users/mcawood/Lmod/Lmod/rt/avail/t1/2024_11_06_15_50_29-Darwin-arm64-avail/message.lua"; export messageFn
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_06"; export tag
+target=""; export target
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/avail/avail.tdesc"; export testdescriptFn
+TARGET=""; export TARGET
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/avail/t1/2024_11_06_15_50_29-Darwin-arm64-avail/results.lua"; export cmdResultFn
+packageName="rt"; export packageName
+resultFn="/Users/mcawood/Lmod/Lmod/rt/avail/t1/2024_11_06_15_50_29-Darwin-arm64-avail/t1.result"; export resultFn
+testName="avail"; export testName
+idTag="t1"; export idTag
+outputDir="/Users/mcawood/Lmod/Lmod/rt/avail/t1/2024_11_06_15_50_29-Darwin-arm64-avail"; export outputDir
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/avail/t1/2024_11_06_15_50_29-Darwin-arm64-avail/t1.runtime"; export runtimeFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+     unsetMT
+     initStdEnvVars
+     export LMOD_TERM_WIDTH=3000
+     MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/avail/mf;  export MODULEPATH_ROOT
+     MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/avail/mf/Core//
+     export MODULEPATH
+     unset TERM
+
+     remove_generated_lmod_files
+
+     cp /Users/mcawood/Lmod/Lmod/rt/avail/.lmodrc.lua .lmodrc.lua
+
+
+     runLmod --version                # 1
+     runLmod load intel               # 2
+     runLmod avail                    # 3
+
+     runLmod avail gcc intel p a j m  # 4
+     runLmod unload intel             # 5
+     runLmod avail                    # 6
+     runLmod --show_hidden avail      # 7
+     runLmod -t    avail              # 8
+     runLmod -t --show_hidden avail   # 9
+     runLmod -t -d avail              #10
+     runLmod -t    avail git          #11
+     runLmod -t -d avail git          #12
+     runLmod -t    avail git/1.7.4.3  #13
+     runLmod use /Users/mcawood/Lmod/Lmod/rt/avail/mf/Core2  #14
+     runLmod avail local              #15
+     runLmod --ignore_cache avail     #16
+
+     export LMOD_MODULERCFILE=$testDir/dot.modulerc.lua
+     runLmod overview                 #17
+     unset LMOD_MODULERCFILE
+
+     runLmod purge                    #18
+     unsetMT
+     unset MODULEPATH
+     runLmod avail                    #19
+
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/avail/mf/Core3
+     runLmod avail                    #20
+     runLmod load TACC                #21
+     runLmod load intel/15.0.2        #22
+     runLmod load intel               #23
+
+     runLmod use /Users/mcawood/Lmod/Lmod/rt/avail/mf/Core4  #24
+     runLmod avail                    #25
+
+     runLmod use /Users/mcawood/Lmod/Lmod/rt/avail/mf/Order  #26
+     runLmod avail                    #27
+     runLmod use /Users/mcawood/Lmod/Lmod/rt/avail/mf/Core6  #28
+     runLmod avail                    #29
+     runLmod avail FooBar             #30
+
+     runLmod purge                    #31
+     unsetMT
+     unset MODULEPATH
+     runLmod use /Users/mcawood/Lmod/Lmod/rt/avail/mf/Core7  #32
+     runLmod avail                    #33
+     runLmod load A                   #34
+     runLmod load B                   #35
+     runLmod list                     #36
+############################################################
+# Test when there are too many non modulefile that start with .
+     runLmod use /Users/mcawood/Lmod/Lmod/rt/avail/mf/Core8  #37
+     runLmod avail                    #38
+############################################################
+# Test when there are too many non modulefile that do not start with .
+     runLmod use /Users/mcawood/Lmod/Lmod/rt/avail/mf/Core9  #39
+############################################################
+# Test Issue #613: clean env after every load thru spider
+     runLmod purge                    #40
+     unsetMT
+     unset MODULEPATH
+     runLmod use /Users/mcawood/Lmod/Lmod/rt/avail/mf/CoreA  #41
+     runLmod avail                    #42
+############################################################
+# Test Issue #629: Do not print global alias section hdr
+#                  when there is no global aliases to print
+
+     export LMOD_MODULERCFILE=$testDir/dot.modulerc.lua
+     runLmod purge                    #43
+     unsetMT
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/avail/mf/CoreA
+     runLmod avail                    #44
+     runLmod avail parmetis           #45
+
+
+     
+     HOME=$ORIG_HOME
+
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/avail/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/avail/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/avail/t1/2024_11_06_15_50_29-Darwin-arm64-avail/t1.result -t /Users/mcawood/Lmod/Lmod/rt/avail/t1/2024_11_06_15_50_29-Darwin-arm64-avail/t1.runtime results.csv
+   

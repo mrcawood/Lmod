@@ -1,0 +1,25 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua fish --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua fish --regression_testing load intel
+===========================
+set -x -g __LMOD_REF_COUNT_LD_LIBRARY_PATH /vol/local/intel/mkl/mkl/lib/lib:1\;/vol/local/intel/idb/idb/lib:1\;/vol/local/intel/fc/fc/lib:1\;/vol/local/intel/cc/cc/lib:1;
+set -x -g LD_LIBRARY_PATH /vol/local/intel/mkl/mkl/lib/lib:/vol/local/intel/idb/idb/lib:/vol/local/intel/fc/fc/lib:/vol/local/intel/cc/cc/lib;
+set -x -g LMOD_FAMILY_COMPILER intel;
+set -x -g LMOD_FAMILY_COMPILER_VERSION intel;
+set -x -g LOADEDMODULES intel/intel;
+set -x -g __LMOD_REF_COUNT_MANPATH /vol/local/intel/mkl/mkl/man:1\;/vol/local/intel/idb/idb/man:1\;/vol/local/intel/fc/fc/man:1\;/vol/local/intel/cc/cc/man:1;
+set -x -g MANPATH /vol/local/intel/mkl/mkl/man:/vol/local/intel/idb/idb/man:/vol/local/intel/fc/fc/man:/vol/local/intel/cc/cc/man;
+set -x -g MKL_DIR /vol/local/intel/mkl/mkl/lib/lib;
+set -x -g MKL_INCLUDE /vol/local/intel/mkl/mkl/include;
+set -x -g __LMOD_REF_COUNT_MODULEPATH /Users/mcawood/Lmod/Lmod/rt/fish/mf/Compiler/intel/10.1:1\;/Users/mcawood/Lmod/Lmod/rt/fish/mf/Core:1;
+set -x -g MODULEPATH /Users/mcawood/Lmod/Lmod/rt/fish/mf/Compiler/intel/10.1:/Users/mcawood/Lmod/Lmod/rt/fish/mf/Core;
+set -x -g __LMOD_REF_COUNT_PATH /vol/local/intel/idb/idb/bin:1\;/vol/local/intel/fc/fc/bin:1\;/vol/local/intel/cc/cc/bin:1\;/Users/mcawood/Lmod/Lmod/proj_mgmt:1\;/Users/mcawood/Lmod/Hermes/bin:1\;/opt/homebrew/bin:1\;/usr/bin:1\;/bin:1;
+set -x -g PATH /vol/local/intel/idb/idb/bin /vol/local/intel/fc/fc/bin /vol/local/intel/cc/cc/bin /Users/mcawood/Lmod/Lmod/proj_mgmt /Users/mcawood/Lmod/Hermes/bin /opt/homebrew/bin /usr/bin /bin;
+set -x -g _LMFILES_ /Users/mcawood/Lmod/Lmod/rt/fish/mf/Core/intel/intel.lua;
+set -x -g _ModuleTable001_ X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpjb21waWxlciA9ICJpbnRlbCIsCn0sCm1UID0gewppbnRlbCA9IHsKYWN0aW9uQSA9IHsKInByZXBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9maXNoL21mL0NvbXBpbGVyL2ludGVsLzEwLjFcIikiLAp9LApmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZmlzaC9tZi9Db3JlL2ludGVsL2ludGVsLmx1YSIsCmZ1bGxOYW1lID0gImludGVsL2ludGVsIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0;
+set -x -g _ModuleTable002_ YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJpbnRlbCIsCndWID0gIippbnRlbC4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2Zpc2gvbWYvQ29tcGlsZXIvaW50ZWwvMTAuMSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvZmlzaC9tZi9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9maXNoL21mL0NvcmUiLAp9Cg==;
+set -x -g _ModuleTable_Sz_ 2;

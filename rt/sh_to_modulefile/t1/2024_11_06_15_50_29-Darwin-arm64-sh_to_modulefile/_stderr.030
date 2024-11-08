@@ -1,0 +1,12 @@
+Lmod has detected the following error: Error found in sourcing script "/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/broken.sh":
+/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/broken.sh: line 3: fooBar: command not found
+
+If this is a bash script please try:
+  $ set -exv; . /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/broken.sh
+See https://lmod.readthedocs.io/en/latest/260_sh_to_modulefile.html for details.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    brokenSh/1.0     /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf/brokenSh/1.0.lua
+

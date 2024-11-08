@@ -1,0 +1,10 @@
+
+Currently Loaded Modules:
+  1) intel/intel     3) _a/1.0             5) alex/2.0   7) rtm_intel/12.1
+  2) gotoblas/1.32   4) boost/1.49.0 (o)   6) D/1.0
+
+  Where:
+   o:  built for offload to the MIC only
+
+ 
+

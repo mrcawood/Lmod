@@ -1,0 +1,156 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load TACC
+===========================
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload B
+===========================
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) A/1.0   2) C/1.0   3) TACC
+
+ 
+
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --mt
+===========================
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {
+    A = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/mgrload_func/mf/Core/A/1.0.lua",
+      fullName = "A/1.0",
+      loadOrder = 1,
+      propT = {},
+      ref_count = 1,
+      stackDepth = 1,
+      status = "active",
+      userName = "A",
+      wV = "000000001.*zfinal",
+    },
+    C = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/mgrload_func/mf/Core/C/1.0.lua",
+      fullName = "C/1.0",
+      loadOrder = 2,
+      propT = {},
+      ref_count = 1,
+      stackDepth = 1,
+      status = "active",
+      userName = "C",
+      wV = "000000001.*zfinal",
+    },
+    TACC = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/mgrload_func/mf/Core/TACC.lua",
+      fullName = "TACC",
+      loadOrder = 3,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "TACC",
+      wV = "M.*zfinal",
+    },
+  },
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/mgrload_func/mf/Core",
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/mgrload_func/mf/Core",
+}
+
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load avx
+===========================
+Unloading: A
+Unloading: C
+Unloading: TACC
+loading: A
+loading: C
+loading: TACC
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) A/1.0   2) C/1.0   3) TACC   4) avx
+
+ 
+
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --mt
+===========================
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {
+    A = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/mgrload_func/mf/Core/A/1.0.lua",
+      fullName = "A/1.0",
+      loadOrder = 1,
+      propT = {},
+      ref_count = 1,
+      stackDepth = 1,
+      status = "active",
+      userName = "A",
+      wV = "000000001.*zfinal",
+    },
+    C = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/mgrload_func/mf/Core/C/1.0.lua",
+      fullName = "C/1.0",
+      loadOrder = 2,
+      propT = {},
+      ref_count = 1,
+      stackDepth = 1,
+      status = "active",
+      userName = "C",
+      wV = "000000001.*zfinal",
+    },
+    TACC = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/mgrload_func/mf/Core/TACC.lua",
+      fullName = "TACC",
+      loadOrder = 3,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "TACC",
+      wV = "M.*zfinal",
+    },
+    avx = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/mgrload_func/mf/Core/avx.lua",
+      fullName = "avx",
+      loadOrder = 4,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "avx",
+      wV = "M.*zfinal",
+    },
+  },
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/mgrload_func/mf/Core",
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/mgrload_func/mf/Core",
+}
+

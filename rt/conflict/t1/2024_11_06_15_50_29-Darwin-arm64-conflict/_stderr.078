@@ -1,0 +1,7 @@
+Lmod has detected the following error: Cannot load module "F/3.1.4" because this module set a conflict: "acme/1.0"
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    F/3.1.4          /Users/mcawood/Lmod/Lmod/rt/conflict/mf2/Core/F/3.1.4.lua
+

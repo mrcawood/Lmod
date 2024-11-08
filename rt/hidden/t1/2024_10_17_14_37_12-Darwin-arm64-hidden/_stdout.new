@@ -1,0 +1,34 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --show_hidden avail
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hidden/mf:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hidden/mf;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hidden/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hidden/mf",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load .system
+===========================
+LOADEDMODULES=.system;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hidden/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/hidden/mf/.system.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={[".system"]={fn="/Users/mcawood/Lmod/Lmod/rt/hidden/mf/.system.lua",fullName=".system",loadOrder=1,propT={lmod={sticky=1,},},stackDepth=0,status="active",userName=".system",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hidden/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hidden/mf",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hidden/mf;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={[".system"]={fn="/Users/mcawood/Lmod/Lmod/rt/hidden/mf/.system.lua",fullName=".system",loadOrder=1,propT={lmod={sticky=1,},},stackDepth=0,status="active",userName=".system",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hidden/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hidden/mf",}';
+export _ModuleTable_;

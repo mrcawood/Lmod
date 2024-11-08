@@ -1,0 +1,10 @@
+
+Lmod is automatically replacing "intel/intel" with "gcc/4.2.3".
+
+
+Inactive Modules:
+  1) gotoblas/1.31
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) openmpi/1.2.6
+

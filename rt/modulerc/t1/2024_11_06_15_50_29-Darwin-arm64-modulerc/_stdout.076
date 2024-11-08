@@ -1,0 +1,193 @@
+timestampFn = {
+  false,
+}
+mrcT = {
+  alias2modT = {},
+  hiddenT = {},
+  version2modT = {},
+}
+
+mrcMpathT = {
+  ["/Users/mcawood/Lmod/Lmod/rt/modulerc/mf6"] = {
+    version2modT = {
+      ["java/1.8"] = "java/1.8.0-A",
+    },
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/modulerc/mf7"] = {
+    version2modT = {
+      ["java/1.8"] = "java/1.8.0-B",
+    },
+  },
+}
+spiderT = {
+  ["/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4"] = {
+    a = {
+      defaultA = {
+        {
+          barefn = ".version",
+          defaultIdx = 4,
+          fn = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4/a/.version",
+          fullName = "a/.version",
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4",
+          value = "2.0",
+        },
+      },
+      defaultT = {
+        barefn = ".version",
+        defaultIdx = 4,
+        fn = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4/a/.version",
+        fullName = "a/.version",
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4",
+        value = "2.0",
+      },
+      dirT = {},
+      fileT = {
+        ["a/1.0"] = {
+          Version = "1.0",
+          canonical = "1.0",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4/a/1.0.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4",
+          pV = "000000001.*zfinal",
+          wV = "000000001.*zfinal",
+        },
+        ["a/2.0"] = {
+          Version = "2.0",
+          canonical = "2.0",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4/a/2.0.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4",
+          pV = "000000002.*zfinal",
+          wV = "^00000002.*zfinal",
+        },
+        ["a/3.0"] = {
+          Version = "3.0",
+          canonical = "3.0",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4/a/3.0.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4",
+          pV = "000000003.*zfinal",
+          wV = "000000003.*zfinal",
+        },
+      },
+    },
+    mpich = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["mpich/3.1.2"] = {
+          Version = "3.1.2",
+          canonical = "3.1.2",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4/mpich/3.1.2.lua",
+          luaExt = 6,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4",
+          pV = "000000003.000000001.000000002.*zfinal",
+          wV = "000000003.000000001.000000002.*zfinal",
+        },
+        ["mpich/3.1.2-dbg"] = {
+          Version = "3.1.2-dbg",
+          canonical = "3.1.2-dbg",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4/mpich/3.1.2-dbg.lua",
+          luaExt = 10,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4",
+          pV = "000000003.000000001.000000002.*dbg.*zfinal",
+          wV = "000000003.000000001.000000002.*dbg.*zfinal",
+        },
+        ["mpich/3.2"] = {
+          Version = "3.2",
+          canonical = "3.2",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4/mpich/3.2.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4",
+          pV = "000000003.000000002.*zfinal",
+          wV = "000000003.000000002.*zfinal",
+        },
+        ["mpich/3.2-dbg"] = {
+          Version = "3.2-dbg",
+          canonical = "3.2-dbg",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4/mpich/3.2-dbg.lua",
+          luaExt = 8,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf4",
+          pV = "000000003.000000002.*dbg.*zfinal",
+          wV = "000000003.000000002.*dbg.*zfinal",
+        },
+      },
+    },
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/modulerc/mf6"] = {
+    java = {
+      defaultA = {
+        {
+          barefn = ".modulerc.lua",
+          defaultIdx = 2,
+          fn = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf6/java/.modulerc.lua",
+          fullName = "java/.modulerc",
+          luaExt = 10,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf6",
+          value = false,
+        },
+      },
+      defaultT = {
+        barefn = ".modulerc.lua",
+        defaultIdx = 2,
+        fn = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf6/java/.modulerc.lua",
+        fullName = "java/.modulerc",
+        luaExt = 10,
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf6",
+        value = false,
+      },
+      dirT = {},
+      fileT = {
+        ["java/1.8.0-A"] = {
+          Version = "1.8.0-A",
+          canonical = "1.8.0-A",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf6/java/1.8.0-A.lua",
+          luaExt = 8,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf6",
+          pV = "000000001.000000008.*a.*zfinal",
+          wV = "000000001.000000008.*a.*zfinal",
+        },
+      },
+    },
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/modulerc/mf7"] = {
+    java = {
+      defaultA = {
+        {
+          barefn = ".modulerc.lua",
+          defaultIdx = 2,
+          fn = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf7/java/.modulerc.lua",
+          fullName = "java/.modulerc",
+          luaExt = 10,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf7",
+          value = false,
+        },
+      },
+      defaultT = {
+        barefn = ".modulerc.lua",
+        defaultIdx = 2,
+        fn = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf7/java/.modulerc.lua",
+        fullName = "java/.modulerc",
+        luaExt = 10,
+        mpath = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf7",
+        value = false,
+      },
+      dirT = {},
+      fileT = {
+        ["java/1.8.0-B"] = {
+          Version = "1.8.0-B",
+          canonical = "1.8.0-B",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf7/java/1.8.0-B.lua",
+          luaExt = 8,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf7",
+          pV = "000000001.000000008.*b.*zfinal",
+          wV = "000000001.000000008.*b.*zfinal",
+        },
+      },
+    },
+  },
+  version = 5,
+}
+mpathMapT = {}
+

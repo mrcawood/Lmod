@@ -1,0 +1,79 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/tabcompl"; export testDir
+messageFn="/Users/mcawood/Lmod/Lmod/rt/tabcompl/t1/2024_11_06_15_50_29-Darwin-arm64-tabcompl/message.lua"; export messageFn
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_06"; export tag
+target=""; export target
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/tabcompl/tabcompl.tdesc"; export testdescriptFn
+TARGET=""; export TARGET
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/tabcompl/t1/2024_11_06_15_50_29-Darwin-arm64-tabcompl/results.lua"; export cmdResultFn
+packageName="rt"; export packageName
+resultFn="/Users/mcawood/Lmod/Lmod/rt/tabcompl/t1/2024_11_06_15_50_29-Darwin-arm64-tabcompl/t1.result"; export resultFn
+testName="tabcompl"; export testName
+idTag="t1"; export idTag
+outputDir="/Users/mcawood/Lmod/Lmod/rt/tabcompl/t1/2024_11_06_15_50_29-Darwin-arm64-tabcompl"; export outputDir
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/tabcompl/t1/2024_11_06_15_50_29-Darwin-arm64-tabcompl/t1.runtime"; export runtimeFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/tabcompl/mf;     export MODULEPATH_ROOT
+
+     export MODULEPATH="$MODULEPATH_ROOT/base"
+     for i in bio compiler data debugger devel lang lib math \
+              mpi numlib perf system toolchain tools vis; do
+       MODULEPATH="$MODULEPATH:$MODULEPATH_ROOT/$i"
+     done
+
+     RTM_SETTARG_CMD=":";               export RTM_SETTARG_CMD
+
+     remove_generated_lmod_files cacheDir
+
+     mkdir cacheDir
+     buildSpiderT $MODULEPATH > cacheDir/spiderT.lua
+     cp /Users/mcawood/Lmod/Lmod/init/lmodrc.lua .lmodrc.lua
+     cat > fn << EOF
+/Users/mcawood/Lmod/Lmod/rt/tabcompl/t1/2024_11_06_15_50_29-Darwin-arm64-tabcompl/cacheDir: /Users/mcawood/Lmod/Lmod/rt/tabcompl/t1/2024_11_06_15_50_29-Darwin-arm64-tabcompl/last_update
+EOF
+     $LUA_EXEC /Users/mcawood/Lmod/Lmod/src/spiderCacheSupport.in.lua --descriptFn fn >> .lmodrc.lua
+     touch last_update
+
+     runLmod --version          # 1
+     T0=`EPOCH`
+     runLmod -t avail           # 2
+     T1=`EPOCH`
+     RT=`echo "$T1 - $T0" | bc -q`
+     echo "--%%-- Avail RT: $RT" > _stderr.orig
+
+     T0=`EPOCH`
+     runLmod --ignore_cache load mupdf # 3
+     T1=`EPOCH`
+     RT=`echo "$T1 - $T0" | bc -q`
+     echo "--%%-- Load W/O cache RT: $RT" >> _stderr.orig
+
+     T0=`EPOCH`
+     runLmod load mupdf         # 4
+     T1=`EPOCH`
+     RT=`echo "$T1 - $T0" | bc -q`
+     echo "--%%-- Load RT: $RT" >> _stderr.orig
+
+
+
+     HOME=$ORIG_HOME
+
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results -bash _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] >> _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/tabcompl/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/tabcompl/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/tabcompl/t1/2024_11_06_15_50_29-Darwin-arm64-tabcompl/t1.result -t /Users/mcawood/Lmod/Lmod/rt/tabcompl/t1/2024_11_06_15_50_29-Darwin-arm64-tabcompl/t1.runtime results.csv
+   

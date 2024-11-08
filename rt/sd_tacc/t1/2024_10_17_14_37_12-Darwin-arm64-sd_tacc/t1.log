@@ -1,0 +1,6 @@
+sed -e 's/Lua: Version.*/Lua: Version/g' -e 's/suite: Version.*//g' < /Users/mcawood/Lmod/Lmod/rt/sd_tacc/out.txt > _out.left
+sed -e 's/Lua: Version.*/Lua: Version/g' -e 's/suite: Version.*//g' < out.txt > _out.right
+diff -c  _out.left _out.right > diff.log 2>&1
+sed -e 's/Lua: Version.*/Lua: Version/g' -e 's/suite: Version.*//g' < /Users/mcawood/Lmod/Lmod/rt/sd_tacc/err.txt > _err.left
+sed -e 's/Lua: Version.*/Lua: Version/g' -e 's/suite: Version.*//g' < err.txt > _err.right
+diff -c  _err.left _err.right > diff.log 2>&1

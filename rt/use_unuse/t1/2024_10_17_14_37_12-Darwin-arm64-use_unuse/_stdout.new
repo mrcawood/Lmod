@@ -1,0 +1,104 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load a
+===========================
+A=1.0;
+export A;
+LOADEDMODULES=a/1.0;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core/a/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core/a/1.0.lua",fullName="a/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unuse /Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core
+===========================
+unset A;
+unset LOADEDMODULES;
+unset __LMOD_REF_COUNT_MODULEPATH;
+unset MODULEPATH;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core/a/1.0.lua",fullName="a/1.0",loadOrder=-1,propT={},stackDepth=0,status="inactive",userName="a",wV="000000001.*zfinal",},},mpathA={},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use /Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core/a/1.0.lua",fullName="a/1.0",loadOrder=-1,propT={},stackDepth=0,status="inactive",userName="a",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unuse /Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM
+===========================
+unset __LMOD_REF_COUNT_MODULEPATH;
+unset MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core/a/1.0.lua",fullName="a/1.0",loadOrder=-1,propT={},stackDepth=0,status="inactive",userName="a",wV="000000001.*zfinal",},},mpathA={},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use ../../mf/RTM
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core/a/1.0.lua",fullName="a/1.0",loadOrder=-1,propT={},stackDepth=0,status="inactive",userName="a",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unuse /Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM
+===========================
+unset MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM",}';
+export _ModuleTable_;
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use /Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM2
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM2:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM2;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM2",},}';
+export _ModuleTable_;
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unuse /Users/mcawood/Lmod/Lmod/rt/use_unuse/mf/RTM2
+===========================
+unset __LMOD_REF_COUNT_MODULEPATH;
+unset MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={},}';
+export _ModuleTable_;
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use --help
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_unuse/t1/2024_10_17_14_37_12-Darwin-arm64-use_unuse/--help:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_unuse/t1/2024_10_17_14_37_12-Darwin-arm64-use_unuse/--help;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/use_unuse/t1/2024_10_17_14_37_12-Darwin-arm64-use_unuse/--help",},}';
+export _ModuleTable_;
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use -h
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_unuse/t1/2024_10_17_14_37_12-Darwin-arm64-use_unuse/-h:1\;/Users/mcawood/Lmod/Lmod/rt/use_unuse/t1/2024_10_17_14_37_12-Darwin-arm64-use_unuse/--help:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_unuse/t1/2024_10_17_14_37_12-Darwin-arm64-use_unuse/-h:/Users/mcawood/Lmod/Lmod/rt/use_unuse/t1/2024_10_17_14_37_12-Darwin-arm64-use_unuse/--help;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/use_unuse/t1/2024_10_17_14_37_12-Darwin-arm64-use_unuse/-h","/Users/mcawood/Lmod/Lmod/rt/use_unuse/t1/2024_10_17_14_37_12-Darwin-arm64-use_unuse/--help",},}';
+export _ModuleTable_;

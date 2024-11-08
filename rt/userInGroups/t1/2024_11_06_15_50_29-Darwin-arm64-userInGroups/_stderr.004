@@ -1,0 +1,6 @@
+userInGroup("vasp"):          true
+userInGroups("vasp"):         true
+userInGroups("Vasp"):         false
+userInGroups("build","vasp"): true
+userInGroups("Build","vasp"): true
+userInGroups("Build","Vasp"): false

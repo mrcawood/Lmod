@@ -1,0 +1,4 @@
+===========================
+step 37
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load bar/1.2
+===========================

@@ -1,0 +1,54 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load a
+===========================
+LOADEDMODULES=a/sub/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf/a/sub/1.0;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf/a/sub/1.0",fullName="a/sub/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="*sub/^00000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf/a/sub/1.0",fullName="a/sub/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="*sub/^00000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load d
+===========================
+LOADEDMODULES=a/sub/1.0:d/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf/a/sub/1.0:/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf/d/1.0;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf/a/sub/1.0",fullName="a/sub/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="*sub/^00000001.*zfinal",},d={fn="/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf/d/1.0",fullName="d/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="d",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf",}';
+export _ModuleTable_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={a={fn="/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf/a/sub/1.0",fullName="a/sub/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="a",wV="*sub/^00000001.*zfinal",},d={fn="/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf/d/1.0",fullName="d/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="d",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/nvv_prereq/mf",}';
+export _ModuleTable_;

@@ -1,0 +1,54 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod --version
+===========================
+===========================
+step 3
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod load admin
+===========================
+===========================
+step 4
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod load amber
+===========================
+===========================
+step 5
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod load bad
+===========================
+===========================
+step 6
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod load myinfo
+===========================
+===========================
+step 7
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod list
+===========================
+===========================
+step 8
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod avail
+===========================
+===========================
+step 9
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod load b
+===========================
+===========================
+step 10
+echo TEST: 0
+===========================
+TEST: 0
+===========================
+step 11
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod unload b
+===========================
+===========================
+step 12
+echo TEST: 0
+===========================
+TEST: 0
+===========================
+step 13
+/Users/mcawood/Lmod/Lmod/rt/end2end/t1/2024_11_06_15_50_29-Darwin-arm64-end2end/lmod/lmod/libexec/lmod avail
+===========================

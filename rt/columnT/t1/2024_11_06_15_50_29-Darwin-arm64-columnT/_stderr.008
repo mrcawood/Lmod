@@ -1,0 +1,8 @@
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/columnT/modules-npa/python2.7.cython.numpy.scipy.numexpr.scientific.matplotlib/intel-13.1.11
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname                                                           Module Filename
+    ---------------                                                           ---------------
+    python2.7.cython.numpy.scipy.numexpr.scientific.matplotlib/intel-13.1.11  /Users/mcawood/Lmod/Lmod/rt/columnT/modules-npa/python2.7.cython.numpy.scipy.numexpr.scientific.matplotlib/intel-13.1.11
+

@@ -1,0 +1,308 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load admin PrgEnv openmpi parmetis
+===========================
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/swap/mf/Core/PrgEnv.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    PrgEnv           /Users/mcawood/Lmod/Lmod/rt/swap/mf/Core/PrgEnv.lua
+
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- /Users/mcawood/Lmod/Lmod/rt/swap/mf/Core -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   PrgEnv                 gcc/4.2.3            gotoblas/1.30    multi/multi
+   admin/admin-1.0        git/1.6.3.1          intel/intel      noweb/2.10c
+   alex/1.0               git/1.7.4            junk/a/c/1.0     parmetis/3.1
+   boost/1.46.0           git/1.7.4.3   (D)    junk/b/c/2.0     unix/unix
+   boost/1.47.1           gotoblas/1.20        junk/d/3.0
+   boost/1.49.0    (D)    gotoblas/1.26 (D)    local/local
+
+  Where:
+   D:  Default Module
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the default modules.
+"module overview" or "ml ov" to display the number of modules for each name.
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
+
+
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload intel
+===========================
+
+Note: the module "intel" cannot be unloaded because it was not loaded.
+
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load gcc
+===========================
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) gcc/4.2.3
+
+ 
+
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing swap gcc intel
+===========================
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load phdf5/1.8.2 petsc
+===========================
+Lmod has detected the following error: These module(s) or extension(s) exist but cannot be loaded as requested: "phdf5/1.8.2"
+   Try: "module spider phdf5/1.8.2" to see how to load the module(s).
+
+
+
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) intel/intel
+
+ 
+
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing swap openmpi mpich2
+===========================
+Lmod has detected the following error: Swap failed: "openmpi" is not loaded.
+
+
+
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) intel/intel
+
+ 
+
+===========================
+step 13
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing swap mpich2 openmpi
+===========================
+Lmod has detected the following error: Swap failed: "mpich2" is not loaded.
+
+
+
+===========================
+step 14
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) intel/intel
+
+ 
+
+===========================
+step 15
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load phdf5
+===========================
+Lmod has detected the following error: These module(s) or extension(s) exist but cannot be loaded as requested: "phdf5"
+   Try: "module spider phdf5" to see how to load the module(s).
+
+
+
+===========================
+step 16
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) intel/intel
+
+ 
+
+===========================
+step 17
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing swap openmpi mpich2
+===========================
+Lmod has detected the following error: Swap failed: "openmpi" is not loaded.
+
+
+
+===========================
+step 18
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) intel/intel
+
+ 
+
+===========================
+step 19
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload mpich2
+===========================
+
+Note: the module "mpich2" cannot be unloaded because it was not loaded.
+
+===========================
+step 20
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) intel/intel
+
+ 
+
+===========================
+step 21
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load gotoblas
+===========================
+===========================
+step 22
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing swap gotoblas/1.31
+===========================
+
+The following have been reloaded with a version change:
+  1) gotoblas/1.32 => gotoblas/1.31
+
+===========================
+step 23
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) intel/intel   2) gotoblas/1.31
+
+ 
+
+===========================
+step 24
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load mpich2
+===========================
+===========================
+step 25
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load openmpi
+===========================
+
+Lmod is automatically replacing "mpich2/1.0.7" with "openmpi/1.2.6".
+
+===========================
+step 26
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load gcc
+===========================
+
+Lmod is automatically replacing "intel/intel" with "gcc/4.2.3".
+
+
+Inactive Modules:
+  1) gotoblas/1.31
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) openmpi/1.2.6
+
+===========================
+step 27
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load intel mpich2
+===========================
+
+Lmod is automatically replacing "gcc/4.2.3" with "intel/intel".
+
+
+Lmod is automatically replacing "openmpi/1.2.6" with "mpich2/1.0.7".
+
+
+Activating Modules:
+  1) gotoblas/1.31
+
+===========================
+step 28
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load gcc openmpi
+===========================
+
+Lmod is automatically replacing "intel/intel" with "gcc/4.2.3".
+
+
+Lmod is automatically replacing "mpich2/1.0.7" with "openmpi/1.2.6".
+
+
+Inactive Modules:
+  1) gotoblas/1.31
+
+===========================
+step 29
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load intel gcc
+===========================
+
+Lmod is automatically replacing "gcc/4.2.3" with "intel/intel".
+
+
+Lmod is automatically replacing "intel/intel" with "gcc/4.2.3".
+
+===========================
+step 30
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+===========================
+step 31
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load gcc
+===========================
+===========================
+step 32
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load intel gcc
+===========================
+
+Lmod is automatically replacing "gcc/4.2.3" with "intel/intel".
+
+
+Lmod is automatically replacing "intel/intel" with "gcc/4.2.3".
+
+===========================
+step 33
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing swap gcc
+===========================
+===========================
+step 34
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load intel unknown
+===========================
+
+Lmod is automatically replacing "gcc/4.2.3" with "intel/intel".
+
+Lmod has detected the following error: The following module(s) are unknown: "unknown"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "unknown"
+
+Also make sure that all modulefiles written in TCL start with the string #%Module
+
+
+

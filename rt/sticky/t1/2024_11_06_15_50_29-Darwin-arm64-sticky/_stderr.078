@@ -1,0 +1,8 @@
+Lmod has detected the following error: These module(s) or extension(s) exist but cannot be loaded as requested: "c"
+   Try: "module spider c" to see how to load the module(s).
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    M1               /Users/mcawood/Lmod/Lmod/rt/sticky/mf/Core/M1.lua
+

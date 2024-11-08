@@ -1,0 +1,57 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/inherit"; export testDir
+messageFn="/Users/mcawood/Lmod/Lmod/rt/inherit/t1/2024_11_06_15_50_29-Darwin-arm64-inherit/message.lua"; export messageFn
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_06"; export tag
+target=""; export target
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/inherit/inherit.tdesc"; export testdescriptFn
+TARGET=""; export TARGET
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/inherit/t1/2024_11_06_15_50_29-Darwin-arm64-inherit/results.lua"; export cmdResultFn
+packageName="rt"; export packageName
+resultFn="/Users/mcawood/Lmod/Lmod/rt/inherit/t1/2024_11_06_15_50_29-Darwin-arm64-inherit/t1.result"; export resultFn
+testName="inherit"; export testName
+idTag="t1"; export idTag
+outputDir="/Users/mcawood/Lmod/Lmod/rt/inherit/t1/2024_11_06_15_50_29-Darwin-arm64-inherit"; export outputDir
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/inherit/t1/2024_11_06_15_50_29-Darwin-arm64-inherit/t1.runtime"; export runtimeFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/inherit/mf;     export MODULEPATH_ROOT
+
+     remove_generated_lmod_files
+
+     runLmod --version                    # 1
+     runLmod use -a /Users/mcawood/Lmod/Lmod/rt/inherit/mf/Linux /Users/mcawood/Lmod/Lmod/rt/inherit/mf/Core /Users/mcawood/Lmod/Lmod/rt/inherit/mf/Core2
+     runLmod load   junk                  # 3
+     runLmod list                         # 4
+     runLmod unload junk                  # 5
+     runLmod load junk2                   # 6
+     runLmod use /Users/mcawood/Lmod/Lmod/rt/inherit/pmf/core      # 7
+     runLmod load intel                   # 8
+     runLmod load mpich                   # 9
+     runLmod load p4est                   #10
+     runLmod list                         #11
+     runLmod swap mpich openmpi           #12
+     runLmod swap intel gcc               #13
+     runLmod list                         #14
+     runLmod purge                        #15
+
+     HOME=$ORIG_HOME
+
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/inherit/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/inherit/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/inherit/t1/2024_11_06_15_50_29-Darwin-arm64-inherit/t1.result -t /Users/mcawood/Lmod/Lmod/rt/inherit/t1/2024_11_06_15_50_29-Darwin-arm64-inherit/t1.runtime results.csv
+   

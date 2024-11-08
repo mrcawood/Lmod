@@ -1,0 +1,365 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load stdenv
+===========================
+EASYBUILD_ALLOW_MODULES_TOOL_MISMATCH=True;
+export EASYBUILD_ALLOW_MODULES_TOOL_MISMATCH;
+EASYBUILD_BUILDPATH=/tmp/easybuild;
+export EASYBUILD_BUILDPATH;
+EASYBUILD_INSTALLPATH=/csc/minerva/2.1;
+export EASYBUILD_INSTALLPATH;
+EASYBUILD_MODULES_TOOL=Lmod;
+export EASYBUILD_MODULES_TOOL;
+EASYBUILD_MODULE_NAMING_SCHEME=HierarchicalMNS;
+export EASYBUILD_MODULE_NAMING_SCHEME;
+EASYBUILD_PREFIX=/home/easybuild/minerva/2.1;
+export EASYBUILD_PREFIX;
+EASYBUILD_RECURSIVE_MODULE_UNLOAD=True;
+export EASYBUILD_RECURSIVE_MODULE_UNLOAD;
+EASYBUILD_REPOSITORY=FileRepository;
+export EASYBUILD_REPOSITORY;
+EASYBUILD_REPOSITORYPATH=/home/easybuild/eb_repo.d/installedCache/minerva/2.1;
+export EASYBUILD_REPOSITORYPATH;
+EASYBUILD_SOURCEPATH=/home/easybuild/sources;
+export EASYBUILD_SOURCEPATH;
+EASYBUILD_SUFFIX_MODULES_PATH=;
+export EASYBUILD_SUFFIX_MODULES_PATH;
+LMOD_FAMILY_EASYBUILD=easybuild;
+export LMOD_FAMILY_EASYBUILD;
+LMOD_FAMILY_EASYBUILD_VERSION=defaults;
+export LMOD_FAMILY_EASYBUILD_VERSION;
+LMOD_IGNORE_CACHE=1;
+export LMOD_IGNORE_CACHE;
+LMOD_TERM_WIDTH=100;
+export LMOD_TERM_WIDTH;
+LOADEDMODULES=easybuild/defaults:stdenv;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Core:1\;/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Core:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core;
+export MODULEPATH;
+__LMOD_REF_COUNT_PATH=/Users/mcawood/Lmod/Lmod/rt/ifur/t1/2024_10_17_14_37_12-Darwin-arm64-ifur/bin:1\;/Users/mcawood/Lmod/Lmod/proj_mgmt:1\;/Users/mcawood/Lmod/Hermes/bin:1\;/opt/homebrew/bin:1\;/usr/bin:1\;/bin:1;
+export __LMOD_REF_COUNT_PATH;
+PATH=/Users/mcawood/Lmod/Lmod/rt/ifur/t1/2024_10_17_14_37_12-Darwin-arm64-ifur/bin:/Users/mcawood/Lmod/Lmod/proj_mgmt:/Users/mcawood/Lmod/Hermes/bin:/opt/homebrew/bin:/usr/bin:/bin;
+export PATH;
+__LMOD_REF_COUNT_PYTHONPATH=/home/easybuild/eb_repo.d/custom:1\;/home/easybuild/eb_repo.d/easyblocks/1.14.0:1\;/home/easybuild/eb_repo.d/easyconfigs/1.14.0.0:1;
+export __LMOD_REF_COUNT_PYTHONPATH;
+PYTHONPATH=/home/easybuild/eb_repo.d/custom:/home/easybuild/eb_repo.d/easyblocks/1.14.0:/home/easybuild/eb_repo.d/easyconfigs/1.14.0.0;
+export PYTHONPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core/easybuild/defaults.lua:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core/stdenv.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewplYXN5YnVpbGQgPSAiZWFzeWJ1aWxkIiwKfSwKbVQgPSB7CmVhc3lidWlsZCA9IHsKYWN0aW9uQSA9IHsKInByZXBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvcmVcIikiLAp9LApmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9jb3JlL2Vhc3lidWlsZC9kZWZhdWx0cy5sdWEiLApmdWxsTmFtZSA9ICJlYXN5YnVpbGQvZGVmYXVsdHMiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9;
+export _ModuleTable001_;
+_ModuleTable002_=LApzdGFja0RlcHRoID0gMSwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImVhc3lidWlsZC9kZWZhdWx0cyIsCndWID0gIipkZWZhdWx0cy4qemZpbmFsIiwKfSwKc3RkZW52ID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9jb3JlL3N0ZGVudi5sdWEiLApmdWxsTmFtZSA9ICJzdGRlbnYiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHsKbG1vZCA9IHsKc3RpY2t5ID0gMSwKfSwKfSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJzdGRlbnYiLAp3ViA9ICJNLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9taW5lcnZhL2FsbC9D;
+export _ModuleTable002_;
+_ModuleTable003_=b3JlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL2NvcmUiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvY29yZSIsCn0K;
+export _ModuleTable003_;
+_ModuleTable_Sz_=3;
+export _ModuleTable_Sz_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Core:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewplYXN5YnVpbGQgPSAiZWFzeWJ1aWxkIiwKfSwKbVQgPSB7CmVhc3lidWlsZCA9IHsKYWN0aW9uQSA9IHsKInByZXBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvcmVcIikiLAp9LApmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9jb3JlL2Vhc3lidWlsZC9kZWZhdWx0cy5sdWEiLApmdWxsTmFtZSA9ICJlYXN5YnVpbGQvZGVmYXVsdHMiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9;
+export _ModuleTable001_;
+_ModuleTable002_=LApzdGFja0RlcHRoID0gMSwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImVhc3lidWlsZC9kZWZhdWx0cyIsCndWID0gIipkZWZhdWx0cy4qemZpbmFsIiwKfSwKc3RkZW52ID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9jb3JlL3N0ZGVudi5sdWEiLApmdWxsTmFtZSA9ICJzdGRlbnYiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHsKbG1vZCA9IHsKc3RpY2t5ID0gMSwKfSwKfSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJzdGRlbnYiLAp3ViA9ICJNLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9taW5lcnZhL2FsbC9D;
+export _ModuleTable002_;
+_ModuleTable003_=b3JlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL2NvcmUiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvY29yZSIsCn0K;
+export _ModuleTable003_;
+_ModuleTable_Sz_=3;
+export _ModuleTable_Sz_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load GCC
+===========================
+__LMOD_REF_COUNT_CPATH=/csc/minerva/2.1/software/Core/GCC/4.9.1/include:1;
+export __LMOD_REF_COUNT_CPATH;
+CPATH=/csc/minerva/2.1/software/Core/GCC/4.9.1/include;
+export CPATH;
+EBDEVELGCC=/csc/minerva/2.1/software/Core/GCC/4.9.1/easybuild/Core-GCC-4.9.1-easybuild-devel;
+export EBDEVELGCC;
+EBROOTGCC=/csc/minerva/2.1/software/Core/GCC/4.9.1;
+export EBROOTGCC;
+EBVERSIONGCC=4.9.1;
+export EBVERSIONGCC;
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/csc/minerva/2.1/software/Core/GCC/4.9.1/lib/gcc/x86_64-unknown-linux-gnu/4.9.1:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/lib64:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/lib:1;
+export __LMOD_REF_COUNT_LD_LIBRARY_PATH;
+LD_LIBRARY_PATH=/csc/minerva/2.1/software/Core/GCC/4.9.1/lib/gcc/x86_64-unknown-linux-gnu/4.9.1:/csc/minerva/2.1/software/Core/GCC/4.9.1/lib64:/csc/minerva/2.1/software/Core/GCC/4.9.1/lib;
+export LD_LIBRARY_PATH;
+__LMOD_REF_COUNT_LIBRARY_PATH=/csc/minerva/2.1/software/Core/GCC/4.9.1/lib64:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/lib:1;
+export __LMOD_REF_COUNT_LIBRARY_PATH;
+LIBRARY_PATH=/csc/minerva/2.1/software/Core/GCC/4.9.1/lib64:/csc/minerva/2.1/software/Core/GCC/4.9.1/lib;
+export LIBRARY_PATH;
+LOADEDMODULES=easybuild/defaults:stdenv:GCC/4.9.1;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MANPATH=/csc/minerva/2.1/software/Core/GCC/4.9.1/share/man:1;
+export __LMOD_REF_COUNT_MANPATH;
+MANPATH=/csc/minerva/2.1/software/Core/GCC/4.9.1/share/man;
+export MANPATH;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Compiler/GCC/4.9.1:1\;/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Core:1\;/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Compiler/GCC/4.9.1:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Core:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core;
+export MODULEPATH;
+__LMOD_REF_COUNT_PATH=/csc/minerva/2.1/software/Core/GCC/4.9.1/bin:1\;/Users/mcawood/Lmod/Lmod/rt/ifur/t1/2024_10_17_14_37_12-Darwin-arm64-ifur/bin:1\;/Users/mcawood/Lmod/Lmod/proj_mgmt:1\;/Users/mcawood/Lmod/Hermes/bin:1\;/opt/homebrew/bin:1\;/usr/bin:1\;/bin:1;
+export __LMOD_REF_COUNT_PATH;
+PATH=/csc/minerva/2.1/software/Core/GCC/4.9.1/bin:/Users/mcawood/Lmod/Lmod/rt/ifur/t1/2024_10_17_14_37_12-Darwin-arm64-ifur/bin:/Users/mcawood/Lmod/Lmod/proj_mgmt:/Users/mcawood/Lmod/Hermes/bin:/opt/homebrew/bin:/usr/bin:/bin;
+export PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core/easybuild/defaults.lua:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core/stdenv.lua:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Core/GCC/4.9.1;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewplYXN5YnVpbGQgPSAiZWFzeWJ1aWxkIiwKfSwKbVQgPSB7CkdDQyA9IHsKYWN0aW9uQSA9IHsKInByZXBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvbXBpbGVyL0dDQy80LjkuMVwiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvcmUvR0NDLzQuOS4xIiwKZnVsbE5hbWUgPSAiR0NDLzQuOS4xIiwKbG9hZE9yZGVyID0gMywKcHJvcFQgPSB7fSwK;
+export _ModuleTable001_;
+_ModuleTable002_=c3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJHQ0MiLAp3ViA9ICIwMDAwMDAwMDQuMDAwMDAwMDA5LjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKZWFzeWJ1aWxkID0gewphY3Rpb25BID0gewoicHJlcGVuZF9wYXRoKFwiTU9EVUxFUEFUSFwiLFwiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvbWluZXJ2YS9hbGwvQ29yZVwiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL2NvcmUvZWFzeWJ1aWxkL2RlZmF1bHRzLmx1YSIsCmZ1bGxOYW1lID0gImVhc3lidWlsZC9kZWZhdWx0cyIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZl;
+export _ModuleTable002_;
+_ModuleTable003_=IiwKdXNlck5hbWUgPSAiZWFzeWJ1aWxkL2RlZmF1bHRzIiwKd1YgPSAiKmRlZmF1bHRzLip6ZmluYWwiLAp9LApzdGRlbnYgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL2NvcmUvc3RkZW52Lmx1YSIsCmZ1bGxOYW1lID0gInN0ZGVudiIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0gewpsbW9kID0gewpzdGlja3kgPSAxLAp9LAp9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gInN0ZGVudiIsCndWID0gIk0uKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvbXBpbGVyL0dDQy80LjkuMSIKLCAiL1VzZXJzL21jYXdv;
+export _ModuleTable003_;
+_ModuleTable004_=b2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvbWluZXJ2YS9hbGwvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9jb3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL2NvcmUiLAp9Cg==;
+export _ModuleTable004_;
+_ModuleTable_Sz_=4;
+export _ModuleTable_Sz_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Compiler/GCC/4.9.1:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Core:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewplYXN5YnVpbGQgPSAiZWFzeWJ1aWxkIiwKfSwKbVQgPSB7CkdDQyA9IHsKYWN0aW9uQSA9IHsKInByZXBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvbXBpbGVyL0dDQy80LjkuMVwiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvcmUvR0NDLzQuOS4xIiwKZnVsbE5hbWUgPSAiR0NDLzQuOS4xIiwKbG9hZE9yZGVyID0gMywKcHJvcFQgPSB7fSwK;
+export _ModuleTable001_;
+_ModuleTable002_=c3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJHQ0MiLAp3ViA9ICIwMDAwMDAwMDQuMDAwMDAwMDA5LjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKZWFzeWJ1aWxkID0gewphY3Rpb25BID0gewoicHJlcGVuZF9wYXRoKFwiTU9EVUxFUEFUSFwiLFwiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvbWluZXJ2YS9hbGwvQ29yZVwiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL2NvcmUvZWFzeWJ1aWxkL2RlZmF1bHRzLmx1YSIsCmZ1bGxOYW1lID0gImVhc3lidWlsZC9kZWZhdWx0cyIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZl;
+export _ModuleTable002_;
+_ModuleTable003_=IiwKdXNlck5hbWUgPSAiZWFzeWJ1aWxkL2RlZmF1bHRzIiwKd1YgPSAiKmRlZmF1bHRzLip6ZmluYWwiLAp9LApzdGRlbnYgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL2NvcmUvc3RkZW52Lmx1YSIsCmZ1bGxOYW1lID0gInN0ZGVudiIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0gewpsbW9kID0gewpzdGlja3kgPSAxLAp9LAp9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gInN0ZGVudiIsCndWID0gIk0uKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvbXBpbGVyL0dDQy80LjkuMSIKLCAiL1VzZXJzL21jYXdv;
+export _ModuleTable003_;
+_ModuleTable004_=b2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvbWluZXJ2YS9hbGwvQ29yZSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9jb3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL2NvcmUiLAp9Cg==;
+export _ModuleTable004_;
+_ModuleTable_Sz_=4;
+export _ModuleTable_Sz_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load OpenMPI
+===========================
+__LMOD_REF_COUNT_CPATH=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/include:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/include:1;
+export __LMOD_REF_COUNT_CPATH;
+CPATH=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/include:/csc/minerva/2.1/software/Core/GCC/4.9.1/include;
+export CPATH;
+EBDEVELOPENMPI=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/easybuild/Compiler-GCC-4.9.1-OpenMPI-1.8.1-easybuild-devel;
+export EBDEVELOPENMPI;
+EBROOTOPENMPI=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1;
+export EBROOTOPENMPI;
+EBVERSIONOPENMPI=1.8.1;
+export EBVERSIONOPENMPI;
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/lib:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/lib/gcc/x86_64-unknown-linux-gnu/4.9.1:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/lib64:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/lib:1;
+export __LMOD_REF_COUNT_LD_LIBRARY_PATH;
+LD_LIBRARY_PATH=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/lib:/csc/minerva/2.1/software/Core/GCC/4.9.1/lib/gcc/x86_64-unknown-linux-gnu/4.9.1:/csc/minerva/2.1/software/Core/GCC/4.9.1/lib64:/csc/minerva/2.1/software/Core/GCC/4.9.1/lib;
+export LD_LIBRARY_PATH;
+__LMOD_REF_COUNT_LIBRARY_PATH=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/lib:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/lib64:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/lib:1;
+export __LMOD_REF_COUNT_LIBRARY_PATH;
+LIBRARY_PATH=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/lib:/csc/minerva/2.1/software/Core/GCC/4.9.1/lib64:/csc/minerva/2.1/software/Core/GCC/4.9.1/lib;
+export LIBRARY_PATH;
+LOADEDMODULES=easybuild/defaults:stdenv:GCC/4.9.1:OpenMPI/1.8.1;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MANPATH=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/share/man:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/share/man:1;
+export __LMOD_REF_COUNT_MANPATH;
+MANPATH=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/share/man:/csc/minerva/2.1/software/Core/GCC/4.9.1/share/man;
+export MANPATH;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/MPI/GCC/4.9.1/OpenMPI/1.8.1:1\;/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Compiler/GCC/4.9.1:1\;/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Core:1\;/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/MPI/GCC/4.9.1/OpenMPI/1.8.1:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Compiler/GCC/4.9.1:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Core:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core;
+export MODULEPATH;
+__LMOD_REF_COUNT_PATH=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/bin:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/bin:1\;/Users/mcawood/Lmod/Lmod/rt/ifur/t1/2024_10_17_14_37_12-Darwin-arm64-ifur/bin:1\;/Users/mcawood/Lmod/Lmod/proj_mgmt:1\;/Users/mcawood/Lmod/Hermes/bin:1\;/opt/homebrew/bin:1\;/usr/bin:1\;/bin:1;
+export __LMOD_REF_COUNT_PATH;
+PATH=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/bin:/csc/minerva/2.1/software/Core/GCC/4.9.1/bin:/Users/mcawood/Lmod/Lmod/rt/ifur/t1/2024_10_17_14_37_12-Darwin-arm64-ifur/bin:/Users/mcawood/Lmod/Lmod/proj_mgmt:/Users/mcawood/Lmod/Hermes/bin:/opt/homebrew/bin:/usr/bin:/bin;
+export PATH;
+__LMOD_REF_COUNT_PKG_CONFIG_PATH=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/lib/pkgconfig:1;
+export __LMOD_REF_COUNT_PKG_CONFIG_PATH;
+PKG_CONFIG_PATH=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/lib/pkgconfig;
+export PKG_CONFIG_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core/easybuild/defaults.lua:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core/stdenv.lua:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Core/GCC/4.9.1:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Compiler/GCC/4.9.1/OpenMPI/1.8.1;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewplYXN5YnVpbGQgPSAiZWFzeWJ1aWxkIiwKfSwKbVQgPSB7CkdDQyA9IHsKYWN0aW9uQSA9IHsKInByZXBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvbXBpbGVyL0dDQy80LjkuMVwiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvcmUvR0NDLzQuOS4xIiwKZnVsbE5hbWUgPSAiR0NDLzQuOS4xIiwKbG9hZE9yZGVyID0gMywKcHJvcFQgPSB7fSwK;
+export _ModuleTable001_;
+_ModuleTable002_=c3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJHQ0MiLAp3ViA9ICIwMDAwMDAwMDQuMDAwMDAwMDA5LjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKT3Blbk1QSSA9IHsKYWN0aW9uQSA9IHsKInByZXBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL01QSS9HQ0MvNC45LjEvT3Blbk1QSS8xLjguMVwiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvbXBpbGVyL0dDQy80LjkuMS9PcGVuTVBJLzEuOC4xIiwKZnVsbE5hbWUgPSAiT3Blbk1QSS8xLjguMSIsCmxvYWRPcmRlciA9IDQsCnByb3BUID0ge30s;
+export _ModuleTable002_;
+_ModuleTable003_=CnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiT3Blbk1QSSIsCndWID0gIjAwMDAwMDAwMS4wMDAwMDAwMDguMDAwMDAwMDAxLip6ZmluYWwiLAp9LAplYXN5YnVpbGQgPSB7CmFjdGlvbkEgPSB7CiJwcmVwZW5kX3BhdGgoXCJNT0RVTEVQQVRIXCIsXCIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9taW5lcnZhL2FsbC9Db3JlXCIpIiwKfSwKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvY29yZS9lYXN5YnVpbGQvZGVmYXVsdHMubHVhIiwKZnVsbE5hbWUgPSAiZWFzeWJ1aWxkL2RlZmF1bHRzIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJh;
+export _ModuleTable003_;
+_ModuleTable004_=Y3RpdmUiLAp1c2VyTmFtZSA9ICJlYXN5YnVpbGQvZGVmYXVsdHMiLAp3ViA9ICIqZGVmYXVsdHMuKnpmaW5hbCIsCn0sCnN0ZGVudiA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvY29yZS9zdGRlbnYubHVhIiwKZnVsbE5hbWUgPSAic3RkZW52IiwKbG9hZE9yZGVyID0gMiwKcHJvcFQgPSB7Cmxtb2QgPSB7CnN0aWNreSA9IDEsCn0sCn0sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAic3RkZW52IiwKd1YgPSAiTS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvbWluZXJ2YS9hbGwvTVBJL0dDQy80LjkuMS9PcGVuTVBJLzEuOC4xIgos;
+export _ModuleTable004_;
+_ModuleTable005_=ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9taW5lcnZhL2FsbC9Db21waWxlci9HQ0MvNC45LjEiCiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvY29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9jb3JlIiwKfQo=;
+export _ModuleTable005_;
+_ModuleTable_Sz_=5;
+export _ModuleTable_Sz_;
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load Python
+===========================
+__LMOD_REF_COUNT_CPATH=/csc/minerva/2.1/software/MPI/GCC/4.9.1/OpenMPI/1.8.1/Python/2.7.8/include:1\;/csc/minerva/2.1/software/Compiler/GCC/4.9.1/zlib/1.2.8/include:1\;/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenBLAS/0.2.9/include:1\;/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/include:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/include:1;
+export __LMOD_REF_COUNT_CPATH;
+CPATH=/csc/minerva/2.1/software/MPI/GCC/4.9.1/OpenMPI/1.8.1/Python/2.7.8/include:/csc/minerva/2.1/software/Compiler/GCC/4.9.1/zlib/1.2.8/include:/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenBLAS/0.2.9/include:/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/include:/csc/minerva/2.1/software/Core/GCC/4.9.1/include;
+export CPATH;
+EBDEVELGCC=/csc/minerva/2.1/software/Core/GCC/4.9.1/easybuild/Core-GCC-4.9.1-easybuild-devel;
+export EBDEVELGCC;
+EBDEVELOPENBLAS=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenBLAS/0.2.9/easybuild/Compiler-GCC-4.9.1-OpenBLAS-0.2.9-easybuild-devel;
+export EBDEVELOPENBLAS;
+EBDEVELOPENMPI=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/easybuild/Compiler-GCC-4.9.1-OpenMPI-1.8.1-easybuild-devel;
+export EBDEVELOPENMPI;
+EBDEVELPYTHON=/csc/minerva/2.1/software/MPI/GCC/4.9.1/OpenMPI/1.8.1/Python/2.7.8/easybuild/MPI-GCC-4.9.1-OpenMPI-1.8.1-Python-2.7.8-easybuild-devel;
+export EBDEVELPYTHON;
+EBDEVELZLIB=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/zlib/1.2.8/easybuild/Compiler-GCC-4.9.1-zlib-1.2.8-easybuild-devel;
+export EBDEVELZLIB;
+EBEXTSLISTPYTHON=setuptools-1.4.2,pip-1.2.1,nose-1.3.0,numpy-1.8.0,scipy-0.13.1,mpi4py-1.3.1,paycheck-1.0.2,argparse-1.2.1,lockfile-0.9.1,Cython-0.19.2,dateutil-2.2,deap-0.9.1,decorator-3.4.0,arff-1.1,pycrypto-2.6.1,paramiko-1.12.0;
+export EBEXTSLISTPYTHON;
+EBROOTGCC=/csc/minerva/2.1/software/Core/GCC/4.9.1;
+export EBROOTGCC;
+EBROOTOPENBLAS=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenBLAS/0.2.9;
+export EBROOTOPENBLAS;
+EBROOTOPENMPI=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1;
+export EBROOTOPENMPI;
+EBROOTPYTHON=/csc/minerva/2.1/software/MPI/GCC/4.9.1/OpenMPI/1.8.1/Python/2.7.8;
+export EBROOTPYTHON;
+EBROOTZLIB=/csc/minerva/2.1/software/Compiler/GCC/4.9.1/zlib/1.2.8;
+export EBROOTZLIB;
+EBVERSIONGCC=4.9.1;
+export EBVERSIONGCC;
+EBVERSIONOPENBLAS=0.2.9;
+export EBVERSIONOPENBLAS;
+EBVERSIONOPENMPI=1.8.1;
+export EBVERSIONOPENMPI;
+EBVERSIONPYTHON=2.7.8;
+export EBVERSIONPYTHON;
+EBVERSIONZLIB=1.2.8;
+export EBVERSIONZLIB;
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/csc/minerva/2.1/software/MPI/GCC/4.9.1/OpenMPI/1.8.1/Python/2.7.8/lib:1\;/csc/minerva/2.1/software/Compiler/GCC/4.9.1/zlib/1.2.8/lib:1\;/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenBLAS/0.2.9/lib:1\;/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/lib:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/lib/gcc/x86_64-unknown-linux-gnu/4.9.1:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/lib64:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/lib:1;
+export __LMOD_REF_COUNT_LD_LIBRARY_PATH;
+LD_LIBRARY_PATH=/csc/minerva/2.1/software/MPI/GCC/4.9.1/OpenMPI/1.8.1/Python/2.7.8/lib:/csc/minerva/2.1/software/Compiler/GCC/4.9.1/zlib/1.2.8/lib:/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenBLAS/0.2.9/lib:/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/lib:/csc/minerva/2.1/software/Core/GCC/4.9.1/lib/gcc/x86_64-unknown-linux-gnu/4.9.1:/csc/minerva/2.1/software/Core/GCC/4.9.1/lib64:/csc/minerva/2.1/software/Core/GCC/4.9.1/lib;
+export LD_LIBRARY_PATH;
+__LMOD_REF_COUNT_LIBRARY_PATH=/csc/minerva/2.1/software/MPI/GCC/4.9.1/OpenMPI/1.8.1/Python/2.7.8/lib:1\;/csc/minerva/2.1/software/Compiler/GCC/4.9.1/zlib/1.2.8/lib:1\;/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenBLAS/0.2.9/lib:1\;/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/lib:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/lib64:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/lib:1;
+export __LMOD_REF_COUNT_LIBRARY_PATH;
+LIBRARY_PATH=/csc/minerva/2.1/software/MPI/GCC/4.9.1/OpenMPI/1.8.1/Python/2.7.8/lib:/csc/minerva/2.1/software/Compiler/GCC/4.9.1/zlib/1.2.8/lib:/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenBLAS/0.2.9/lib:/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/lib:/csc/minerva/2.1/software/Core/GCC/4.9.1/lib64:/csc/minerva/2.1/software/Core/GCC/4.9.1/lib;
+export LIBRARY_PATH;
+LOADEDMODULES=easybuild/defaults:stdenv:GCC/4.9.1:OpenMPI/1.8.1:OpenBLAS/0.2.9:zlib/1.2.8:Python/2.7.8;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MANPATH=/csc/minerva/2.1/software/MPI/GCC/4.9.1/OpenMPI/1.8.1/Python/2.7.8/share/man:1\;/csc/minerva/2.1/software/Compiler/GCC/4.9.1/zlib/1.2.8/share/man:1\;/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/share/man:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/share/man:1;
+export __LMOD_REF_COUNT_MANPATH;
+MANPATH=/csc/minerva/2.1/software/MPI/GCC/4.9.1/OpenMPI/1.8.1/Python/2.7.8/share/man:/csc/minerva/2.1/software/Compiler/GCC/4.9.1/zlib/1.2.8/share/man:/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/share/man:/csc/minerva/2.1/software/Core/GCC/4.9.1/share/man;
+export MANPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/MPI/GCC/4.9.1/OpenMPI/1.8.1:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Compiler/GCC/4.9.1:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Core:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core;
+export MODULEPATH;
+__LMOD_REF_COUNT_PATH=/csc/minerva/2.1/software/MPI/GCC/4.9.1/OpenMPI/1.8.1/Python/2.7.8/bin:1\;/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenBLAS/0.2.9/bin:1\;/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/bin:1\;/csc/minerva/2.1/software/Core/GCC/4.9.1/bin:1\;/Users/mcawood/Lmod/Lmod/rt/ifur/t1/2024_10_17_14_37_12-Darwin-arm64-ifur/bin:1\;/Users/mcawood/Lmod/Lmod/proj_mgmt:1\;/Users/mcawood/Lmod/Hermes/bin:1\;/opt/homebrew/bin:1\;/usr/bin:1\;/bin:1;
+export __LMOD_REF_COUNT_PATH;
+PATH=/csc/minerva/2.1/software/MPI/GCC/4.9.1/OpenMPI/1.8.1/Python/2.7.8/bin:/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenBLAS/0.2.9/bin:/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/bin:/csc/minerva/2.1/software/Core/GCC/4.9.1/bin:/Users/mcawood/Lmod/Lmod/rt/ifur/t1/2024_10_17_14_37_12-Darwin-arm64-ifur/bin:/Users/mcawood/Lmod/Lmod/proj_mgmt:/Users/mcawood/Lmod/Hermes/bin:/opt/homebrew/bin:/usr/bin:/bin;
+export PATH;
+__LMOD_REF_COUNT_PKG_CONFIG_PATH=/csc/minerva/2.1/software/MPI/GCC/4.9.1/OpenMPI/1.8.1/Python/2.7.8/lib/pkgconfig:1\;/csc/minerva/2.1/software/Compiler/GCC/4.9.1/zlib/1.2.8/lib/pkgconfig:1\;/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/lib/pkgconfig:1;
+export __LMOD_REF_COUNT_PKG_CONFIG_PATH;
+PKG_CONFIG_PATH=/csc/minerva/2.1/software/MPI/GCC/4.9.1/OpenMPI/1.8.1/Python/2.7.8/lib/pkgconfig:/csc/minerva/2.1/software/Compiler/GCC/4.9.1/zlib/1.2.8/lib/pkgconfig:/csc/minerva/2.1/software/Compiler/GCC/4.9.1/OpenMPI/1.8.1/lib/pkgconfig;
+export PKG_CONFIG_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core/easybuild/defaults.lua:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core/stdenv.lua:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Core/GCC/4.9.1:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Compiler/GCC/4.9.1/OpenMPI/1.8.1:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Compiler/GCC/4.9.1/OpenBLAS/0.2.9:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Compiler/GCC/4.9.1/zlib/1.2.8:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/MPI/GCC/4.9.1/OpenMPI/1.8.1/Python/2.7.8;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewplYXN5YnVpbGQgPSAiZWFzeWJ1aWxkIiwKfSwKbVQgPSB7CkdDQyA9IHsKYWN0aW9uQSA9IHsKInByZXBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvbXBpbGVyL0dDQy80LjkuMVwiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvcmUvR0NDLzQuOS4xIiwKZnVsbE5hbWUgPSAiR0NDLzQuOS4xIiwKbG9hZE9yZGVyID0gMywKcHJvcFQgPSB7fSwK;
+export _ModuleTable001_;
+_ModuleTable002_=c3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJHQ0MvNC45LjEiLAp3ViA9ICIwMDAwMDAwMDQuMDAwMDAwMDA5LjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKT3BlbkJMQVMgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvbXBpbGVyL0dDQy80LjkuMS9PcGVuQkxBUy8wLjIuOSIsCmZ1bGxOYW1lID0gIk9wZW5CTEFTLzAuMi45IiwKbG9hZE9yZGVyID0gNSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJPcGVuQkxBUy8wLjIuOSIsCndWID0gIjAwMDAwMDAwMC4wMDAwMDAwMDIuMDAwMDAwMDA5Lip6ZmluYWwiLAp9LApPcGVu;
+export _ModuleTable002_;
+_ModuleTable003_=TVBJID0gewphY3Rpb25BID0gewoicHJlcGVuZF9wYXRoKFwiTU9EVUxFUEFUSFwiLFwiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvbWluZXJ2YS9hbGwvTVBJL0dDQy80LjkuMS9PcGVuTVBJLzEuOC4xXCIpIiwKfSwKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvbWluZXJ2YS9hbGwvQ29tcGlsZXIvR0NDLzQuOS4xL09wZW5NUEkvMS44LjEiLApmdWxsTmFtZSA9ICJPcGVuTVBJLzEuOC4xIiwKbG9hZE9yZGVyID0gNCwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJPcGVuTVBJLzEuOC4xIiwKd1YgPSAiMDAwMDAwMDAxLjAwMDAwMDAwOC4wMDAwMDAwMDEuKnpmaW5h;
+export _ModuleTable003_;
+_ModuleTable004_=bCIsCn0sClB5dGhvbiA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvbWluZXJ2YS9hbGwvTVBJL0dDQy80LjkuMS9PcGVuTVBJLzEuOC4xL1B5dGhvbi8yLjcuOCIsCmZ1bGxOYW1lID0gIlB5dGhvbi8yLjcuOCIsCmxvYWRPcmRlciA9IDcsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiUHl0aG9uIiwKd1YgPSAiMDAwMDAwMDAyLjAwMDAwMDAwNy4wMDAwMDAwMDguKnpmaW5hbCIsCn0sCmVhc3lidWlsZCA9IHsKYWN0aW9uQSA9IHsKInByZXBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvcmVc;
+export _ModuleTable004_;
+_ModuleTable005_=IikiLAp9LApmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9jb3JlL2Vhc3lidWlsZC9kZWZhdWx0cy5sdWEiLApmdWxsTmFtZSA9ICJlYXN5YnVpbGQvZGVmYXVsdHMiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMSwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImVhc3lidWlsZC9kZWZhdWx0cyIsCndWID0gIipkZWZhdWx0cy4qemZpbmFsIiwKfSwKc3RkZW52ID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9jb3JlL3N0ZGVudi5sdWEiLApmdWxsTmFtZSA9ICJzdGRlbnYiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHsKbG1vZCA9IHsKc3RpY2t5ID0gMSwKfSwKfSwKc3Rh;
+export _ModuleTable005_;
+_ModuleTable006_=Y2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJzdGRlbnYiLAp3ViA9ICJNLip6ZmluYWwiLAp9LAp6bGliID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9taW5lcnZhL2FsbC9Db21waWxlci9HQ0MvNC45LjEvemxpYi8xLjIuOCIsCmZ1bGxOYW1lID0gInpsaWIvMS4yLjgiLApsb2FkT3JkZXIgPSA2LApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMSwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gInpsaWIvMS4yLjgiLAp3ViA9ICIwMDAwMDAwMDEuMDAwMDAwMDAyLjAwMDAwMDAwOC4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvbWlu;
+export _ModuleTable006_;
+_ModuleTable007_=ZXJ2YS9hbGwvTVBJL0dDQy80LjkuMS9PcGVuTVBJLzEuOC4xIgosICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9taW5lcnZhL2FsbC9Db21waWxlci9HQ0MvNC45LjEiCiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvY29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9jb3JlIiwKfQo=;
+export _ModuleTable007_;
+_ModuleTable_Sz_=7;
+export _ModuleTable_Sz_;
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/MPI/GCC/4.9.1/OpenMPI/1.8.1:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Compiler/GCC/4.9.1:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Core:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewplYXN5YnVpbGQgPSAiZWFzeWJ1aWxkIiwKfSwKbVQgPSB7CkdDQyA9IHsKYWN0aW9uQSA9IHsKInByZXBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvbXBpbGVyL0dDQy80LjkuMVwiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvcmUvR0NDLzQuOS4xIiwKZnVsbE5hbWUgPSAiR0NDLzQuOS4xIiwKbG9hZE9yZGVyID0gMywKcHJvcFQgPSB7fSwK;
+export _ModuleTable001_;
+_ModuleTable002_=c3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJHQ0MvNC45LjEiLAp3ViA9ICIwMDAwMDAwMDQuMDAwMDAwMDA5LjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKT3BlbkJMQVMgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvbXBpbGVyL0dDQy80LjkuMS9PcGVuQkxBUy8wLjIuOSIsCmZ1bGxOYW1lID0gIk9wZW5CTEFTLzAuMi45IiwKbG9hZE9yZGVyID0gNSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJPcGVuQkxBUy8wLjIuOSIsCndWID0gIjAwMDAwMDAwMC4wMDAwMDAwMDIuMDAwMDAwMDA5Lip6ZmluYWwiLAp9LApPcGVu;
+export _ModuleTable002_;
+_ModuleTable003_=TVBJID0gewphY3Rpb25BID0gewoicHJlcGVuZF9wYXRoKFwiTU9EVUxFUEFUSFwiLFwiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvbWluZXJ2YS9hbGwvTVBJL0dDQy80LjkuMS9PcGVuTVBJLzEuOC4xXCIpIiwKfSwKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvbWluZXJ2YS9hbGwvQ29tcGlsZXIvR0NDLzQuOS4xL09wZW5NUEkvMS44LjEiLApmdWxsTmFtZSA9ICJPcGVuTVBJLzEuOC4xIiwKbG9hZE9yZGVyID0gNCwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJPcGVuTVBJLzEuOC4xIiwKd1YgPSAiMDAwMDAwMDAxLjAwMDAwMDAwOC4wMDAwMDAwMDEuKnpmaW5h;
+export _ModuleTable003_;
+_ModuleTable004_=bCIsCn0sClB5dGhvbiA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvbWluZXJ2YS9hbGwvTVBJL0dDQy80LjkuMS9PcGVuTVBJLzEuOC4xL1B5dGhvbi8yLjcuOCIsCmZ1bGxOYW1lID0gIlB5dGhvbi8yLjcuOCIsCmxvYWRPcmRlciA9IDcsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiUHl0aG9uIiwKd1YgPSAiMDAwMDAwMDAyLjAwMDAwMDAwNy4wMDAwMDAwMDguKnpmaW5hbCIsCn0sCmVhc3lidWlsZCA9IHsKYWN0aW9uQSA9IHsKInByZXBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvcmVc;
+export _ModuleTable004_;
+_ModuleTable005_=IikiLAp9LApmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9jb3JlL2Vhc3lidWlsZC9kZWZhdWx0cy5sdWEiLApmdWxsTmFtZSA9ICJlYXN5YnVpbGQvZGVmYXVsdHMiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMSwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImVhc3lidWlsZC9kZWZhdWx0cyIsCndWID0gIipkZWZhdWx0cy4qemZpbmFsIiwKfSwKc3RkZW52ID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9jb3JlL3N0ZGVudi5sdWEiLApmdWxsTmFtZSA9ICJzdGRlbnYiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHsKbG1vZCA9IHsKc3RpY2t5ID0gMSwKfSwKfSwKc3Rh;
+export _ModuleTable005_;
+_ModuleTable006_=Y2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJzdGRlbnYiLAp3ViA9ICJNLip6ZmluYWwiLAp9LAp6bGliID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9taW5lcnZhL2FsbC9Db21waWxlci9HQ0MvNC45LjEvemxpYi8xLjIuOCIsCmZ1bGxOYW1lID0gInpsaWIvMS4yLjgiLApsb2FkT3JkZXIgPSA2LApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMSwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gInpsaWIvMS4yLjgiLAp3ViA9ICIwMDAwMDAwMDEuMDAwMDAwMDAyLjAwMDAwMDAwOC4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvbWlu;
+export _ModuleTable006_;
+_ModuleTable007_=ZXJ2YS9hbGwvTVBJL0dDQy80LjkuMS9PcGVuTVBJLzEuOC4xIgosICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9taW5lcnZhL2FsbC9Db21waWxlci9HQ0MvNC45LjEiCiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvcmUiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvY29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9jb3JlIiwKfQo=;
+export _ModuleTable007_;
+_ModuleTable_Sz_=7;
+export _ModuleTable_Sz_;
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload Python
+===========================
+unset __LMOD_REF_COUNT_CPATH;
+unset CPATH;
+unset EBDEVELGCC;
+unset EBDEVELOPENBLAS;
+unset EBDEVELOPENMPI;
+unset EBDEVELPYTHON;
+unset EBDEVELZLIB;
+unset EBEXTSLISTPYTHON;
+unset EBROOTGCC;
+unset EBROOTOPENBLAS;
+unset EBROOTOPENMPI;
+unset EBROOTPYTHON;
+unset EBROOTZLIB;
+unset EBVERSIONGCC;
+unset EBVERSIONOPENBLAS;
+unset EBVERSIONOPENMPI;
+unset EBVERSIONPYTHON;
+unset EBVERSIONZLIB;
+unset __LMOD_REF_COUNT_LD_LIBRARY_PATH;
+unset LD_LIBRARY_PATH;
+unset __LMOD_REF_COUNT_LIBRARY_PATH;
+unset LIBRARY_PATH;
+LOADEDMODULES=easybuild/defaults:stdenv;
+export LOADEDMODULES;
+unset __LMOD_REF_COUNT_MANPATH;
+unset MANPATH;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Core:1\;/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Core:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core;
+export MODULEPATH;
+__LMOD_REF_COUNT_PATH=/Users/mcawood/Lmod/Lmod/rt/ifur/t1/2024_10_17_14_37_12-Darwin-arm64-ifur/bin:1\;/Users/mcawood/Lmod/Lmod/proj_mgmt:1\;/Users/mcawood/Lmod/Hermes/bin:1\;/opt/homebrew/bin:1\;/usr/bin:1\;/bin:1;
+export __LMOD_REF_COUNT_PATH;
+PATH=/Users/mcawood/Lmod/Lmod/rt/ifur/t1/2024_10_17_14_37_12-Darwin-arm64-ifur/bin:/Users/mcawood/Lmod/Lmod/proj_mgmt:/Users/mcawood/Lmod/Hermes/bin:/opt/homebrew/bin:/usr/bin:/bin;
+export PATH;
+unset __LMOD_REF_COUNT_PKG_CONFIG_PATH;
+unset PKG_CONFIG_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core/easybuild/defaults.lua:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core/stdenv.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewplYXN5YnVpbGQgPSAiZWFzeWJ1aWxkIiwKfSwKbVQgPSB7CmVhc3lidWlsZCA9IHsKYWN0aW9uQSA9IHsKInByZXBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvcmVcIikiLAp9LApmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9jb3JlL2Vhc3lidWlsZC9kZWZhdWx0cy5sdWEiLApmdWxsTmFtZSA9ICJlYXN5YnVpbGQvZGVmYXVsdHMiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9;
+export _ModuleTable001_;
+_ModuleTable002_=LApzdGFja0RlcHRoID0gMSwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImVhc3lidWlsZC9kZWZhdWx0cyIsCndWID0gIipkZWZhdWx0cy4qemZpbmFsIiwKfSwKc3RkZW52ID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9jb3JlL3N0ZGVudi5sdWEiLApmdWxsTmFtZSA9ICJzdGRlbnYiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHsKbG1vZCA9IHsKc3RpY2t5ID0gMSwKfSwKfSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJzdGRlbnYiLAp3ViA9ICJNLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9taW5lcnZhL2FsbC9D;
+export _ModuleTable002_;
+_ModuleTable003_=b3JlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL2NvcmUiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvY29yZSIsCn0K;
+export _ModuleTable003_;
+_ModuleTable_Sz_=3;
+export _ModuleTable_Sz_;
+unset _ModuleTable005_;
+unset _ModuleTable006_;
+unset _ModuleTable007_;
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Core:/Users/mcawood/Lmod/Lmod/rt/ifur/mf/core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewplYXN5YnVpbGQgPSAiZWFzeWJ1aWxkIiwKfSwKbVQgPSB7CmVhc3lidWlsZCA9IHsKYWN0aW9uQSA9IHsKInByZXBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL21pbmVydmEvYWxsL0NvcmVcIikiLAp9LApmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9jb3JlL2Vhc3lidWlsZC9kZWZhdWx0cy5sdWEiLApmdWxsTmFtZSA9ICJlYXN5YnVpbGQvZGVmYXVsdHMiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9;
+export _ModuleTable001_;
+_ModuleTable002_=LApzdGFja0RlcHRoID0gMSwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImVhc3lidWlsZC9kZWZhdWx0cyIsCndWID0gIipkZWZhdWx0cy4qemZpbmFsIiwKfSwKc3RkZW52ID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9jb3JlL3N0ZGVudi5sdWEiLApmdWxsTmFtZSA9ICJzdGRlbnYiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHsKbG1vZCA9IHsKc3RpY2t5ID0gMSwKfSwKfSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJzdGRlbnYiLAp3ViA9ICJNLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvaWZ1ci9tZi9taW5lcnZhL2FsbC9D;
+export _ModuleTable002_;
+_ModuleTable003_=b3JlIiwgIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9pZnVyL21mL2NvcmUiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2lmdXIvbWYvY29yZSIsCn0K;
+export _ModuleTable003_;
+_ModuleTable_Sz_=3;
+export _ModuleTable_Sz_;

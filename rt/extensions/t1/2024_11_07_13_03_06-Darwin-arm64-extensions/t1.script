@@ -1,0 +1,56 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_07"; export tag
+idTag="t1"; export idTag
+TARGET=""; export TARGET
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/extensions/t1/2024_11_07_13_03_06-Darwin-arm64-extensions/t1.runtime"; export runtimeFn
+resultFn="/Users/mcawood/Lmod/Lmod/rt/extensions/t1/2024_11_07_13_03_06-Darwin-arm64-extensions/t1.result"; export resultFn
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/extensions"; export testDir
+testName="extensions"; export testName
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/extensions/t1/2024_11_07_13_03_06-Darwin-arm64-extensions/message.lua"; export messageFn
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/extensions/extensions.tdesc"; export testdescriptFn
+outputDir="/Users/mcawood/Lmod/Lmod/rt/extensions/t1/2024_11_07_13_03_06-Darwin-arm64-extensions"; export outputDir
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/extensions/t1/2024_11_07_13_03_06-Darwin-arm64-extensions/results.lua"; export cmdResultFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     export MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/extensions/mf
+     export MODULEPATH=$MODULEPATH_ROOT/Core
+
+     remove_generated_lmod_files
+
+     cp /Users/mcawood/Lmod/Lmod/rt/extensions/dot.modulerc.lua .modulerc.lua
+
+     runLmod --version                         # 1
+
+     mkdir -p .cache/lmod
+     buildSpiderT $MODULEPATH > $HOME/.cache/lmod/spiderT.lua
+     buildDbT     $MODULEPATH > $HOME/.cache/lmod/dbT.lua
+
+     runLmod avail                             # 2
+     runLmod load gcc python                   # 3
+     runLmod avail                             # 4
+     runLmod --show_hidden avail               # 5
+     runLmod load intel python                 # 6
+     runLmod avail                             # 7
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/extensions/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/extensions/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/extensions/t1/2024_11_07_13_03_06-Darwin-arm64-extensions/t1.result -t /Users/mcawood/Lmod/Lmod/rt/extensions/t1/2024_11_07_13_03_06-Darwin-arm64-extensions/t1.runtime results.csv
+   

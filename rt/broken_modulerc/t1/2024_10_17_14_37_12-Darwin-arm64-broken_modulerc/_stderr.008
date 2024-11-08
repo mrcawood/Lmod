@@ -1,0 +1,10 @@
+Lmod Warning: Badly formed module-version line: module-name must be fully qualified: hdf5 is not.
+
+
+
+
+Currently Loaded Modules:
+  1) git -> git/2.0.3   2) hdf5/1.8.15
+
+ 
+

@@ -1,0 +1,8 @@
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/eb/mf/CMake/2.8.4-goolf-1.4.10
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname           Module Filename
+    ---------------           ---------------
+    CMake/2.8.4-goolf-1.4.10  /Users/mcawood/Lmod/Lmod/rt/eb/mf/CMake/2.8.4-goolf-1.4.10
+

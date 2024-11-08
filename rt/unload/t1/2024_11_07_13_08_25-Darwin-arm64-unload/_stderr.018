@@ -1,0 +1,6 @@
+Lmod Warning: Error in unload of B/2.0 
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    B/2.0            /Users/mcawood/Lmod/Lmod/rt/unload/mf/Core/B/2.0.lua
+

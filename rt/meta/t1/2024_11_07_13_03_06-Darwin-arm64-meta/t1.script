@@ -1,0 +1,78 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_07"; export tag
+idTag="t1"; export idTag
+TARGET=""; export TARGET
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/meta/t1/2024_11_07_13_03_06-Darwin-arm64-meta/t1.runtime"; export runtimeFn
+resultFn="/Users/mcawood/Lmod/Lmod/rt/meta/t1/2024_11_07_13_03_06-Darwin-arm64-meta/t1.result"; export resultFn
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/meta"; export testDir
+testName="meta"; export testName
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/meta/t1/2024_11_07_13_03_06-Darwin-arm64-meta/message.lua"; export messageFn
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/meta/meta.tdesc"; export testdescriptFn
+outputDir="/Users/mcawood/Lmod/Lmod/rt/meta/t1/2024_11_07_13_03_06-Darwin-arm64-meta"; export outputDir
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/meta/t1/2024_11_07_13_03_06-Darwin-arm64-meta/results.lua"; export cmdResultFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/meta/mf0/Core:/Users/mcawood/Lmod/Lmod/rt/meta/mf1/Core:/Users/mcawood/Lmod/Lmod/rt/meta/mf2/Core
+
+     remove_generated_lmod_files
+
+     runLmod --version                             # 1
+     runLmod avail                                 # 2
+
+     runLmod load settarg                          # 3
+     runLmod load targ                             # 4
+     runLmod list                                  # 5
+
+     runLmod purge                                 # 6
+     unsetMT
+     MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/meta/MF_FOO/A:/Users/mcawood/Lmod/Lmod/rt/meta/MF_FOO/B
+
+     runLmod avail                                 # 7
+     runLmod load Foo                              # 8
+     runLmod list                                  # 9
+     runLmod load Foo/1.0                          #10
+     runLmod list                                  #11
+
+     runLmod purge                                 #12
+     unsetMT
+     MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/meta/MF_FOO/B:/Users/mcawood/Lmod/Lmod/rt/meta/MF_FOO/A
+
+     runLmod avail                                 #13
+     runLmod load Foo                              #14
+     runLmod list                                  #15
+     runLmod load Foo/1.0                          #16
+     runLmod list                                  #17
+
+     runLmod purge                                 #18
+     unsetMT
+     MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/meta/MF_FOO/A:/Users/mcawood/Lmod/Lmod/rt/meta/MF_FOO/B
+
+     export LMOD_MODULERCFILE=$testDir/dot.modulerc.lua
+     runLmod avail                                 #19
+     runLmod load Foo                              #20
+     runLmod list                                  #21
+     runBase runSpiderCmd -o spiderT $MODULEPATH   #22
+
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/meta/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/meta/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/meta/t1/2024_11_07_13_03_06-Darwin-arm64-meta/t1.result -t /Users/mcawood/Lmod/Lmod/rt/meta/t1/2024_11_07_13_03_06-Darwin-arm64-meta/t1.runtime results.csv
+   

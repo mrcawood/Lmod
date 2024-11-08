@@ -1,0 +1,38 @@
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {
+    AA = {
+      depends_on_anyA = {
+        "y", "y", "y",
+      },
+      fn = "/Users/mcawood/Lmod/Lmod/rt/depends_on_any/mf/Core/AA/2.0",
+      fullName = "AA/2.0",
+      loadOrder = 2,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "AA",
+      wV = "000000002.*zfinal",
+    },
+    y = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/depends_on_any/mf/Core/y/1.0.lua",
+      fullName = "y/1.0",
+      loadOrder = 1,
+      propT = {},
+      ref_count = 3,
+      stackDepth = 1,
+      status = "active",
+      userName = "y",
+      wV = "000000001.*zfinal",
+    },
+  },
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/depends_on_any/mf/Core",
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/depends_on_any/mf/Core",
+}
+

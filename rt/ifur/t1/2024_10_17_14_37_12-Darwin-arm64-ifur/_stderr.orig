@@ -1,0 +1,107 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load stdenv
+===========================
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+
+---------------------- /Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Core -----------------------
+   GCC/4.9.1    gompi/2.9.11    goolf/2.9.11
+
+---------------------------- /Users/mcawood/Lmod/Lmod/rt/ifur/mf/core -----------------------------
+   easybuild/defaults (L)    stdenv (S,L)
+
+  Where:
+   L:  Module is loaded
+   S:  Module is Sticky, requires --force to unload or purge
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the default modules.
+"module overview" or "ml ov" to display the number of modules for each name.
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
+
+
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load GCC
+===========================
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+
+--------------- /Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Compiler/GCC/4.9.1 ----------------
+   OpenBLAS/0.2.9    OpenMPI/1.8.1    zlib/1.2.8
+
+---------------------- /Users/mcawood/Lmod/Lmod/rt/ifur/mf/minerva/all/Core -----------------------
+   GCC/4.9.1 (L)    gompi/2.9.11    goolf/2.9.11
+
+---------------------------- /Users/mcawood/Lmod/Lmod/rt/ifur/mf/core -----------------------------
+   easybuild/defaults (L)    stdenv (S,L)
+
+  Where:
+   L:  Module is loaded
+   S:  Module is Sticky, requires --force to unload or purge
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the default modules.
+"module overview" or "ml ov" to display the number of modules for each name.
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
+
+
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load OpenMPI
+===========================
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load Python
+===========================
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) easybuild/defaults       4) OpenMPI/1.8.1    7) Python/2.7.8
+  2) stdenv             (S)   5) OpenBLAS/0.2.9
+  3) GCC/4.9.1                6) zlib/1.2.8
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+
+ 
+
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload Python
+===========================
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) easybuild/defaults   2) stdenv (S)
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+
+ 
+

@@ -1,0 +1,8 @@
+Lmod has detected the following error: Cannot load module "d/1.0" because these module(s) are loaded:
+   e/2.0
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    d/1.0            /Users/mcawood/Lmod/Lmod/rt/conflict/mf/d/1.0.lua
+

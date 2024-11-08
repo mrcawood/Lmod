@@ -1,0 +1,11 @@
+
+Currently Loaded Modules:
+  1) easybuild/defaults       4) OpenMPI/1.8.1    7) Python/2.7.8
+  2) stdenv             (S)   5) OpenBLAS/0.2.9
+  3) GCC/4.9.1                6) zlib/1.2.8
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+
+ 
+

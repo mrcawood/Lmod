@@ -1,0 +1,10 @@
+Lmod has detected the following error: These module(s) or extension(s) exist but cannot be loaded as requested: between("a","0.8<","<0.9")
+   Try: "module spider a" to see how to load the module(s).
+
+Executing this command requires loading "a" which failed while processing the following module(s):
+
+    Module fullname  Module Filename
+    ---------------  ---------------
+    Md               /Users/mcawood/Lmod/Lmod/rt/between/mf/Core/Md.lua
+
+

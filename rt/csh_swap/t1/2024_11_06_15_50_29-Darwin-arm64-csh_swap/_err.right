@@ -1,0 +1,38 @@
+===========================
+step 0
+===========================
+Modules based on Lua: Version
+    by Robert McLay mclay@tacc.utexas.edu
+===========================
+step 1
+===========================
+Lmod has detected the following error: Syntax error in file: ProjectDIR/rt/csh_swap/mf/Core/PrgEnv.lua
+ with command: load, one or more arguments are not strings.
+While processing the following module(s):
+    Module fullname  Module Filename
+    PrgEnv           ProjectDIR/rt/csh_swap/mf/Core/PrgEnv.lua
+===========================
+step 2
+===========================
+Note: the module "intel" cannot be unloaded because it was not loaded.
+===========================
+step 3
+===========================
+===========================
+step 4
+===========================
+===========================
+step 5
+===========================
+===========================
+step 6
+===========================
+===========================
+step 7
+===========================
+===========================
+step 8
+===========================
+===========================
+step 9
+===========================

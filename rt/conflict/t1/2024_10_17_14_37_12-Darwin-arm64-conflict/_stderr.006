@@ -1,0 +1,8 @@
+Lmod has detected the following error: Cannot load module "c" because these module(s) are loaded:
+   b
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    c                /Users/mcawood/Lmod/Lmod/rt/conflict/mf/c.lua
+

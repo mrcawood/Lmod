@@ -1,0 +1,5 @@
+Lmod Warning: You are trying to save an empty collection of modules in "foss". If this is what you want then enter:
+  $ module --force save foss
+
+
+

@@ -1,0 +1,13 @@
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {},
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_10_17_14_37_12-Darwin-arm64-mpathColl/mf/Core",
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/mpathColl/t1/2024_10_17_14_37_12-Darwin-arm64-mpathColl/mf/Core",
+}
+

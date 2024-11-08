@@ -1,0 +1,86 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T load ibmA openmpi phdf5
+===========================
+  Lmod version: 8.7.43 2024-06-24 15:50 -06:00
+running: module --regression_testing -T load ibmA openmpi phdf5
+  (1)(0)Loading: ibmA (fn: /Users/mcawood/Lmod/Lmod/rt/family/mf/Core/ibmA/13.1.6.lua, using Find-Best)
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/family/mf/Core/ibmA/13.1.6.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    ibmA/13.1.6      /Users/mcawood/Lmod/Lmod/rt/family/mf/Core/ibmA/13.1.6.lua
+
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T load gccA
+===========================
+  Lmod version: 8.7.43 2024-06-24 15:50 -06:00
+running: module --regression_testing -T load gccA
+  (1)(0)Loading: gccA (fn: /Users/mcawood/Lmod/Lmod/rt/family/mf/Core/gccA/7.1.0.lua, using Find-Best)
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/family/mf/Core/gccA/7.1.0.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    gccA/7.1.0       /Users/mcawood/Lmod/Lmod/rt/family/mf/Core/gccA/7.1.0.lua
+
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- /Users/mcawood/Lmod/Lmod/rt/family/mf/Core ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   gcc/7.1.0    gccA/7.1.0    ibm/13.1.6    ibmA/13.1.6    tcc/1.0
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the default modules.
+"module overview" or "ml ov" to display the number of modules for each name.
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
+
+
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T load ibmA
+===========================
+  Lmod version: 8.7.43 2024-06-24 15:50 -06:00
+running: module --regression_testing -T load ibmA
+  (1)(0)Loading: ibmA (fn: /Users/mcawood/Lmod/Lmod/rt/family/mf/Core/ibmA/13.1.6.lua, using Find-Best)
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/family/mf/Core/ibmA/13.1.6.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    ibmA/13.1.6      /Users/mcawood/Lmod/Lmod/rt/family/mf/Core/ibmA/13.1.6.lua
+
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load tcc
+===========================
+Lmod has detected the following error: family names must be start with a letter or underscore followed letters, numbers and underscores (Not: "tcc-compiler")
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    tcc/1.0          /Users/mcawood/Lmod/Lmod/rt/family/mf/Core/tcc/1.0.lua
+

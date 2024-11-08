@@ -1,0 +1,13 @@
+-- -*- lua -*-
+-- created: Thu Nov  7 13:03:53 2024 --
+myResult = {
+  ["comment"] = [[
+   Test Results:
+      'notfinished': means that the test has started but not completed.
+      'failed': means that the test has started but not completed.
+      'notrun': test has not started running.
+      'diff'  : Test has run but is different from gold copy.
+      'passed': Test has run and matches gold copy.
+]],
+  ["testresult"] = "notfinished",
+}

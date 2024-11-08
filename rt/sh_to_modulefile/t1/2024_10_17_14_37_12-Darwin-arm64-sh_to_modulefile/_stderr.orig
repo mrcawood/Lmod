@@ -1,0 +1,267 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+buildSh2MF /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/tstScript.sh
+===========================
+===========================
+step 3
+buildSh2MF --to TCL /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/tstScript.sh
+===========================
+===========================
+step 4
+buildSh2MF /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/path_both_ends.sh
+===========================
+===========================
+step 5
+buildSh2MF --from csh /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/cshScript.csh
+===========================
+===========================
+step 6
+buildSh2MF /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/broken.sh
+===========================
+Error found in sourcing script "/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/broken.sh": 
+/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/broken.sh: line 3: fooBar: command not found
+
+If this is a bash script please try:
+  $ set -exv; . /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/broken.sh
+See https://lmod.readthedocs.io/en/latest/260_sh_to_modulefile.html for details.
+
+===========================
+step 7
+buildSh2MF /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/unalias.sh
+===========================
+Error found in sourcing script "/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/unalias.sh": 
+
+If this is a bash script please try:
+  $ set -exv; . /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/unalias.sh
+See https://lmod.readthedocs.io/en/latest/260_sh_to_modulefile.html for details.
+
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show wrapperSh/1.0
+===========================
+Lmod Warning: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf/wrapperSh/1.0.lua
+ with command: set_alias, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    wrapperSh/1.0    /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf/wrapperSh/1.0.lua
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf/wrapperSh/1.0.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--source_sh("bash","/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/tstScript.sh")
+setenv("MY_NAME","tstScript.sh")
+prepend_path("PATH","/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/bin")
+append_path("PATH","/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/sbin")
+setenv("TST_SCRIPT","1")
+set_shell_function("banner"," \
+    local str=\"$1\";\
+    local RED='\27[1;31m';\
+    local NONE='\27[0m';\
+    echo \"${RED}${str}${NONE}\"\
+","")
+set_shell_function("fooFunc"," \
+    echo \"arg1: $1\"\
+","")
+set_shell_function("junk"," \
+    if [ -n \"${ZSH_VERSION:-}\" ]; then\
+        \\echo \"junk\";\
+    fi\
+","")
+set_shell_function("my_help"," \
+    echo \"do not forget \\\"foo\\\"\"\
+","")
+set_shell_function("save_args"," \
+    for arg in \"$@\";\
+    do\
+        printf \"%s\\n\" \"$arg\" | sed -e \"s/'/'\\\\\\\\''/g\" -e \"1s/^/'/\" -e \"\\$s/\\$/' \\\\\\\\/\";\
+    done;\
+    echo \" \"\
+","")
+complete("bash","xyz123","-F _xyz123")
+setenv("MY_NAME","tstScript.sh")
+--source_sh("bash","/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/second.sh arg1")
+setenv("SECOND","FOO_BAR")
+
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load wrapperSh/1.0
+===========================
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf/wrapperSh/1.0.lua
+ with command: set_alias, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    wrapperSh/1.0    /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf/wrapperSh/1.0.lua
+
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show wrapperSh/1.0
+===========================
+Lmod Warning: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf/wrapperSh/1.0.lua
+ with command: set_alias, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    wrapperSh/1.0    /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf/wrapperSh/1.0.lua
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf/wrapperSh/1.0.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--source_sh("bash","/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/tstScript.sh")
+setenv("MY_NAME","tstScript.sh")
+prepend_path("PATH","/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/bin")
+append_path("PATH","/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/sbin")
+setenv("TST_SCRIPT","1")
+set_shell_function("banner"," \
+    local str=\"$1\";\
+    local RED='\27[1;31m';\
+    local NONE='\27[0m';\
+    echo \"${RED}${str}${NONE}\"\
+","")
+set_shell_function("fooFunc"," \
+    echo \"arg1: $1\"\
+","")
+set_shell_function("junk"," \
+    if [ -n \"${ZSH_VERSION:-}\" ]; then\
+        \\echo \"junk\";\
+    fi\
+","")
+set_shell_function("my_help"," \
+    echo \"do not forget \\\"foo\\\"\"\
+","")
+set_shell_function("save_args"," \
+    for arg in \"$@\";\
+    do\
+        printf \"%s\\n\" \"$arg\" | sed -e \"s/'/'\\\\\\\\''/g\" -e \"1s/^/'/\" -e \"\\$s/\\$/' \\\\\\\\/\";\
+    done;\
+    echo \" \"\
+","")
+complete("bash","xyz123","-F _xyz123")
+setenv("MY_NAME","tstScript.sh")
+--source_sh("bash","/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/second.sh arg1")
+setenv("SECOND","FOO_BAR")
+
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing refresh
+===========================
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 13
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --mt
+===========================
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {},
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf",
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf",
+}
+
+===========================
+step 14
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload wrapperSh/1.0
+===========================
+
+Note: the module "wrapperSh/1.0" cannot be unloaded because it was not loaded.
+
+===========================
+step 15
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load brokenSh/1.0
+===========================
+Lmod has detected the following error: Error found in sourcing script "/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/broken.sh":
+/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/broken.sh: line 3: fooBar: command not found
+
+If this is a bash script please try:
+  $ set -exv; . /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/broken.sh
+See https://lmod.readthedocs.io/en/latest/260_sh_to_modulefile.html for details.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    brokenSh/1.0     /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf/brokenSh/1.0.lua
+
+===========================
+step 16
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load wrapperSh/1.0
+===========================
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf/wrapperSh/1.0.lua
+ with command: set_alias, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    wrapperSh/1.0    /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf/wrapperSh/1.0.lua
+
+===========================
+step 17
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing save
+===========================
+Lmod Warning: You are trying to save an empty collection of modules in "default". If this is what you want then enter:
+  $ module --force save default
+
+
+
+===========================
+step 18
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing restore
+===========================
+The system default contains no modules
+  (env var: LMOD_SYSTEM_DEFAULT_MODULES is empty)
+  No changes in loaded modules
+
+===========================
+step 19
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --mt
+===========================
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {},
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf",
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/mf",
+}
+
+===========================
+step 20
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load A
+===========================
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/t1/2024_10_17_14_37_12-Darwin-arm64-sh_to_modulefile/mf/A/1.0
+ with command: set_alias, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    A/1.0            /Users/mcawood/Lmod/Lmod/rt/sh_to_modulefile/t1/2024_10_17_14_37_12-Darwin-arm64-sh_to_modulefile/mf/A/1.0
+
+===========================
+step 21
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded

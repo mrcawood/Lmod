@@ -1,0 +1,60 @@
+===========================
+step 1
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load PrgEnv
+===========================
+false
+===========================
+step 3
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing add junk/d
+===========================
+JUNK=RTM_3;
+export JUNK;
+LOADEDMODULES=junk/d/3.0;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=ProjectDIR/rt/junk/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=ProjectDIR/rt/junk/mf/Core;
+export MODULEPATH;
+_LMFILES_=ProjectDIR/rt/junk/mf/Core/junk/d/3.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={["junk/d"]={fn="ProjectDIR/rt/junk/mf/Core/junk/d/3.0.lua",fullName="junk/d/3.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="junk/d",wV="000000003.*zfinal",},},mpathA={"ProjectDIR/rt/junk/mf/Core",},systemBaseMPATH="ProjectDIR/rt/junk/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 4
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing add junk/a/c
+===========================
+JUNK=RTM_1;
+export JUNK;
+LOADEDMODULES=junk/d/3.0:junk/a/c/1.0;
+export LOADEDMODULES;
+MODULEPATH=ProjectDIR/rt/junk/mf/Core;
+export MODULEPATH;
+_LMFILES_=ProjectDIR/rt/junk/mf/Core/junk/d/3.0.lua:ProjectDIR/rt/junk/mf/Core/junk/a/c/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={["junk/a/c"]={fn="ProjectDIR/rt/junk/mf/Core/junk/a/c/1.0.lua",fullName="junk/a/c/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="junk/a/c",wV="000000001.*zfinal",},["junk/d"]={fn="ProjectDIR/rt/junk/mf/Core/junk/d/3.0.lua",fullName="junk/d/3.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="junk/d",wV="000000003.*zfinal",},},mpathA={"ProjectDIR/rt/junk/mf/Core",},systemBaseMPATH="ProjectDIR/rt/junk/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 5
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=ProjectDIR/rt/junk/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={["junk/a/c"]={fn="ProjectDIR/rt/junk/mf/Core/junk/a/c/1.0.lua",fullName="junk/a/c/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="junk/a/c",wV="000000001.*zfinal",},["junk/d"]={fn="ProjectDIR/rt/junk/mf/Core/junk/d/3.0.lua",fullName="junk/d/3.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="junk/d",wV="000000003.*zfinal",},},mpathA={"ProjectDIR/rt/junk/mf/Core",},systemBaseMPATH="ProjectDIR/rt/junk/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 6
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing del junk/a/c/1.0
+===========================
+unset JUNK;
+LOADEDMODULES=junk/d/3.0;
+export LOADEDMODULES;
+MODULEPATH=ProjectDIR/rt/junk/mf/Core;
+export MODULEPATH;
+_LMFILES_=ProjectDIR/rt/junk/mf/Core/junk/d/3.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={["junk/d"]={fn="ProjectDIR/rt/junk/mf/Core/junk/d/3.0.lua",fullName="junk/d/3.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="junk/d",wV="000000003.*zfinal",},},mpathA={"ProjectDIR/rt/junk/mf/Core",},systemBaseMPATH="ProjectDIR/rt/junk/mf/Core",}';
+export _ModuleTable_;

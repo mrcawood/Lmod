@@ -1,0 +1,18 @@
+LOADEDMODULES=a/1.0:tdog/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/priority/mf/RTM:/Users/mcawood/Lmod/Lmod/rt/priority/mf/Core;
+export MODULEPATH;
+__LMOD_Priority_RTM_PATH=/top/dog100:-100;
+export __LMOD_Priority_RTM_PATH;
+__LMOD_REF_COUNT_RTM_PATH=/top/dog100:1\;/top/dog0:1\;/d/e/f:1\;/a/b/c:1;
+export __LMOD_REF_COUNT_RTM_PATH;
+RTM_PATH=/top/dog100:/top/dog0:/d/e/f:/a/b/c;
+export RTM_PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/priority/mf/Core/a/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/priority/mf/Core/tdog/1.0;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewphID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcHJpb3JpdHkvbWYvQ29yZS9hLzEuMC5sdWEiLApmdWxsTmFtZSA9ICJhLzEuMCIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiYSIsCndWID0gIjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKdGRvZyA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByaW9yaXR5L21mL0NvcmUvdGRvZy8xLjAiLApmdWxsTmFt;
+export _ModuleTable001_;
+_ModuleTable002_=ZSA9ICJ0ZG9nLzEuMCIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAidGRvZyIsCndWID0gIjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3ByaW9yaXR5L21mL1JUTSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcHJpb3JpdHkvbWYvQ29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcHJpb3JpdHkvbWYvQ29yZSIsCn0K;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;

@@ -1,0 +1,11 @@
+  Lmod version: 8.7.43 2024-06-24 15:50 -06:00
+running: module --regression_testing -T unload StdEnv
+  (1)(0)Unloading: StdEnv (status: active) (fn: /Users/mcawood/Lmod/Lmod/rt/break/mf/StdEnv.lua)
+    (2)(0)Unloading: A (status: active) (fn: /Users/mcawood/Lmod/Lmod/rt/break/mf/A/1.0)
+    (3)(0)Unloading: B (status: active) (fn: /Users/mcawood/Lmod/Lmod/rt/break/mf/B/2.0)
+0
+1
+2
+3
+    (4)(0)Unloading: BRK (status: ) (fn: nil)
+    (5)(0)Unloading: C (status: active) (fn: /Users/mcawood/Lmod/Lmod/rt/break/mf/C/3.0.lua)

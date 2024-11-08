@@ -1,0 +1,67 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/hierarchy"; export testDir
+messageFn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/t1/2024_11_06_15_50_29-Darwin-arm64-hierarchy/message.lua"; export messageFn
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_06"; export tag
+target=""; export target
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/hierarchy.tdesc"; export testdescriptFn
+TARGET=""; export TARGET
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/t1/2024_11_06_15_50_29-Darwin-arm64-hierarchy/results.lua"; export cmdResultFn
+packageName="rt"; export packageName
+resultFn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/t1/2024_11_06_15_50_29-Darwin-arm64-hierarchy/t1.result"; export resultFn
+testName="hierarchy"; export testName
+idTag="t1"; export idTag
+outputDir="/Users/mcawood/Lmod/Lmod/rt/hierarchy/t1/2024_11_06_15_50_29-Darwin-arm64-hierarchy"; export outputDir
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/t1/2024_11_06_15_50_29-Darwin-arm64-hierarchy/t1.runtime"; export runtimeFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf;    export MODULEPATH_ROOT
+     MODULEPATH=$MODULEPATH_ROOT/Core; export MODULEPATH
+
+     remove_generated_lmod_files
+     runLmod --version                     # 1
+     runLmod load python                   # 2
+     runLmod list                          # 3
+     runLmod load gcc boost                # 4
+     runLmod list                          # 5
+     runLmod unload gcc                    # 6
+     runLmod list                          # 7
+     runLmod unload boost                  # 8 
+     runLmod load gcc impi petsc           # 9
+     runLmod avail                         #10
+     runLmod load intel petsc              #11
+     runLmod avail                         #12
+     runLmod purge                         #13
+     runLmod load gcc impi petsc           #14
+     runLmod -T rm impi gcc                #15
+     runLmod list                          #16
+     runLmod purge                         #17
+     runLmod load gcc impi petsc           #18
+     runLmod -T rm  gcc impi               #19
+     runLmod list                          #20
+
+     
+     runLmod purge                         #21
+     unsetMT
+     export MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2
+     export MODULEPATH=$MODULEPATH_ROOT/Core
+     runLmod load Default                  #22
+     runLmod list                          #23
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/hierarchy/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/hierarchy/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/hierarchy/t1/2024_11_06_15_50_29-Darwin-arm64-hierarchy/t1.result -t /Users/mcawood/Lmod/Lmod/rt/hierarchy/t1/2024_11_06_15_50_29-Darwin-arm64-hierarchy/t1.runtime results.csv
+   

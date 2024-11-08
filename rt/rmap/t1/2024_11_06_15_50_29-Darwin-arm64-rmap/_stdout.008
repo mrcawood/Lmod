@@ -1,0 +1,71 @@
+timestampFn = {
+  false,
+}
+reverseMapT = {
+  ["/Users/mcawood/Lmod/Lmod/rt/rmap/apps/intel-13_1/impi/4.1/bin"] = {
+    flavor = {
+      "default:intel/13.1",
+    },
+    kind = "bin",
+    moduleFn = "/Users/mcawood/Lmod/Lmod/rt/rmap/mf/Compiler/intel/13.1/impi/4.1.lua",
+    pkg = "impi/4.1",
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/rmap/apps/intel-13_1/impi/4.1/lib"] = {
+    flavor = {
+      "default:intel/13.1",
+    },
+    kind = "lib",
+    moduleFn = "/Users/mcawood/Lmod/Lmod/rt/rmap/mf/Compiler/intel/13.1/impi/4.1.lua",
+    pkg = "impi/4.1",
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/rmap/apps/intel/13.1/bin"] = {
+    flavor = {
+      "default",
+    },
+    kind = "bin",
+    moduleFn = "/Users/mcawood/Lmod/Lmod/rt/rmap/mf/Core/intel/13.1.lua",
+    pkg = "intel/13.1",
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/rmap/apps/intel/13.1/lib"] = {
+    flavor = {
+      "default",
+    },
+    kind = "lib",
+    moduleFn = "/Users/mcawood/Lmod/Lmod/rt/rmap/mf/Core/intel/13.1.lua",
+    pkg = "intel/13.1",
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/rmap/apps/intel/14.0.1/bin"] = {
+    flavor = {
+      "default",
+    },
+    kind = "bin",
+    moduleFn = "/Users/mcawood/Lmod/Lmod/rt/rmap/mf/Core/intel/14.0.1.lua",
+    pkg = "intel/14.0.1",
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/rmap/apps/intel/14.0.1/lib"] = {
+    flavor = {
+      "default",
+    },
+    kind = "lib",
+    moduleFn = "/Users/mcawood/Lmod/Lmod/rt/rmap/mf/Core/intel/14.0.1.lua",
+    pkg = "intel/14.0.1",
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/rmap/t1/2024_11_06_15_50_29-Darwin-arm64-rmap/more_apps/bin"] = {
+    flavor = {
+      "default",
+    },
+    kind = "bin",
+    moduleFn = "/Users/mcawood/Lmod/Lmod/rt/rmap/mf/Core/symlink/1.0.lua",
+    pkg = "symlink/1.0",
+  },
+  ["/Users/mcawood/Lmod/Lmod/rt/rmap/t1/2024_11_06_15_50_29-Darwin-arm64-rmap/my_bin"] = {
+    flavor = {
+      "default",
+    },
+    kind = "bin",
+    moduleFn = "/Users/mcawood/Lmod/Lmod/rt/rmap/mf/Core/symlink/1.0.lua",
+    pkg = "symlink/1.0",
+  },
+}
+xlibmap = {}
+

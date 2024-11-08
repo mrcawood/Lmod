@@ -1,0 +1,54 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_07"; export tag
+idTag="t1"; export idTag
+TARGET=""; export TARGET
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/terse_avail/t1/2024_11_07_13_03_06-Darwin-arm64-avail/t1.runtime"; export runtimeFn
+resultFn="/Users/mcawood/Lmod/Lmod/rt/terse_avail/t1/2024_11_07_13_03_06-Darwin-arm64-avail/t1.result"; export resultFn
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/terse_avail"; export testDir
+testName="avail"; export testName
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/terse_avail/t1/2024_11_07_13_03_06-Darwin-arm64-avail/message.lua"; export messageFn
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/terse_avail/terse_avail.tdesc"; export testdescriptFn
+outputDir="/Users/mcawood/Lmod/Lmod/rt/terse_avail/t1/2024_11_07_13_03_06-Darwin-arm64-avail"; export outputDir
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/terse_avail/t1/2024_11_07_13_03_06-Darwin-arm64-avail/results.lua"; export cmdResultFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+     unsetMT
+     initStdEnvVars
+     export LMOD_TERM_WIDTH=3000
+     MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/terse_avail/mf;  export MODULEPATH_ROOT
+     MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/terse_avail/mf/Core//
+     export MODULEPATH
+     unset TERM
+
+     remove_generated_lmod_files
+
+     cp /Users/mcawood/Lmod/Lmod/rt/terse_avail/.lmodrc.lua .lmodrc.lua
+
+
+     runLmod --version                # 1
+     runLmod load intel               # 2
+     runLmod avail                    # 3
+     runLmod --nx avail                # 4
+     runLmod --terse avail            # 5
+     runLmod --terse_show_extensions avail #6
+ 
+     HOME=$ORIG_HOME
+
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/terse_avail/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/terse_avail/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/terse_avail/t1/2024_11_07_13_03_06-Darwin-arm64-avail/t1.result -t /Users/mcawood/Lmod/Lmod/rt/terse_avail/t1/2024_11_07_13_03_06-Darwin-arm64-avail/t1.runtime results.csv
+   

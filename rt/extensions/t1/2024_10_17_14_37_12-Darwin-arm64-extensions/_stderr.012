@@ -1,0 +1,7 @@
+
+Lmod is automatically replacing "gcc/9.4" with "intel/19.1".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) python/3.7
+

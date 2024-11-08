@@ -1,0 +1,69 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing whatis a
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load earlyLateOutput
+===========================
+echo early output
+LOADEDMODULES=earlyLateOutput/2.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf;
+export MODULEPATH;
+ONE=1;
+export ONE;
+TWO=2;
+export TWO;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf/earlyLateOutput/2.0;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={earlyLateOutput={fn="/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf/earlyLateOutput/2.0",fullName="earlyLateOutput/2.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="earlyLateOutput",wV="000000002.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf",}';
+export _ModuleTable_;
+echo source conda1.sh;
+echo source conda2.sh;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={earlyLateOutput={fn="/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf/earlyLateOutput/2.0",fullName="earlyLateOutput/2.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="earlyLateOutput",wV="000000002.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show showMe
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={earlyLateOutput={fn="/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf/earlyLateOutput/2.0",fullName="earlyLateOutput/2.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="earlyLateOutput",wV="000000002.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf",}';
+export _ModuleTable_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={earlyLateOutput={fn="/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf/earlyLateOutput/2.0",fullName="earlyLateOutput/2.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="earlyLateOutput",wV="000000002.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf",}';
+export _ModuleTable_;
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load getenv
+===========================
+LOADEDMODULES=earlyLateOutput/2.0:getenv/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf/earlyLateOutput/2.0:/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf/getenv/1.0;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={earlyLateOutput={fn="/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf/earlyLateOutput/2.0",fullName="earlyLateOutput/2.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="earlyLateOutput",wV="000000002.*zfinal",},getenv={fn="/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf/getenv/1.0",fullName="getenv/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="getenv",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/tclmodules/mf",}';
+export _ModuleTable_;

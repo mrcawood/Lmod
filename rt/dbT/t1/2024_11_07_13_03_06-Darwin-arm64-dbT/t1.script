@@ -1,0 +1,84 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_07"; export tag
+idTag="t1"; export idTag
+TARGET=""; export TARGET
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/dbT/t1/2024_11_07_13_03_06-Darwin-arm64-dbT/t1.runtime"; export runtimeFn
+resultFn="/Users/mcawood/Lmod/Lmod/rt/dbT/t1/2024_11_07_13_03_06-Darwin-arm64-dbT/t1.result"; export resultFn
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/dbT"; export testDir
+testName="dbT"; export testName
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/dbT/t1/2024_11_07_13_03_06-Darwin-arm64-dbT/message.lua"; export messageFn
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/dbT/dbT.tdesc"; export testdescriptFn
+outputDir="/Users/mcawood/Lmod/Lmod/rt/dbT/t1/2024_11_07_13_03_06-Darwin-arm64-dbT"; export outputDir
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/dbT/t1/2024_11_07_13_03_06-Darwin-arm64-dbT/results.lua"; export cmdResultFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+
+     remove_generated_lmod_files c1 c2 
+
+     mkdir c1 c2
+
+     touch c1/system.txt c2/system.txt
+
+     BASE_MODULE_PATH=/Users/mcawood/Lmod/Lmod/rt/dbT/mf1/Core
+     buildNewDB c1 c1/system.txt spiderT
+     buildNewDB c1 c1/system.txt dbT
+
+     BASE_MODULE_PATH=/Users/mcawood/Lmod/Lmod/rt/dbT/mf2/Core
+     buildNewDB c2 c2/system.txt spiderT
+     buildNewDB c2 c2/system.txt dbT
+
+     cat > .lmodrc.lua <<EOF
+scDescriptT = {
+  {
+    ["dir"]       = "/Users/mcawood/Lmod/Lmod/rt/dbT/t1/2024_11_07_13_03_06-Darwin-arm64-dbT/c1",
+    ["timestamp"] = "/Users/mcawood/Lmod/Lmod/rt/dbT/t1/2024_11_07_13_03_06-Darwin-arm64-dbT/c1/system.txt",
+  },
+  {
+    ["dir"]       = "/Users/mcawood/Lmod/Lmod/rt/dbT/t1/2024_11_07_13_03_06-Darwin-arm64-dbT/c2",
+    ["timestamp"] = "/Users/mcawood/Lmod/Lmod/rt/dbT/t1/2024_11_07_13_03_06-Darwin-arm64-dbT/c2/system.txt",
+  },
+}
+EOF
+
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dbT/mf2/Core:/Users/mcawood/Lmod/Lmod/rt/dbT/mf1/Core
+
+     runLmod --version                                # 1
+     runLmod av                                       # 2
+
+     runLmod purge                                    # 3     
+     unsetMT
+     export MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/dbT
+     export MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dbT/mf4
+     runBase runSpiderCmd -o spiderT     $MODULEPATH  # 4
+     runBase runSpiderCmd -o dbT         $MODULEPATH  # 5
+     runLmod load newdir                              # 6
+     runLmod --show_hidden av                         # 7
+     runBase runSpiderCmd -o dbT         $MODULEPATH  # 8
+
+
+
+
+
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/dbT/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/dbT/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/dbT/t1/2024_11_07_13_03_06-Darwin-arm64-dbT/t1.result -t /Users/mcawood/Lmod/Lmod/rt/dbT/t1/2024_11_07_13_03_06-Darwin-arm64-dbT/t1.runtime results.csv
+   

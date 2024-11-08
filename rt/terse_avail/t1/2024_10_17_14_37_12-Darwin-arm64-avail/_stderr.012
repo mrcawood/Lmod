@@ -1,0 +1,11 @@
+/Users/mcawood/Lmod/Lmod/rt/terse_avail/mf/Compiler/intel/19:
+python/
+python/3.7
+/Users/mcawood/Lmod/Lmod/rt/terse_avail/mf/Core:
+TACC
+gcc/
+gcc/9.4
+intel/
+intel/19.1
+#    CC
+#    DDD

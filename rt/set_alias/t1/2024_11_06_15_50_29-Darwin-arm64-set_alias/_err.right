@@ -1,0 +1,62 @@
+===========================
+step 1
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing --version
+===========================
+Modules based on Lua: Version
+    by Robert McLay mclay@tacc.utexas.edu
+===========================
+step 2
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load test1
+===========================
+Lmod has detected the following error: Syntax error in file: ProjectDIR/rt/set_alias/mf/test1/1.0.lua
+ with command: unload, one or more arguments are not strings.
+While processing the following module(s):
+    Module fullname  Module Filename
+    test1/1.0        ProjectDIR/rt/set_alias/mf/test1/1.0.lua
+===========================
+step 3
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load test2
+===========================
+Lmod has detected the following error: Syntax error in file: ProjectDIR/rt/set_alias/mf/test2/2.0.lua
+ with command: unload, one or more arguments are not strings.
+While processing the following module(s):
+    Module fullname  Module Filename
+    test2/2.0        ProjectDIR/rt/set_alias/mf/test2/2.0.lua
+===========================
+step 4
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing unload test2
+===========================
+Note: the module "test2" cannot be unloaded because it was not loaded.
+===========================
+step 5
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load test1
+===========================
+Lmod has detected the following error: Syntax error in file: ProjectDIR/rt/set_alias/mf/test1/1.0.lua
+ with command: unload, one or more arguments are not strings.
+While processing the following module(s):
+    Module fullname  Module Filename
+    test1/1.0        ProjectDIR/rt/set_alias/mf/test1/1.0.lua
+===========================
+step 6
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load sfunc
+===========================
+===========================
+step 7
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load alias
+===========================
+Lmod has detected the following error: Syntax error in file: ProjectDIR/rt/set_alias/mf/alias/1.0
+ with command: set_alias, one or more arguments are not strings.
+While processing the following module(s):
+    Module fullname  Module Filename
+    alias/1.0        ProjectDIR/rt/set_alias/mf/alias/1.0
+===========================
+step 8
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing load spack
+===========================
+===========================
+step 9
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing show showMe
+===========================
+   ProjectDIR/rt/set_alias/mf/showMe/1.0.lua:
+pushenv("TEST","test")
+set_shell_function("foo","echo ok","")

@@ -1,0 +1,118 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf2/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf2/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf2/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf3/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf3/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf3/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf3/Core",}';
+export _ModuleTable_;
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf3/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf3/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf3/Core",}';
+export _ModuleTable_;
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --terse spider
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core",}';
+export _ModuleTable_;
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --terse spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core",}';
+export _ModuleTable_;
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --terse spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core",}';
+export _ModuleTable_;
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load gcc/9.3.0
+===========================
+LMOD_FAMILY_COMPILER=gcc;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=9.3.0;
+export LMOD_FAMILY_COMPILER_VERSION;
+LOADEDMODULES=gcc/9.3.0;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/t1/2024_11_06_15_50_29-Darwin-arm64-dynamic_spider/myModules4/Compiler/gcc9:1\;/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Compiler/gcc9:1\;/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/t1/2024_11_06_15_50_29-Darwin-arm64-dynamic_spider/myModules4/Compiler/gcc9:/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Compiler/gcc9:/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core/gcc/9.3.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={compiler="gcc",},mT={gcc={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Compiler/gcc9\")","prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/t1/2024_11_06_15_50_29-Darwin-arm64-dynamic_spider/myModules4/Compiler/gcc9\")",},fn="/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core/gcc/9.3.0.lua",fullName="gcc/9.3.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="gcc/9.3.0",wV="000000009.000000003.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/t1/2024_11_06_15_50_29-Darwin-arm64-dynamic_spider/myModules4/Compiler/gcc9","/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Compiler/gcc9","/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core",}';
+export _ModuleTable_;
+===========================
+step 13
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --terse spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/t1/2024_11_06_15_50_29-Darwin-arm64-dynamic_spider/myModules4/Compiler/gcc9:/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Compiler/gcc9:/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={compiler="gcc",},mT={gcc={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Compiler/gcc9\")","prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/t1/2024_11_06_15_50_29-Darwin-arm64-dynamic_spider/myModules4/Compiler/gcc9\")",},fn="/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core/gcc/9.3.0.lua",fullName="gcc/9.3.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="gcc/9.3.0",wV="000000009.000000003.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/t1/2024_11_06_15_50_29-Darwin-arm64-dynamic_spider/myModules4/Compiler/gcc9","/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Compiler/gcc9","/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/dynamic_spider/mf4/Core",}';
+export _ModuleTable_;

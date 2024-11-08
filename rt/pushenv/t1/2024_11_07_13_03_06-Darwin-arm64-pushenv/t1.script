@@ -1,0 +1,90 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_07"; export tag
+idTag="t1"; export idTag
+TARGET=""; export TARGET
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/pushenv/t1/2024_11_07_13_03_06-Darwin-arm64-pushenv/t1.runtime"; export runtimeFn
+resultFn="/Users/mcawood/Lmod/Lmod/rt/pushenv/t1/2024_11_07_13_03_06-Darwin-arm64-pushenv/t1.result"; export resultFn
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/pushenv"; export testDir
+testName="pushenv"; export testName
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/pushenv/t1/2024_11_07_13_03_06-Darwin-arm64-pushenv/message.lua"; export messageFn
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/pushenv/pushenv.tdesc"; export testdescriptFn
+outputDir="/Users/mcawood/Lmod/Lmod/rt/pushenv/t1/2024_11_07_13_03_06-Darwin-arm64-pushenv"; export outputDir
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/pushenv/t1/2024_11_07_13_03_06-Darwin-arm64-pushenv/results.lua"; export cmdResultFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/pushenv/mf;     export MODULEPATH_ROOT
+     MODULEPATH=$MODULEPATH_ROOT/Core;  export MODULEPATH
+
+     RTM_SETTARG_CMD=":";               export RTM_SETTARG_CMD
+
+     remove_generated_lmod_files
+
+     runLmod --version        # 1
+     runLmod load   a b       # 2
+     runLmod unload a b       # 3
+     runLmod load intel       # 4
+     runLmod load mpich       # 5
+     runLmod load clang       # 6
+     runLmod unload clang     # 7
+     runLmod unload mpich     # 8
+     runLmod unload intel     # 9
+     runLmod load intel mpich #10
+     runLmod unload intel     #11
+     runLmod load intel       #12
+     runLmod load settarg     #13
+     runLmod unload settarg   #14
+     export LEWIS="test"
+     export   RTM="test"
+     runLmod load   ll/1.0    #15
+     runLmod unload ll/1.0    #16
+     runLmod load   ll/2.0    #17
+     runLmod unload ll/2.0    #18
+    
+     export LLOYD="FOO"
+     runLmod load   lloyd     #19
+     runLmod unload lloyd     #20
+     
+     runLmod save             #21
+     runLmod restore          #22
+#--------------------------------------------------------------
+# Issue: #627: pushenv("FOO","")
+     
+     runLmod purge            #23
+     unsetMT
+     MODULEPATH=$MODULEPATH_ROOT/Core2;  export MODULEPATH
+     unset FOO
+     unset BAZ
+     unset TEST
+     runLmod load   first     #24
+     runLmod load   second    #25
+     runLmod unload second    #26
+     runBase echo FOO="%$FOO%" BAZ="%$BAZ%"    #27
+
+
+
+ 
+
+
+     HOME_ORIG=$HOME
+
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results -bash _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/pushenv/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/pushenv/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/pushenv/t1/2024_11_07_13_03_06-Darwin-arm64-pushenv/t1.result -t /Users/mcawood/Lmod/Lmod/rt/pushenv/t1/2024_11_07_13_03_06-Darwin-arm64-pushenv/t1.runtime results.csv
+   

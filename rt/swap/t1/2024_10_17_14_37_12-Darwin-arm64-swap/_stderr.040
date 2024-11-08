@@ -1,0 +1,13 @@
+
+Currently Loaded Modules:
+  1) admin/admin-1.0   3) local/local   5) PrgEnv        7) parmetis/3.1 (m)
+  2) unix/unix         4) noweb/2.10c   6) intel/intel
+
+  Where:
+   m:  built for host and native MIC
+
+Inactive Modules:
+  1) petsc   2) phdf5
+
+ 
+

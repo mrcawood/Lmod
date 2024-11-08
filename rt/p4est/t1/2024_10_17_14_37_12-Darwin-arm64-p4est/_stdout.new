@@ -1,0 +1,58 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing av
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/p4est/mf/User:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core:/Users/mcawood/Lmod/Lmod/rt/p4est/mf/User;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core","/Users/mcawood/Lmod/Lmod/rt/p4est/mf/User",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core:/Users/mcawood/Lmod/Lmod/rt/p4est/mf/User",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --show_hidden av
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core:/Users/mcawood/Lmod/Lmod/rt/p4est/mf/User;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core","/Users/mcawood/Lmod/Lmod/rt/p4est/mf/User",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core:/Users/mcawood/Lmod/Lmod/rt/p4est/mf/User",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load p4est
+===========================
+LOADEDMODULES=p4est/1.1;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core:/Users/mcawood/Lmod/Lmod/rt/p4est/mf/User;
+export MODULEPATH;
+Version=1.1;
+export Version;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core/p4est/1.1.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={p4est={fn="/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core/p4est/1.1.lua",fullName="p4est/1.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="p4est",wV="000000001.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core","/Users/mcawood/Lmod/Lmod/rt/p4est/mf/User",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core:/Users/mcawood/Lmod/Lmod/rt/p4est/mf/User",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load local
+===========================
+LOADEDMODULES=p4est/1.1:local;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core:/Users/mcawood/Lmod/Lmod/rt/p4est/mf/User;
+export MODULEPATH;
+TACC=found;
+export TACC;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core/p4est/1.1.lua:/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core/local;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={["local"]={fn="/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core/local",fullName="local",loadOrder=2,propT={},stackDepth=0,status="active",userName="local",wV="M.*zfinal",},p4est={fn="/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core/p4est/1.1.lua",fullName="p4est/1.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="p4est",wV="000000001.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core","/Users/mcawood/Lmod/Lmod/rt/p4est/mf/User",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core:/Users/mcawood/Lmod/Lmod/rt/p4est/mf/User",}';
+export _ModuleTable_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core:/Users/mcawood/Lmod/Lmod/rt/p4est/mf/User;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={["local"]={fn="/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core/local",fullName="local",loadOrder=2,propT={},stackDepth=0,status="active",userName="local",wV="M.*zfinal",},p4est={fn="/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core/p4est/1.1.lua",fullName="p4est/1.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="p4est",wV="000000001.000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core","/Users/mcawood/Lmod/Lmod/rt/p4est/mf/User",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/p4est/mf/Core:/Users/mcawood/Lmod/Lmod/rt/p4est/mf/User",}';
+export _ModuleTable_;

@@ -1,0 +1,142 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show BRK
+===========================
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /Users/mcawood/Lmod/Lmod/rt/break/mf/BRK/1.0:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+setenv("BRK","1.0")
+LmodBreak("")
+
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load StdEnv
+===========================
+0
+1
+2
+3
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) A/1.0   2) B/2.0   3) C/3.0   4) StdEnv
+
+ 
+
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload StdEnv
+===========================
+0
+1
+2
+3
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T load StdEnv
+===========================
+  Lmod version: 8.7.43 2024-06-24 15:50 -06:00
+running: module --regression_testing -T load StdEnv
+  (1)(0)Loading: StdEnv (fn: /Users/mcawood/Lmod/Lmod/rt/break/mf/StdEnv.lua, using Find-Best)
+    (2)(0)Loading: A (fn: /Users/mcawood/Lmod/Lmod/rt/break/mf/A/1.0, using Find-Best)
+    (3)(0)Loading: B (fn: /Users/mcawood/Lmod/Lmod/rt/break/mf/B/2.0, using Find-Best)
+0
+1
+2
+3
+    (4)(0)Loading: BRK (fn: /Users/mcawood/Lmod/Lmod/rt/break/mf/BRK/1.0, using Find-Best)
+      LmodBreak called
+    (5)(0)Loading: C (fn: /Users/mcawood/Lmod/Lmod/rt/break/mf/C/3.0.lua, using Find-Best)
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T unload StdEnv
+===========================
+  Lmod version: 8.7.43 2024-06-24 15:50 -06:00
+running: module --regression_testing -T unload StdEnv
+  (1)(0)Unloading: StdEnv (status: active) (fn: /Users/mcawood/Lmod/Lmod/rt/break/mf/StdEnv.lua)
+    (2)(0)Unloading: A (status: active) (fn: /Users/mcawood/Lmod/Lmod/rt/break/mf/A/1.0)
+    (3)(0)Unloading: B (status: active) (fn: /Users/mcawood/Lmod/Lmod/rt/break/mf/B/2.0)
+0
+1
+2
+3
+    (4)(0)Unloading: BRK (status: ) (fn: nil)
+    (5)(0)Unloading: C (status: active) (fn: /Users/mcawood/Lmod/Lmod/rt/break/mf/C/3.0.lua)
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load BRK
+===========================
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load bad
+===========================
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload bad
+===========================
+already set
+===========================
+step 13
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 14
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load X other
+===========================
+break
+===========================
+step 15
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) other/1.0
+
+ 
+
+===========================
+step 16
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload other
+===========================
+===========================
+step 17
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+No modules loaded
+===========================
+step 18
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load X/X other
+===========================
+break
+===========================
+step 19
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) other/1.0
+
+ 
+

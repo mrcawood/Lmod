@@ -1,0 +1,420 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load python
+===========================
+LOADEDMODULES=python/2.7.9;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+MY_VERSION=2.7.9;
+export MY_VERSION;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/python/2.7.9.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={python={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/python/2.7.9.lua",fullName="python/2.7.9",loadOrder=1,propT={},stackDepth=0,status="active",userName="python",wV="000000002.000000007.000000009.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={python={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/python/2.7.9.lua",fullName="python/2.7.9",loadOrder=1,propT={},stackDepth=0,status="active",userName="python",wV="000000002.000000007.000000009.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load gcc boost
+===========================
+BOOST_VERSION=1.59.0;
+export BOOST_VERSION;
+COMPILER_DEPENDENT=yes;
+export COMPILER_DEPENDENT;
+LMOD_FAMILY_COMPILER=gcc;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=6.1;
+export LMOD_FAMILY_COMPILER_VERSION;
+LOADEDMODULES=gcc/6.1:boost/1.59.0:python/2.7.9;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1:1\;/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+MY_VERSION=2.7.9;
+export MY_VERSION;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/gcc/6.1.lua:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/boost/1.59.0.lua:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/python/2.7.9.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={Compiler="gcc",},mT={boost={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/boost/1.59.0.lua",fullName="boost/1.59.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="boost",wV="000000001.000000059.*zfinal",},gcc={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/gcc/6.1.lua",fullName="gcc/6.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="gcc",wV="000000006.000000001.*zfinal",},python={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/python/2.7.9.lua",fullName="python/2.7.9",loadOrder=3,propT={},stackDepth=0,status="active",userName="python",wV="000000002.000000007.000000009.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1","/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={Compiler="gcc",},mT={boost={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/boost/1.59.0.lua",fullName="boost/1.59.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="boost",wV="000000001.000000059.*zfinal",},gcc={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/gcc/6.1.lua",fullName="gcc/6.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="gcc",wV="000000006.000000001.*zfinal",},python={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/python/2.7.9.lua",fullName="python/2.7.9",loadOrder=3,propT={},stackDepth=0,status="active",userName="python",wV="000000002.000000007.000000009.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1","/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload gcc
+===========================
+unset BOOST_VERSION;
+unset COMPILER_DEPENDENT;
+unset LMOD_FAMILY_COMPILER;
+unset LMOD_FAMILY_COMPILER_VERSION;
+LOADEDMODULES=python/2.7.9;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+MY_VERSION=2.7.9;
+export MY_VERSION;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/python/2.7.9.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={boost={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/boost/1.59.0.lua",fullName="boost/1.59.0",loadOrder=-1,propT={},stackDepth=0,status="inactive",userName="boost",wV="000000001.000000059.*zfinal",},python={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/python/2.7.9.lua",fullName="python/2.7.9",loadOrder=1,propT={},stackDepth=0,status="active",userName="python",wV="000000002.000000007.000000009.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={boost={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/boost/1.59.0.lua",fullName="boost/1.59.0",loadOrder=-1,propT={},stackDepth=0,status="inactive",userName="boost",wV="000000001.000000059.*zfinal",},python={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/python/2.7.9.lua",fullName="python/2.7.9",loadOrder=1,propT={},stackDepth=0,status="active",userName="python",wV="000000002.000000007.000000009.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload boost
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={python={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/python/2.7.9.lua",fullName="python/2.7.9",loadOrder=1,propT={},stackDepth=0,status="active",userName="python",wV="000000002.000000007.000000009.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load gcc impi petsc
+===========================
+COMPILER_DEPENDENT=yes;
+export COMPILER_DEPENDENT;
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=lib/openmpi:1\;lib:1;
+export __LMOD_REF_COUNT_LD_LIBRARY_PATH;
+LD_LIBRARY_PATH=lib/openmpi:lib;
+export LD_LIBRARY_PATH;
+LMOD_FAMILY_COMPILER=gcc;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=6.1;
+export LMOD_FAMILY_COMPILER_VERSION;
+LMOD_FAMILY_MPI=impi;
+export LMOD_FAMILY_MPI;
+LMOD_FAMILY_MPI_VERSION=17.0.3;
+export LMOD_FAMILY_MPI_VERSION;
+LOADEDMODULES=gcc/6.1:impi/17.0.3:petsc/3.7:python/2.7.9;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MANPATH=/opt/apps/gcc-6_1/impi/17.0.3/man:1;
+export __LMOD_REF_COUNT_MANPATH;
+MANPATH=/opt/apps/gcc-6_1/impi/17.0.3/man;
+export MANPATH;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0:1\;/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1:1\;/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+MPICH_HOME=/opt/apps/gcc-6_1/impi/17.0.3;
+export MPICH_HOME;
+MPIHOME=/opt/apps/gcc-6_1/impi/17.0.3;
+export MPIHOME;
+MY_VERSION=2.7.9;
+export MY_VERSION;
+TACC_IMPI_BIN=/opt/apps/gcc-6_1/impi/17.0.3/bin;
+export TACC_IMPI_BIN;
+TACC_IMPI_DIR=/opt/apps/gcc-6_1/impi/17.0.3;
+export TACC_IMPI_DIR;
+TACC_IMPI_INC=/opt/apps/gcc-6_1/impi/17.0.3/include;
+export TACC_IMPI_INC;
+TACC_IMPI_LIB=/opt/apps/gcc-6_1/impi/17.0.3/lib;
+export TACC_IMPI_LIB;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/gcc/6.1.lua:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/impi/17.0.3.lua:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0/petsc/3.7.lua:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/python/2.7.9.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={Compiler="gcc",MPI="impi",},mT={gcc={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/gcc/6.1.lua",fullName="gcc/6.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="gcc",wV="000000006.000000001.*zfinal",},impi={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/impi/17.0.3.lua",fullName="impi/17.0.3",loadOrder=2,propT={},stackDepth=0,status="active",userName="impi",wV="000000017.000000000.000000003.*zfinal",},petsc={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0/petsc/3.7.lua",fullName="petsc/3.7",loadOrder=3,propT={},stackDepth=0,status="active",userName="petsc",wV="000000003.000000007.*zfinal",},python={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/python/2.7.9.lua",fullName="python/2.7.9",loadOrder=4,propT={},stackDepth=0,status="active",userName="python",wV="000000002.000000007.000000009.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0","/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1","/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={Compiler="gcc",MPI="impi",},mT={gcc={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/gcc/6.1.lua",fullName="gcc/6.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="gcc",wV="000000006.000000001.*zfinal",},impi={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/impi/17.0.3.lua",fullName="impi/17.0.3",loadOrder=2,propT={},stackDepth=0,status="active",userName="impi",wV="000000017.000000000.000000003.*zfinal",},petsc={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0/petsc/3.7.lua",fullName="petsc/3.7",loadOrder=3,propT={},stackDepth=0,status="active",userName="petsc",wV="000000003.000000007.*zfinal",},python={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/python/2.7.9.lua",fullName="python/2.7.9",loadOrder=4,propT={},stackDepth=0,status="active",userName="python",wV="000000002.000000007.000000009.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0","/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1","/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load intel petsc
+===========================
+unset COMPILER_DEPENDENT;
+LD_LIBRARY_PATH=lib/openmpi:lib;
+export LD_LIBRARY_PATH;
+LMOD_FAMILY_COMPILER=intel;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=17.0.4;
+export LMOD_FAMILY_COMPILER_VERSION;
+LMOD_FAMILY_MPI=impi;
+export LMOD_FAMILY_MPI;
+LMOD_FAMILY_MPI_VERSION=17.0.3;
+export LMOD_FAMILY_MPI_VERSION;
+LOADEDMODULES=intel/17.0.4:python/2.7.9:impi/17.0.3:petsc/3.7;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MANPATH=/opt/apps/intel-17_0/impi/17.0.3/man:1;
+export __LMOD_REF_COUNT_MANPATH;
+MANPATH=/opt/apps/intel-17_0/impi/17.0.3/man;
+export MANPATH;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/intel/17.0/impi/17.0:1\;/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/intel/17.0:1\;/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/intel/17.0/impi/17.0:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/intel/17.0:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+MPICH_HOME=/opt/apps/intel-17_0/impi/17.0.3;
+export MPICH_HOME;
+MPIHOME=/opt/apps/intel-17_0/impi/17.0.3;
+export MPIHOME;
+MY_VERSION=2.7.9;
+export MY_VERSION;
+TACC_IMPI_BIN=/opt/apps/intel-17_0/impi/17.0.3/bin;
+export TACC_IMPI_BIN;
+TACC_IMPI_DIR=/opt/apps/intel-17_0/impi/17.0.3;
+export TACC_IMPI_DIR;
+TACC_IMPI_INC=/opt/apps/intel-17_0/impi/17.0.3/include;
+export TACC_IMPI_INC;
+TACC_IMPI_LIB=/opt/apps/intel-17_0/impi/17.0.3/lib;
+export TACC_IMPI_LIB;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/intel/17.0.4.lua:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/python/2.7.9.lua:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/intel/17.0/impi/17.0.3.lua:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/intel/17.0/impi/17.0/petsc/3.7.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={Compiler="intel",MPI="impi",},mT={impi={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/intel/17.0/impi/17.0\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/intel/17.0/impi/17.0.3.lua",fullName="impi/17.0.3",loadOrder=3,propT={},stackDepth=0,status="active",userName="impi",wV="000000017.000000000.000000003.*zfinal",},intel={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/intel/17.0\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/intel/17.0.4.lua",fullName="intel/17.0.4",loadOrder=1,propT={},stackDepth=0,status="active",userName="intel",wV="000000017.000000000.000000004.*zfinal",},petsc={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/intel/17.0/impi/17.0/petsc/3.7.lua",fullName="petsc/3.7",loadOrder=4,propT={},stackDepth=0,status="active",userName="petsc",wV="000000003.000000007.*zfinal",},python={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/python/2.7.9.lua",fullName="python/2.7.9",loadOrder=2,propT={},stackDepth=0,status="active",userName="python",wV="000000002.000000007.000000009.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/intel/17.0/impi/17.0","/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/intel/17.0","/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/intel/17.0/impi/17.0:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/intel/17.0:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={Compiler="intel",MPI="impi",},mT={impi={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/intel/17.0/impi/17.0\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/intel/17.0/impi/17.0.3.lua",fullName="impi/17.0.3",loadOrder=3,propT={},stackDepth=0,status="active",userName="impi",wV="000000017.000000000.000000003.*zfinal",},intel={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/intel/17.0\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/intel/17.0.4.lua",fullName="intel/17.0.4",loadOrder=1,propT={},stackDepth=0,status="active",userName="intel",wV="000000017.000000000.000000004.*zfinal",},petsc={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/intel/17.0/impi/17.0/petsc/3.7.lua",fullName="petsc/3.7",loadOrder=4,propT={},stackDepth=0,status="active",userName="petsc",wV="000000003.000000007.*zfinal",},python={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/python/2.7.9.lua",fullName="python/2.7.9",loadOrder=2,propT={},stackDepth=0,status="active",userName="python",wV="000000002.000000007.000000009.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/intel/17.0/impi/17.0","/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/intel/17.0","/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 13
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+unset __LMOD_REF_COUNT_LD_LIBRARY_PATH;
+unset LD_LIBRARY_PATH;
+unset LMOD_FAMILY_COMPILER;
+unset LMOD_FAMILY_COMPILER_VERSION;
+unset LMOD_FAMILY_MPI;
+unset LMOD_FAMILY_MPI_VERSION;
+unset LOADEDMODULES;
+unset __LMOD_REF_COUNT_MANPATH;
+unset MANPATH;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+unset MPICH_HOME;
+unset MPIHOME;
+unset MY_VERSION;
+unset TACC_IMPI_BIN;
+unset TACC_IMPI_DIR;
+unset TACC_IMPI_INC;
+unset TACC_IMPI_LIB;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 14
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load gcc impi petsc
+===========================
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=lib/openmpi:1\;lib:1;
+export __LMOD_REF_COUNT_LD_LIBRARY_PATH;
+LD_LIBRARY_PATH=lib/openmpi:lib;
+export LD_LIBRARY_PATH;
+LMOD_FAMILY_COMPILER=gcc;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=6.1;
+export LMOD_FAMILY_COMPILER_VERSION;
+LMOD_FAMILY_MPI=impi;
+export LMOD_FAMILY_MPI;
+LMOD_FAMILY_MPI_VERSION=17.0.3;
+export LMOD_FAMILY_MPI_VERSION;
+LOADEDMODULES=gcc/6.1:impi/17.0.3:petsc/3.7;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MANPATH=/opt/apps/gcc-6_1/impi/17.0.3/man:1;
+export __LMOD_REF_COUNT_MANPATH;
+MANPATH=/opt/apps/gcc-6_1/impi/17.0.3/man;
+export MANPATH;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0:1\;/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1:1\;/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+MPICH_HOME=/opt/apps/gcc-6_1/impi/17.0.3;
+export MPICH_HOME;
+MPIHOME=/opt/apps/gcc-6_1/impi/17.0.3;
+export MPIHOME;
+TACC_IMPI_BIN=/opt/apps/gcc-6_1/impi/17.0.3/bin;
+export TACC_IMPI_BIN;
+TACC_IMPI_DIR=/opt/apps/gcc-6_1/impi/17.0.3;
+export TACC_IMPI_DIR;
+TACC_IMPI_INC=/opt/apps/gcc-6_1/impi/17.0.3/include;
+export TACC_IMPI_INC;
+TACC_IMPI_LIB=/opt/apps/gcc-6_1/impi/17.0.3/lib;
+export TACC_IMPI_LIB;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/gcc/6.1.lua:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/impi/17.0.3.lua:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0/petsc/3.7.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={Compiler="gcc",MPI="impi",},mT={gcc={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/gcc/6.1.lua",fullName="gcc/6.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="gcc",wV="000000006.000000001.*zfinal",},impi={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/impi/17.0.3.lua",fullName="impi/17.0.3",loadOrder=2,propT={},stackDepth=0,status="active",userName="impi",wV="000000017.000000000.000000003.*zfinal",},petsc={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0/petsc/3.7.lua",fullName="petsc/3.7",loadOrder=3,propT={},stackDepth=0,status="active",userName="petsc",wV="000000003.000000007.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0","/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1","/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 15
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T rm impi gcc
+===========================
+unset __LMOD_REF_COUNT_LD_LIBRARY_PATH;
+unset LD_LIBRARY_PATH;
+unset LMOD_FAMILY_COMPILER;
+unset LMOD_FAMILY_COMPILER_VERSION;
+unset LMOD_FAMILY_MPI;
+unset LMOD_FAMILY_MPI_VERSION;
+unset LOADEDMODULES;
+unset __LMOD_REF_COUNT_MANPATH;
+unset MANPATH;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+unset MPICH_HOME;
+unset MPIHOME;
+unset TACC_IMPI_BIN;
+unset TACC_IMPI_DIR;
+unset TACC_IMPI_INC;
+unset TACC_IMPI_LIB;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={petsc={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0/petsc/3.7.lua",fullName="petsc/3.7",loadOrder=-1,propT={},stackDepth=0,status="inactive",userName="petsc",wV="000000003.000000007.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 16
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={petsc={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0/petsc/3.7.lua",fullName="petsc/3.7",loadOrder=-1,propT={},stackDepth=0,status="inactive",userName="petsc",wV="000000003.000000007.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 17
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 18
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load gcc impi petsc
+===========================
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=lib/openmpi:1\;lib:1;
+export __LMOD_REF_COUNT_LD_LIBRARY_PATH;
+LD_LIBRARY_PATH=lib/openmpi:lib;
+export LD_LIBRARY_PATH;
+LMOD_FAMILY_COMPILER=gcc;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=6.1;
+export LMOD_FAMILY_COMPILER_VERSION;
+LMOD_FAMILY_MPI=impi;
+export LMOD_FAMILY_MPI;
+LMOD_FAMILY_MPI_VERSION=17.0.3;
+export LMOD_FAMILY_MPI_VERSION;
+LOADEDMODULES=gcc/6.1:impi/17.0.3:petsc/3.7;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MANPATH=/opt/apps/gcc-6_1/impi/17.0.3/man:1;
+export __LMOD_REF_COUNT_MANPATH;
+MANPATH=/opt/apps/gcc-6_1/impi/17.0.3/man;
+export MANPATH;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0:1\;/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1:1\;/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+MPICH_HOME=/opt/apps/gcc-6_1/impi/17.0.3;
+export MPICH_HOME;
+MPIHOME=/opt/apps/gcc-6_1/impi/17.0.3;
+export MPIHOME;
+TACC_IMPI_BIN=/opt/apps/gcc-6_1/impi/17.0.3/bin;
+export TACC_IMPI_BIN;
+TACC_IMPI_DIR=/opt/apps/gcc-6_1/impi/17.0.3;
+export TACC_IMPI_DIR;
+TACC_IMPI_INC=/opt/apps/gcc-6_1/impi/17.0.3/include;
+export TACC_IMPI_INC;
+TACC_IMPI_LIB=/opt/apps/gcc-6_1/impi/17.0.3/lib;
+export TACC_IMPI_LIB;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/gcc/6.1.lua:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/impi/17.0.3.lua:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0/petsc/3.7.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={Compiler="gcc",MPI="impi",},mT={gcc={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/gcc/6.1.lua",fullName="gcc/6.1",loadOrder=1,propT={},stackDepth=0,status="active",userName="gcc",wV="000000006.000000001.*zfinal",},impi={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/impi/17.0.3.lua",fullName="impi/17.0.3",loadOrder=2,propT={},stackDepth=0,status="active",userName="impi",wV="000000017.000000000.000000003.*zfinal",},petsc={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0/petsc/3.7.lua",fullName="petsc/3.7",loadOrder=3,propT={},stackDepth=0,status="active",userName="petsc",wV="000000003.000000007.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0","/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1","/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 19
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T rm gcc impi
+===========================
+unset __LMOD_REF_COUNT_LD_LIBRARY_PATH;
+unset LD_LIBRARY_PATH;
+unset LMOD_FAMILY_COMPILER;
+unset LMOD_FAMILY_COMPILER_VERSION;
+unset LMOD_FAMILY_MPI;
+unset LMOD_FAMILY_MPI_VERSION;
+unset LOADEDMODULES;
+unset __LMOD_REF_COUNT_MANPATH;
+unset MANPATH;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+unset MPICH_HOME;
+unset MPIHOME;
+unset TACC_IMPI_BIN;
+unset TACC_IMPI_DIR;
+unset TACC_IMPI_INC;
+unset TACC_IMPI_LIB;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={petsc={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0/petsc/3.7.lua",fullName="petsc/3.7",loadOrder=-1,propT={},stackDepth=0,status="inactive",userName="petsc",wV="000000003.000000007.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 20
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={petsc={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0/petsc/3.7.lua",fullName="petsc/3.7",loadOrder=-1,propT={},stackDepth=0,status="inactive",userName="petsc",wV="000000003.000000007.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 21
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 22
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load Default
+===========================
+LOADEDMODULES=moduleA:moduleB:Default;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Compiler:1\;/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Compiler:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Core;
+export MODULEPATH;
+MY_NAME=moduleB;
+export MY_NAME;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Core/moduleA.lua:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Compiler/moduleB.lua:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Core/Default.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={Default={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Core/Default.lua",fullName="Default",loadOrder=3,propT={},stackDepth=0,status="active",userName="Default",wV="M.*zfinal",},moduleA={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Compiler\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Core/moduleA.lua",fullName="moduleA",loadOrder=1,propT={},stackDepth=1,status="active",userName="moduleA",wV="M.*zfinal",},moduleB={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Compiler/moduleB.lua",fullName="moduleB",loadOrder=2,propT={},stackDepth=1,status="active",userName="moduleB",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Compiler","/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Core",}';
+export _ModuleTable_;
+===========================
+step 23
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Compiler:/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={Default={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Core/Default.lua",fullName="Default",loadOrder=3,propT={},stackDepth=0,status="active",userName="Default",wV="M.*zfinal",},moduleA={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Compiler\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Core/moduleA.lua",fullName="moduleA",loadOrder=1,propT={},stackDepth=1,status="active",userName="moduleA",wV="M.*zfinal",},moduleB={fn="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Compiler/moduleB.lua",fullName="moduleB",loadOrder=2,propT={},stackDepth=1,status="active",userName="moduleB",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Compiler","/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/hierarchy/mf2/Core",}';
+export _ModuleTable_;

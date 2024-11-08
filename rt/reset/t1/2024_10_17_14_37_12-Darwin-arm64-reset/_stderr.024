@@ -1,0 +1,9 @@
+
+Currently Loaded Modules:
+  1) admin/admin-1.0   2) intel/intel   3) openmpi/1.2.6   4) parmetis/3.1 (m)
+
+  Where:
+   m:  built for host and native MIC
+
+ 
+

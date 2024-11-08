@@ -1,0 +1,63 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/inaccessible"; export testDir
+messageFn="/Users/mcawood/Lmod/Lmod/rt/inaccessible/t1/2024_11_06_15_50_29-Darwin-arm64-inaccessible/message.lua"; export messageFn
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_06"; export tag
+target=""; export target
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/inaccessible/inaccessible.tdesc"; export testdescriptFn
+TARGET=""; export TARGET
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/inaccessible/t1/2024_11_06_15_50_29-Darwin-arm64-inaccessible/results.lua"; export cmdResultFn
+packageName="rt"; export packageName
+resultFn="/Users/mcawood/Lmod/Lmod/rt/inaccessible/t1/2024_11_06_15_50_29-Darwin-arm64-inaccessible/t1.result"; export resultFn
+testName="inaccessible"; export testName
+idTag="t1"; export idTag
+outputDir="/Users/mcawood/Lmod/Lmod/rt/inaccessible/t1/2024_11_06_15_50_29-Darwin-arm64-inaccessible"; export outputDir
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/inaccessible/t1/2024_11_06_15_50_29-Darwin-arm64-inaccessible/t1.runtime"; export runtimeFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     export MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf
+     export MROOT2=/Users/mcawood/Lmod/Lmod/rt/inaccessible/mf2
+     export MODULEPATH=$MODULEPATH_ROOT/Core
+
+     remove_generated_lmod_files
+     mkdir -p .cache/lmod
+
+     runLmod --version                          # 1
+     runLmod use $MODULEPATH_ROOT/path1         # 2
+     runLmod --ignore_cache spider              # 3
+     export LMOD_SHORT_TIME=0
+     runLmod --ignore_cache spider inaccessible # 4
+     runLmod unuse $MODULEPATH_ROOT/path1       # 5
+     export LMOD_SHORT_TIME=10
+     runLmod spider inaccessible                # 6
+     runLmod load extend                        # 7
+     runLmod purge                              # 8
+     
+     unsetMT
+     buildSpiderT $MROOT2/Stages/2017a/UI/Compilers > .cache/lmod/spiderT.lua
+     export MODULEPATH=$MROOT2/Stages/2017a/UI/Compilers
+     runLmod spider software1                   # 9
+     runLmod load compiler1                     #10
+     runLmod av                                 #11
+
+
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/inaccessible/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/inaccessible/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/inaccessible/t1/2024_11_06_15_50_29-Darwin-arm64-inaccessible/t1.result -t /Users/mcawood/Lmod/Lmod/rt/inaccessible/t1/2024_11_06_15_50_29-Darwin-arm64-inaccessible/t1.runtime results.csv
+   

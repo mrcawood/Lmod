@@ -1,0 +1,25 @@
+===========================
+step 1
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing --version
+===========================
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+===========================
+step 2
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing --checkSyntax load 3.7
+===========================
+Lmod has detected the following error: Syntax error in file: ProjectDIR/rt/checkSyntax/mf/3.7.lua
+ with command: load, one or more arguments are not strings.
+While processing the following module(s):
+    Module fullname  Module Filename
+    3.7              ProjectDIR/rt/checkSyntax/mf/3.7.lua
+===========================
+step 3
+lua ProjectDIR/src/lmod.in.lua shell --regression_testing --checkSyntax load 3.8
+===========================
+Lmod has detected the following error: Unable to load module because of error when evaluating modulefile:
+     ProjectDIR/rt/checkSyntax/mf/3.8.lua: [string "# comment..."]:1: unexpected symbol near '#'
+     Please check the modulefile and especially if there is a line number specified in the above message
+While processing the following module(s):
+    Module fullname  Module Filename
+    3.8              ProjectDIR/rt/checkSyntax/mf/3.8.lua

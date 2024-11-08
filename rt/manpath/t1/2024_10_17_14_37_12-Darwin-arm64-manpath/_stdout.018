@@ -1,0 +1,16 @@
+LOADEDMODULES=abc/1.0:def/2.0;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MANPATH=/opt/apps/abc/share/man:1\;/opt/X/man:1\;:1\;/opt/Y/man:1\;/opt/apps/def/share/man:1;
+export __LMOD_REF_COUNT_MANPATH;
+MANPATH=/opt/apps/abc/share/man:/opt/X/man::/opt/Y/man:/opt/apps/def/share/man;
+export MANPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/manpath/mf/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/manpath/mf/Core/abc/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/manpath/mf/Core/def/2.0.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewphYmMgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9tYW5wYXRoL21mL0NvcmUvYWJjLzEuMC5sdWEiLApmdWxsTmFtZSA9ICJhYmMvMS4wIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJhYmMiLAp3ViA9ICIwMDAwMDAwMDEuKnpmaW5hbCIsCn0sCmRlZiA9IHsKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L21hbnBhdGgvbWYvQ29yZS9kZWYvMi4wLmx1YSIs;
+export _ModuleTable001_;
+_ModuleTable002_=CmZ1bGxOYW1lID0gImRlZi8yLjAiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImRlZiIsCndWID0gIjAwMDAwMDAwMi4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L21hbnBhdGgvbWYvQ29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvbWFucGF0aC9tZi9Db3JlIiwKfQo=;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;

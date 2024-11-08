@@ -1,0 +1,30 @@
+LOADEDMODULES=matt/1.0;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/zsh_to_modulefile/mf:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/zsh_to_modulefile/mf;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/zsh_to_modulefile/mf/matt/1.0.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewptYXR0ID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvenNoX3RvX21vZHVsZWZpbGUvbWYvbWF0dC8xLjAubHVhIiwKZnVsbE5hbWUgPSAibWF0dC8xLjAiLApsb2FkT3JkZXIgPSAxLAptY21kVF82NCA9IHsKWyJMMVZ6WlhKekwyMWpZWGR2YjJRdlRHMXZaQzlNYlc5a0wzSjBMM3B6YUY5MGIxOXRiMlIxYkdWbWFXeGxMM0owYlM1emFBPT0iXSA9IHsKImMyVjBYM05vWld4c1gyWjFibU4wYVc5dUtDSmZjM0JmYlhWc2RHbGZjR0YwYUdGa1pDSXNJbHdLSUNBZ0lH;
+export _ModuleTable001_;
+_ModuleTable002_=eHZZMkZzSUVsR1V6MG5PaWNnWEFvZ0lDQWdhV1lnV3lCY0lpUmZjM0JmYzJobGJHeGNJaUE5SUhwemFDQmRYQW9nSUNBZ2RHaGxibHdLSUNBZ0lDQWdJQ0JsYlhWc1lYUmxJQzFNSUhOb1hBb2dJQ0FnWm1sY0NpQWdJQ0JtYjNJZ2NIUm9JR2x1SUNReVhBb2dJQ0FnWkc5Y0NpQWdJQ0FnSUNBZ1ptOXlJSE41YzNSNWNHVWdhVzRnSkh0ZmMzQmZZMjl0Y0dGMGFXSnNaVjl6ZVhOZmRIbHdaWE45WEFvZ0lDQWdJQ0FnSUdSdlhBb2dJQ0FnSUNBZ0lDQWdJQ0JmYzNCaFkydGZjR0YwYUdGa1pDQmNJaVF4WENJZ1hDSWtlM0IwYUgwdkpIdHplWE4wZVhCbGZWd2lYQW9nSUNBZ0lDQWdJR1J2Ym1WY0NpQWdJQ0JrYjI1bFhBb2lMQ0lpS1E9PSIsCn0sCn0sCnByb3BUID0ge30sCnN0YWNr;
+export _ModuleTable002_;
+_ModuleTable003_=RGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibWF0dC8xLjAiLAp3ViA9ICIwMDAwMDAwMDEuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC96c2hfdG9fbW9kdWxlZmlsZS9tZiIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvenNoX3RvX21vZHVsZWZpbGUvbWYiLAp9Cg==;
+export _ModuleTable003_;
+_ModuleTable_Sz_=3;
+export _ModuleTable_Sz_;
+_sp_multi_pathadd () { 
+    local IFS=':' 
+    if [ "$_sp_shell" = zsh ]
+    then
+        emulate -L sh
+    fi
+    for pth in $2
+    do
+        for systype in ${_sp_compatible_sys_types}
+        do
+            _spack_pathadd "$1" "${pth}/${systype}"
+        done
+    done; 
+};

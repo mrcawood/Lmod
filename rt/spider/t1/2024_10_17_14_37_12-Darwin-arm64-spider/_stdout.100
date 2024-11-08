@@ -1,0 +1,40 @@
+timestampFn = {
+  false,
+}
+mrcT = {
+  alias2modT = {
+    intelcompiler = "intel",
+  },
+  hiddenT = {
+    ["gcc/4.8"] = true,
+  },
+  version2modT = {
+    ["intel/17"] = "intel/2017.1.132",
+    ["intel/2017"] = "intel/2017.1.132",
+  },
+}
+
+mrcMpathT = {}
+spiderT = {
+  ["/Users/mcawood/Lmod/Lmod/rt/spider/mf/G_Core"] = {
+    acme_xyz = {
+      defaultA = {},
+      defaultT = {},
+      dirT = {},
+      fileT = {
+        ["acme_xyz/1.0"] = {
+          Version = "1.0",
+          canonical = "1.0",
+          fn = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/G_Core/acme_xyz/1.0.lua",
+          luaExt = 4,
+          mpath = "/Users/mcawood/Lmod/Lmod/rt/spider/mf/G_Core",
+          pV = "000000001.*zfinal",
+          wV = "000000001.*zfinal",
+        },
+      },
+    },
+  },
+  version = 5,
+}
+mpathMapT = {}
+

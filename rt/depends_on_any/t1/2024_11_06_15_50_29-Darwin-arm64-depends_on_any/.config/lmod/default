@@ -1,0 +1,82 @@
+-- -*- lua -*-
+-- created: Wed Nov  6 15:52:00 2024 --
+-- Lmod 8.7.43 2024-06-24 15:50 -06:00
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {
+    A = {
+      depends_on_anyA = {
+        "y", "x",
+      },
+      fn = "/Users/mcawood/Lmod/Lmod/rt/depends_on_any/mf/Core/A/1.0.lua",
+      fullName = "A/1.0",
+      hash = "57c73852a2500410a40d7e0f747bed120c5ef286",
+      loadOrder = 5,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "A",
+      wV = "000000001.*zfinal",
+    },
+    B = {
+      depends_on_anyA = {
+        "y",
+      },
+      fn = "/Users/mcawood/Lmod/Lmod/rt/depends_on_any/mf/Core/B/1.0.lua",
+      fullName = "B/1.0",
+      hash = "5056b07dc281653b25981f46ed88f84a1aedd823",
+      loadOrder = 3,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "B",
+      wV = "000000001.*zfinal",
+    },
+    d = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/depends_on_any/mf/Core/d/1.0.lua",
+      fullName = "d/1.0",
+      hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      loadOrder = 1,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "d",
+      wV = "000000001.*zfinal",
+    },
+    x = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/depends_on_any/mf/Core/x/2.0.lua",
+      fullName = "x/2.0",
+      hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      loadOrder = 4,
+      propT = {},
+      ref_count = 1,
+      stackDepth = 1,
+      status = "active",
+      userName = "x",
+      wV = "000000002.*zfinal",
+    },
+    y = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/depends_on_any/mf/Core/y/1.0.lua",
+      fullName = "y/1.0",
+      hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      loadOrder = 2,
+      propT = {},
+      ref_count = 2,
+      stackDepth = 1,
+      status = "active",
+      userName = "y",
+      wV = "000000001.*zfinal",
+    },
+  },
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/depends_on_any/mf/Core",
+  },
+  mpathRefCountT = {
+    ["/Users/mcawood/Lmod/Lmod/rt/depends_on_any/mf/Core"] = 1,
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/depends_on_any/mf/Core",
+}

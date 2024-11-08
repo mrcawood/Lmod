@@ -1,0 +1,8 @@
+Lmod has detected the following error: Syntax error in file: /Users/mcawood/Lmod/Lmod/rt/saverestore/EB/gcc/5.4.lua
+ with command: load, one or more arguments are not strings.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    gcc/5.4          /Users/mcawood/Lmod/Lmod/rt/saverestore/EB/gcc/5.4.lua
+

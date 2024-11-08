@@ -1,0 +1,10 @@
+Lmod has detected the following error: A load storm (possibly an infinite loop) detected for module: "C/1.0" file: "/Users/mcawood/Lmod/Lmod/rt/infiniteLoop/mf/Core/C/1.0.lua". It was loaded more than 500 times.
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    C/1.0            /Users/mcawood/Lmod/Lmod/rt/infiniteLoop/mf/Core/C/1.0.lua
+    B/1.0            /Users/mcawood/Lmod/Lmod/rt/infiniteLoop/mf/Core/B/1.0.lua
+    A/1.0            /Users/mcawood/Lmod/Lmod/rt/infiniteLoop/mf/Core/A/1.0.lua
+    parent/1.0       /Users/mcawood/Lmod/Lmod/rt/infiniteLoop/mf/Core/parent/1.0.lua
+

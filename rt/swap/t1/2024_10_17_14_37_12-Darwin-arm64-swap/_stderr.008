@@ -1,0 +1,7 @@
+
+Inactive Modules:
+  1) openmpi
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) parmetis/3.1
+

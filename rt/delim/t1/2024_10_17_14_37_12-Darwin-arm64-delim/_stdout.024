@@ -1,0 +1,16 @@
+LOADEDMODULES=ncarIntel/1.0:ncarNetcdf/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core;
+export MODULEPATH;
+__LMOD_REF_COUNT_NCAR_LIB_INTEL=-Wl,-rpath,/opt/intel/composer_xe_2011_sp1.6.233/compiler/lib/intel64:1\;-L/opt/netcdf/3.6.3/intel/12.1.0/lib:1\;-lnetcdf:1\;-lnetcdff:1\;-Wl,-rpath,/opt/netcdf/3.6.3/intel/12.1.0/lib:1;
+export __LMOD_REF_COUNT_NCAR_LIB_INTEL;
+NCAR_LIB_INTEL=-Wl,-rpath,/opt/intel/composer_xe_2011_sp1.6.233/compiler/lib/intel64\ -L/opt/netcdf/3.6.3/intel/12.1.0/lib\ -lnetcdf\ -lnetcdff\ -Wl,-rpath,/opt/netcdf/3.6.3/intel/12.1.0/lib;
+export NCAR_LIB_INTEL;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core/ncarIntel/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/delim/mf/Core/ncarNetcdf/1.0.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpuY2FySW50ZWwgPSB7CmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9kZWxpbS9tZi9Db3JlL25jYXJJbnRlbC8xLjAubHVhIiwKZnVsbE5hbWUgPSAibmNhckludGVsLzEuMCIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibmNhckludGVsIiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LApuY2FyTmV0Y2RmID0gewpmbiA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQv;
+export _ModuleTable001_;
+_ModuleTable002_=ZGVsaW0vbWYvQ29yZS9uY2FyTmV0Y2RmLzEuMC5sdWEiLApmdWxsTmFtZSA9ICJuY2FyTmV0Y2RmLzEuMCIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibmNhck5ldGNkZiIsCndWID0gIjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2RlbGltL21mL0NvcmUiLAp9LAp9Cg==;
+export _ModuleTable002_;
+_ModuleTable_Sz_=2;
+export _ModuleTable_Sz_;

@@ -1,0 +1,4 @@
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use /Users/mcawood/Lmod/Lmod/rt/load/mf/notDir /Users/mcawood/Lmod/Lmod/rt/load/t1/2024_11_06_15_50_29-Darwin-arm64-load/mf
+===========================

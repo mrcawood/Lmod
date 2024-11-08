@@ -1,0 +1,58 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_07"; export tag
+idTag="t1"; export idTag
+TARGET=""; export TARGET
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/noTCL/t1/2024_11_07_13_03_06-Darwin-arm64-noTCL/t1.runtime"; export runtimeFn
+resultFn="/Users/mcawood/Lmod/Lmod/rt/noTCL/t1/2024_11_07_13_03_06-Darwin-arm64-noTCL/t1.result"; export resultFn
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/noTCL"; export testDir
+testName="noTCL"; export testName
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/noTCL/t1/2024_11_07_13_03_06-Darwin-arm64-noTCL/message.lua"; export messageFn
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/noTCL/noTCL.tdesc"; export testdescriptFn
+outputDir="/Users/mcawood/Lmod/Lmod/rt/noTCL/t1/2024_11_07_13_03_06-Darwin-arm64-noTCL"; export outputDir
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/noTCL/t1/2024_11_07_13_03_06-Darwin-arm64-noTCL/results.lua"; export cmdResultFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/noTCL/mf;   export MODULEPATH_ROOT
+     MODULEPATH=$MODULEPATH_ROOT/Core:$MODULEPATH_ROOT/TACC
+     export MODULEPATH
+     LMOD_DEFAULT_MODULEPATH=$MODULEPATH
+     export LMOD_DEFAULT_MODULEPATH
+     export LMOD_ALLOW_TCL_MFILES=no;
+
+     remove_generated_lmod_files
+
+     cp /Users/mcawood/Lmod/Lmod/init/lmodrc.lua .lmodrc.lua
+
+     runLmod --version                                      # 1
+     runLmod avail                                          # 2
+     runLmod spider                                         # 3
+     runLmod load   PrgEnv                                  # 4
+     runLmod unload PrgEnv                                  # 5
+     buildSpiderT $LMOD_DEFAULT_MODULEPATH > $HOME/.cache/lmod/spiderT.lua
+     runLmod load   PrgEnv                                  # 6
+
+
+
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/noTCL/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/noTCL/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/noTCL/t1/2024_11_07_13_03_06-Darwin-arm64-noTCL/t1.result -t /Users/mcawood/Lmod/Lmod/rt/noTCL/t1/2024_11_07_13_03_06-Darwin-arm64-noTCL/t1.runtime results.csv
+   

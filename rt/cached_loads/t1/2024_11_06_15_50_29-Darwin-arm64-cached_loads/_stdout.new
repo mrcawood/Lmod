@@ -1,0 +1,117 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load C openfoam
+===========================
+LOADEDMODULES=C/1.2:openfoam/1.0;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/cae:1\;/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/cae:/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/C/1.2.lua:/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/cae/openfoam/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={C={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/cae\")",},fn="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/C/1.2.lua",fullName="C/1.2",loadOrder=1,propT={},stackDepth=0,status="active",userName="C",wV="000000001.000000002.*zfinal",},openfoam={fn="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/cae/openfoam/1.0.lua",fullName="openfoam/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="openfoam",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/cae","/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core",}';
+export _ModuleTable_;
+openfoam=openfoam/1.0;
+export openfoam;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+unset LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core;
+export MODULEPATH;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core",}';
+export _ModuleTable_;
+unset openfoam;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load A
+===========================
+LOADEDMODULES=A/1.0;
+export LOADEDMODULES;
+ME=A/1.0;
+export ME;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/A/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={A={fn="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/A/1.0.lua",fullName="A/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="A",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load B
+===========================
+LOADEDMODULES=A/1.0:B/1.0;
+export LOADEDMODULES;
+ME=B/1.0;
+export ME;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/A/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/B/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={A={fn="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/A/1.0.lua",fullName="A/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="A",wV="000000001.*zfinal",},B={fn="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/B/1.0.lua",fullName="B/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="B",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={A={fn="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/A/1.0.lua",fullName="A/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="A",wV="000000001.*zfinal",},B={fn="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/B/1.0.lua",fullName="B/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="B",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload B
+===========================
+LOADEDMODULES=A/1.0;
+export LOADEDMODULES;
+unset ME;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/A/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={A={fn="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/A/1.0.lua",fullName="A/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="A",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load B
+===========================
+false
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={A={fn="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/A/1.0.lua",fullName="A/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="A",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load B
+===========================
+LOADEDMODULES=A/1.0:B/1.0;
+export LOADEDMODULES;
+ME=B/1.0;
+export ME;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/A/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/B/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={A={fn="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/A/1.0.lua",fullName="A/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="A",wV="000000001.*zfinal",},B={fn="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/B/1.0.lua",fullName="B/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="B",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={A={fn="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/A/1.0.lua",fullName="A/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="A",wV="000000001.*zfinal",},B={fn="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core/B/1.0.lua",fullName="B/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="B",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/cached_loads/t1/2024_11_06_15_50_29-Darwin-arm64-cached_loads/mf/Core",}';
+export _ModuleTable_;

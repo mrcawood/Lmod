@@ -1,0 +1,110 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load intel mvapich2
+===========================
+__LMOD_REF_COUNT_CPATH=/usr/include/x86_64-linux-gnu:1\;/unknown/apps/intel/13.1/composer_xe_2013.2.146/ipp/include:1\;/unknown/apps/intel/13.1/composer_xe_2013.2.146/mkl/include:1\;/unknown/apps/intel/13.1/composer_xe_2013.2.146/tbb/include:1;
+export __LMOD_REF_COUNT_CPATH;
+CPATH=/usr/include/x86_64-linux-gnu:/unknown/apps/intel/13.1/composer_xe_2013.2.146/ipp/include:/unknown/apps/intel/13.1/composer_xe_2013.2.146/mkl/include:/unknown/apps/intel/13.1/composer_xe_2013.2.146/tbb/include;
+export CPATH;
+__LMOD_REF_COUNT_INCLUDE=/usr/include/x86_64-linux-gnu:1\;/unknown/apps/intel/13.1/composer_xe_2013.2.146/mkl/include:1;
+export __LMOD_REF_COUNT_INCLUDE;
+INCLUDE=/usr/include/x86_64-linux-gnu:/unknown/apps/intel/13.1/composer_xe_2013.2.146/mkl/include;
+export INCLUDE;
+__LMOD_REF_COUNT_INTEL_LICENSE_FILE=/unknown/apps/intel/13.1/composer_xe_2013.2.146/licenses:1;
+export __LMOD_REF_COUNT_INTEL_LICENSE_FILE;
+INTEL_LICENSE_FILE=/unknown/apps/intel/13.1/composer_xe_2013.2.146/licenses;
+export INTEL_LICENSE_FILE;
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/unknown/apps/intel-13_1/mvapich2/1.9/lib:1\;/unknown/apps/intel/13.1/composer_xe_2013.2.146/mpirt/lib/intel64:1\;/unknown/apps/intel/13.1/composer_xe_2013.2.146/ipp/lib/intel64:1\;/unknown/apps/intel/13.1/composer_xe_2013.2.146/mkl/lib/intel64:1\;/unknown/apps/intel/13.1/composer_xe_2013.2.146/tbb/lib/intel64:1\;/unknown/apps/intel/13.1/composer_xe_2013.2.146/compiler/lib/intel64:1;
+export __LMOD_REF_COUNT_LD_LIBRARY_PATH;
+LD_LIBRARY_PATH=/unknown/apps/intel-13_1/mvapich2/1.9/lib:/unknown/apps/intel/13.1/composer_xe_2013.2.146/mpirt/lib/intel64:/unknown/apps/intel/13.1/composer_xe_2013.2.146/ipp/lib/intel64:/unknown/apps/intel/13.1/composer_xe_2013.2.146/mkl/lib/intel64:/unknown/apps/intel/13.1/composer_xe_2013.2.146/tbb/lib/intel64:/unknown/apps/intel/13.1/composer_xe_2013.2.146/compiler/lib/intel64;
+export LD_LIBRARY_PATH;
+__LMOD_REF_COUNT_LIBRARY_PATH=/unknown/apps/intel/13.1/composer_xe_2013.2.146/ipp/lib/intel64:1\;/unknown/apps/intel/13.1/composer_xe_2013.2.146/tbb/lib/intel64:1\;/unknown/apps/intel/13.1/composer_xe_2013.2.146/mkl/lib/intel64:1;
+export __LMOD_REF_COUNT_LIBRARY_PATH;
+LIBRARY_PATH=/unknown/apps/intel/13.1/composer_xe_2013.2.146/ipp/lib/intel64:/unknown/apps/intel/13.1/composer_xe_2013.2.146/tbb/lib/intel64:/unknown/apps/intel/13.1/composer_xe_2013.2.146/mkl/lib/intel64;
+export LIBRARY_PATH;
+LMOD_FAMILY_COMPILER=intel;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=13.1;
+export LMOD_FAMILY_COMPILER_VERSION;
+LMOD_FAMILY_MPI=mvapich2;
+export LMOD_FAMILY_MPI;
+LMOD_FAMILY_MPI_VERSION=1.9;
+export LMOD_FAMILY_MPI_VERSION;
+LOADEDMODULES=intel/13.1:mvapich2/1.9;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MANPATH=/unknown/apps/intel-13_1/mvapich2/1.9/man:1\;/unknown/apps/intel/13.1/composer_xe_2013.2.146/man/en_US:1;
+export __LMOD_REF_COUNT_MANPATH;
+MANPATH=/unknown/apps/intel-13_1/mvapich2/1.9/man:/unknown/apps/intel/13.1/composer_xe_2013.2.146/man/en_US;
+export MANPATH;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/petsc/mf/MPI/intel/13.1/mvapich2/1.9:1\;/Users/mcawood/Lmod/Lmod/rt/petsc/mf/Compiler/intel/13.1:1\;/Users/mcawood/Lmod/Lmod/rt/petsc/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/petsc/mf/MPI/intel/13.1/mvapich2/1.9:/Users/mcawood/Lmod/Lmod/rt/petsc/mf/Compiler/intel/13.1:/Users/mcawood/Lmod/Lmod/rt/petsc/mf/Core;
+export MODULEPATH;
+MPICH_HOME=/unknown/apps/intel-13_1/mvapich2/1.9;
+export MPICH_HOME;
+MPIHOME=/unknown/apps/intel-13_1/mvapich2/1.9;
+export MPIHOME;
+__LMOD_REF_COUNT_NLSPATH=/unknown/apps/intel/13.1/composer_xe_2013.2.146/compiler/lib/intel64/locale/%l_%t/%N:1\;/unknown/apps/intel/13.1/composer_xe_2013.2.146/ipp/lib/intel64/locale/%l_%t/%N:1\;/unknown/apps/intel/13.1/composer_xe_2013.2.146/mkl/lib/intel64/locale/%l_%t/%N:1\;/unknown/apps/intel/13.1/composer_xe_2013.2.146/debugger/intel64/locale/%l_%t/%N:1;
+export __LMOD_REF_COUNT_NLSPATH;
+NLSPATH=/unknown/apps/intel/13.1/composer_xe_2013.2.146/compiler/lib/intel64/locale/%l_%t/%N:/unknown/apps/intel/13.1/composer_xe_2013.2.146/ipp/lib/intel64/locale/%l_%t/%N:/unknown/apps/intel/13.1/composer_xe_2013.2.146/mkl/lib/intel64/locale/%l_%t/%N:/unknown/apps/intel/13.1/composer_xe_2013.2.146/debugger/intel64/locale/%l_%t/%N;
+export NLSPATH;
+__LMOD_REF_COUNT_PATH=/unknown/apps/intel-13_1/mvapich2/1.9/bin:1\;/unknown/apps/intel/13.1/inspector_xe_2013/bin64:1\;/unknown/apps/intel/13.1/vtune_amplifier_xe_2013/bin64:1\;/unknown/apps/intel/13.1/bin:1\;/Users/mcawood/Lmod/Lmod/proj_mgmt:1\;/Users/mcawood/Lmod/Hermes/bin:1\;/opt/homebrew/bin:1\;/usr/bin:1\;/bin:1;
+export __LMOD_REF_COUNT_PATH;
+PATH=/unknown/apps/intel-13_1/mvapich2/1.9/bin:/unknown/apps/intel/13.1/inspector_xe_2013/bin64:/unknown/apps/intel/13.1/vtune_amplifier_xe_2013/bin64:/unknown/apps/intel/13.1/bin:/Users/mcawood/Lmod/Lmod/proj_mgmt:/Users/mcawood/Lmod/Hermes/bin:/opt/homebrew/bin:/usr/bin:/bin;
+export PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/petsc/mf/Core/intel/13.1.lua:/Users/mcawood/Lmod/Lmod/rt/petsc/mf/Compiler/intel/13.1/mvapich2/1.9.lua;
+export _LMFILES_;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpNUEkgPSAibXZhcGljaDIiLApjb21waWxlciA9ICJpbnRlbCIsCn0sCm1UID0gewppbnRlbCA9IHsKYWN0aW9uQSA9IHsKInByZXBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wZXRzYy9tZi9Db21waWxlci9pbnRlbC8xMy4xXCIpIiwKfSwKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BldHNjL21mL0NvcmUvaW50ZWwvMTMuMS5sdWEiLApmdWxsTmFtZSA9ICJpbnRlbC8xMy4xIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwK;
+export _ModuleTable001_;
+_ModuleTable002_=c3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJpbnRlbCIsCndWID0gIjAwMDAwMDAxMy4wMDAwMDAwMDEuKnpmaW5hbCIsCn0sCm12YXBpY2gyID0gewphY3Rpb25BID0gewoicHJlcGVuZF9wYXRoKFwiTU9EVUxFUEFUSFwiLFwiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BldHNjL21mL01QSS9pbnRlbC8xMy4xL212YXBpY2gyLzEuOVwiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wZXRzYy9tZi9Db21waWxlci9pbnRlbC8xMy4xL212YXBpY2gyLzEuOS5sdWEiLApmdWxsTmFtZSA9ICJtdmFwaWNoMi8xLjkiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0g;
+export _ModuleTable002_;
+_ModuleTable003_=ImFjdGl2ZSIsCnVzZXJOYW1lID0gIm12YXBpY2gyIiwKd1YgPSAiMDAwMDAwMDAxLjAwMDAwMDAwOS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BldHNjL21mL01QSS9pbnRlbC8xMy4xL212YXBpY2gyLzEuOSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcGV0c2MvbWYvQ29tcGlsZXIvaW50ZWwvMTMuMSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcGV0c2MvbWYvQ29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcGV0c2MvbWYvQ29yZSIsCn0K;
+export _ModuleTable003_;
+_ModuleTable_Sz_=3;
+export _ModuleTable_Sz_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/petsc/mf/MPI/intel/13.1/mvapich2/1.9:/Users/mcawood/Lmod/Lmod/rt/petsc/mf/Compiler/intel/13.1:/Users/mcawood/Lmod/Lmod/rt/petsc/mf/Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpNUEkgPSAibXZhcGljaDIiLApjb21waWxlciA9ICJpbnRlbCIsCn0sCm1UID0gewppbnRlbCA9IHsKYWN0aW9uQSA9IHsKInByZXBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wZXRzYy9tZi9Db21waWxlci9pbnRlbC8xMy4xXCIpIiwKfSwKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BldHNjL21mL0NvcmUvaW50ZWwvMTMuMS5sdWEiLApmdWxsTmFtZSA9ICJpbnRlbC8xMy4xIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwK;
+export _ModuleTable001_;
+_ModuleTable002_=c3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJpbnRlbCIsCndWID0gIjAwMDAwMDAxMy4wMDAwMDAwMDEuKnpmaW5hbCIsCn0sCm12YXBpY2gyID0gewphY3Rpb25BID0gewoicHJlcGVuZF9wYXRoKFwiTU9EVUxFUEFUSFwiLFwiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BldHNjL21mL01QSS9pbnRlbC8xMy4xL212YXBpY2gyLzEuOVwiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wZXRzYy9tZi9Db21waWxlci9pbnRlbC8xMy4xL212YXBpY2gyLzEuOS5sdWEiLApmdWxsTmFtZSA9ICJtdmFwaWNoMi8xLjkiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0g;
+export _ModuleTable002_;
+_ModuleTable003_=ImFjdGl2ZSIsCnVzZXJOYW1lID0gIm12YXBpY2gyIiwKd1YgPSAiMDAwMDAwMDAxLjAwMDAwMDAwOS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BldHNjL21mL01QSS9pbnRlbC8xMy4xL212YXBpY2gyLzEuOSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcGV0c2MvbWYvQ29tcGlsZXIvaW50ZWwvMTMuMSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcGV0c2MvbWYvQ29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcGV0c2MvbWYvQ29yZSIsCn0K;
+export _ModuleTable003_;
+_ModuleTable_Sz_=3;
+export _ModuleTable_Sz_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/petsc/mf/MPI/intel/13.1/mvapich2/1.9:/Users/mcawood/Lmod/Lmod/rt/petsc/mf/Compiler/intel/13.1:/Users/mcawood/Lmod/Lmod/rt/petsc/mf/Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpNUEkgPSAibXZhcGljaDIiLApjb21waWxlciA9ICJpbnRlbCIsCn0sCm1UID0gewppbnRlbCA9IHsKYWN0aW9uQSA9IHsKInByZXBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wZXRzYy9tZi9Db21waWxlci9pbnRlbC8xMy4xXCIpIiwKfSwKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BldHNjL21mL0NvcmUvaW50ZWwvMTMuMS5sdWEiLApmdWxsTmFtZSA9ICJpbnRlbC8xMy4xIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwK;
+export _ModuleTable001_;
+_ModuleTable002_=c3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJpbnRlbCIsCndWID0gIjAwMDAwMDAxMy4wMDAwMDAwMDEuKnpmaW5hbCIsCn0sCm12YXBpY2gyID0gewphY3Rpb25BID0gewoicHJlcGVuZF9wYXRoKFwiTU9EVUxFUEFUSFwiLFwiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BldHNjL21mL01QSS9pbnRlbC8xMy4xL212YXBpY2gyLzEuOVwiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wZXRzYy9tZi9Db21waWxlci9pbnRlbC8xMy4xL212YXBpY2gyLzEuOS5sdWEiLApmdWxsTmFtZSA9ICJtdmFwaWNoMi8xLjkiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0g;
+export _ModuleTable002_;
+_ModuleTable003_=ImFjdGl2ZSIsCnVzZXJOYW1lID0gIm12YXBpY2gyIiwKd1YgPSAiMDAwMDAwMDAxLjAwMDAwMDAwOS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BldHNjL21mL01QSS9pbnRlbC8xMy4xL212YXBpY2gyLzEuOSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcGV0c2MvbWYvQ29tcGlsZXIvaW50ZWwvMTMuMSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcGV0c2MvbWYvQ29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcGV0c2MvbWYvQ29yZSIsCn0K;
+export _ModuleTable003_;
+_ModuleTable_Sz_=3;
+export _ModuleTable_Sz_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider pet
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/petsc/mf/MPI/intel/13.1/mvapich2/1.9:/Users/mcawood/Lmod/Lmod/rt/petsc/mf/Compiler/intel/13.1:/Users/mcawood/Lmod/Lmod/rt/petsc/mf/Core;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpNUEkgPSAibXZhcGljaDIiLApjb21waWxlciA9ICJpbnRlbCIsCn0sCm1UID0gewppbnRlbCA9IHsKYWN0aW9uQSA9IHsKInByZXBlbmRfcGF0aChcIk1PRFVMRVBBVEhcIixcIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wZXRzYy9tZi9Db21waWxlci9pbnRlbC8xMy4xXCIpIiwKfSwKZm4gPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BldHNjL21mL0NvcmUvaW50ZWwvMTMuMS5sdWEiLApmdWxsTmFtZSA9ICJpbnRlbC8xMy4xIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwK;
+export _ModuleTable001_;
+_ModuleTable002_=c3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJpbnRlbCIsCndWID0gIjAwMDAwMDAxMy4wMDAwMDAwMDEuKnpmaW5hbCIsCn0sCm12YXBpY2gyID0gewphY3Rpb25BID0gewoicHJlcGVuZF9wYXRoKFwiTU9EVUxFUEFUSFwiLFwiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BldHNjL21mL01QSS9pbnRlbC8xMy4xL212YXBpY2gyLzEuOVwiKSIsCn0sCmZuID0gIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9wZXRzYy9tZi9Db21waWxlci9pbnRlbC8xMy4xL212YXBpY2gyLzEuOS5sdWEiLApmdWxsTmFtZSA9ICJtdmFwaWNoMi8xLjkiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0g;
+export _ModuleTable002_;
+_ModuleTable003_=ImFjdGl2ZSIsCnVzZXJOYW1lID0gIm12YXBpY2gyIiwKd1YgPSAiMDAwMDAwMDAxLjAwMDAwMDAwOS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L3BldHNjL21mL01QSS9pbnRlbC8xMy4xL212YXBpY2gyLzEuOSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcGV0c2MvbWYvQ29tcGlsZXIvaW50ZWwvMTMuMSIsICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcGV0c2MvbWYvQ29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvcGV0c2MvbWYvQ29yZSIsCn0K;
+export _ModuleTable003_;
+_ModuleTable_Sz_=3;
+export _ModuleTable_Sz_;

@@ -1,0 +1,8 @@
+Lmod has detected the following error: Unable to load module because of error when evaluating modulefile:
+     /Users/mcawood/Lmod/Lmod/rt/between/mf/Core/M9.lua: /Users/mcawood/Lmod/Lmod/src/MN_Latest.lua:55: invalid value (boolean) at index 3 in table for 'concat'
+     Please check the modulefile and especially if there is a line number specified in the above message 
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    M9               /Users/mcawood/Lmod/Lmod/rt/between/mf/Core/M9.lua
+

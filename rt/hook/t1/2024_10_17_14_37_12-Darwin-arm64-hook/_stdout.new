@@ -1,0 +1,122 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use -a /Users/mcawood/Lmod/Lmod/rt/hook/mf/Core
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core",},}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load admin intel
+===========================
+ADMIN_MODULE_LOADED=1;
+export ADMIN_MODULE_LOADED;
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/vol/local/intel/mkl/mkl/lib/lib:1\;/vol/local/intel/idb/idb/lib:1\;/vol/local/intel/fc/fc/lib:1\;/vol/local/intel/cc/cc/lib:1;
+export __LMOD_REF_COUNT_LD_LIBRARY_PATH;
+LD_LIBRARY_PATH=/vol/local/intel/mkl/mkl/lib/lib:/vol/local/intel/idb/idb/lib:/vol/local/intel/fc/fc/lib:/vol/local/intel/cc/cc/lib;
+export LD_LIBRARY_PATH;
+LMOD_FAMILY_COMPILER=intel;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=intel;
+export LMOD_FAMILY_COMPILER_VERSION;
+LOADEDMODULES=admin/admin-1.0:intel/intel;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MANPATH=/vol/local/intel/mkl/mkl/man:1\;/vol/local/intel/idb/idb/man:1\;/vol/local/intel/fc/fc/man:1\;/vol/local/intel/cc/cc/man:1;
+export __LMOD_REF_COUNT_MANPATH;
+MANPATH=/vol/local/intel/mkl/mkl/man:/vol/local/intel/idb/idb/man:/vol/local/intel/fc/fc/man:/vol/local/intel/cc/cc/man;
+export MANPATH;
+MKL_DIR=/vol/local/intel/mkl/mkl/lib/lib;
+export MKL_DIR;
+MKL_INCLUDE=/vol/local/intel/mkl/mkl/include;
+export MKL_INCLUDE;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hook/mf/Compiler/intel/10.1:1\;/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hook/mf/Compiler/intel/10.1:/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core;
+export MODULEPATH;
+__LMOD_REF_COUNT_PATH=/vol/local/intel/idb/idb/bin:1\;/vol/local/intel/fc/fc/bin:1\;/vol/local/intel/cc/cc/bin:1\;/usr/sbin:1\;/sbin:1\;/Users/mcawood/Lmod/Lmod/proj_mgmt:1\;/Users/mcawood/Lmod/Hermes/bin:1\;/opt/homebrew/bin:1\;/usr/bin:1\;/bin:1;
+export __LMOD_REF_COUNT_PATH;
+PATH=/vol/local/intel/idb/idb/bin:/vol/local/intel/fc/fc/bin:/vol/local/intel/cc/cc/bin:/usr/sbin:/sbin:/Users/mcawood/Lmod/Lmod/proj_mgmt:/Users/mcawood/Lmod/Hermes/bin:/opt/homebrew/bin:/usr/bin:/bin;
+export PATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core/admin/admin-1.0.lua:/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core/intel/intel.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={compiler="intel",},mT={admin={fn="/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core/admin/admin-1.0.lua",fullName="admin/admin-1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="admin",wV="^admin.*zfinal-.000000001.*zfinal",},intel={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hook/mf/Compiler/intel/10.1\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core/intel/intel.lua",fullName="intel/intel",loadOrder=2,propT={},stackDepth=0,status="active",userName="intel",wV="*intel.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hook/mf/Compiler/intel/10.1","/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core",},}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load admin intel
+===========================
+ADMIN_MODULE_LOADED=1;
+export ADMIN_MODULE_LOADED;
+LD_LIBRARY_PATH=/vol/local/intel/mkl/mkl/lib/lib:/vol/local/intel/idb/idb/lib:/vol/local/intel/fc/fc/lib:/vol/local/intel/cc/cc/lib;
+export LD_LIBRARY_PATH;
+LMOD_FAMILY_COMPILER=intel;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=intel;
+export LMOD_FAMILY_COMPILER_VERSION;
+MANPATH=/vol/local/intel/mkl/mkl/man:/vol/local/intel/idb/idb/man:/vol/local/intel/fc/fc/man:/vol/local/intel/cc/cc/man;
+export MANPATH;
+MKL_DIR=/vol/local/intel/mkl/mkl/lib/lib;
+export MKL_DIR;
+MKL_INCLUDE=/vol/local/intel/mkl/mkl/include;
+export MKL_INCLUDE;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hook/mf/Compiler/intel/10.1:/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core;
+export MODULEPATH;
+PATH=/vol/local/intel/idb/idb/bin:/vol/local/intel/fc/fc/bin:/vol/local/intel/cc/cc/bin:/usr/sbin:/sbin:/Users/mcawood/Lmod/Lmod/proj_mgmt:/Users/mcawood/Lmod/Hermes/bin:/opt/homebrew/bin:/usr/bin:/bin;
+export PATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={compiler="intel",},mT={admin={fn="/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core/admin/admin-1.0.lua",fullName="admin/admin-1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="admin",wV="^admin.*zfinal-.000000001.*zfinal",},intel={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hook/mf/Compiler/intel/10.1\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core/intel/intel.lua",fullName="intel/intel",loadOrder=2,propT={},stackDepth=0,status="active",userName="intel",wV="*intel.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hook/mf/Compiler/intel/10.1","/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core",},}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load admin intel
+===========================
+ADMIN_MODULE_LOADED=1;
+export ADMIN_MODULE_LOADED;
+LD_LIBRARY_PATH=/vol/local/intel/mkl/mkl/lib/lib:/vol/local/intel/idb/idb/lib:/vol/local/intel/fc/fc/lib:/vol/local/intel/cc/cc/lib;
+export LD_LIBRARY_PATH;
+LMOD_FAMILY_COMPILER=intel;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=intel;
+export LMOD_FAMILY_COMPILER_VERSION;
+MANPATH=/vol/local/intel/mkl/mkl/man:/vol/local/intel/idb/idb/man:/vol/local/intel/fc/fc/man:/vol/local/intel/cc/cc/man;
+export MANPATH;
+MKL_DIR=/vol/local/intel/mkl/mkl/lib/lib;
+export MKL_DIR;
+MKL_INCLUDE=/vol/local/intel/mkl/mkl/include;
+export MKL_INCLUDE;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hook/mf/Compiler/intel/10.1:/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core;
+export MODULEPATH;
+PATH=/vol/local/intel/idb/idb/bin:/vol/local/intel/fc/fc/bin:/vol/local/intel/cc/cc/bin:/usr/sbin:/sbin:/Users/mcawood/Lmod/Lmod/proj_mgmt:/Users/mcawood/Lmod/Hermes/bin:/opt/homebrew/bin:/usr/bin:/bin;
+export PATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={compiler="intel",},mT={admin={fn="/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core/admin/admin-1.0.lua",fullName="admin/admin-1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="admin",wV="^admin.*zfinal-.000000001.*zfinal",},intel={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hook/mf/Compiler/intel/10.1\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core/intel/intel.lua",fullName="intel/intel",loadOrder=2,propT={},stackDepth=0,status="active",userName="intel",wV="*intel.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hook/mf/Compiler/intel/10.1","/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core",},}';
+export _ModuleTable_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load admin intel
+===========================
+ADMIN_MODULE_LOADED=1;
+export ADMIN_MODULE_LOADED;
+LD_LIBRARY_PATH=/vol/local/intel/mkl/mkl/lib/lib:/vol/local/intel/idb/idb/lib:/vol/local/intel/fc/fc/lib:/vol/local/intel/cc/cc/lib;
+export LD_LIBRARY_PATH;
+LMOD_FAMILY_COMPILER=intel;
+export LMOD_FAMILY_COMPILER;
+LMOD_FAMILY_COMPILER_VERSION=intel;
+export LMOD_FAMILY_COMPILER_VERSION;
+MANPATH=/vol/local/intel/mkl/mkl/man:/vol/local/intel/idb/idb/man:/vol/local/intel/fc/fc/man:/vol/local/intel/cc/cc/man;
+export MANPATH;
+MKL_DIR=/vol/local/intel/mkl/mkl/lib/lib;
+export MKL_DIR;
+MKL_INCLUDE=/vol/local/intel/mkl/mkl/include;
+export MKL_INCLUDE;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/hook/mf/Compiler/intel/10.1:/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core;
+export MODULEPATH;
+PATH=/vol/local/intel/idb/idb/bin:/vol/local/intel/fc/fc/bin:/vol/local/intel/cc/cc/bin:/usr/sbin:/sbin:/Users/mcawood/Lmod/Lmod/proj_mgmt:/Users/mcawood/Lmod/Hermes/bin:/opt/homebrew/bin:/usr/bin:/bin;
+export PATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={compiler="intel",},mT={admin={fn="/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core/admin/admin-1.0.lua",fullName="admin/admin-1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="admin",wV="^admin.*zfinal-.000000001.*zfinal",},intel={actionA={"prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/hook/mf/Compiler/intel/10.1\")",},fn="/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core/intel/intel.lua",fullName="intel/intel",loadOrder=2,propT={},stackDepth=0,status="active",userName="intel",wV="*intel.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/hook/mf/Compiler/intel/10.1","/Users/mcawood/Lmod/Lmod/rt/hook/mf/Core",},}';
+export _ModuleTable_;

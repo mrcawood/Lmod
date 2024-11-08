@@ -1,0 +1,79 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+resultFn="/Users/mcawood/Lmod/Lmod/rt/cmake/t1/2024_10_17_14_37_12-Darwin-arm64-cmake/t1.result"; export resultFn
+testName="cmake"; export testName
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/cmake/cmake.tdesc"; export testdescriptFn
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/cmake/t1/2024_10_17_14_37_12-Darwin-arm64-cmake/t1.runtime"; export runtimeFn
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/cmake/t1/2024_10_17_14_37_12-Darwin-arm64-cmake/results.lua"; export cmdResultFn
+packageName="rt"; export packageName
+target=""; export target
+messageFn="/Users/mcawood/Lmod/Lmod/rt/cmake/t1/2024_10_17_14_37_12-Darwin-arm64-cmake/message.lua"; export messageFn
+tag="2024_10_17"; export tag
+testDir="/Users/mcawood/Lmod/Lmod/rt/cmake"; export testDir
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+outputDir="/Users/mcawood/Lmod/Lmod/rt/cmake/t1/2024_10_17_14_37_12-Darwin-arm64-cmake"; export outputDir
+TARGET=""; export TARGET
+idTag="t1"; export idTag
+CMAKE="/opt/homebrew/bin/cmake"
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/cmake/mf;       export MODULEPATH_ROOT
+     MODULEPATH="$MODULEPATH_ROOT/Core";  export MODULEPATH
+
+     rm -rf init .cache .config
+     mkdir init
+     sed -e 's|@PKG@/libexec/lmod|lua;/Users/mcawood/Lmod/Lmod/src/lmod.in.lua|g' \
+              < /Users/mcawood/Lmod/Lmod/init/cmake > init/cmake
+
+cat > cmake.cmake << EOF
+include("/Users/mcawood/Lmod/Lmod/rt/cmake/t1/2024_10_17_14_37_12-Darwin-arm64-cmake/init/cmake")
+
+module_avail(AVAIL_MODS)
+message("AVAIL_MODS: \${AVAIL_MODS}")
+
+module_list(CURRENT_MODS)
+message("CURRENT_MODS: \${CURRENT_MODS}")
+message("ENV{FOO}: \$ENV{FOO}")
+message("ENV{BAR}: \$ENV{BAR}")
+
+module(load foo)
+
+module_list(CURRENT_MODS)
+message("CURRENT_MODS: \${CURRENT_MODS}")
+message("ENV{FOO}: \$ENV{FOO}")
+message("ENV{BAR}: \$ENV{BAR}")
+
+module_swap(foo foo/1.0)
+
+module_list(CURRENT_MODS)
+message("CURRENT_MODS: \${CURRENT_MODS}")
+message("ENV{FOO}: \$ENV{FOO}")
+message("ENV{BAR}: \$ENV{BAR}")
+
+module(swap foo bar)
+
+module_list(CURRENT_MODS)
+message("CURRENT_MODS: \${CURRENT_MODS}")
+message("ENV{FOO}: \$ENV{FOO}")
+message("ENV{BAR}: \$ENV{BAR}")
+
+module(load bad)
+
+EOF
+
+     remove_generated_lmod_files results.csv
+
+     $CMAKE -P ./cmake.cmake  > _stdout.000 2> _stderr.000
+
+     HOME=$ORIG_HOME
+
+     cleanUp _stdout.000 out.txt
+     cleanUp _stderr.000 err.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/cmake/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/cmake/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/cmake/t1/2024_10_17_14_37_12-Darwin-arm64-cmake/t1.result -t /Users/mcawood/Lmod/Lmod/rt/cmake/t1/2024_10_17_14_37_12-Darwin-arm64-cmake/t1.runtime results.csv
+   

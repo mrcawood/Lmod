@@ -1,0 +1,230 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+
+Modules based on Lua: Version 8.7.43 2024-06-24 15:50 -06:00
+    by Robert McLay mclay@tacc.utexas.edu
+
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load python
+===========================
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) python/2.7.9
+
+ 
+
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load gcc boost
+===========================
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) python/2.7.9
+
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) gcc/6.1   2) boost/1.59.0   3) python/2.7.9
+
+ 
+
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload gcc
+===========================
+
+Inactive Modules:
+  1) boost
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) python/2.7.9
+
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) python/2.7.9
+
+Inactive Modules:
+  1) boost
+
+ 
+
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing unload boost
+===========================
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load gcc impi petsc
+===========================
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) python/2.7.9
+
+===========================
+step 10
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- /Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   petsc/3.7 (L)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- /Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   boost/1.59.0    impi/17.0.3 (L)    python/2.7.9 (L,D)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- /Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   gcc/6.1 (L)    intel/17.0.4    python/2.7.9
+
+  Where:
+   D:  Default Module
+   L:  Module is loaded
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the default modules.
+"module overview" or "ml ov" to display the number of modules for each name.
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
+
+
+===========================
+step 11
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load intel petsc
+===========================
+
+Lmod is automatically replacing "gcc/6.1" with "intel/17.0.4".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) impi/17.0.3     2) petsc/3.7     3) python/2.7.9
+
+===========================
+step 12
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- /Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/intel/17.0/impi/17.0 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   petsc/3.7 (L)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ /Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/intel/17.0 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   impi/17.0.3 (L)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- /Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   gcc/6.1    intel/17.0.4 (L)    python/2.7.9 (L)
+
+  Where:
+   L:  Module is loaded
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the default modules.
+"module overview" or "ml ov" to display the number of modules for each name.
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
+
+
+===========================
+step 13
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+===========================
+step 14
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load gcc impi petsc
+===========================
+===========================
+step 15
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T rm impi gcc
+===========================
+  Lmod version: 8.7.43 2024-06-24 15:50 -06:00
+running: module --regression_testing -T rm impi gcc
+  (1)(0)Unloading: impi (status: active) (fn: /Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/impi/17.0.3.lua)
+    Removing: /Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0 from MODULEPATH
+  (2)(0)Unloading: gcc (status: active) (fn: /Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/gcc/6.1.lua)
+    Removing: /Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1 from MODULEPATH
+  reloadAll(1)(petsc)
+  (3)(1)Unloading: petsc (status: active) (fn: /Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0/petsc/3.7.lua)
+
+Inactive Modules:
+  1) petsc
+
+===========================
+step 16
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  None found.
+Inactive Modules:
+  1) petsc
+
+ 
+
+===========================
+step 17
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+===========================
+step 18
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load gcc impi petsc
+===========================
+===========================
+step 19
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing -T rm gcc impi
+===========================
+  Lmod version: 8.7.43 2024-06-24 15:50 -06:00
+running: module --regression_testing -T rm gcc impi
+  (1)(0)Unloading: gcc (status: active) (fn: /Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Core/gcc/6.1.lua)
+    Removing: /Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1 from MODULEPATH
+  (2)(0)Unloading: impi (status: active) (fn: /Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/Compiler/gcc/6.1/impi/17.0.3.lua)
+    Removing: /Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0 from MODULEPATH
+  reloadAll(1)(petsc)
+  (3)(1)Unloading: petsc (status: active) (fn: /Users/mcawood/Lmod/Lmod/rt/hierarchy/mf/MPI/gcc/6.1/impi/17.0/petsc/3.7.lua)
+
+Inactive Modules:
+  1) petsc
+
+===========================
+step 20
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  None found.
+Inactive Modules:
+  1) petsc
+
+ 
+
+===========================
+step 21
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+===========================
+step 22
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load Default
+===========================
+===========================
+step 23
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+
+Currently Loaded Modules:
+  1) moduleA   2) moduleB   3) Default
+
+ 
+

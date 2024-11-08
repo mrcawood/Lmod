@@ -1,0 +1,49 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/proj_mgmt/jsonLoadConversion load.json
+===========================
+loadTbl = {
+  _mlstatus = true,
+  alias = {},
+  env = {
+    A = "A",
+    LOADEDMODULES = "A/1.0",
+    MODULEPATH = "/Users/mcawood/Lmod/Lmod/rt/jsonShell/mf/Core",
+    MT = [[_ModuleTable_ = {
+MTversion = 3,
+c_rebuildTime = false,
+c_shortTime = false,
+depthT = {},
+family = {},
+mT = {
+A = {
+fn = "/Users/mcawood/Lmod/Lmod/rt/jsonShell/mf/Core/A/1.0.lua",
+fullName = "A/1.0",
+loadOrder = 1,
+propT = {},
+stackDepth = 0,
+status = "active",
+userName = "A",
+wV = "000000001.*zfinal",
+},
+},
+mpathA = {
+"/Users/mcawood/Lmod/Lmod/rt/jsonShell/mf/Core",
+},
+systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/jsonShell/mf/Core",
+}
+]],
+    MY_PATH = "/path/to/nowhere",
+    _LMFILES_ = "/Users/mcawood/Lmod/Lmod/rt/jsonShell/mf/Core/A/1.0.lua",
+  },
+  shellFunc = {
+    ml = {
+      "eval $($LMOD_DIR/ml_cmd \"$@\")", "eval `$LMOD_DIR/ml_cmd $*`",
+    },
+  },
+  unset = {},
+}

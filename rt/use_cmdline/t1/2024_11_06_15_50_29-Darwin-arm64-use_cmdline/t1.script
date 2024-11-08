@@ -1,0 +1,46 @@
+#!/bin/bash
+# -*- shell-script -*-
+
+packageDir="/Users/mcawood/Lmod/Lmod/rt"; export packageDir
+testDir="/Users/mcawood/Lmod/Lmod/rt/use_cmdline"; export testDir
+messageFn="/Users/mcawood/Lmod/Lmod/rt/use_cmdline/t1/2024_11_06_15_50_29-Darwin-arm64-use_cmdline/message.lua"; export messageFn
+projectDir="/Users/mcawood/Lmod/Lmod"; export projectDir
+tag="2024_11_06"; export tag
+target=""; export target
+testdescriptFn="/Users/mcawood/Lmod/Lmod/rt/use_cmdline/use_cmdline.tdesc"; export testdescriptFn
+TARGET=""; export TARGET
+cmdResultFn="/Users/mcawood/Lmod/Lmod/rt/use_cmdline/t1/2024_11_06_15_50_29-Darwin-arm64-use_cmdline/results.lua"; export cmdResultFn
+packageName="rt"; export packageName
+resultFn="/Users/mcawood/Lmod/Lmod/rt/use_cmdline/t1/2024_11_06_15_50_29-Darwin-arm64-use_cmdline/t1.result"; export resultFn
+testName="use_cmdline"; export testName
+idTag="t1"; export idTag
+outputDir="/Users/mcawood/Lmod/Lmod/rt/use_cmdline/t1/2024_11_06_15_50_29-Darwin-arm64-use_cmdline"; export outputDir
+runtimeFn="/Users/mcawood/Lmod/Lmod/rt/use_cmdline/t1/2024_11_06_15_50_29-Darwin-arm64-use_cmdline/t1.runtime"; export runtimeFn
+
+     . /Users/mcawood/Lmod/Lmod/rt/common_funcs.sh
+
+     unsetMT
+     initStdEnvVars
+     MODULEPATH_ROOT=/Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf;  export MODULEPATH_ROOT
+     MODULEPATH=$MODULEPATH_ROOT/Core; export MODULEPATH
+
+     remove_generated_lmod_files mf
+
+     runLmod load a                     # 1
+     runLmod load use                   # 2
+     runLmod use /Users/mcawood/Lmod/Lmod/rt/use_cmdline/mf/C2       # 3
+     runLmod list                       # 4
+
+     HOME=$ORIG_HOME
+     cat _stdout.[0-9][0-9][0-9] > _stdout.orig
+     joinBase64Results  -bash  _stdout.orig _stdout.new
+     cleanUp _stdout.new out.txt
+
+     cat _stderr.[0-9][0-9][0-9] > _stderr.orig
+     cleanUp _stderr.orig err.txt
+
+     rm -f results.csv
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/use_cmdline/out.txt out.txt
+     wrapperDiff --csv results.csv /Users/mcawood/Lmod/Lmod/rt/use_cmdline/err.txt err.txt
+     testFinish -r /Users/mcawood/Lmod/Lmod/rt/use_cmdline/t1/2024_11_06_15_50_29-Darwin-arm64-use_cmdline/t1.result -t /Users/mcawood/Lmod/Lmod/rt/use_cmdline/t1/2024_11_06_15_50_29-Darwin-arm64-use_cmdline/t1.runtime results.csv
+   

@@ -1,0 +1,95 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load B C
+===========================
+B=1.0;
+export B;
+C=2.0;
+export C;
+LOADEDMODULES=B/1.0:C/2.0;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core/B/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core/C/2.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={B={fn="/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core/B/1.0.lua",fullName="B/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="B",wV="000000001.*zfinal",},C={fn="/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core/C/2.0.lua",fullName="C/2.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="C",wV="000000002.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load A
+===========================
+false
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+unset B;
+unset C;
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core;
+export MODULEPATH;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load B
+===========================
+B=1.0;
+export B;
+LOADEDMODULES=B/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core/B/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={B={fn="/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core/B/1.0.lua",fullName="B/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="B",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 6
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load A
+===========================
+false
+===========================
+step 7
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing purge
+===========================
+unset B;
+unset LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core;
+export MODULEPATH;
+unset _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={},mpathA={"/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 8
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load miniconda
+===========================
+LOADEDMODULES=miniconda/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core/miniconda/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={miniconda={fn="/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core/miniconda/1.0.lua",fullName="miniconda/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="miniconda",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core",}';
+export _ModuleTable_;
+miniconda=1.0;
+export miniconda;
+===========================
+step 9
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load A
+===========================
+LOADEDMODULES=miniconda/1.0:A/1.0;
+export LOADEDMODULES;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core/miniconda/1.0.lua:/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core/A/1.0.lua;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={A={fn="/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core/A/1.0.lua",fullName="A/1.0",loadOrder=2,propT={},stackDepth=0,status="active",userName="A",wV="000000001.*zfinal",},miniconda={fn="/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core/miniconda/1.0.lua",fullName="miniconda/1.0",loadOrder=1,propT={},stackDepth=0,status="active",userName="miniconda",wV="000000001.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/cnflt_except/mf/Core",}';
+export _ModuleTable_;

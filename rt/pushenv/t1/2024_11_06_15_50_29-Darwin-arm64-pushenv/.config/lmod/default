@@ -1,0 +1,45 @@
+-- -*- lua -*-
+-- created: Wed Nov  6 15:52:16 2024 --
+-- Lmod 8.7.43 2024-06-24 15:50 -06:00
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {
+    intel = {
+      actionA = {
+        "prepend_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/pushenv/mf/Compiler/intel/13.0\")",
+      },
+      fn = "/Users/mcawood/Lmod/Lmod/rt/pushenv/mf/Core/intel/13.0.lua",
+      fullName = "intel/13.0",
+      hash = "f9b3a46c25d9822f9804d9189654388c3bb9a3ed",
+      loadOrder = 1,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "intel",
+      wV = "000000013.*zfinal",
+    },
+    mpich = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/pushenv/mf/Compiler/intel/13.0/mpich/3.0.lua",
+      fullName = "mpich/3.0",
+      hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      loadOrder = 2,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "mpich",
+      wV = "000000003.*zfinal",
+    },
+  },
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/pushenv/mf/Compiler/intel/13.0", "/Users/mcawood/Lmod/Lmod/rt/pushenv/mf/Core",
+  },
+  mpathRefCountT = {
+    ["/Users/mcawood/Lmod/Lmod/rt/pushenv/mf/Compiler/intel/13.0"] = 1,
+    ["/Users/mcawood/Lmod/Lmod/rt/pushenv/mf/Core"] = 1,
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/pushenv/mf/Core",
+}

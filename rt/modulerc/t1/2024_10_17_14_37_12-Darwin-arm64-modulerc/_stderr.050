@@ -1,0 +1,5 @@
+The default cluster module cannot be determined. Please set $VSC_DEFAULT_CLUSTER_MODULE.
+Lmod has detected the following error: Unable to parse: "/Users/mcawood/Lmod/Lmod/rt/modulerc/mf3/Core/cluster/.modulerc". Aborting!
+
+
+

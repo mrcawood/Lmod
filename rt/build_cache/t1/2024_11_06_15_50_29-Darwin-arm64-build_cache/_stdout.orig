@@ -1,0 +1,48 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9idWlsZF9jYWNoZS9tZi9Db21tb24iLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2J1aWxkX2NhY2hlL21mL0NvbW1vbiIsCn0K;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing use broken_mf
+===========================
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/build_cache/t1/2024_11_06_15_50_29-Darwin-arm64-build_cache/broken_mf:1\;/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/build_cache/t1/2024_11_06_15_50_29-Darwin-arm64-build_cache/broken_mf:/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9idWlsZF9jYWNoZS90MS8yMDI0XzExXzA2XzE1XzUwXzI5LURhcndpbi1hcm02NC1idWlsZF9jYWNoZS9icm9rZW5fbWYiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2J1aWxkX2NhY2hlL21mL0NvbW1vbiIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvYnVpbGRfY2FjaGUvbWYvQ29tbW9uIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing spider
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/build_cache/t1/2024_11_06_15_50_29-Darwin-arm64-build_cache/broken_mf:/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9idWlsZF9jYWNoZS90MS8yMDI0XzExXzA2XzE1XzUwXzI5LURhcndpbi1hcm02NC1idWlsZF9jYWNoZS9icm9rZW5fbWYiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2J1aWxkX2NhY2hlL21mL0NvbW1vbiIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvYnVpbGRfY2FjaGUvbWYvQ29tbW9uIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;
+===========================
+step 5
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing avail
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/build_cache/t1/2024_11_06_15_50_29-Darwin-arm64-build_cache/broken_mf:/Users/mcawood/Lmod/Lmod/rt/build_cache/mf/Common;
+export MODULEPATH;
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0ge30sCm1wYXRoQSA9IHsKIi9Vc2Vycy9tY2F3b29kL0xtb2QvTG1vZC9ydC9idWlsZF9jYWNoZS90MS8yMDI0XzExXzA2XzE1XzUwXzI5LURhcndpbi1hcm02NC1idWlsZF9jYWNoZS9icm9rZW5fbWYiLCAiL1VzZXJzL21jYXdvb2QvTG1vZC9MbW9kL3J0L2J1aWxkX2NhY2hlL21mL0NvbW1vbiIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvVXNlcnMvbWNhd29vZC9MbW9kL0xtb2QvcnQvYnVpbGRfY2FjaGUvbWYvQ29tbW9uIiwKfQo=;
+export _ModuleTable001_;
+_ModuleTable_Sz_=1;
+export _ModuleTable_Sz_;

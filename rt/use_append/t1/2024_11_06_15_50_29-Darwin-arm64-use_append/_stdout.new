@@ -1,0 +1,34 @@
+===========================
+step 1
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing --version
+===========================
+===========================
+step 2
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing load append
+===========================
+LOADEDMODULES=append;
+export LOADEDMODULES;
+__LMOD_REF_COUNT_MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Core:1\;/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append:1\;/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append2:1;
+export __LMOD_REF_COUNT_MODULEPATH;
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Core:/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append:/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append2;
+export MODULEPATH;
+_LMFILES_=/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Core/append;
+export _LMFILES_;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={append={actionA={"append_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append\")","append_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append2\")",},fn="/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Core/append",fullName="append",loadOrder=1,propT={},stackDepth=0,status="active",userName="append",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Core","/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append","/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append2",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 3
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing show append
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Core:/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append:/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append2;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={append={actionA={"append_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append\")","append_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append2\")",},fn="/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Core/append",fullName="append",loadOrder=1,propT={},stackDepth=0,status="active",userName="append",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Core","/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append","/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append2",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Core",}';
+export _ModuleTable_;
+===========================
+step 4
+/opt/homebrew/bin/lua /Users/mcawood/Lmod/Lmod/src/lmod.in.lua shell --regression_testing list
+===========================
+MODULEPATH=/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Core:/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append:/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append2;
+export MODULEPATH;
+_ModuleTable_='_ModuleTable_={MTversion=3,depthT={},family={},mT={append={actionA={"append_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append\")","append_path(\"MODULEPATH\",\"/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append2\")",},fn="/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Core/append",fullName="append",loadOrder=1,propT={},stackDepth=0,status="active",userName="append",wV="M.*zfinal",},},mpathA={"/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Core","/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append","/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Append2",},systemBaseMPATH="/Users/mcawood/Lmod/Lmod/rt/use_append/mf/Core",}';
+export _ModuleTable_;

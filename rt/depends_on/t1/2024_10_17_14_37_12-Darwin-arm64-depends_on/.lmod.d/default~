@@ -1,0 +1,42 @@
+-- -*- lua -*-
+-- created: Thu Oct 17 14:37:15 2024 --
+-- Lmod 8.7.43 2024-06-24 15:50 -06:00
+_ModuleTable_ = {
+  MTversion = 3,
+  c_rebuildTime = false,
+  c_shortTime = false,
+  depthT = {},
+  family = {},
+  mT = {
+    B = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/depends_on/mf/Core/B.lua",
+      fullName = "B",
+      hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      loadOrder = 1,
+      propT = {},
+      ref_count = 1,
+      stackDepth = 1,
+      status = "active",
+      userName = "B",
+      wV = "M.*zfinal",
+    },
+    Y = {
+      fn = "/Users/mcawood/Lmod/Lmod/rt/depends_on/mf/Core/Y.lua",
+      fullName = "Y",
+      hash = "6cbfc7716ecec6441981a534f345b4ca86e546c0",
+      loadOrder = 2,
+      propT = {},
+      stackDepth = 0,
+      status = "active",
+      userName = "Y",
+      wV = "M.*zfinal",
+    },
+  },
+  mpathA = {
+    "/Users/mcawood/Lmod/Lmod/rt/depends_on/mf/Core",
+  },
+  mpathRefCountT = {
+    ["/Users/mcawood/Lmod/Lmod/rt/depends_on/mf/Core"] = 1,
+  },
+  systemBaseMPATH = "/Users/mcawood/Lmod/Lmod/rt/depends_on/mf/Core",
+}
