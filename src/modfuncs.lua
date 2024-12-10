@@ -60,6 +60,7 @@ require("parseVersion")
 require("TermWidth")
 require("declare")
 
+
 local BeautifulTbl = require("BeautifulTbl")
 local MName        = require("MName")
 local Version      = require("Version")
@@ -68,6 +69,7 @@ local hook         = require("Hook")
 local max          = math.max
 local _concatTbl   = table.concat
 local pack         = (_VERSION == "Lua 5.1") and argsPack or table.pack -- luacheck: compat
+
 
 --------------------------------------------------------------------------
 -- Special table concat function that knows about strings and numbers.
@@ -92,12 +94,36 @@ local function l_concatTbl(aa,delim)
    return _concatTbl(a, delim)
 end
 
+-- Helper function to print table contents for debugging
+local function printTable(tbl, indent)
+   indent = indent or 0
+   local formatting = string.rep("  ", indent)
+   if type(tbl) ~= "table" then
+       dbg.print{formatting .. tostring(tbl) .. "\n"}
+       return
+   end
+   for k, v in pairs(tbl) do
+       if type(v) == "table" then
+           dbg.print{formatting .. tostring(k) .. " = {\n"}
+           printTable(v, indent + 1)
+           dbg.print{formatting .. "}\n"}
+       else
+           dbg.print{formatting .. tostring(k) .. " = " .. tostring(v) .. "\n"}
+       end
+   end
+end
+
+
 --------------------------------------------------------------------------
 -- Validate a function with only string arguments.
 -- @param cmdName The command which is getting its arguments validated.
 local function l_validateStringArgs(cmdName, ...)
    local argA = pack(...)
-   for i = 1, argA.n do
+   if (argA.n == 1 and type(argA[1]) == "table") then
+      argA = argA[1]
+   end
+   local n = argA.n or #argA
+   for i = 1, n do
       local v = argA[i]
       if (type(v) ~= "string") then
          mcp:report{msg="e_Args_Not_Strings", fn = myFileName(), cmdName = cmdName}
@@ -110,20 +136,22 @@ end
 --------------------------------------------------------------------------
 -- Validate a function with only string table.
 -- @param cmdName The command which is getting its arguments validated.
-local function l_validateStringTable(n, cmdName, t)
-   n = max(n,#t)
+local function l_validateStringTable(n, cmdName, table)
+   n = max(n, #table)
    for i = 1, n do
-      local v = t[i]
+      local v = table[i]
       if (type(v) ~= "string") then
          mcp:report{msg="e_Args_Not_Strings", fn = myFileName(), cmdName = cmdName}
          return false
       end
    end
-   if (t.priority ~= nil) then
+   
+   -- Check priority if specified
+   if (table.priority ~= nil) then
       local valid = false
-      if (t.priority == 0) then
+      if (table.priority == 0) then
          valid = true
-      elseif (t.priority >= 10) then
+      elseif (table.priority >= 10) then
          valid = true
       end
 
@@ -139,18 +167,28 @@ end
 --------------------------------------------------------------------------
 -- Validate a function with only string module names table.
 -- @param cmdName The command which is getting its arguments validated.
-local function l_validateArgsWithValue(cmdName, ...)
-   local argA = pack(...)
+local function l_validateArgsWithValue(cmdName, table)
+   dbg.print{"l_validateArgsWithValue for ", cmdName, "\n"}
+   dbg.print{"table type: ", type(table), "\n"}
+   if type(table) == "table" then
+      dbg.print{"table contents: \n"}
+      for k,v in pairs(table) do
+         dbg.print{"  ", k, " = ", v, "\n"}
+      end
+   end
 
-   for i = 1, argA.n -1 do
-      local v = argA[i]
+   local n = table.n or #table
+   dbg.print{"n = ", n, "\n"}
+   
+   for i = 1, n do
+      local v = table[i]
       if (type(v) ~= "string") then
          mcp:report{msg="e_Args_Not_Strings", fn = myFileName(), cmdName = cmdName}
          return false
       end
    end
 
-   local v = argA[argA.n]
+   local v = table[n]
    if (type(v) ~= "string" and type(v) ~= "number" and type(v) ~= "boolean") then
       mcp:report{msg="e_Args_Not_Strings", fn = myFileName(), cmdName = cmdName}
       return false
@@ -161,40 +199,130 @@ end
 --------------------------------------------------------------------------
 -- Validate a function with only string module names table.
 -- @param cmdName The command which is getting its arguments validated.
-local function l_validateModules(cmdName, ...)
-   local argA = pack(...)
-   --dbg.print{"l_validateModules: cmd: ",cmdName, " argA.n: ",argA.n,"\n"}
+local function l_validateModules(cmdName, argA)
+   dbg.start{"l_validateModules(", cmdName, ", argA)"}
+   -- dbg.print{"Current context - Mode: ", mode(), ", Stack depth: ", FrameStk:singleton():stackDepth(), "\n"}
+   dbg.print{"cmdName: ", cmdName, "\n"}
+   
+   -- Debug input argument
+   dbg.print{"argA details:\n"}
+   dbg.print{"  type: ", type(argA), "\n"}
+   if type(argA) == "table" then
+      dbg.print{"  n: ", argA.n, "\n"}
+      dbg.print{"  kind: ", argA.kind, "\n"}
+      dbg.print{"  contents:\n"}
+      for k,v in pairs(argA) do
+         if type(v) == "table" then
+            dbg.print{"    ", k, " = (table)\n"}
+            dbg.print{"      mode: ", type(v.mode) == "table" and table.concat(v.mode, ",") or v.mode, "\n"}
+            for k2,v2 in pairs(v) do
+               if k2 ~= "mode" then
+                  dbg.print{"      ", k2, " = ", tostring(v2), "\n"}
+               end
+            end
+         else
+            dbg.print{"    ", k, " = ", type(v), " : ", tostring(v), "\n"}
+         end
+      end
+   end
+   
+   if (type(argA) == "table" and argA.kind == "table") then
+      dbg.print{"Converting table with kind=table to array format\n"}
+      argA = {argA[1], n=1}  -- Convert to array format
+   end
+   
    local allGood = true
-   local fn      = false
-   for i = 1, argA.n do
+   local fn = false
+   for i = 1, argA.n or #argA do
       local v = argA[i]
+      dbg.print{"Validating argument ", i, ":\n"}
+      dbg.print{"  type: ", type(v), "\n"}
+      dbg.print{"  value: ", tostring(v), "\n"}
+      if type(v) == "table" then
+         dbg.print{"  mode: ", type(v.mode) == "table" and table.concat(v.mode, ",") or v.mode, "\n"}
+      end
+      
       if (type(v) == "string") then
          allGood = true
-      elseif (type(v) == "table" and v.__waterMark == "MName") then
+      elseif (type(v) == "table") then
+         if (not v.mode) then
+            dbg.print{"  ERROR: Missing mode in table argument\n"}
+            mcp:report{msg="e_Mode_Does_Not_Exist", fn = myFileName(), cmdName = cmdName}
+         end
          allGood = true
       else
+         dbg.print{"  ERROR: Invalid argument type\n"}
          allGood = false
          fn = myFileName()
          break
       end
    end
+   
    if (not allGood) then
       mcp:report{msg="e_Args_Not_Strings", fn = myFileName(), cmdName = cmdName}
    end
+   
+   dbg.print{"Validation result: ", allGood and "PASS" or "FAIL", "\n"}
+   dbg.fini("l_validateModules")
    return allGood
 end
+
+--------------------------------------------------------------------------
+-- Check if function should execute based on specified modes
+-- @param modes table of modes or nil
+-- @return boolean true if should execute, false if should skip
+local function l_checkModes(modes)
+   if not modes then
+       return true -- No modes specified means execute in all modes
+   end
+   
+   local currentMode = mcp:mode()
+   for _, mode in ipairs(modes) do
+       if mode == currentMode then
+           return true
+       end
+   end
+   return false
+end
+
 
 --------------------------------------------------------------------------
 --  The load function.  It can be found in the following forms:
 -- "load('name'); load('name/1.2'); load(atleast('name','3.2'))",
 function load_module(...)
-   dbg.start{"load_module(",l_concatTbl({...},", "),")"}
-   if (not l_validateModules("load",...)) then return {} end
-
-   dbg.print{"mcp:name(): ",mcp:name(),"\n"}
-   local b  = mcp:load_usr(MName:buildA(mcp:MNameType(), ...))
-   dbg.fini("load_module")
-   return b
+    dbg.start{"load_module(", l_concatTbl({...}, ", "), ")"}
+    
+    local mcp_old = mcp
+    mcp, table = list_2_Tbl(MCP, mcp, ...)
+    if not mcp then
+        mcp = mcp_old
+        dbg.fini("load_module")
+        return
+    end
+    
+    if not l_validateModules("load", table) then
+        mcp = mcp_old
+        dbg.fini("load_module")
+        return
+    end
+    
+    -- Additional debug output to demonstrate MName object creation
+    dbg.print{"Building MName objects with sType=", mcp:MNameType(), " and table:\n"}
+    printTable(table)
+    
+    local mnameA = MName:buildA(mcp:MNameType(), table)
+    
+    -- Debugging MName objects after creation
+    for i, mname in ipairs(mnameA) do
+        dbg.print{"MName object [", i, "]:\n"}
+        printTable(mname)
+    end
+    
+    local b = mcp:load_usr(mnameA)
+    mcp = mcp_old
+    
+    dbg.fini("load_module")
+    return b
 end
 
 function mgrload(required, active)
@@ -250,38 +378,97 @@ local function l_cleanupPathArgs(t)
    return
 end
 
+--------------------------------------------------------------------------
+-- Convert all function arguments to table form
+-- first_elem seperated from args for type test
+function list_2_Tbl(MCP, mcp, first_elem, ...)
+   dbg.start{"list_2_Tbl(", l_concatTbl({first_elem, ...}, ", "), ")"}
+   
+   local my_mcp = nil
+   local t = {}
+   local action = false
+   local my_mode = mcp:mode()
+   
+   if type(first_elem) == "table" and first_elem.mode then
+       t = first_elem
+       t.kind = "table"
+       -- Check if current mode matches any of the specified modes
+       for _, mode in ipairs(t.mode) do
+           if my_mode == mode then
+               action = true
+               my_mcp = MCP
+               break
+           end
+       end
+   else
+       t = pack(first_elem, ...)
+       t.kind = "list"
+       my_mcp = mcp
+       action = true
+   end
+   
+   if not action then
+       my_mcp = nil
+   end
+   dbg.fini("list_2_Tbl")
+   return my_mcp, t
+end
+
 
 --------------------------------------------------------------------------
 -- Prepend a value to a path like variable.
 function prepend_path(...)
-   local t = l_convert2table(...)
-   dbg.start{"prepend_path(",l_concatTbl(t,", "),")"}
-   if (not l_validateStringTable(2, "prepend_path",t)) then return end
-
-   l_cleanupPathArgs(t)
-   if (t[2]) then mcp:prepend_path(t) end
+   local table
+   local mcp_old = mcp
+   mcp, table = list_2_Tbl(MCP, mcp, ...)
+   dbg.start{"prepend_path(",l_concatTbl(table,", "),")"}
+   if (not mcp) then
+       mcp = mcp_old
+       return
+   end
+    
+   if (not l_validateStringTable(2, "prepend_path", table)) then return end
+   l_cleanupPathArgs(table)
+   if (table[2]) then mcp:prepend_path(table) end
+   mcp = mcp_old
    dbg.fini("prepend_path")
 end
 
 --------------------------------------------------------------------------
 -- Append a value to a path like variable.
 function append_path(...)
-   local t = l_convert2table(...)
-   dbg.start{"append_path(",l_concatTbl(t,", "),")"}
-   if (not l_validateStringTable(2, "append_path",t)) then return end
-   l_cleanupPathArgs(t)
-   if (t[2]) then mcp:append_path(t) end
+   local table
+   local mcp_old = mcp
+   mcp, table = list_2_Tbl(MCP, mcp, ...)
+   dbg.start{"append_path(",l_concatTbl(table,", "),")"}
+   if (not mcp) then
+       mcp = mcp_old
+       return
+   end
+
+   if (not l_validateStringTable(2, "append_path",table)) then return end
+   l_cleanupPathArgs(table)
+   if (table[2]) then mcp:append_path(table) end
+   mcp = mcp_old
    dbg.fini("append_path")
 end
 
 --------------------------------------------------------------------------
 -- Remove a value from a path like variable.
 function remove_path(...)
-   local t = l_convert2table(...)
-   dbg.start{"remove_path(",l_concatTbl(t,", "),")"}
-   if (not l_validateStringTable(2, "remove_path",t)) then return end
-   l_cleanupPathArgs(t)
-   if (t[2]) then mcp:remove_path(t) end
+   local table
+   local mcp_old = mcp
+   mcp, table = list_2_Tbl(MCP, mcp, ...)
+   dbg.start{"remove_path(",l_concatTbl(table,", "),")"}
+   if (not mcp) then
+       mcp = mcp_old
+       return
+   end
+
+   if (not l_validateStringTable(2, "remove_path", table)) then return end
+   l_cleanupPathArgs(table)
+   if (table[2]) then mcp:remove_path(table) end
+   mcp = mcp_old
    dbg.fini("remove_path")
 end
 
@@ -291,20 +478,44 @@ end
 -- Set the value of environment variable and maintain a stack.
 function pushenv(...)
    dbg.start{"pushenv(",l_concatTbl({...},", "),")"}
-   if (not l_validateArgsWithValue("pushenv",...)) then return end
 
-   mcp:pushenv(...)
+   local table
+   local mcp_old = mcp
+   mcp, table = list_2_Tbl(MCP, mcp, ...)
+   if (not mcp) then
+       mcp = mcp_old
+       return
+   end
+
+   if (not l_validateArgsWithValue("pushenv", table)) then return end
+   mcp:pushenv(table)
+   mcp = mcp_old
    dbg.fini("pushenv")
    return
 end
+
+
 
 --------------------------------------------------------------------------
 -- Set the value of environment variable.
 function setenv(...)
    dbg.start{"setenv(",l_concatTbl({...},", "),")"}
-   if (not l_validateArgsWithValue("setenv",...)) then return end
+   dbg.print{"setenv - initial mcp type: ", type(mcp), "\n"}
 
-   mcp:setenv(...)
+   local table
+   local mcp_old = mcp
+   mcp, table = list_2_Tbl(MCP, mcp, ...)
+   dbg.print{"setenv - after list_2_Tbl - mcp type: ", type(mcp), "\n"}
+
+   if (not mcp) then
+       dbg.print{"setenv - mcp is nil, restoring from mcp_old\n"}
+       mcp = mcp_old
+       return
+   end
+
+   if (not l_validateArgsWithValue("setenv", table)) then return end
+   mcp:setenv(table)
+   mcp = mcp_old
    dbg.fini("setenv")
    return
 end
@@ -339,10 +550,9 @@ end
 -- generalized prereq/conflict function.
 function family(name)
    dbg.start{"family(",name,")"}
+
    if (not l_validateStringArgs("family",name)) then return end
-
    dbg.print{"Setting mcp to ", mcp:name(),"\n"}
-
 
    mcp:family(name)
    dbg.fini("family")
@@ -935,4 +1145,3 @@ function subprocess(cmd)
    p:close()
    return ret
 end
-

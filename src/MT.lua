@@ -1106,18 +1106,33 @@ end
 
 --------------------------------------------------------------------------
 -- Build the name of the *family* env. variable.
+--local function l_buildFamilyPrefix()
+--   if (not s_familyA) then
+--      s_familyA    = {}
+--      s_familyA[1] = "LMOD_FAMILY_"
+--      local siteName = hook.apply("SiteName")
+--      if (siteName) then
+--         s_familyA[2] = siteName .. "_FAMILY_"
+--      end
+--   end
+--   return s_familyA
+--end
+
 local function l_buildFamilyPrefix()
+   dbg.start{"l_buildFamilyPrefix()"}
    if (not s_familyA) then
-      s_familyA    = {}
-      s_familyA[1] = "LMOD_FAMILY_"
+      dbg.print{"Initializing s_familyA\n"}
+      s_familyA = { "LMOD_FAMILY_" }
       local siteName = hook.apply("SiteName")
+      dbg.print{"siteName: ", siteName, "\n"}
       if (siteName) then
-         s_familyA[2] = siteName .. "_FAMILY_"
+         s_familyA[#s_familyA + 1] = siteName .. "_FAMILY_"
       end
    end
+   dbg.print{"s_familyA at return: ", s_familyA, "\n"}
+   dbg.fini("l_buildFamilyPrefix")
    return s_familyA
 end
-
 
 --------------------------------------------------------------------------
 -- Set the family
@@ -1130,12 +1145,11 @@ function M.setfamily(self,familyNm,mName)
    local familyA = l_buildFamilyPrefix()
    for i = 1,#familyA do
       local n = familyA[i] .. familyNm:upper()
-      MCP:setenv(n, mName)
-      MCP:setenv(n .. "_VERSION", myModuleVersion())
+      MCP:setenv{n, mName}
+      MCP:setenv{n .. "_VERSION", myModuleVersion()}
    end
    return results
 end
-
 --------------------------------------------------------------------------
 -- Unset the family
 -- @param self An MT object
@@ -1144,8 +1158,8 @@ function M.unsetfamily(self,familyNm)
    local familyA = l_buildFamilyPrefix()
    for i = 1,#familyA do
       local n = familyA[i] .. familyNm:upper()
-      MCP:unsetenv(n, "")
-      MCP:unsetenv(n .. "_VERSION", "")
+      MCP:unsetenv{n}
+      MCP:unsetenv{n .. "_VERSION"}
    end
    self.family[familyNm] = nil
 end
@@ -1625,3 +1639,5 @@ end
 
 
 return M
+
+

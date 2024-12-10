@@ -118,11 +118,15 @@ local function l_compareRequestedLoadsWithActual()
 end
 
 local function l_check_for_valid_name(kind, name)
+   dbg.start{"l_check_for_valid_name(kind=", kind, ", name='", name, "')"}
+   dbg.print{"Caller stack:\n", debug.traceback(), "\n"}
    local l    = name:len()
    local i, j = name:find("^[a-zA-Z_][a-zA-Z0-9_]*")
    if (j ~= l) then
+      dbg.print{"Invalid name detected: '", name, "'\n"}
       LmodError{msg="e_BadName",kind=kind, name=name}
    end
+   dbg.fini("l_check_for_valid_name")
 end
 
 local function l_check_for_valid_alias_name(kind, name)
@@ -312,10 +316,16 @@ end
 -- @param name the environment variable name.
 -- @param value the environment variable value.
 -- @param respect If true, then respect the old value.
-function M.setenv(self, name, value, respect)
-   name = (name or ""):trim()
+function M.setenv(self, t)
+   -- Extract values from table
+   local name = (t[1] or ""):trim()
+   local value = t[2]
+   local respect = t.respect
+
    dbg.start{"MainControl:setenv(\"",name,"\", \"",value,"\", \"",
               respect,"\")"}
+   dbg.print{"setenv context - Mode: ", self:mode(), ", Stack depth: ", FrameStk:singleton():stackDepth(), "\n"}
+   dbg.print{"setenv caller stack:\n", debug.traceback(), "\n"}
 
    l_check_for_valid_name("setenv",name)
 
@@ -343,9 +353,14 @@ end
 -- Set an environment variable.
 -- This function just sets the name with value in the current env.
 function M.setenv_env(self, name, value, respect)
+   dbg.start{"MainControl:setenv_env - raw inputs: name='", name, "', value='", value, "', respect='", respect, "'"}
+   if name == nil then
+      dbg.print{"WARNING: name is nil in setenv_env\n"}
+      dbg.fini("MainControl:setenv_env")
+      return
+   end
    name = (name or ""):trim()
-   dbg.start{"MainControl:setenv_env(\"",name,"\", \"",value,"\", \"",
-              respect,"\")"}
+   dbg.print{"MainControl:setenv_env - after trim: name='", name, "'\n"}
    posix.setenv(name, value, true)
    dbg.fini("MainControl:setenv_env")
 end
@@ -357,10 +372,26 @@ end
 -- @param name the environment variable name.
 -- @param value the environment variable value.
 -- @param respect If true, then respect the old value.
-function M.unsetenv(self, name, value, respect)
-   name = (name or ""):trim()
-   dbg.start{"MainControl:unsetenv(\"",name,"\", \"",value,"\")"}
+function M.unsetenv(self, t)
+   -- Extract values from table
+   dbg.start{"MainControl:unsetenv - input table t: ", type(t)}
+   if type(t) ~= "table" then
+      dbg.print{"WARNING: Input to unsetenv is not a table, type is ", type(t), "\n"}
+      dbg.fini("MainControl:unsetenv")
+      return
+   end
+   
+   dbg.print{"t contents:\n"}
+   for k,v in pairs(t) do
+      dbg.print{"  ", k, " = ", v, "\n"}
+   end
 
+   local name = (t[1] or ""):trim()
+   local value = t[2]
+   local respect = t.respect
+
+   dbg.print{"After extraction: name='", name, "', value='", value, "', respect='", respect, "'\n"}
+   
    l_check_for_valid_name("unsetenv",name)
 
    if (respect and getenv(name) ~= value) then
@@ -393,18 +424,17 @@ end
 -- @param self A MainControl object.
 -- @param name the environment variable name.
 -- @param value the environment variable value.
-function M.pushenv(self, name, value)
-   name = (name or ""):trim()
+function M.pushenv(self, t)
+   -- Extract values from table
+   local name = (t[1] or ""):trim()
+   local value = t[2]
+   
    dbg.start{"MainControl:pushenv(\"",name,"\", \"",value,"\")"}
 
    l_check_for_valid_name("pushenv",name)
-   ----------------------------------------------------------------
-   -- If name exists in the env and the stack version of the name
-   -- doesn't exist then use the name's value as the initial value
-   -- for "stackName".
 
    if (value == nil) then
-      LmodError{msg="e_Missing_Value",func = "pushenv", name = name}
+      LmodError{msg="e_Missing_Value", func = "pushenv", name = name}
    end
 
    local stackName = l_createStackName(name)
@@ -529,7 +559,7 @@ function M.append_path(self, t)
    local delim    = t.delim or ":"
    local name     = t[1]
    local value    = t[2]
-   local nodups   = not allow_dups( not t.nodups)
+   local nodups   = not allow_dups(not t.nodups)
    local priority = t.priority or 0
    local frameStk = FrameStk:singleton()
    local varT     = frameStk:varT()
@@ -560,7 +590,7 @@ function M.remove_path(self, t)
    local delim    = t.delim or ":"
    local name     = t[1]
    local value    = t[2]
-   local nodups   = not allow_dups( not t.nodups)
+   local nodups   = not allow_dups(not t.nodups)
    local priority = t.priority or 0
    local where    = t.where
    local frameStk = FrameStk:singleton()
@@ -1182,6 +1212,24 @@ function M.load_usr(self, mA)
       return {}
    end
 
+   -- Check if we're in unload mode and handle accordingly
+   if (self:mode() == "unload") then
+      -- In unload mode, we want to unload any modules that are loaded
+      local mt = frameStk:mt()
+      local mB = {}
+      for i = 1, #mA do
+         local mname = mA[i]
+         if (mname:isloaded()) then
+            mB[#mB + 1] = mname
+         end
+      end
+      if (#mB > 0) then
+         l_unRegisterUserLoads(mB)
+         return self:unload(mB)
+      end
+      return {}
+   end
+
    l_registerUserLoads(mA)
    local a = self:load(mA)
    dbg.fini("MainControl:load_usr")
@@ -1195,6 +1243,15 @@ end
 function mAList(mA)
    local a = {}
    for i = 1, #mA do
+      dbg.print{"Inspecting mA[", i, "] before userName call:\n"}
+      if type(mA[i]) == "table" then
+         dbg.print{"  Table contents:\n"}
+         for k,v in pairs(mA[i]) do
+            dbg.print{"    ", k, " = ", type(v), " : ", tostring(v), "\n"}
+         end
+      else
+         dbg.print{"  Not a table, type: ", type(mA[i]), "\n"}
+      end
       a[#a + 1] = mA[i]:userName()
    end
    return concatTbl(a, ", ")
@@ -1207,7 +1264,18 @@ function M.load(self, mA)
    end
 
    local hub = Hub:singleton()
-   local a      = hub:load(mA)
+   
+   -- Filter modules based on mode
+   local filteredMA = {}
+   local currentMode = self:mode()
+   for i = 1, #mA do
+      local mname = mA[i]
+      if not mname.__mode or (mname.__mode and contains(mname.__mode, currentMode)) then
+         filteredMA[#filteredMA + 1] = mname
+      end
+   end
+   
+   local a = hub:load(filteredMA)
 
    if (not quiet()) then
       self:registerAdminMsg(mA)
@@ -1529,17 +1597,31 @@ function M.family(self, name)
    local optionTbl = optionTbl()
    local auto_swap = cosmic:value("LMOD_AUTO_SWAP")
 
+   dbg.print{"MainControl:family state - fullName: ", fullName, ", sn: ", sn, ", mt type: ", type(mt), "\n"}
+
    l_check_for_valid_name("family",name)
 
+   dbg.print{"Before getfamily - name: ", name, "\n"}
    local oldName = mt:getfamily(name)
+   dbg.print{"After getfamily - oldName: ", oldName, "\n"}
+   
    if (oldName ~= nil and oldName ~= sn and not expert() ) then
+      dbg.print{"Found existing family member\n"}
+      dbg.print{"Family state - oldName: ", oldName, ", sn: ", sn, "\n"}
       if (auto_swap ~= "no") then
+         dbg.print{"Calling familyStackPush\n"}
+         dbg.print{"Stack push state - oldName: ", oldName, ", sn: ", sn, "\n"}
          self.familyStackPush(oldName, sn)
       else
          LmodError{msg="e_Family_Conflict", name = name, oldName = oldName, fullName = fullName}
       end
    end
+   
+   dbg.print{"Before setfamily - name: ", name, " sn: ", sn, "\n"}
+   dbg.print{"Setfamily state - mt: ", type(mt), ", name: ", name, ", sn: ", sn, "\n"}
    mt:setfamily(name,sn)
+   dbg.print{"After setfamily\n"}
+   
    dbg.fini("MainControl:family")
 end
 
@@ -1868,3 +1950,4 @@ function M.haveDynamicMPATH(self)
 end
 
 return M
+

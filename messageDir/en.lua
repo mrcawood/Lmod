@@ -103,6 +103,10 @@ return {
      e_Args_Not_Strings    = [==[Syntax error in file: %{fn}
  with command: %{cmdName}, one or more arguments are not strings.
 ]==], --
+     e_Mode_Does_Not_Exist    = [==[Syntax error in file: %{fn}
+ with command: %{cmdName}, mode is not defined.
+]==], --
+
      e_Args_Not_Table    = [==[Syntax error in file: %{fn}
  with function: %{func}, is not a table.
 ]==], --

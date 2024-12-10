@@ -50,6 +50,7 @@ require("utils")
 local dbg             = require("Dbg"):dbg()
 local concatTbl       = table.concat
 local getenv          = os.getenv
+local FrameStk        = require("FrameStk")
 
 local s_mfileCountT   = {}
 
@@ -59,6 +60,7 @@ local s_mfileCountT   = {}
 --          things like the current list of modules and the shell.
 function loadModuleFile(t)
    dbg.start{"loadModuleFile(",t.file,")"}
+   dbg.print{"Stack state - Current mode: ", mode(), ", Frame depth: ", FrameStk:singleton():stackDepth(), "\n"}
 
    local myType     = extname(t.file)
    local forbiddenT = t.forbiddenT or {}
