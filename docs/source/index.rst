@@ -1,4 +1,3 @@
-
 Lmod: A New Environment Module System
 =====================================
 
@@ -148,6 +147,19 @@ Advanced Topics
    340_inherit
    350_community
    360_check_syntax
+
+Notes for Developers
+^^^^^^^^^^^^^^^^^^
+
+.. toctree::
+   :maxdepth: 1
+
+   500_developer_overview
+   510_codebase_architecture
+   520_key_functions
+   530_use_case_walkthroughs
+   540_making_changes
+   550_visual_aids
 
 Internal Structure of Lmod
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
